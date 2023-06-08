@@ -1,0 +1,101 @@
+.agripinaslogo-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6.25rem;
+  height: 6.35rem;
+  object-fit: cover;
+}
+.agripinas {
+  position: absolute;
+  top: 0.92rem;
+  left: 6rem;
+  line-height: 220.52%;
+  cursor: pointer;
+}
+.home,
+.logo {
+  position: relative;
+}
+.logo {
+  width: 13.44rem;
+  height: 6.35rem;
+}
+.home {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  color: inherit;
+}
+
+.home:hover {
+  color: #27AE60;
+}
+
+.a:active {
+  color: #27AE60;
+}
+.navigation-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+.navigation-right {
+  justify-content: flex-end;
+  text-align: left;
+  font-size: 1.3rem;
+}
+.navigation-right,
+.top-container,
+.top-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.top-container {
+  flex: 1;
+  justify-content: space-between;
+}
+.top-header {
+  position: sticky;
+  background-color: #fff;
+  width: 100%;
+  height: 6.88rem;
+  padding: 1.38rem 5rem;
+  box-sizing: border-box;
+  justify-content: center;
+  top: 0;
+  background: #fff;
+  text-align: center;
+  font-size: 1.88rem;
+  color: #557153;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 1200px) {
+  .top-header {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 960px) {
+  .navigation-menu {
+    display: none;
+  }
+  .top-header {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .agripinas {
+    font-size: 0.75rem;
+    line-height: 0.63rem;
+  }
+  .navigation-right {
+    display: flex;
+  }
+}

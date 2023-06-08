@@ -1,0 +1,165 @@
+.contact-us {
+  position: relative;
+  line-height: 10rem;
+  font-weight: 600;
+}
+.contact-us,
+.email,
+.name {
+  align-self: stretch;
+}
+.name {
+  position: relative;
+}
+.email {
+  border: 0; 
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0.75rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+.email:focus {
+  outline: 0;
+}
+.email1,
+.name-parent {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+.name-parent {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.38rem;
+}
+.email1 {
+  border: 0; 
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 1rem 0.75rem;
+  align-items: center;
+  outline: 0;
+}
+.optional {
+  color: #ddd;
+}
+.frame-group {
+  flex: 1;
+  flex-direction: column;
+  gap: 1.13rem;
+}
+.email3,
+.frame-group,
+.message-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.email3 {
+  border: 0;
+  background-color: #fff;
+  font-size: 1rem;
+  align-self: stretch;
+  border-radius: 6px;
+  height: 15.19rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: 1rem 0.75rem;
+  box-sizing: border-box;
+  outline: 0;
+}
+.message-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: 0.38rem;
+}
+.button,
+.frame-parent {
+  font-size: 1.13rem;
+}
+.frame-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.13rem;
+  text-align: left;
+}
+.button {
+  position: relative;
+  letter-spacing: 0.46px;
+  color: #fff;
+  text-align: center;
+}
+.search-flights-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0.75rem 1.13rem;
+  background-color: #27ae60;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.search-flights-button:hover {
+  background-color: #557153;
+}
+
+.form {
+  position: relative; 
+  background-color: #fff;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
+  width: 100%;
+  height: 100vh; /* Set the height to 100vh */
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 1.88rem;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center; /* Center the content vertically */
+  gap: 1.06rem;
+  text-align: center;
+  font-size: 2.19rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('../../img/riceFarmersImage.png');
+  background-size: cover; /* Add this line to ensure the background image covers the entire form */
+}
+
+@media screen and (max-width: 960px) {
+  .contact-us {
+    font-size: 1.13rem;
+  }
+  .name {
+    font-size: 0.88rem;
+  }
+  .search-flights-button {
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .frame-group,
+  .message-parent {
+    flex: unset;
+    align-self: stretch;
+  }
+  .frame-parent {
+    flex-direction: column;
+  }
+  .search-flights-button {
+    width: 100% !important;
+  }
+}
