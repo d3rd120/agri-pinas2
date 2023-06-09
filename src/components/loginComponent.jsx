@@ -3,26 +3,29 @@ import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
   return (
-    <div className="loginpage">
-      <div className="wrapper">
-        <div className="form">
-          <div className="form-text">
-            <div className="login">Login</div>
+    <div className="loginComponent">
+      <div className="loginComponentWrapper">
+        <div className="loginComponentForm">
+          <div className="loginComponentFormText">
+            <div className="loginComponentMainText">Login</div>
           </div>
-          <div className="form-fields">
+          <div className="loginComponentFormFields">
             <input
-              className="input"
+              className="loginComponentInput" id = "loginComponentEmail"
               type="text"
               placeholder="Email Address"
             />
-            <input className="input" type="password" placeholder="Password" />
+            <input 
+            className="loginComponentInput" id = "loginComponentPassword"
+            type="password" 
+            placeholder="Password" />
           </div>
-          <button className="button">
-            <div className="login1">Login</div>
+          <button className="loginComponentButton">
+            <div className="loginComponentButtonText">Login</div>
           </button>
-          <div className="dont-have-an-container">
+          <div className="loginComponentSubTextContainter">
             <span>{`Don’t have an account? `}</span>
-            <Link className="sign-up" to = '/signup'>SignUp</Link>
+            <Link className="loginComponentSignUpLink" to = '/signup'>Signup</Link>
           </div>
         </div>
       </div>
