@@ -28,16 +28,13 @@ const CalloutSection = () => {
       <div className="callout-copywriting">
         <b className="about-agripinas">About AgriPinas</b>
         <div className="callout-text">
-          <p className="as-one-of">{`As one of the alpine countries, landlocked Switzerland with her mountains has to compete not only with her neighbours but with other destinations. There are, e.g., no coastal resorts. `}</p>
+          <p className="as-one-of">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  `}</p>
           <p className="as-one-of">&nbsp;</p>
           <p className="as-one-of">
-            The advantage is that tourism in Switzerland benefits of a large
-            diversity of beautiful landscapes in a relatively small space.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-        </div>
-        <button className="view-full-gallery-button">
-          <div className="view-more">View more</div>
-        </button>
+        </div>       
       </div>
     </div>
   );
