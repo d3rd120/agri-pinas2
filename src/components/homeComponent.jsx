@@ -1,5 +1,5 @@
 import "../css/Components/homeComponent.css";
-import HomePhoto from "../img/homePhoto.png";
+
 const Offer = () => {
   return (
     <div className="offer">
@@ -21,7 +21,6 @@ const Offer = () => {
             <div className="more">More</div>
           </button>
         </div>
-        <img className="image-2-icon" alt="" src={HomePhoto} />
       </div>
     </div>
   );

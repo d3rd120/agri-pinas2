@@ -26,6 +26,7 @@
   text-decoration: none;
   font-weight: 700;
   color: inherit;
+  transition: 0.5s;
 }
 
 .home:hover {
@@ -41,11 +42,13 @@
   align-items: center;
   justify-content: flex-end;
   gap: 3rem;
+  
 }
 .navigation-right {
   justify-content: flex-end;
   text-align: left;
   font-size: 1.3rem;
+  
 }
 .navigation-right,
 .top-container,
