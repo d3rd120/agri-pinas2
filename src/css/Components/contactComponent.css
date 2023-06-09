@@ -113,10 +113,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .contactComponentButton:hover {
-  background-color: #557153;
+  background-color: #3e8e41;
+  color: white;
 }
 
 .contactComponentForm {

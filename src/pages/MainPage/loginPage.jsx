@@ -5,8 +5,7 @@ import LoginComponent from '../../components/loginComponent';
 const Login = () => {
 
     return(
-        <>
-            <MainPageNavigation />
+        <>          
             <LoginComponent />
         </>
     );

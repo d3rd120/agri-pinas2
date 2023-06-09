@@ -42,7 +42,7 @@
   flex-direction: row;
   justify-content: flex-start;
   transition: 0.5s;
-  text-decoration: none;
+  text-decoration: none;  
 }
 
 .homeComponentButton:hover {

@@ -1,5 +1,7 @@
 import "../css/Components/loginComponent.css";
-const Loginpage = () => {
+import { Link } from 'react-router-dom';
+
+const LoginPage = () => {
   return (
     <div className="loginpage">
       <div className="wrapper">
@@ -11,18 +13,21 @@ const Loginpage = () => {
             <input
               className="input"
               type="text"
-              placeholder="Username or email address"
+              placeholder="Email Address"
             />
-            <input className="input" type="text" placeholder="Password" />
+            <input className="input" type="password" placeholder="Password" />
           </div>
           <button className="button">
             <div className="login1">Login</div>
           </button>
-          <div className="new-user-sign">New user? Sign up!</div>
+          <div className="dont-have-an-container">
+            <span>{`Don’t have an account? `}</span>
+            <Link className="sign-up" to = '/signup'>SignUp</Link>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Loginpage;
+export default LoginPage;
