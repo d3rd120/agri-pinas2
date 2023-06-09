@@ -1,7 +1,7 @@
 import React from 'react';
 import MainPageNavigation from '../../components/mainPageNavigation';
 import HomeComponent from '../../components/homeComponent';
-import PostsComponent from '../../components/postsComponent';
+import PostComponent from '../../components/postComponent';
 import ContactComponent from '../../components/contactComponent';
 import AboutComponent from '../../components/aboutComponent';
 const MainPage = () => {
@@ -11,7 +11,7 @@ const MainPage = () => {
         <MainPageNavigation />                    
         <HomeComponent />  
         <AboutComponent />     
-        <PostsComponent />        
+        <PostComponent />        
         <ContactComponent />       
         </>
     );
