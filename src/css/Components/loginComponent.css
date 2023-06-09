@@ -1,22 +1,22 @@
-.login {
+.loginComponentMainText {
   align-self: stretch;
   position: relative;
   line-height: 2.13rem;
   font-weight: 600;
 }
-.form-text {
+.loginComponentFormText {
   flex-direction: column;
   padding: 0 0 1rem;
   align-items: center;
 }
-.form-fields,
-.form-text,
-.input {
+.loginComponentFormFields,
+.loginComponentFormText,
+.loginComponentInput {
   align-self: stretch;
   display: flex;
   justify-content: flex-start;
 }
-.input {
+.loginComponentInput {
   border: 1px solid #dee3eb;
   font-size: 1rem;
   background-color: #fff;
@@ -28,13 +28,13 @@
   line-height: 1.13rem;
   outline: 0;
 }
-.form-fields {
+.loginComponentFormFields {
   flex-direction: column;
   padding: 0 2.06rem;
   align-items: flex-start;
   gap: 0.63rem;
 }
-.login1 {
+.loginComponentButtonText {
   position: relative;
   font-size: 1rem;
   line-height: 150%;
@@ -42,7 +42,7 @@
   color: #fff;
   text-align: left;
 }
-.button {
+.loginComponentButton {
   cursor: pointer;
   border: 0;
   padding: 0.5rem 1rem;
@@ -58,20 +58,21 @@
   transition: 0.5s;
 }
 
-.button:hover {
+.loginComponentButton:hover {
   background-color: #3e8e41;
   color: white;
 }
-.sign-up {
+.loginComponentSignUpLink {
   color: #27ae60;
+  text-decoration: none;
   transition: 0.5s;
 }
 
-.sign-up:hover {  
+.loginComponentSignUpLink:hover {  
   color: #3e8e41;  
 }
 
-.dont-have-an-container {
+.loginComponentSubTextContainter {
   position: relative;
   font-size: 0.90rem;
   line-height: 150%; 
@@ -81,31 +82,31 @@
   flex-shrink: 0;
   color: #000;
 }
-.form {
+.loginComponentForm {
   border-radius: 12px;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
   border: 1px solid #eaeaea;
   box-sizing: border-box;
-  width: 35rem;
-  height: 40rem;
+  width: 32rem;
+  height: 32rem;
   padding: 1.75rem 3.19rem;
   gap: 2.06rem;
   max-width: 90%;
 }
-.form,
-.loginpage,
-.wrapper {
+.loginComponentForm,
+.loginComponent,
+.loginComponentWrapper {
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.wrapper {
+.loginComponentWrapper {
   align-self: stretch;
   padding: 5rem 0;
 }
-.loginpage {
+.loginComponent {
   position: relative;
   width: 100%;
   text-align: center;
