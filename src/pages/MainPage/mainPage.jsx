@@ -12,8 +12,7 @@ const MainPage = () => {
         <HomeComponent />  
         <AboutComponent />     
         <NewsComponent />        
-        <ContactComponent />
-       
+        <ContactComponent />       
 
         </>
     );

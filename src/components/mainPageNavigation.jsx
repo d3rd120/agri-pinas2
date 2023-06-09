@@ -26,6 +26,7 @@ const MainPageNavigation = () => {
           <div className="navigation-menu">
             <a className="home">Home</a>
             <a className="home">About</a>
+            <a className="home">Posts</a>
             <a className="home">Contact</a>
           </div>
         </div>

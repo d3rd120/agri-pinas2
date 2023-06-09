@@ -57,9 +57,14 @@
   flex-direction: row;
   align-items: center;
 }
+
 .top-container {
-  flex: 1;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 .top-header {
   position: sticky;

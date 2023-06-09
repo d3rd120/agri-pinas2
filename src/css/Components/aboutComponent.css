@@ -39,6 +39,7 @@
 }
 .as-one-of {
   margin: 0;
+  font-size: 1.25rem;
 }
 .callout-text,
 .view-more {
@@ -54,20 +55,7 @@
   color: #fff;
   text-align: center;
 }
-.view-full-gallery-button {
-  cursor: pointer;
-  border: 0;
-  padding: 1.25rem;
-  background-color: #27ae60;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.view-full-gallery-button:hover {
-  background-color: #5922ce;
-}
+
 .callout-copywriting,
 .callout-section {
   display: flex;
@@ -89,7 +77,7 @@
   flex-direction: row;
   padding: 1.88rem;
   text-align: left;
-  font-size: 2.63rem;
+  font-size:  2.25rem;
   color: #434343;
   
   font-family: Arial, Helvetica, sans-serif;
