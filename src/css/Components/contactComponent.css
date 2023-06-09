@@ -1,18 +1,18 @@
-.contact-us {
+.contactComponentMainText {
   position: relative;
   line-height: 10rem;
   font-weight: 600;
   font-size: 2.5rem;
 }
-.contact-us,
-.email,
-.name {
+.contactComponentMainText,
+.contactComponentEmail,
+.contactComponentInputText {
   align-self: stretch;
 }
-.name {
+.contactComponentInputText {
   position: relative;
 }
-.email {
+.contactComponentEmail {
   border: 0; 
   font-size: 1rem;
   background-color: #fff;
@@ -24,21 +24,21 @@
   align-items: center;
   justify-content: flex-start;
 }
-.email:focus {
+.contactComponentEmail:focus {
   outline: 0;
 }
-.email1,
-.name-parent {
+.contactComponentEmail1,
+.contactComponentNameParent{
   align-self: stretch;
   display: flex;
   justify-content: flex-start;
 }
-.name-parent {
+.contactComponentNameParent {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.38rem;
 }
-.email1 {
+.contactComponentEmail1 {
   border: 0; 
   font-size: 1rem;
   background-color: #fff;
@@ -49,22 +49,22 @@
   align-items: center;
   outline: 0;
 }
-.optional {
+.contactComponentOptional {
   color: #ddd;
 }
-.frame-group {
+.contactComponentFrameGroup{
   flex: 1;
   flex-direction: column;
   gap: 1.13rem;
 }
-.email3,
-.frame-group,
-.message-parent {
+.contactComponentEmail3,
+.contactComponentFrameGroup,
+.contactComponentMessageParent {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.email3 {
+.contactComponentEmail3 {
   border: 0;
   background-color: #fff;
   font-size: 1rem;
@@ -78,16 +78,16 @@
   box-sizing: border-box;
   outline: 0;
 }
-.message-parent {
+.contactComponentMessageParent {
   flex: 1;
   flex-direction: column;
   gap: 0.38rem;
 }
-.button,
-.frame-parent {
+.contactComponentSendMessage,
+.contactComponentFrameParent {
   font-size: 1.13rem;
 }
-.frame-parent {
+.contactComponentFrameParent {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -96,13 +96,13 @@
   gap: 1.13rem;
   text-align: left;
 }
-.button {
+.contactComponentSendMessage {
   position: relative;
   letter-spacing: 0.46px;
   color: #fff;
   text-align: center;
 }
-.search-flights-button {
+.contactComponentButton {
   cursor: pointer;
   border: 0;
   padding: 0.75rem 1.13rem;
@@ -115,52 +115,52 @@
   justify-content: center;
   transition: 0.3s;
 }
-.search-flights-button:hover {
+.contactComponentButton:hover {
   background-color: #557153;
 }
 
-.form {
+.contactComponentForm {
   position: relative; 
   background-color: #fff;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
   width: 100%;
-  height: 100vh; /* Set the height to 100vh */
+  height: 100vh; 
   display: flex;
   flex-direction: column;
   padding: 1.75rem 1.88rem;
   box-sizing: border-box;
   align-items: center;
-  justify-content: center; /* Center the content vertically */
+  justify-content: center;
   gap: 1.06rem;
   text-align: center;
   font-size: 2.19rem;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   background-image: url('../../img/riceFarmersImage.png');
-  background-size: cover; /* Add this line to ensure the background image covers the entire form */
+  background-size: cover; 
 }
 
 @media screen and (max-width: 960px) {
-  .contact-us {
+  .contactComponentMainText {
     font-size: 1.13rem;
   }
-  .name {
+  .contactComponentInputText {
     font-size: 0.88rem;
   }
-  .search-flights-button {
+  .contactComponentButton {
     margin-right: auto;
   }
 }
 @media screen and (max-width: 420px) {
-  .frame-group,
-  .message-parent {
+  .contactComponentFrameGroup,
+  .contactComponentMessageParent{
     flex: unset;
     align-self: stretch;
   }
-  .frame-parent {
+  .contactComponentFrameParent{
     flex-direction: column;
   }
-  .search-flights-button {
+  .contactComponentButton {
     width: 100% !important;
   }
 }

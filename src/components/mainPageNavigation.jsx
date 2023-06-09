@@ -10,24 +10,24 @@ const MainPageNavigation = () => {
   }, []);
 
   return (
-    <header className="top-header">
-      <div className="top-container">
-        <div className="logo">
+    <header className="mainNavigationHeader">
+      <div className="mainNavigationContainer">
+        <div className="mainNavigationLogo">
           <img
-            className="agripinaslogo-icon"
+            className="mainNavigationLogoIcon"
             alt=""
             src={Logo}
           />
-          <b className="agripinas" onClick={onAgriPinasTextClick}>
+          <b className="mainNavigationMainText" onClick={onAgriPinasTextClick}>
             AgriPinas
           </b>
         </div>
-        <div className="navigation-right">
-          <div className="navigation-menu">
-            <a className="home">Home</a>
-            <a className="home">About</a>
-            <a className="home">Posts</a>
-            <a className="home">Contact</a>
+        <div className="mainNavigationRightLinks">
+          <div className="mainNavigationMenu">
+            <a className="mainNavigationLink">Home</a>
+            <a className="mainNavigationLink">About</a>
+            <a className="mainNavigationLink">Posts</a>
+            <a className="mainNavigationLink">Contact</a>
           </div>
         </div>
       </div>

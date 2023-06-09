@@ -1,4 +1,4 @@
-.agripinaslogo-icon {
+.mainNavigationLogoIcon{
   position: absolute;
   top: 0;
   left: 0;
@@ -6,22 +6,22 @@
   height: 6.35rem;
   object-fit: cover;
 }
-.agripinas {
+.mainNavigationMainText {
   position: absolute;
   top: 0.92rem;
   left: 6rem;
   line-height: 220.52%;
   cursor: pointer;
 }
-.home,
-.logo {
+.mainNavigationLink,
+.mainNavigationLogo{
   position: relative;
 }
-.logo {
+.mainNavigationLogo {
   width: 13.44rem;
   height: 6.35rem;
 }
-.home {
+.mainNavigationLink {
   cursor: pointer;
   text-decoration: none;
   font-weight: 700;
@@ -29,14 +29,14 @@
   transition: 0.5s;
 }
 
-.home:hover {
+.mainNavigationLink:hover {
   color: #27AE60;
 }
 
 .a:active {
   color: #27AE60;
 }
-.navigation-menu {
+.mainNavigationMenu {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,21 +44,21 @@
   gap: 3rem;
   
 }
-.navigation-right {
+.mainNavigationRightLinks {
   justify-content: flex-end;
   text-align: left;
   font-size: 1.3rem;
   
 }
-.navigation-right,
-.top-container,
-.top-header {
+.mainNavigationRightLinks,
+.mainNavigationContainer,
+.mainNavigationHeader {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.top-container {
+.mainNavigationContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,7 +66,7 @@
   overflow-x: auto;
   scroll-behavior: smooth;
 }
-.top-header {
+.mainNavigationHeader {
   position: sticky;
   background-color: #fff;
   width: 100%;
@@ -82,28 +82,28 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 @media screen and (max-width: 1200px) {
-  .top-header {
+  .mainNavigationHeader {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 960px) {
-  .navigation-menu {
+  .mainNavigationMenu {
     display: none;
   }
-  .top-header {
+  .mainNavigationHeader {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 420px) {
-  .agripinas {
+  .mainNavigationMainText {
     font-size: 0.75rem;
     line-height: 0.63rem;
   }
-  .navigation-right {
+  .mainNavigationRightLinks {
     display: flex;
   }
 }

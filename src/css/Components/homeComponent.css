@@ -1,17 +1,17 @@
-.fresh-from-the {
+.homeComponentContainerText {
   margin: 0;
 }
-.fresh-from-the-container,
-.lets-help-farmers-container {
+.homeComponentTitleContainer,
+.homeComponentTextContainer {
   align-self: stretch;
   position: relative;
   line-height: 80.5%;
 }
-.lets-help-farmers-container {
+.homeComponentTextContainer {
   font-size: 1.25rem;
   line-height: 167.02%;
 }
-.taglines {
+.homeComponentTagLine {
   width: 28.13rem;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   gap: 0.13rem;
 }
 
-.more {
+.homeComponentMore {
   position: relative;
   font-size: 1.25rem;
   line-height: 220.52%;
@@ -28,11 +28,11 @@
   color: #fff;
   text-align: center;
 }
-.button,
-.cta {
+.homeComponentButton,
+.homeComponentSet {
   align-items: flex-start;
 }
-.button {
+.homeComponentButton {
   cursor: pointer;
   border: 0;
   padding: 0 1.25rem;
@@ -42,25 +42,26 @@
   flex-direction: row;
   justify-content: flex-start;
   transition: 0.5s;
+  text-decoration: none;
 }
 
-.button:hover {
+.homeComponentButton:hover {
   background-color: #3e8e41;
   color: white;
 }
-.cta {
+.homeComponentSet {
   flex: 1;
   flex-direction: column;
   padding: 0 3.06rem;
   gap: 1.94rem;
 }
-.background,
-.cta,
-.offer {
+.homeComponentBackground,
+.homeComponentSet,
+.homeComponent {
   display: flex;
   justify-content: flex-start;
 }
-.background {
+.homeComponentBackground {
   align-self: stretch;
   border-radius: 15px;
   display: flex;
@@ -69,7 +70,7 @@
   justify-content: center; /* Updated */
   height: 100vh;
 }
-.offer {
+.homeComponent {
   position: relative;
   background-image: url('../../img/homePhoto.png');
   background-size: cover;
@@ -86,20 +87,20 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 @media screen and (max-width: 960px) {
-  .fresh-from-the-container,
-  .lets-help-farmers-container {
+  .homeComponentTitleContainer,
+  .homeComponentTextContainer {
     text-align: center;
   }
-  .taglines {
+  .homeComponentTagLine {
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .background,
-  .cta {
+  .homeComponentBackground,
+  .cthomeComponentSeta {
     align-items: center;
     box-sizing: border-box;
   }
-  .cta {
+  .homeComponentSet {
     gap: 1.56rem;
     justify-content: center;
     padding-left: 0;
@@ -107,7 +108,7 @@
     flex: unset;
     align-self: stretch;
   }
-  .background {
+  .homeComponentBackground {
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 3rem;

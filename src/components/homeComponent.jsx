@@ -1,29 +1,30 @@
 import "../css/Components/homeComponent.css";
+import { Link } from 'react-router-dom';
 
-const Offer = () => {
+const HomeComponent = () => {
   return (
-    <div className="offer">
-      <div className="background">
-        <div className="cta">
-          <div className="taglines">
-            <b className="fresh-from-the-container">
-              <p className="fresh-from-the">Fresh from the farm,</p>
-              <p className="fresh-from-the">delivered to your door.</p>
+    <div className="homeComponent">
+      <div className="homeComponentBackground">
+        <div className="homeComponentSet">
+          <div className="homeComponentTagLine">
+            <b className="homeComponentTitleContainer">
+              <p className="homeComponentContainerText">Fresh from the farm,</p>
+              <p className="homeComponentContainerText">delivered to your door.</p>
             </b>
-            <div className="lets-help-farmers-container">
-              <p className="fresh-from-the">Let’s help farmers!</p>
-              <p className="fresh-from-the">
+            <div className="homeComponentTextContainer">
+              <p className="homeComponentContainerText">Let’s help farmers!</p>
+              <p className="homeComponentContainerText">
                 Direct link between farmers and consumers
               </p>
             </div>
           </div>
-          <button className="button">
-            <div className="more">More</div>
-          </button>
+          <Link className="homeComponentButton" to = '/login'>
+            <div className="homeComponentMore">More</div>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default Offer;
+export default HomeComponent;
