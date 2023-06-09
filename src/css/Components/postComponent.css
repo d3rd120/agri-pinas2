@@ -1,21 +1,21 @@
-.catch-up-to,
-.recent-story-entries {
+.postComponentSubTitle,
+.postComponentTitle{
   align-self: stretch;
   position: relative;
 }
   
-.catch-up-to {
+.postComponentSubTitle {
   letter-spacing: 0.06em;
   line-height: 2.63rem;
   text-transform: uppercase;
 }
-.recent-story-entries {
+.postComponentTitle {
   font-size: 2rem;
   line-height: 3.68rem;
   font-weight: 700;
   color: #434343;
 }
-.catch-up-to-our-posts-parent {
+.postComponentParent{
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@
   justify-content: flex-start;
   gap: 0.38rem;
 }
-.zermatt-card-image {
+.postComponentCard1Image {
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -33,30 +33,30 @@
   max-height: 100%;
   object-fit: cover;
 }
-.zermatt-card-title {
+.postComponentCard1Title {
   align-self: stretch;
   position: relative;
   line-height: 2.73rem;
 }
-.view-full-blog {
+.postComponentCard1ViewBlog {
   color: rgba(39, 174, 96, 0.9);
 }
-.zermatt-card-description-container {
+.postComponentCard1DescriptionContainer {
   align-self: stretch;
   position: relative;
   font-size: 1rem;
   line-height: 1.97rem;
   color: #576074;
 }
-.zermatt-card,
-.zermatt-card-details {
+.postComponentCard1,
+.postComponentCard1Details {
   align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.zermatt-card {
+.postComponentCard1 {
   flex: 1;
   border-radius: 10.52px;
   background-color: #f9f9f9;
@@ -64,7 +64,7 @@
   padding: 1.31rem;
   gap: 1.31rem;
 }
-.tuscany-card-image {
+.postComponentCard2Image {
   align-self: stretch;
   position: relative;
   border-radius: 5.26px;
@@ -72,20 +72,20 @@
   width: 14.06rem;
   object-fit: cover;
 }
-.view-full-blog1 {
+.postComponentCard1ViewBlog1 {
   color: #27ae60;
 }
-.tuscany-card,
-.tuscany-card-details {
+.postComponentCard2,
+.postComponentCard2Details {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.tuscany-card-details {
+.postComponentCard2Details {
   flex: 1;
   flex-direction: column;
 }
-.tuscany-card {
+.postComponentCard2{
   align-self: stretch;
   border-radius: 10.52px;
   background-color: #f9f9f9;
@@ -109,18 +109,18 @@
   line-height: 1.97rem;
   color: #576074;
 }
-.cards-container,
-.small-cards {
+.postComponentCardContainer,
+.postComponentSmallCards {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.small-cards {
+.postComponentSmallCards{
   flex: 1;
   flex-direction: column;
   gap: 0.94rem;
 }
-.cards-container {
+.postComponentCardContainer {
   align-self: stretch;
   flex-direction: row;
   gap: 1.31rem;
@@ -128,7 +128,7 @@
   font-size: 1.5rem;
   color: #434343;
 }
-.recent-stories-frame {
+.postComponentFrame {
   position: relative;
   background-color: #fff;
   width: 100%;
@@ -152,32 +152,32 @@
 
 
 @media screen and (max-width: 1200px) {
-  .zermatt-card {
+  .postComponentCard1 {
     width: 100%;
   }
-  .small-cards,
-  .zermatt-card {
+  .postComponentSmallCards,
+  .postComponentCard1{
     flex: unset;
     align-self: stretch;
   }
-  .cards-container {
+  .postComponentCardContainer {
     flex-direction: column;
   }
-  .recent-stories-frame {
+  .postComponentFrame {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 960px) {
-  .tuscany-card-image {
+  .postComponentCard2Image {
     width: 100%;
   }
-  .tuscany-card-details {
+  .postComponentCard2Details {
     flex: unset;
     align-self: stretch;
   }
-  .tuscany-card {
+  .postComponentCard2 {
     flex-direction: column;
   }
   .kyoto-card-image {
@@ -185,7 +185,7 @@
   }
 }
 @media screen and (max-width: 420px) {
-  .zermatt-card-image {
+  .postComponentCard1Image {
     width: 100% !important;
     height: auto !important;
   }
