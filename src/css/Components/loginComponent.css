@@ -1,0 +1,109 @@
+/* .login {
+    align-self: stretch;
+    position: relative;
+    line-height: 2.13rem;
+    font-weight: 600;
+  }
+  .form-text {
+    flex-direction: column;
+    padding: 0 0 1rem;
+    align-items: center;
+  }
+  .form-fields,
+  .form-text,
+  .input {
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .input {
+    border: 1px solid #dee3eb;
+    font-family: Roboto;
+    font-size: 0.75rem;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-direction: row;
+    padding: 0.63rem 0.88rem;
+    align-items: center;
+    line-height: 1.13rem;
+    outline: 0;
+  }
+  .form-fields {
+    flex-direction: column;
+    padding: 0 2.06rem;
+    align-items: flex-start;
+    gap: 0.63rem;
+  }
+  .login1 {
+    position: relative;
+    font-size: 0.75rem;
+    line-height: 150%;
+    font-weight: 600;
+    font-family: Roboto;
+    color: #fff;
+    text-align: left;
+  }
+  .button {
+    cursor: pointer;
+    border: 0;
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    border-radius: 8px;
+    width: 7.19rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .new-user-sign {
+    position: relative;
+    font-size: 0.69rem;
+    text-decoration: underline;
+    line-height: 150%;
+    font-family: Roboto;
+    color: #000;
+    display: inline-block;
+    width: 9.25rem;
+    height: 0.94rem;
+    flex-shrink: 0;
+  }
+  .form,
+  .loginpage,
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form {
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    width: 32.38rem;
+    height: 26.13rem;
+    padding: 1.75rem 3.19rem;
+    gap: 2.06rem;
+    max-width: 90%;
+  }
+  .loginpage,
+  .wrapper {
+    background-color: #ececec;
+  }
+  .wrapper {
+    align-self: stretch;
+    padding: 5rem 0;
+  }
+  .loginpage {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 1.38rem;
+    color: #434343;
+    font-family: Poppins;
+  }
+   */

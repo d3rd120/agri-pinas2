@@ -1,52 +1,52 @@
 import "../css/Components/contactComponent.css";
 
 
-const Form = () => {
+const ContactComponent = () => {
   return (
-    <div className="form">
-      <div className="contact-us">Contact Us</div>
-      <div className="frame-parent">
-        <div className="frame-group">
-          <div className="name-parent">
-            <div className="name">Name</div>
+    <div className="contactComponentForm">
+      <div className="contactComponentMainText">Contact Us</div>
+      <div className="contactComponentFrameParent">
+        <div className="contactComponentFrameGroup">
+          <div className="contactComponentNameParent">
+            <div className="contactComponentInputText">Name</div>
             <input
-              className="email"
+              className="contactComponentEmail" id = "contactComponentName"
               type="text"
               placeholder="Enter your name"
             />
           </div>
-          <div className="name-parent">
-            <div className="name">Email Address</div>
+          <div className="contactComponentNameParent">
+            <div className="contactComponentInputText">Email Address</div>
             <input
-              className="email1"
+              className="contactComponentEmail1" id = "contactComponentEmail"
               type="text"
               placeholder="Enter your email address"
             />
           </div>
-          <div className="name-parent">
-            <div className="name">
+          <div className="contactComponentNameParent">
+            <div className="contactComponentInputText">
               <span>Phone Number</span>
-              <span className="optional"> (Optional)</span>
+              <span className="contactComponentOptional"> (Optional)</span>
             </div>
             <input 
-            className="email1" 
+            className="contactComponentEmail1" id = "contactComponentPhoneNumber"
             type="text"
             placeholder = "Enter your phone number"
             />
           </div>
         </div>
-        <div className="message-parent">
-          <div className="name">Message</div>
+        <div className="contactComponentMessageParent">
+          <div className="contactComponentInputText">Message</div>
           <textarea 
-          className="email3" 
+          className="contactComponentEmail3" id = "contactComponentMessage"
           placeholder="Enter your message" />
         </div>
       </div>
-      <button className="search-flights-button">
-        <b className="button">Send message</b>
+      <button className="contactComponentButton">
+        <b className="contactComponentSendMessage">Send message</b>
       </button>
     </div>
   );
 };
 
-export default Form;
+export default ContactComponent;

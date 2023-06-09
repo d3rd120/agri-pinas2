@@ -3,34 +3,34 @@ import AboutImage1 from '../img/aboutImage1.png';
 import AboutImage2 from '../img/aboutImage2.png';
 import AboutImage3 from '../img/aboutImage3.png';
 
-const CalloutSection = () => {
+const AboutComponent = () => {
   return (
-    <div className="callout-section">
-      <div className="callout-images">
+    <div className="aboutComponentSection">
+      <div className="aboutComponentImages">
         <img
-          className="callout-swiss-winter-image"
+          className="aboutComponentImage1"
           alt=""
           src={AboutImage1}
         />
-        <div className="callout-images-column">
+        <div className="aboutComponentImageColumn">
           <img
-            className="callout-switzerland-mountains"
+            className="aboutComponentImage2"
             alt=""
             src={AboutImage2}
           />
           <img
-            className="callout-switzerland-sunset-ima"
+            className="aboutComponentImage3"
             alt=""
             src={AboutImage3}
           />
         </div>
       </div>
-      <div className="callout-copywriting">
-        <b className="about-agripinas">About AgriPinas</b>
-        <div className="callout-text">
-          <p className="as-one-of">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  `}</p>
-          <p className="as-one-of">&nbsp;</p>
-          <p className="as-one-of">
+      <div className="aboutComponentAgriPinas">
+        <b className="aboutComponentAgriPinasText">About AgriPinas</b>
+        <div className="aboutComponentText">
+          <p className="aboutComponentParagraph">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  `}</p>
+          <p className="aboutComponentParagraph">&nbsp;</p>
+          <p className="aboutComponentParagraph">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
@@ -40,4 +40,4 @@ const CalloutSection = () => {
   );
 };
 
-export default CalloutSection;
+export default AboutComponent;

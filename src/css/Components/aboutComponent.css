@@ -1,6 +1,6 @@
-.callout-swiss-winter-image,
-.callout-switzerland-mountains,
-.callout-switzerland-sunset-ima {
+.aboutComponentImage1,
+.aboutComponentImage2,
+.aboutComponentImage3 {
   align-self: stretch;
   position: relative;
   border-radius: 8px;
@@ -8,17 +8,17 @@
   overflow: hidden;
   object-fit: cover;
 }
-.callout-swiss-winter-image,
-.callout-switzerland-mountains {
+.aboutComponentImage1,
+.aboutComponentImage2 {
   flex: 1;
   max-height: 100%;
 }
-.callout-switzerland-sunset-ima {
+.aboutComponentImage3{
   height: 16.71rem;
   flex-shrink: 0;
 }
-.callout-images,
-.callout-images-column {
+.aboutComponentImages,
+.aboutComponentImageColumn{
   align-self: stretch;
   flex: 1;
   display: flex;
@@ -27,49 +27,44 @@
   justify-content: flex-start;
   gap: 1rem;
 }
-.callout-images {
+.aboutComponentImages {
   flex-direction: row;
   gap: 0.94rem;
 }
-.about-agripinas {
+.aboutComponentAgriPinasText {
   align-self: stretch;
   position: relative;
   letter-spacing: -0.04em;
   line-height: 2.94rem;
 }
-.as-one-of {
+.aboutComponentParagraph {
   margin: 0;
   font-size: 1.25rem;
 }
-.callout-text,
-.view-more {
-  position: relative;
+.aboutComponentText{
+ position: relative;
   font-size: 1.25rem;
 }
-.callout-text {
+.aboutComponentText {
   align-self: stretch;
   line-height: 2.31rem;
 }
-.view-more {
-  font-weight: 600;
-  color: #fff;
-  text-align: center;
-}
 
-.callout-copywriting,
-.callout-section {
+
+.aboutComponentAgriPinas,
+.aboutComponentSection{
   display: flex;
   box-sizing: border-box;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.callout-copywriting {
+.aboutComponentAgriPinas {
   width: 31.13rem;
   flex-direction: column;
   padding: 0.63rem 0 2.25rem 3.13rem;
   gap: 1.88rem;
 }
-.callout-section {
+.aboutComponentSection {
   position: relative;
   background-color: #fff;
   width: 100%;
@@ -83,47 +78,46 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 @media screen and (max-width: 1200px) {
-  .callout-images-column,
-  .callout-swiss-winter-image {
+  
+  .aboutComponentImageColumn,
+  .aboutComponentImage1 {
     width: 50% !important;
   }
-  .view-full-gallery-button {
-    background-color: #8a53ff;
-  }
+ 
 }
 @media screen and (max-width: 960px) {
-  .callout-swiss-winter-image {
+  .aboutComponentImage1 {
     width: 50% !important;
     height: auto !important;
   }
-  .callout-switzerland-mountains {
+  .aboutComponentImage2 {
     width: 100% !important;
     height: auto !important;
   }
-  .callout-switzerland-sunset-ima {
+  .aboutComponentImage3 {
     width: 100% !important;
     height: auto !important;
   }
-  .callout-images-column {
+  .aboutComponentImageColumn {
     width: 50% !important;
   }
-  .callout-images {
+  .aboutComponentImages {
     flex: unset;
     align-self: stretch;
   }
-  .callout-copywriting {
+  .aboutComponentAgriPinas {
     width: 100%;
     padding-left: 0;
     padding-top: 2.5rem;
     padding-bottom: 0.31rem;
     box-sizing: border-box;
   }
-  .callout-section {
+  .aboutComponentSection {
     flex-direction: column;
   }
 }
 @media screen and (max-width: 420px) {
-  .callout-images {
+  .aboutComponentImages {
     width: 96% !important;
   }
 }

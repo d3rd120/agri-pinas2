@@ -6,7 +6,7 @@ import CarrotCardImage from '../img/carrotCardImage.png';
 import RiceCardImage from '../img/riceCardImage.png';
 
 
-const RecentStoriesFrame = () => {
+const PostsComponent = () => {
   return (
     <div className="recent-stories-frame">
       <div className="catch-up-to-our-posts-parent">
@@ -97,6 +97,6 @@ const RecentStoriesFrame = () => {
   );
 };
 
-export default RecentStoriesFrame;
+export default PostsComponent;
 
 
