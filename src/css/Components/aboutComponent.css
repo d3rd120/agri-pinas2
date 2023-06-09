@@ -1,0 +1,141 @@
+.callout-swiss-winter-image,
+.callout-switzerland-mountains,
+.callout-switzerland-sunset-ima {
+  align-self: stretch;
+  position: relative;
+  border-radius: 8px;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.callout-swiss-winter-image,
+.callout-switzerland-mountains {
+  flex: 1;
+  max-height: 100%;
+}
+.callout-switzerland-sunset-ima {
+  height: 16.71rem;
+  flex-shrink: 0;
+}
+.callout-images,
+.callout-images-column {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.callout-images {
+  flex-direction: row;
+  gap: 0.94rem;
+}
+.about-agripinas {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.04em;
+  line-height: 2.94rem;
+}
+.as-one-of {
+  margin: 0;
+}
+.callout-text,
+.view-more {
+  position: relative;
+  font-size: 1.25rem;
+}
+.callout-text {
+  align-self: stretch;
+  line-height: 2.31rem;
+}
+.view-more {
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.view-full-gallery-button {
+  cursor: pointer;
+  border: 0;
+  padding: 1.25rem;
+  background-color: #27ae60;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.view-full-gallery-button:hover {
+  background-color: #5922ce;
+}
+.callout-copywriting,
+.callout-section {
+  display: flex;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.callout-copywriting {
+  width: 31.13rem;
+  flex-direction: column;
+  padding: 0.63rem 0 2.25rem 3.13rem;
+  gap: 1.88rem;
+}
+.callout-section {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row;
+  padding: 1.88rem;
+  text-align: left;
+  font-size: 2.63rem;
+  color: #434343;
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 1200px) {
+  .callout-images-column,
+  .callout-swiss-winter-image {
+    width: 50% !important;
+  }
+  .view-full-gallery-button {
+    background-color: #8a53ff;
+  }
+}
+@media screen and (max-width: 960px) {
+  .callout-swiss-winter-image {
+    width: 50% !important;
+    height: auto !important;
+  }
+  .callout-switzerland-mountains {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .callout-switzerland-sunset-ima {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .callout-images-column {
+    width: 50% !important;
+  }
+  .callout-images {
+    flex: unset;
+    align-self: stretch;
+  }
+  .callout-copywriting {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 2.5rem;
+    padding-bottom: 0.31rem;
+    box-sizing: border-box;
+  }
+  .callout-section {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 420px) {
+  .callout-images {
+    width: 96% !important;
+  }
+}

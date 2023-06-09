@@ -5,12 +5,13 @@ import ElNinoCardImage from '../img/elNinoCardImage.png';
 import CarrotCardImage from '../img/carrotCardImage.png';
 import RiceCardImage from '../img/riceCardImage.png';
 
+
 const RecentStoriesFrame = () => {
   return (
     <div className="recent-stories-frame">
       <div className="catch-up-to-our-posts-parent">
         <b className="catch-up-to">catch up to our posts</b>
-        <b className="recent-story-entries">Recent story entries</b>
+        <b className="recent-story-entries">Recent community forum entries</b>
       </div>
       <div className="cards-container">
         <div className="zermatt-card">
@@ -50,7 +51,7 @@ const RecentStoriesFrame = () => {
             </div>
           </div>
           <div className="tuscany-card">
-            <img className="kyoto-card-image" alt="" src = {ElNinoCardImage} />
+            <img className="kyoto-card-image" alt="" src={ElNinoCardImage} />
             <div className="tuscany-card-details">
               <b className="zermatt-card-title">El Niño</b>
               <div className="zermatt-card-description-container">
@@ -63,7 +64,7 @@ const RecentStoriesFrame = () => {
             </div>
           </div>
           <div className="tuscany-card">
-            <img className="kyoto-card-image" alt="" src={FarmingCardImage} />
+            <img className="kyoto-card-image" alt="" src={FarmingCardImage}/>
             <div className="tuscany-card-details">
               <b className="zermatt-card-title">Farming Tips</b>
               <div className="farming-is-a-container">
@@ -77,7 +78,7 @@ const RecentStoriesFrame = () => {
             </div>
           </div>
           <div className="tuscany-card">
-            <img className="kyoto-card-image" alt="" src={RiceCardImage} />
+            <img className="kyoto-card-image" alt="" src={RiceCardImage}/>
             <div className="tuscany-card-details">
               <b className="zermatt-card-title">Rice Planting</b>
               <div className="farming-is-a-container">
@@ -97,3 +98,5 @@ const RecentStoriesFrame = () => {
 };
 
 export default RecentStoriesFrame;
+
+
