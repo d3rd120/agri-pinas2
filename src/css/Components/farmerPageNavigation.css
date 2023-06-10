@@ -3,6 +3,7 @@
     width: 6.25rem;
     height: 6.35rem;
     object-fit: cover;
+    cursor:pointer;
   }
   .community,
   .crop-tracker,
@@ -32,8 +33,22 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 1.88rem;
+    gap: 1.88rem;    
   }
+
+  .crop-tracker {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 550;
+    color: inherit;
+    transition: 0.5s;
+  }
+
+  .crop-tracker:hover {
+    color: #FBA403;
+  }
+
+  
   .group-child {
     position: absolute;
     height: 100%;
@@ -47,7 +62,25 @@
     overflow: hidden;
     max-height: 100%;
     object-fit: cover;
+    transition: 0.5s;
+    cursor: pointer;
   }
+
+  .group-child:hover {
+    color: #FBA403;
+  }
+
+  
+  .group-child svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
   .group-item {
     position: absolute;
     height: 84.48%;
@@ -59,6 +92,7 @@
     border-right: 0.7px solid #fff;
     box-sizing: border-box;
   }
+  
   .vector-icon {
     position: absolute;
     height: 100%;
@@ -70,7 +104,25 @@
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
   }
+
+  .vector-icon:hover {
+    color: #FBA403;
+  }
+  
+  .vector-icon svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
   .group-inner {
     position: absolute;
     height: 35.98%;

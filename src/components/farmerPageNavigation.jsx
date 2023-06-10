@@ -1,24 +1,32 @@
 import "../css/Components/farmerPageNavigation.css";
 import Logo from '../img/agriPinasLogo.png';
+import { FaUserCircle, FaBell } from 'react-icons/fa';
+import {Link} from 'react-router-dom';
+
+
 const FarmerNavigation = () => {
   return (
     <div className="farmernavigation">
       <img className="agripinaslogo-icon" alt="" src={Logo} />
       <div className="dashboard-parent">
-        <a className="dashboard">Dashboard</a>
-        <a className="marketplace">Marketplace</a>
-        <a className="community">Community</a>
-        <a className="crop-tracker">Crop Tracker</a>
-        <a className="crop-tracker">Transactions</a>
+        <Link className="crop-tracker" to = '/farmerdashboard'>Dashboard</Link>
+        <Link className="crop-tracker" to = '/farmermarketplace'>Marketplace</Link>
+        <Link className="crop-tracker" to = '/farmercommunityforum'>Community</Link>
+        <Link className="crop-tracker" to = '/farmercroptracker'>Crop Tracker</Link>
+        <Link className="crop-tracker" to = '/farmertransactions'>Transactions</Link>
       </div>
       <div className="ellipse-parent">
-        <img className="group-child" alt="" src="/ellipse-1@2x.png" />
-        <div className="group-item" />
-        <button className="vector-parent">
-          <img className="vector-icon" alt="" src="/vector.svg" />
-          <div className="group-inner" />
-        </button>
-      </div>
+          <div className="group-child">
+            <FaUserCircle />
+          </div>
+          <div className="group-item" />
+          <button className="vector-parent">
+            <div className="vector-icon">
+              <FaBell />
+            </div>
+            <div className="group-inner" />
+          </button>
+        </div>
     </div>
   );
 };
