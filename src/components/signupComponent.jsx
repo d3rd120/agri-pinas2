@@ -27,38 +27,33 @@ const Signup = () => {
   
 
   return (
-    <div className="registerpage">
-      <div className="wrapper">
-        <div className="form">
-          <div className="form-text">
-            <div className="register">Register</div>
+    <div className="signupComponent">
+      <div className="signupComponentWrapper">
+        <div className="signupComponentForm">
+          <div className="signupComponentFormText">
+            <div className="signupComponentMainText">Register</div>
           </div>
-          <div className="form-fields">
-            <input className="input" type="text" placeholder="Full Name" />
-            <input className="input" type="text" placeholder="Contact Number" />
-            <input className="input" type="text" placeholder="Address" />
-            <input
-              className="input"
-              type="date"
-              placeholder="Birthday"
-              onInput={calculateAge}
-            />
-            <input className="input" type="text" placeholder="Age" value={age} readOnly />
-            <input className="input" type="text" placeholder="Email" />
-            <select className="input"> 
+          <div className="signupComponentFormFields">
+            <input className="signupComponentFormInput" id = "signupComponentFullName" type="text" placeholder="Full Name" />
+            <input className="signupComponentFormInput" id = "signupComponentContactNumber" type="text" placeholder="Contact Number" />
+            <input className="signupComponentFormInput" id = "signupComponentAddress" type="text" placeholder="Address" />
+            <input className="signupComponentFormInput" id = "signupComponentBirthday" type="date" placeholder="Birthday" onInput={calculateAge}  />
+            <input className="signupComponentFormInput" id = "signupComponentAge" type="text" placeholder="Age" value={age} readOnly />
+            <input className="signupComponentFormInput" id = "signupComponentEmail" type="text" placeholder="Email" />
+            <select className="signupComponentFormInput" id = "signupComponentRole"> 
               <option value="">Select a role</option>             
               <option value="farmer">Farmer</option>
               <option value="buyer">Buyer</option>
             </select>
-            <input className="input" type="password" placeholder="Password" />
-            <input className="input" type="password" placeholder="Confirm Password" />
+            <input className="signupComponentFormInput" id = "signupComponentPassword" type="password" placeholder="Password" />
+            <input className="signupComponentFormInput" id = "signupComponentConfirmPassword" type="password" placeholder="Confirm Password" />
           </div>
-          <button className="button">
-            <div className="register1">Register</div>
+          <button className="signupComponentButton">
+            <div className="signupComponentButtonText">Register</div>
           </button>
-          <div className="already-have-an-container">
+          <div className="signupComponentSubTextContainer">
             <span>{`Already have an account? `}</span>
-            <Link className="login" to = '/login'>Login</Link>
+            <Link className="signupComponentLoginLink" to = '/login'>Login</Link>
           </div>
         </div>
       </div>
