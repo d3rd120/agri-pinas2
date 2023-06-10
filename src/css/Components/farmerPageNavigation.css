@@ -1,0 +1,126 @@
+.agripinaslogo-icon {
+    position: relative;
+    width: 6.25rem;
+    height: 6.35rem;
+    object-fit: cover;
+  }
+  .community,
+  .crop-tracker,
+  .dashboard,
+  .marketplace {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    width: 5.13rem;
+    flex-shrink: 0;
+  }
+  .community,
+  .crop-tracker,
+  .marketplace {
+    width: 6.57rem;
+  }
+  .community,
+  .crop-tracker {
+    width: 5.8rem;
+  }
+  .crop-tracker {
+    width: 6.31rem;
+  }
+  .dashboard-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.88rem;
+  }
+  .group-child {
+    position: absolute;
+    height: 100%;
+    width: 36%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 64%;
+    border-radius: 50%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .group-item {
+    position: absolute;
+    height: 84.48%;
+    width: 0.7%;
+    top: 7.76%;
+    right: 55.3%;
+    bottom: 7.76%;
+    left: 44%;
+    border-right: 0.7px solid #fff;
+    box-sizing: border-box;
+  }
+  .vector-icon {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .group-inner {
+    position: absolute;
+    height: 35.98%;
+    width: 39.98%;
+    top: 3.9%;
+    right: 0;
+    bottom: 60.12%;
+    left: 60.02%;
+    border-radius: 50%;
+    background-color: #fba403;
+  }
+  .vector-parent {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    height: 74.07%;
+    width: 24%;
+    top: 12.96%;
+    right: 76%;
+    bottom: 12.96%;
+    left: 0;
+  }
+  .ellipse-parent {
+    position: relative;
+    width: 6.25rem;
+    height: 2.25rem;
+  }
+  .farmernavigation {
+    position: relative;
+    background-color: #557153;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #333;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  @media screen and (max-width: 960px) {
+    .dashboard-parent {
+      display: none;
+    }
+  }
+  

@@ -5,11 +5,11 @@
 .homeComponentTextContainer {
   align-self: stretch;
   position: relative;
-  line-height: 80.5%;
+  line-height: 100.5%;
 }
 .homeComponentTextContainer {
-  font-size: 1.25rem;
-  line-height: 167.02%;
+  font-size: 1rem;
+  line-height:200.02%;
 }
 .homeComponentTagLine {
   width: 28.13rem;

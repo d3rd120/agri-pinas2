@@ -1,22 +1,22 @@
-.register {
+.signupComponentMainText {
     align-self: stretch;
     position: relative;
     line-height: 2.13rem;
     font-weight: 600;
   }
-  .form-text {
+  .signupComponentFormText {
     flex-direction: column;
     padding: 0 0 1rem;
     align-items: center;
   }
-  .form-fields,
-  .form-text,
-  .input {
+  .signupComponentFormFields,
+  .signupComponentFormText,
+  .signupComponentFormInput {
     align-self: stretch;
     display: flex;
     justify-content: flex-start;
   }
-  .input {
+  .signupComponentFormInput {
     border: 1px solid #dee3eb;  
     font-size: 0.90rem;
     background-color: #fff;
@@ -28,13 +28,13 @@
     line-height: 1.13rem;
     outline: 0;
   }
-  .form-fields {
+  .signupComponentFormFields {
     flex-direction: column;
     padding: 0 2.06rem;
     align-items: flex-start;
     gap: 0.63rem;
   }
-  .register1 {
+  .signupComponentButtonText {
     position: relative;
     font-size: 0.90rem;
     line-height: 150%;
@@ -42,7 +42,7 @@
     color: #fff;
     text-align: left;
   }
-  .button {
+  .signupComponentButton {
     cursor: pointer;
     border: 0;
     padding: 0.60rem 0.60rem;
@@ -58,21 +58,21 @@
     transition: 0.5s;
   }
 
-  button:hover { 
+  .signupComponentButton:hover { 
     background-color: #3e8e41;
     color: white;
   }
 
-  .login {
+  .signupComponentLoginLink {
     color: #27ae60;
     text-decoration: none;
     transition: 0.5s;
   }
 
-  .login:hover {
+  .signupComponentLoginLink:hover {
     color: #3e8e41;  
   }
-  .already-have-an-container {
+  .signupComponentSubTextContainer {
     position: relative;
     font-size: 0.80rem;
     line-height: 150%;
@@ -82,7 +82,7 @@
     flex-shrink: 0;
     color: #000;
   }
-  .form {
+  .signupComponentForm {
     border-radius: 12px;
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
     border: 1px solid #eaeaea;
@@ -93,25 +93,25 @@
     gap: 2.06rem;
     max-width: 90%;
   }
-  .form,
-  .registerpage,
-  .wrapper {
+  .signupComponentForm,
+  .signupComponent,
+  .signupComponentWrapper {
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .wrapper {
+  .signupComponentWrapper {
     align-self: stretch;
     padding: 5rem 0;
   }
-  .registerpage {
+  .signupComponent {
     position: relative;
     width: 100%;
     text-align: center;
     font-size: 2rem;
-    color: #557153;
+    color: #557153; 
     font-family: Arial, Helvetica, sans-serif;
   }
 
