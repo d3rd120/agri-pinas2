@@ -1,4 +1,4 @@
-.side-bar {
+.farmerPageNavigation {
     align-self: stretch;
     background-color: #557153;
     display: flex;
@@ -9,7 +9,7 @@
     gap: 5.81rem;
   }
 
-  .agripinaslogo-parent {
+  .farmerPageNavigationLogoParent {
     height: 1.84rem;
     display: flex;
     flex-direction: row;
@@ -18,13 +18,13 @@
     cursor:pointer;
   }
 
-  .agripinaslogo-icon {
+  .farmerPageNavigationLogoIcon {
     position: relative;
     width: 4rem;
     height: 4rem;
     object-fit: cover;
   }
-  .agripinas {
+  .farmerPageNavigationMainText {
     position: relative;
     display: inline-block;
     width: 6.63rem;
@@ -32,13 +32,13 @@
     flex-shrink: 0;
   }
 
-  .group-parent {
+  .farmerPageNavigationGroupParent {
     position: relative;
     width: 9.56rem;
     height: 16.28rem;
   }
 
-  .community-parent {
+  .farmerPageNavigationLink1{
     text-decoration: none;
     position: absolute;
     top: 7.47rem;
@@ -49,7 +49,7 @@
   }
   
 
-  .community {
+  .farmerPageNavigationLinks {
     position: absolute;
     top: 0;
     left: 2.51rem;
@@ -60,11 +60,11 @@
     transition: 0.5s
   }
 
-  .community:hover {
+  .farmerPageNavigationLinks:hover {
     color: #FBA403;
   }
 
-  .group-child {
+  .farmerPageNavigationLinksIcon {
     position: absolute;
     top: 0.14rem;
     left: 0;
@@ -72,7 +72,7 @@
     height: 1.05rem;
   }
 
-  .crop-tracker-parent {
+  .farmerPageNavigationLink2 {
     text-decoration: none;
     position: absolute;
     top: 11.22rem;
@@ -82,7 +82,7 @@
     color: inherit;
   }
 
-  .dashboard-parent {
+  .farmerPageNavigationLink3 {
     text-decoration: none;
     position: absolute;
     top: 0;
@@ -92,7 +92,7 @@
     color: inherit;
   }
 
-  .marketplace-parent {
+  .farmerPageNavigationLink4 {
     text-decoration: none;
     position: absolute;
     top: 3.78rem;
@@ -102,7 +102,7 @@
     color: inherit;
   }
 
-  .transactions-parent {
+  .farmerPageNavigationLink5 {
     text-decoration: none;
     position: absolute;
     top: 14.91rem;
@@ -220,7 +220,7 @@
  
 
   @media screen and (max-width: 1200px) {
-    .side-bar {
+    .farmerPageNavigation {
       display: none;
     }
   }
