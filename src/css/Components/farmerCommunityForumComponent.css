@@ -166,9 +166,9 @@
   cursor: pointer;
   width: 32%;
   margin-bottom: 1.25rem;
-  transition: 0.3s;
+  transition: 0.5s;
   color: inherit;
-  margin:1rem;
+  margin-right:1rem;
 }
 .farmerCommunityForumComponentRectangleParent:hover {
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
@@ -196,10 +196,7 @@
   align-items: center;
   justify-content: center;
 }
-.farmerCommunityForumComponentForumWrapper1 {
-  background-color: rgba(69, 126, 255, 0.06);
-  color: #457eff;
-}
+
 .farmerCommunityForumComponentForumContainer,
 .farmerCommunityForumComponentForumWrapper2 {
   background-color: #fff;
@@ -211,6 +208,16 @@
   gap: 0.63rem;
   font-size: 1.06rem;
 }
+
+.farmerCommunityForumComponentForumContainer {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.farmerCommunityForumComponentForumContainer:hover {
+  background-color : #E5FCE7;
+}
+
 .farmerCommunityForumComponentForumNumber,
 .farmerCommunityForumComponentFrameParent,
 .farmerCommunityForumComponentMiddleSection {

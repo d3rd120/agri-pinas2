@@ -1,12 +1,12 @@
 import React from 'react';
+import FarmerMarketplaceComponent from '../../components/farmerMarketplaceComponent';
 
 
 const FarmerMarketplace = () => {
 
     return (
         <>
-      
-        <h1>This is Farmer Marketplace</h1>
+        <FarmerMarketplaceComponent />       
         </>
     );
 };
