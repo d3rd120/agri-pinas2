@@ -109,7 +109,7 @@ const FarmerDashboard = () => {
         <div className="farmerDashboardComponentMiddleSection">
           <div className="farmerDashboardComponentOverview">
             <div className="farmerDashboardComponentMainText2">
-              Monthly Seller’s Performance
+             Your Monthly Sales Performance
             </div>
             <div className="farmerDashboardComponentCard">           
           <ResponsiveContainer width="100%" height={350}>
