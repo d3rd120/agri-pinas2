@@ -1,173 +1,21 @@
 
 
-
-
-.crop-tracker {
-  position: absolute;
-  top: 0;
-  left: 2.55rem;
-  display: inline-block;
-  width: 6.94rem;
-  height: 1.35rem;
-}
-.worldwide-icon {
-  position: absolute;
-  height: 90.91%;
-  width: 12.99%;
-  top: 4.55%;
-  right: 87.01%;
-  bottom: 4.54%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-
-.dashboard {
-  position: absolute;
-  top: 0;
-  left: 2.49rem;
-  display: inline-block;
-  width: 5.94rem;
-  height: 1.35rem;
-}
-.home-1-icon {
-  position: absolute;
-  height: 77.27%;
-  width: 13.09%;
-  top: 4.55%;
-  right: 86.91%;
-  bottom: 18.18%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-
-.marketplace {
-  position: absolute;
-  top: 0;
-  left: 2.56rem;
-  display: inline-block;
-  width: 6.88rem;
-  height: 1.38rem;
-}
-.wallet-2-icon {
-  position: absolute;
-  height: 75.85%;
-  width: 13.43%;
-  top: 8.6%;
-  right: 86.57%;
-  bottom: 15.55%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-
-.transactions {
-  position: absolute;
-  top: 0;
-  left: 2.53rem;
-  display: inline-block;
-  width: 7rem;
-  height: 1.38rem;
-}
-.store-icon {
-  position: absolute;
-  height: 75.85%;
-  width: 12.57%;
-  top: 14.1%;
-  right: 87.43%;
-  bottom: 10.05%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-
-
-.group-inner,
-.group-item,
-.vector-icon {
-  position: absolute;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.group-item {
-  height: 100%;
-  width: 36%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 64%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.group-inner,
-.vector-icon {
-  height: 82.54%;
-  width: 0.7%;
-  top: 8.73%;
-  right: 55.3%;
-  bottom: 8.73%;
-  left: 44%;
-}
-.vector-icon {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.ellipse-div {
-  position: absolute;
-  height: 35.98%;
-  width: 39.98%;
-  top: 3.9%;
-  right: 0;
-  bottom: 60.12%;
-  left: 60.02%;
-  border-radius: 50%;
-  background-color: #fba403;
-}
-.vector-parent {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  height: 74.07%;
-  width: 24%;
-  top: 12.96%;
-  right: 76%;
-  bottom: 12.96%;
-  left: 0;
-}
-.ellipse-parent {
-  position: relative;
-  width: 6.25rem;
-  height: 2.25rem;
-}
-
-.blank-line {
+.farmerDashboardComponentBlankLine {
   margin: 0;
 }
-.welcome-back-farmer-container {
+.farmerDashboardComponentMainText1Container{
   align-self: stretch;
   position: relative;
   text-transform: uppercase;
 }
-.welcome-to-dashboard {
+.farmerDashboardComponentMainText1 {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
-.top-section {
+.farmerDashboardComponentTopSection {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -175,72 +23,13 @@
   justify-content: flex-start;
   gap: 1.88rem;
 }
-.monthly-sellers-performance {
+.farmerDashboardComponentMainText2 {
   align-self: stretch;
   position: relative;
 }
-.frame-child {
-  width: 12.83rem;
-  height: 19.13rem;
-  display: none;
-}
-.available-balance-in,
-.div,
-.frame-child {
-  position: relative;
-}
-.div {
-  font-size: 1.88rem;
-}
-.div1 {
-  position: absolute;
-  top: 1.66rem;
-  left: 0;
-  font-size: 1.38rem;
-}
-.transactions-group {
-  position: relative;
-  width: 4.69rem;
-  height: 3.29rem;
-}
-.wallets {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.wallets-parent {
-  position: relative;
-  width: 2.63rem;
-  height: 3.29rem;
-}
-.frame-group,
-.frame-parent {
-  display: flex;
-  align-items: center;
-}
-.frame-group {
-  width: 9.94rem;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.frame-parent {
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.56rem;
-  z-index: 0;
-}
-.bitcoin-card-child {
-  position: absolute;
-  margin: 0 !important;
-  top: calc(50% - 152.79px);
-  right: -0.03rem;
-  width: 12.83rem;
-  height: 19.13rem;
-  z-index: 1;
-}
-.bitcoin-card {
+
+.farmerDashboardComponentCard{
   align-self: stretch;
-  background-color: #4f46ba;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: row;
@@ -252,23 +41,23 @@
   font-size: 0.75rem;
   color: #fff;
 }
-.div3,
+.farmerDashboardComponentLegendSubTitle,
 .wholesale {
   position: relative;
   letter-spacing: 0.04em;
 }
-.div3 {
+.farmerDashboardComponentLegendSubTitle {
   letter-spacing: -0.02em;
   font-weight: 500;
 }
-.wrapper {
+.farmerDashboardComponentLegendBoxWrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   font-size: 1.06rem;
 }
-.bitcoin-icon-child {
+.farmerDashboardComponentLegendChild1{
   position: absolute;
   top: 0;
   left: 0;
@@ -276,12 +65,12 @@
   width: 5.63rem;
   height: 1.13rem;
 }
-.bitcoin-icon {
+.farmerDashboardComponentLegendVector {
   position: relative;
   width: 5.63rem;
   height: 1.13rem;
 }
-.nio-wallet {
+.farmerDashboardComponentLegendBox {
   flex: 1;
   background-color: #fff;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -292,8 +81,8 @@
   justify-content: center;
   gap: 0.75rem;
 }
-.bitcoin-icon-inner,
-.bitcoin-icon-item {
+.farmerDashboardComponentLegendChild3,
+.farmerDashboardComponentLegendChild2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -301,10 +90,10 @@
   width: 5.63rem;
   height: 1.13rem;
 }
-.bitcoin-icon-inner {
+.farmerDashboardComponentLegendChild3 {
   background-color: rgba(255, 165, 0, 0.43);
 }
-.wallet-section {
+.farmerDashboardComponentLegendSection {
   align-self: stretch;
   height: 9.31rem;
   flex-direction: row;
@@ -312,32 +101,32 @@
   gap: 1.56rem;
   font-size: 0.69rem;
 }
-.middle-section,
-.overview,
-.wallet-section {
+.farmerDashboardComponentMiddleSection,
+.farmerDashboardComponentOverview,
+.farmerDashboardComponentLegendSection {
   display: flex;
   justify-content: flex-start;
 }
-.overview {
+.farmerDashboardComponentOverview {
   flex: 1;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
 }
-.middle-section {
+.farmerDashboardComponentMiddleSection {
   align-self: stretch;
   flex-direction: row;
   align-items: flex-end;
   font-size: 1.25rem;
   color: #0d1118;
 }
-.farmerdashboard,
-.main-panel {
+.farmerDashboardComponent,
+.farmerDashboardComponentMainPanel {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.main-panel {
+.farmerDashboardComponentMainPanel {
   align-self: stretch;
   flex: 1;
   flex-direction: column;
@@ -346,7 +135,7 @@
   font-size: 1.31rem;
   color: #151630;
 }
-.farmerdashboard {
+.farmerDashboardComponent {
   position: relative;
   background-color: #fff;
   width: 100%;
@@ -361,53 +150,43 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 @media screen and (max-width: 960px) {
-  .welcome-to-dashboard {
+  .farmerDashboardComponentMainText1 {
     padding-right: 0;
     box-sizing: border-box;
     flex: unset;
     align-self: stretch;
   }
-  .top-section {
+  .farmerDashboardComponentTopSection {
     flex-direction: column;
   }
-  .overview {
+  .farmerDashboardComponentOverview {
     width: 100%;
     flex: unset;
     align-self: stretch;
   }
-  .middle-section {
+  .farmerDashboardComponentMiddleSection {
     flex-direction: column;
   }
 }
 @media screen and (max-width: 420px) {
-  .welcome-to-dashboard {
+  .farmerDashboardComponentMainText1 {
     width: 100%;
   }
-  .main-panel {
+  .farmerDashboardComponentMainPanel {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 350px) {
-  .frame-child {
-    display: flex;
-  }
-  .bitcoin-card-child {
-    display: none;
-  }
-  .bitcoin-card {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    box-sizing: border-box;
-    justify-content: center;
-  }
-  .nio-wallet {
+ 
+  .farmerDashboardComponentLegendBox {
     flex: unset;
     align-self: stretch;
   }
-  .wallet-section {
+  .farmerDashboardComponentLegendSection {
     flex-direction: column;
   }
 }
