@@ -1,12 +1,18 @@
 import React from 'react';
-import FarmerNavigation from '../../components/farmerPageNavigation';
+// import FarmerNavigation from '../../components/farmerPageNavigation';
+import FarmerDashboardComponent  from '../../components/farmerDashboardComponent';
+
+// import Footer from '../../components/footerComponent';
+
 
 const FarmerDashboard = () => {
+  
+    
 
     return (
         <>
-        <FarmerNavigation />
-        <h1>This is Farmer Dashboard</h1>
+        <FarmerDashboardComponent />
+        {/* <FarmerNavigation />    */}
         </>
     );
 };
