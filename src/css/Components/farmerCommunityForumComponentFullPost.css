@@ -1,258 +1,19 @@
-.agripinaslogo-icon {
-    position: relative;
-    width: 3.08rem;
-    height: 3.13rem;
-    object-fit: cover;
-  }
-  .agripinas {
-    position: relative;
-    display: inline-block;
-    width: 6.63rem;
-    height: 1.36rem;
-    flex-shrink: 0;
-  }
-  .agripinaslogo-parent {
-    height: 1.84rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .community {
-    position: absolute;
-    top: 0;
-    left: 2.51rem;
-    display: inline-block;
-    width: 6.63rem;
-    height: 1.38rem;
-  }
-  .group-child {
-    position: absolute;
-    top: 0.14rem;
-    left: 0;
-    width: 1.25rem;
-    height: 1.05rem;
-  }
-  .community-parent {
-    text-decoration: none;
-    position: absolute;
-    top: 7.47rem;
-    left: 0.05rem;
-    width: 9.14rem;
-    height: 1.38rem;
-    color: inherit;
-  }
-  .crop-tracker {
-    position: absolute;
-    top: 0;
-    left: 2.55rem;
-    display: inline-block;
-    width: 6.94rem;
-    height: 1.35rem;
-  }
-  .worldwide-icon {
-    position: absolute;
-    height: 90.91%;
-    width: 12.99%;
-    top: 4.55%;
-    right: 87.01%;
-    bottom: 4.54%;
-    left: 0;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-  }
-  .crop-tracker-parent {
-    text-decoration: none;
-    position: absolute;
-    top: 11.22rem;
-    left: 0.02rem;
-    width: 9.49rem;
-    height: 1.35rem;
-    color: inherit;
-  }
-  .dashboard {
-    position: absolute;
-    top: 0;
-    left: 2.49rem;
-    display: inline-block;
-    width: 5.94rem;
-    height: 1.35rem;
-  }
-  .home-1-icon {
-    position: absolute;
-    height: 77.27%;
-    width: 13.09%;
-    top: 4.55%;
-    right: 86.91%;
-    bottom: 18.18%;
-    left: 0;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-  }
-  .dashboard-parent {
-    text-decoration: none;
-    position: absolute;
-    top: 0;
-    left: 0.08rem;
-    width: 8.42rem;
-    height: 1.35rem;
-    color: inherit;
-  }
-  .marketplace {
-    position: absolute;
-    top: 0;
-    left: 2.56rem;
-    display: inline-block;
-    width: 6.88rem;
-    height: 1.38rem;
-  }
-  .wallet-2-icon {
-    position: absolute;
-    height: 75.85%;
-    width: 13.43%;
-    top: 8.6%;
-    right: 86.57%;
-    bottom: 15.55%;
-    left: 0;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-  }
-  .marketplace-parent {
-    text-decoration: none;
-    position: absolute;
-    top: 3.78rem;
-    left: 0;
-    width: 9.44rem;
-    height: 1.38rem;
-    color: inherit;
-  }
-  .transactions {
-    position: absolute;
-    top: 0;
-    left: 2.53rem;
-    display: inline-block;
-    width: 7rem;
-    height: 1.38rem;
-  }
-  .store-icon {
-    position: absolute;
-    height: 75.85%;
-    width: 12.57%;
-    top: 14.1%;
-    right: 87.43%;
-    bottom: 10.05%;
-    left: 0;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-  }
-  .transactions-parent {
-    text-decoration: none;
-    position: absolute;
-    top: 14.91rem;
-    left: 0.04rem;
-    width: 9.53rem;
-    height: 1.38rem;
-    color: inherit;
-  }
-  .group-parent {
-    position: relative;
-    width: 9.56rem;
-    height: 16.28rem;
-  }
-  .group-inner,
-  .group-item,
-  .vector-icon {
-    position: absolute;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-  }
-  .group-item {
-    height: 100%;
-    width: 36%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 64%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  .group-inner,
-  .vector-icon {
-    height: 82.54%;
-    width: 0.7%;
-    top: 8.73%;
-    right: 55.3%;
-    bottom: 8.73%;
-    left: 44%;
-  }
-  .vector-icon {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  .ellipse-div {
-    position: absolute;
-    height: 35.98%;
-    width: 39.98%;
-    top: 3.9%;
-    right: 0;
-    bottom: 60.12%;
-    left: 60.02%;
-    border-radius: 50%;
-    background-color: #fba403;
-  }
-  .vector-parent {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    position: absolute;
-    height: 74.07%;
-    width: 24%;
-    top: 12.96%;
-    right: 76%;
-    bottom: 12.96%;
-    left: 0;
-  }
-  .ellipse-parent {
-    position: relative;
-    width: 6.25rem;
-    height: 2.25rem;
-  }
-  .side-bar {
-    align-self: stretch;
-    background-color: #557153;
-    display: flex;
-    flex-direction: column;
-    padding: 3.31rem 2rem;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5.81rem;
-  }
-  .blank-line {
+  .farmerCommunityForumComponentFullPostBlankLine {
     margin: 0;
   }
-  .community-forum {
+  .farmerCommunityForumComponentFullPostMainText1 {
     align-self: stretch;
     position: relative;
     text-transform: uppercase;
   }
-  .welcome-to-dashboard {
+  .farmerCommunityForumComponentFullPostMainTextContainer{
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
   }
-  .top-section {
+  .farmerCommunityForumComponentFullPostTopSection{
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -260,7 +21,7 @@
     justify-content: flex-start;
     gap: 1.88rem;
   }
-  .zermatt-card-image {
+  .farmerCommunityForumComponentFullPostCard1Image {
     align-self: stretch;
     flex: 1;
     position: relative;
@@ -270,7 +31,7 @@
     max-height: 100%;
     object-fit: cover;
   }
-  .zermatt-card {
+  .farmerCommunityForumComponentFullPostCard1 {
     flex: 1;
     border-radius: 10.52px;
     height: 34.94rem;
@@ -281,17 +42,17 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .course-name,
-  .description1 {
+  .farmerCommunityForumComponentFullPostSmallCardsMainText,
+  .farmerCommunityForumComponentFullPostSmallCardsDescription1 {
     align-self: stretch;
     position: relative;
     line-height: 2.73rem;
   }
-  .description1 {
+  .farmerCommunityForumComponentFullPostSmallCardsDescription1 {
     font-size: 0.88rem;
     line-height: 1.23rem;  
   }
-  .details {
+  .farmerCommunityForumComponentFullPostSmallCardsDetails {
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -299,30 +60,30 @@
     justify-content: flex-start;
     font-size: 2rem; 
   }
-  .fulldescription {
+  .farmerCommunityForumComponentFullPostSmallCardsFullDescription {
     flex: 1;
     position: relative;
     line-height: 1.23rem;
   }
-  .fulldescription-wrapper {
+  .farmerCommunityForumComponentFullPostSmallCardsDescriptionWrapper {
     align-self: stretch;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .description2 {
+  .farmerCommunityForumComponentFullPostSmallCardsDescription2 {
     align-self: stretch;
     position: relative;
     line-height: 1.23rem;
   }
-  .iconplus {
+  .farmerCommunityForumComponentFullPostButtonIcon {
     position: relative;
     width: 1rem;
     height: 1rem;
     color: white;
   }
-  .button {
+  .farmerCommunityForumComponentFullPostButtonText {
     position: relative;
     font-size: 0.88rem;
     letter-spacing: 0.46px;
@@ -330,7 +91,7 @@
     color: #fff;
     text-align: center;
   }
-  .search-flights-button {
+  .farmerCommunityForumComponentFullPostButton{
     cursor: pointer;
     border: 0;
     padding: 0.75rem 1.13rem;
@@ -344,23 +105,23 @@
     gap: 0.38rem;
     transition: 0.3s;
   }
-  .search-flights-button:hover {
+  .farmerCommunityForumComponentFullPostButton:hover {
     background-color: #598025;
   }
-  .heading-and-subheading {
+  .farmerCommunityForumComponentFullPostSmallCardsHeading{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1.94rem;
   }
-  .content,
-  .description,
-  .heading-and-subheading,
-  .input {
+  .farmerCommunityForumComponentFullPostSmallCardsContent,
+  .farmerCommunityForumComponentFullPostSmallCardsDescription,
+  .farmerCommunityForumComponentFullPostSmallCardsHeading,
+  .farmerCommunityForumComponentFullPostCommentInput {
     align-self: stretch;
     display: flex;
   }
-  .input {
+  .farmerCommunityForumComponentFullPostCommentInput {
     border: 1px solid #dee3eb;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -377,31 +138,31 @@
     line-height: 1.88rem;
     outline: 0;
   }
-  .content,
-  .description {
+  .farmerCommunityForumComponentFullPostSmallCardsContent,
+  .farmerCommunityForumComponentFullPostSmallCardsDescription {
     flex: 1;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
   }
-  .description {
+  .farmerCommunityForumComponentFullPostSmallCardsDescription {
     border-radius: 10.52px;
     background-color: #fff;
     align-items: center;
     justify-content: center;
   }
-  .cards-container,
-  .small-cards {
+  .farmerCommunityForumComponentFullPostCardsContainer,
+  .farmerCommunityForumComponentFullPostSmallCards {
     flex: 1;
     display: flex;
     align-items: flex-start;
   }
-  .small-cards {
+  .farmerCommunityForumComponentFullPostSmallCards {
     height: 34.94rem;
     flex-direction: column;
     justify-content: flex-start;
   }
-  .cards-container {
+  .farmerCommunityForumComponentFullPostCardsContainer {
     background-color: #fff;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     flex-direction: row;
@@ -409,7 +170,7 @@
     justify-content: center;
     gap: 1.25rem;
   }
-  .middle-section {
+  .farmerCommunityForumComponentFullPostMiddleSection {
     align-self: stretch;
     height: 39.44rem;
     display: flex;
@@ -419,12 +180,12 @@
     font-size: 0.88rem;
     color: #434343; 
   }
-  .other-posts {
+  .farmerCommunityForumComponentFullPostNewCardMainText {
     position: relative;
     line-height: 220.52%;
     font-weight: 600;
   }
-  .unsplash5mv818tzxeo-icon {
+  .farmerCommunityForumComponentFullPostNewCardImage {
     align-self: stretch;
     position: relative;
     border-radius: 10px 10px 0 0;
@@ -434,7 +195,7 @@
     flex-shrink: 0;
     object-fit: cover;
   }
-  .how-corn-grows {
+  .farmerCommunityForumComponentFullPostNewCardTitle {
     align-self: stretch;
     position: relative;
     font-size: 1.25rem;
@@ -443,22 +204,22 @@
     color: #000;
     text-align: left;
   }
-  .how-corn-grows-wrapper {
+  .farmerCommunityForumComponentFullPostNewCardTitleWrapper {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .holiday-details,
-  .holiday-details-inner {
+  .farmerCommunityForumComponentFullPostNewCardDetails,
+  .farmerCommunityForumComponentFullPostNewCardInner {
     align-self: stretch;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
   }
-  .holiday-details {
+  .farmerCommunityForumComponentFullPostNewCardDetails {
     flex: 1;
     border-radius: 0 0 10px 10px;
     background-color: #fff;
@@ -467,40 +228,46 @@
     justify-content: center;
   }
   .holiday-details-child,
-  .rec-card-1 {
+  .farmerCommunityForumComponentFullPostNewCardButton{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start;   
   }
-  .rec-card-1 {
+
+  .farmerCommunityForumComponentFullPostNewCardButton:hover {
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .farmerCommunityForumComponentFullPostNewCardButton{
     cursor: pointer;
     border: 1px solid #ececec;
     padding: 0;
     background-color: transparent;
     flex: 1;
     border-radius: 10px;
-    box-shadow: 0 0 26px rgba(0, 0, 0, 0.08);
+    
     box-sizing: border-box;
     height: 22.44rem;
     flex-direction: column;
+    transition:0.5s;
   }
   .holiday-details-child {
     align-self: stretch;
     flex-direction: row;
   }
-  .courses,
-  .new {
+  .farmerCommunityForumComponentFullPostNewCardText,
+  .farmerCommunityForumComponentFullPostNewCard {
     align-self: stretch;
     gap: 0.63rem;
   }
-  .courses {
+  .farmerCommunityForumComponentFullPostNewCardText {
     display: grid;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
-  .new {
+  .farmerCommunityForumComponentFullPostNewCard {
     flex: 1;
     flex-direction: column;
     padding: 0.63rem 5.13rem;
@@ -508,14 +275,14 @@
     font-size: 1.5rem;
     color: #000;
   }
-  .farmermarketplace,
-  .main-panel,
-  .new {
+  .farmerCommunityForumComponentFullPost,
+  .farmerCommunityForumComponentFullPostMainPanel,
+  .farmerCommunityForumComponentFullPostNewCard {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .main-panel {
+  .farmerCommunityForumComponentFullPostMainPanel {
     align-self: stretch;
     flex: 1;
     flex-direction: column;
@@ -524,7 +291,7 @@
     font-size: 1.31rem;
     color: #557153;
   }
-  .farmermarketplace {
+  .farmerCommunityForumComponentFullPost {
     position: relative;
     background-color: #fff;
     width: 100%;
@@ -535,63 +302,61 @@
     font-size: 1.13rem;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+    
   }
-  @media screen and (max-width: 1200px) {
-    .side-bar {
-      display: none;
-    }
-    .zermatt-card {
+  @media screen and (max-width: 1200px) {   
+    .farmerCommunityForumComponentFullPostCard1 {
       width: 100%;
     }
   }
   @media screen and (max-width: 960px) {
-    .welcome-to-dashboard {
+    .farmerCommunityForumComponentFullPostMainTextContainer{
       padding-right: 0;
       box-sizing: border-box;
       flex: unset;
       align-self: stretch;
     }
-    .top-section {
+    .farmerCommunityForumComponentFullPostTopSection{
       flex-direction: column;
     }
-    .zermatt-card {
+    .farmerCommunityForumComponentFullPostCard1 {
       flex: unset;
       align-self: stretch;
     }
-    .search-flights-button {
+    .farmerCommunityForumComponentFullPostButton {
       margin-right: auto;
     }
-    .description {
+    .farmerCommunityForumComponentFullPostSmallCardsDescription {
       flex-direction: column;
     }
-    .cards-container,
-    .small-cards {
+    .farmerCommunityForumComponentFullPostCardsContainer,
+    .farmerCommunityForumComponentFullPostSmallCards {
       flex: unset;
       align-self: stretch;
     }
-    .cards-container,
-    .middle-section {
+    .farmerCommunityForumComponentFullPostCardsContainer,
+    .farmerCommunityForumComponentFullPostMiddleSection {
       flex-direction: column;
     }
   }
   @media screen and (max-width: 420px) {
-    .welcome-to-dashboard {
+    .farmerCommunityForumComponentFullPostMainTextContainer {
       width: 100%;
     }
-    .zermatt-card-image {
+    .farmerCommunityForumComponentFullPostCard1Image {
       height: auto !important;
     }
-    .search-flights-button,
-    .zermatt-card-image {
+    .farmerCommunityForumComponentFullPostButton,
+    .farmerCommunityForumComponentFullPostCard1Image {
       width: 100% !important;
     }
-    .holiday-details-inner {
+    .farmerCommunityForumComponentFullPostNewCardInner {
       flex-direction: row;
       gap: 0;
       align-items: center;
       justify-content: flex-start;
     }
-    .main-panel {
+    .farmerCommunityForumComponentFullPostMainPanel {
       padding-left: 1.25rem;
       padding-right: 1.25rem;
       box-sizing: border-box;
