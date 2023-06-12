@@ -4,6 +4,7 @@ import SignupPage from './pages/MainPage/signupPage';
 import FarmerDashboard from './pages/FarmerPage/farmerDashboard';
 import FarmerMarketplace from './pages/FarmerPage/farmerMarketplace';
 import FarmerCommunityForum from './pages/FarmerPage/farmerCommunityForum';
+import FarmerCommunityForumPost from './pages/FarmerPage/farmerCommunityForumPost';
 import FarmerCropTracker from './pages/FarmerPage/farmerCropTracker';
 import FarmerTransactions from './pages/FarmerPage/farmerTransactions';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -22,6 +23,7 @@ const App = () => {
         <Route path = "/farmerdashboard" element = { <FarmerDashboard/> }/>               
         <Route path = "/farmermarketplace" element = { <FarmerMarketplace/> }/>
         <Route path = "/farmercommunityforum" element = { <FarmerCommunityForum/> }/>
+        <Route path = "/farmercommunityforumpost" element = { <FarmerCommunityForumPost/> }/>
         <Route path = "/farmercroptracker" element = { <FarmerCropTracker/> }/>
         <Route path = "/farmertransactions" element = { <FarmerTransactions/> }/>
         </Routes> 

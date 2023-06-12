@@ -4,6 +4,7 @@ import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
 import ProfileVector1 from '../img/profileVector1.png';
 import ProfileVector2 from '../img/profileVector2.png';
+import {Link} from 'react-router-dom';
 import { FaEdit } from 'react-icons/fa';
 
 const FarmerCommunityForumComponent = () => {
@@ -27,7 +28,8 @@ const FarmerCommunityForumComponent = () => {
         <div className="farmerCommunityForumComponentMiddleSection">
           <div className="farmerCommunityForumComponentFrameParent">
             <div className="farmerCommunityForumComponentFrameWrapper">
-              <a className="farmerCommunityForumComponentRectangleParent">
+
+              <Link className="farmerCommunityForumComponentRectangleParent"  to = '/farmercommunityforumpost'>
                 <img
                   className="farmerCommunityForumComponentFrameChild"
                   alt=""
@@ -55,9 +57,9 @@ const FarmerCommunityForumComponent = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
 
-              <a className="farmerCommunityForumComponentRectangleParent">
+              <Link className="farmerCommunityForumComponentRectangleParent" to = '/farmercommunityforumpost'>
                 <img
                   className="farmerCommunityForumComponentFrameChild"
                   alt=""
@@ -85,12 +87,12 @@ const FarmerCommunityForumComponent = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
 
               
             </div>
              <div className="farmerCommunityForumComponentFrameWrapper">
-              <a className="farmerCommunityForumComponentRectangleParent">
+              <Link className="farmerCommunityForumComponentRectangleParent" to = '/farmercommunityforumpost'>
                 <img
                   className="farmerCommunityForumComponentFrameChild"
                   alt=""
@@ -118,9 +120,9 @@ const FarmerCommunityForumComponent = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
 
-              <a className="farmerCommunityForumComponentRectangleParent">
+              <Link className="farmerCommunityForumComponentRectangleParent" to = '/farmercommunityforumpost'>
                 <img
                   className="farmerCommunityForumComponentFrameChild"
                   alt=""
@@ -148,7 +150,7 @@ const FarmerCommunityForumComponent = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
 
               
             </div>
