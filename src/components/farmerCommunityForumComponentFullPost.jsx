@@ -8,37 +8,37 @@ import { FaThumbsUp } from 'react-icons/fa';
 
 const FarmerMarketplace = () => {
   return (
-    <div className="farmermarketplace">
+    <div className="farmerCommunityForumComponentFullPost">
         <FarmerNavigation />      
-      <div className="main-panel">
-        <div className="top-section">
-          <div className="welcome-to-dashboard">
-            <b className="community-forum">
-              <p className="blank-line">&nbsp;</p>
-              <p className="blank-line">&nbsp;</p>
-              <p className="blank-line">Community Forum</p>
+      <div className="farmerCommunityForumComponentFullPostMainPanel">
+        <div className="farmerCommunityForumComponentFullPostTopSection">
+          <div className="farmerCommunityForumComponentFullPostMainTextContainer">
+            <b className="farmerCommunityForumComponentFullPostMainText1">
+              <p className="farmerCommunityForumComponentFullPostBlankLine">&nbsp;</p>
+              <p className="farmerCommunityForumComponentFullPostBlankLine">&nbsp;</p>
+              <p className="farmerCommunityForumComponentFullPostBlankLine">Community Forum</p>
             </b>
           </div>
         </div>
-        <div className="middle-section">
-          <div className="cards-container">
-            <div className="zermatt-card">
+        <div className="farmerCommunityForumComponentFullPostMiddleSection">
+          <div className="farmerCommunityForumComponentFullPostCardsContainer">
+            <div className="farmerCommunityForumComponentFullPostCard1">
               <img
-                className="zermatt-card-image"
+                className="farmerCommunityForumComponentFullPostCard1Image"
                 alt=""
                 src={OnionVector}
               />
             </div>
-            <div className="small-cards">
-              <div className="description">
-                <div className="content">
-                  <div className="heading-and-subheading">
-                    <div className="details">
-                      <b className="course-name">What is the SRP of Onions?</b>
-                      <b className="description1">Posted by: Jenkins Mesina</b>
+            <div className="farmerCommunityForumComponentFullPostSmallCards">
+              <div className="farmerCommunityForumComponentFullPostSmallCardsDescription">
+                <div className="farmerCommunityForumComponentFullPostSmallCardsContent">
+                  <div className="farmerCommunityForumComponentFullPostSmallCardsHeading">
+                    <div className="farmerCommunityForumComponentFullPostSmallCardsDetails">
+                      <b className="farmerCommunityForumComponentFullPostSmallCardsMainText">What is the SRP of Onions?</b>
+                      <b className="farmerCommunityForumComponentFullPostSmallCardsDescription1">Posted by: Jenkins Mesina</b>
                     </div>
-                    <div className="fulldescription-wrapper">
-                      <div className="fulldescription">
+                    <div className="farmerCommunityForumComponentFullPostSmallCardsDescriptionWrapper">
+                      <div className="farmerCommunityForumComponentFullPostSmallCardsFullDescription">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -50,33 +50,33 @@ const FarmerMarketplace = () => {
                         anim id est laborum.
                       </div>
                     </div>
-                    <b className="description2">24 people liked this post.</b>
-                    <button className="search-flights-button">
-                        <FaThumbsUp className="iconplus" />
-                        <div className="button">Like</div>
+                    <b className="farmerCommunityForumComponentFullPostSmallCardsDescription2">24 people liked this post.</b>
+                    <button className="farmerCommunityForumComponentFullPostButton">
+                        <FaThumbsUp className="farmerCommunityForumComponentFullPostButtonIcon" />
+                        <div className="farmerCommunityForumComponentFullPostButtonText">Like</div>
                     </button>
                   </div>
                   <input
-                    className="input"
+                    className="farmerCommunityForumComponentFullPostCommentInput"
                     type="text"
                     placeholder="Comment Here"
                   />
-                  <div className="fulldescription-wrapper">
-                    <div className="fulldescription">
-                      <p className="blank-line">
+                  <div className="farmerCommunityForumComponentFullPostSmallCardsDescriptionWrapper">
+                    <div className="farmerCommunityForumComponentFullPostSmallCardsFullDescription">
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>Comments:</b>
                       </p>
-                      <p className="blank-line">
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>&nbsp;</b>
                       </p>
-                      <p className="blank-line">
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>{`Ryan Edward Amador: `}</b>
                         <span>{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `}</span>
                       </p>
-                      <p className="blank-line">
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>&nbsp;</b>
                       </p>
-                      <p className="blank-line">
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>{`Marievic Anes: `}</b>
                         <span>
                           Ut enim ad minim veniam, quis nostrud exercitation
@@ -91,51 +91,54 @@ const FarmerMarketplace = () => {
             </div>
           </div>
         </div>
-        <div className="new">
-          <div className="other-posts">Other Posts</div>
-          <div className="courses">
-            <button className="rec-card-1">
+        <div className="farmerCommunityForumComponentFullPostNewCard">
+          <div className="farmerCommunityForumComponentFullPostNewCardMainText">Other Posts</div>
+          <div className="farmerCommunityForumComponentFullPostNewCardText">
+            <button className="farmerCommunityForumComponentFullPostNewCardButton">
               <img
-                className="unsplash5mv818tzxeo-icon"
+                className="farmerCommunityForumComponentFullPostNewCardImage"
                 alt=""
                 src={CornVector}
               />
-              <div className="holiday-details">
-                <div className="holiday-details-inner">
-                  <div className="how-corn-grows-wrapper">
-                    <div className="how-corn-grows">How Corn Grows?</div>
+              <div className="farmerCommunityForumComponentFullPostNewCardDetails">
+                <div className="farmerCommunityForumComponentFullPostNewCardInner">
+                  <div className="farmerCommunityForumComponentFullPostNewCardTitleWrapper">
+                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">How Corn Grows?</div>
                   </div>
                 </div>
               </div>
             </button>
-            <button className="rec-card-1">
+
+             <button className="farmerCommunityForumComponentFullPostNewCardButton">
               <img
-                className="unsplash5mv818tzxeo-icon"
+                className="farmerCommunityForumComponentFullPostNewCardImage"
                 alt=""
                 src={RiceVector}
               />
-              <div className="holiday-details">
-                <div className="holiday-details-child">
-                  <div className="how-corn-grows-wrapper">
-                    <div className="how-corn-grows">Planting Rice</div>
+              <div className="farmerCommunityForumComponentFullPostNewCardDetails">
+                <div className="farmerCommunityForumComponentFullPostNewCardInner">
+                  <div className="farmerCommunityForumComponentFullPostNewCardTitleWrapper">
+                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">Rice Planting</div>
                   </div>
                 </div>
               </div>
-            </button>
-            <button className="rec-card-1">
+            </button>             
+
+            <button className="farmerCommunityForumComponentFullPostNewCardButton">
               <img
-                className="unsplash5mv818tzxeo-icon"
+                className="farmerCommunityForumComponentFullPostNewCardImage"
                 alt=""
                 src={TomatoVector}
               />
-              <div className="holiday-details">
-                <div className="holiday-details-child">
-                  <div className="how-corn-grows-wrapper">
-                    <div className="how-corn-grows">How to Plant Tomato?</div>
+              <div className="farmerCommunityForumComponentFullPostNewCardDetails">
+                <div className="farmerCommunityForumComponentFullPostNewCardInner">
+                  <div className="farmerCommunityForumComponentFullPostNewCardTitleWrapper">
+                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">How to plant Tomatoes?</div>
                   </div>
                 </div>
               </div>
-            </button>
+            </button> 
+           
           </div>
         </div>
       </div>
