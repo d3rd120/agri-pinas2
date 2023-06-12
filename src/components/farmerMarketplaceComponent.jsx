@@ -4,6 +4,7 @@ import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
 import ProfileVector1 from '../img/profileVector1.png';
 import ProfileVector2 from '../img/profileVector2.png';
+import {Link} from 'react-router-dom';
 
 const FarmerMarketplace = () => {
   return (
@@ -22,7 +23,7 @@ const FarmerMarketplace = () => {
         <div className="farmerMarketplaceComponentMiddleSection">
           <div className="farmerMarketplaceComponentFrameParent">
             <div className="farmerMarketplaceComponentFrameWrapper">
-              <a className="farmerMarketplaceComponentRectangleParent">
+              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -31,7 +32,7 @@ const FarmerMarketplace = () => {
                 <div className="farmerMarketplaceComponentFrameGroup">
                   <div className="farmerMarketplaceComponentFrameContainer">
                     <div className="farmerMarketplaceComponentCardWrapper">
-                      <b className="farmerMarketplaceComponentCardText">Onions</b>
+                      <b className="farmerMarketplaceComponentCardText">Corn</b>
                     </div>
                     <div className="farmerMarketplaceComponentCategoryWrapper">
                       <div className="farmerMarketplaceComponentCategoryContainer">
@@ -54,7 +55,7 @@ const FarmerMarketplace = () => {
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                            A red round vegetable with a good storage quality
+                            A red round vegetable with a good storage quality......
                           </span>
                         </p>
                       </div>
@@ -69,8 +70,8 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </a>              
-              <a className="farmerMarketplaceComponentRectangleParent">
+              </Link>              
+              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -102,7 +103,7 @@ const FarmerMarketplace = () => {
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                            A red round vegetable with a good storage quality
+                            A red round vegetable with a good storage quality.....
                           </span>
                         </p>
                       </div>
@@ -117,7 +118,7 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </a>     
+              </Link>     
               
             </div>
             <div className="farmerMarketplaceComponentCategories">
