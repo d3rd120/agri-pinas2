@@ -1,0 +1,600 @@
+.agripinaslogo-icon {
+    position: relative;
+    width: 3.08rem;
+    height: 3.13rem;
+    object-fit: cover;
+  }
+  .agripinas {
+    position: relative;
+    display: inline-block;
+    width: 6.63rem;
+    height: 1.36rem;
+    flex-shrink: 0;
+  }
+  .agripinaslogo-parent {
+    height: 1.84rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .community {
+    position: absolute;
+    top: 0;
+    left: 2.51rem;
+    display: inline-block;
+    width: 6.63rem;
+    height: 1.38rem;
+  }
+  .group-child {
+    position: absolute;
+    top: 0.14rem;
+    left: 0;
+    width: 1.25rem;
+    height: 1.05rem;
+  }
+  .community-parent {
+    text-decoration: none;
+    position: absolute;
+    top: 7.47rem;
+    left: 0.05rem;
+    width: 9.14rem;
+    height: 1.38rem;
+    color: inherit;
+  }
+  .crop-tracker {
+    position: absolute;
+    top: 0;
+    left: 2.55rem;
+    display: inline-block;
+    width: 6.94rem;
+    height: 1.35rem;
+  }
+  .worldwide-icon {
+    position: absolute;
+    height: 90.91%;
+    width: 12.99%;
+    top: 4.55%;
+    right: 87.01%;
+    bottom: 4.54%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .crop-tracker-parent {
+    text-decoration: none;
+    position: absolute;
+    top: 11.22rem;
+    left: 0.02rem;
+    width: 9.49rem;
+    height: 1.35rem;
+    color: inherit;
+  }
+  .dashboard {
+    position: absolute;
+    top: 0;
+    left: 2.49rem;
+    display: inline-block;
+    width: 5.94rem;
+    height: 1.35rem;
+  }
+  .home-1-icon {
+    position: absolute;
+    height: 77.27%;
+    width: 13.09%;
+    top: 4.55%;
+    right: 86.91%;
+    bottom: 18.18%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .dashboard-parent {
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0.08rem;
+    width: 8.42rem;
+    height: 1.35rem;
+    color: inherit;
+  }
+  .marketplace {
+    position: absolute;
+    top: 0;
+    left: 2.56rem;
+    display: inline-block;
+    width: 6.88rem;
+    height: 1.38rem;
+  }
+  .wallet-2-icon {
+    position: absolute;
+    height: 75.85%;
+    width: 13.43%;
+    top: 8.6%;
+    right: 86.57%;
+    bottom: 15.55%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .marketplace-parent {
+    text-decoration: none;
+    position: absolute;
+    top: 3.78rem;
+    left: 0;
+    width: 9.44rem;
+    height: 1.38rem;
+    color: inherit;
+  }
+  .transactions {
+    position: absolute;
+    top: 0;
+    left: 2.53rem;
+    display: inline-block;
+    width: 7rem;
+    height: 1.38rem;
+  }
+  .store-icon {
+    position: absolute;
+    height: 75.85%;
+    width: 12.57%;
+    top: 14.1%;
+    right: 87.43%;
+    bottom: 10.05%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .transactions-parent {
+    text-decoration: none;
+    position: absolute;
+    top: 14.91rem;
+    left: 0.04rem;
+    width: 9.53rem;
+    height: 1.38rem;
+    color: inherit;
+  }
+  .group-parent {
+    position: relative;
+    width: 9.56rem;
+    height: 16.28rem;
+  }
+  .group-inner,
+  .group-item,
+  .vector-icon {
+    position: absolute;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .group-item {
+    height: 100%;
+    width: 36%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 64%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .group-inner,
+  .vector-icon {
+    height: 82.54%;
+    width: 0.7%;
+    top: 8.73%;
+    right: 55.3%;
+    bottom: 8.73%;
+    left: 44%;
+  }
+  .vector-icon {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .ellipse-div {
+    position: absolute;
+    height: 35.98%;
+    width: 39.98%;
+    top: 3.9%;
+    right: 0;
+    bottom: 60.12%;
+    left: 60.02%;
+    border-radius: 50%;
+    background-color: #fba403;
+  }
+  .vector-parent {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    height: 74.07%;
+    width: 24%;
+    top: 12.96%;
+    right: 76%;
+    bottom: 12.96%;
+    left: 0;
+  }
+  .ellipse-parent {
+    position: relative;
+    width: 6.25rem;
+    height: 2.25rem;
+  }
+  .side-bar {
+    align-self: stretch;
+    background-color: #557153;
+    display: flex;
+    flex-direction: column;
+    padding: 3.31rem 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5.81rem;
+  }
+  .blank-line {
+    margin: 0;
+  }
+  .community-forum {
+    align-self: stretch;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .welcome-to-dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .top-section {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.88rem;
+  }
+  .zermatt-card-image {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    border-radius: 10px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .zermatt-card {
+    flex: 1;
+    border-radius: 10.52px;
+    height: 34.94rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.56rem;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .course-name,
+  .description1 {
+    align-self: stretch;
+    position: relative;
+    line-height: 2.73rem;
+  }
+  .description1 {
+    font-size: 0.88rem;
+    line-height: 1.23rem;  
+  }
+  .details {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 2rem; 
+  }
+  .fulldescription {
+    flex: 1;
+    position: relative;
+    line-height: 1.23rem;
+  }
+  .fulldescription-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .description2 {
+    align-self: stretch;
+    position: relative;
+    line-height: 1.23rem;
+  }
+  .iconplus {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    color: white;
+  }
+  .button {
+    position: relative;
+    font-size: 0.88rem;
+    letter-spacing: 0.46px;
+    font-weight: 600; 
+    color: #fff;
+    text-align: center;
+  }
+  .search-flights-button {
+    cursor: pointer;
+    border: 0;
+    padding: 0.75rem 1.13rem;
+    background-color: #27ae60;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.38rem;
+    transition: 0.3s;
+  }
+  .search-flights-button:hover {
+    background-color: #598025;
+  }
+  .heading-and-subheading {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.94rem;
+  }
+  .content,
+  .description,
+  .heading-and-subheading,
+  .input {
+    align-self: stretch;
+    display: flex;
+  }
+  .input {
+    border: 1px solid #dee3eb;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 1.94rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-direction: row;
+    padding: 0.63rem 1.13rem;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 1.88rem;
+    outline: 0;
+  }
+  .content,
+  .description {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .description {
+    border-radius: 10.52px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards-container,
+  .small-cards {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+  }
+  .small-cards {
+    height: 34.94rem;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .cards-container {
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    flex-direction: row;
+    padding: 0.38rem 3rem 3.06rem 0;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+  .middle-section {
+    align-self: stretch;
+    height: 39.44rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 0.88rem;
+    color: #434343; 
+  }
+  .other-posts {
+    position: relative;
+    line-height: 220.52%;
+    font-weight: 600;
+  }
+  .unsplash5mv818tzxeo-icon {
+    align-self: stretch;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+    overflow: hidden;
+    height: 15.13rem;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  .how-corn-grows {
+    align-self: stretch;
+    position: relative;
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+    font-weight: 500; 
+    color: #000;
+    text-align: left;
+  }
+  .how-corn-grows-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .holiday-details,
+  .holiday-details-inner {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .holiday-details {
+    flex: 1;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 1.25rem 1rem;
+    justify-content: center;
+  }
+  .holiday-details-child,
+  .rec-card-1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .rec-card-1 {
+    cursor: pointer;
+    border: 1px solid #ececec;
+    padding: 0;
+    background-color: transparent;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 26px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    height: 22.44rem;
+    flex-direction: column;
+  }
+  .holiday-details-child {
+    align-self: stretch;
+    flex-direction: row;
+  }
+  .courses,
+  .new {
+    align-self: stretch;
+    gap: 0.63rem;
+  }
+  .courses {
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  .new {
+    flex: 1;
+    flex-direction: column;
+    padding: 0.63rem 5.13rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
+  }
+  .farmermarketplace,
+  .main-panel,
+  .new {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .main-panel {
+    align-self: stretch;
+    flex: 1;
+    flex-direction: column;
+    padding: 2.75rem 3.38rem;
+    gap: 3.19rem;
+    font-size: 1.31rem;
+    color: #557153;
+  }
+  .farmermarketplace {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 83.5rem;
+    flex-direction: row;
+    gap: 0.06rem;
+    text-align: left;
+    font-size: 1.13rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  @media screen and (max-width: 1200px) {
+    .side-bar {
+      display: none;
+    }
+    .zermatt-card {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .welcome-to-dashboard {
+      padding-right: 0;
+      box-sizing: border-box;
+      flex: unset;
+      align-self: stretch;
+    }
+    .top-section {
+      flex-direction: column;
+    }
+    .zermatt-card {
+      flex: unset;
+      align-self: stretch;
+    }
+    .search-flights-button {
+      margin-right: auto;
+    }
+    .description {
+      flex-direction: column;
+    }
+    .cards-container,
+    .small-cards {
+      flex: unset;
+      align-self: stretch;
+    }
+    .cards-container,
+    .middle-section {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .welcome-to-dashboard {
+      width: 100%;
+    }
+    .zermatt-card-image {
+      height: auto !important;
+    }
+    .search-flights-button,
+    .zermatt-card-image {
+      width: 100% !important;
+    }
+    .holiday-details-inner {
+      flex-direction: row;
+      gap: 0;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .main-panel {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      box-sizing: border-box;
+    }
+  }
+  
