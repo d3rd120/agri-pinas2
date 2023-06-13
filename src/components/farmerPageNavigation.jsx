@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaUsers, FaGlobe, FaHome, FaWallet, FaStore } from 'react-icons/fa';
 import { FaUserCircle, FaBell } from 'react-icons/fa';
-import {NavLink, Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import '../css/Components/farmerPageNavigation.css';
 
 import Logo from '../img/agriPinasLogo.png';
