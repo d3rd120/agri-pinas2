@@ -19,7 +19,7 @@
     margin-bottom: 10px;
     color: #557153;
     margin-right: 990px;
-  margin-left: 0;
+    margin-left: 0;
   }
 
   .farmerCropTrackerPageLayout1 {
@@ -212,10 +212,7 @@
     font-weight: 600;
   }
 
-  .farmerCropTrackerIcons {
-    cursor: pointer;
-  }
- 
+  
 
   .farmerCropTrackerComponent {
     position: relative;
