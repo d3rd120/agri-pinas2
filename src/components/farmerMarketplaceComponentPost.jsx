@@ -85,7 +85,7 @@ const FarmerMarketplace = () => {
           </div>
         </div>
         <div className="farmerMarketplaceComponentPostButtonNew">
-          <div className="farmerMarketplaceComponentPostButtonNewTitle">Other Products</div>
+          <div className="farmerMarketplaceComponentPostButtonNewTitle">Your Other Products</div>
           <div className="farmerMarketplaceComponentPostButtonNewCourses">
             <button className="farmerMarketplaceComponentPostButtonNewCard1">
               <img

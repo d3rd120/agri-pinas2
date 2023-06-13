@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaUsers, FaGlobe, FaHome, FaWallet, FaStore } from 'react-icons/fa';
 import { FaUserCircle, FaBell } from 'react-icons/fa';
-import {Link} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 import '../css/Components/farmerPageNavigation.css';
 
 import Logo from '../img/agriPinasLogo.png';
@@ -14,26 +14,49 @@ const FarmerNavigation = () => {
         <div className="farmerPageNavigationMainText">AgriPinas</div>
       </div>
       <div className="farmerPageNavigationGroupParent">
-        <Link className="farmerPageNavigationLink1" to = '/farmercommunityforum'>
+      <NavLink
+          className="farmerPageNavigationLink1"
+          to="/farmercommunityforum"
+          activeClassName="active"
+        >
           <div className="farmerPageNavigationLinks">Community</div>
           <FaUsers className="farmerPageNavigationLinksIcon" />
-        </Link>
-        <Link className="farmerPageNavigationLink2" to = '/farmercroptracker'>
+        </NavLink>
+
+        <NavLink
+          className="farmerPageNavigationLink2"
+          to="/farmercroptracker"
+          activeClassName="active"
+        >
           <div className="farmerPageNavigationLinks">Crop Tracker</div>
           <FaGlobe className="farmerPageNavigationLinksIcon" />
-        </Link>
-        <Link className="farmerPageNavigationLink3"  to = '/farmerdashboard'>
+        </NavLink>
+
+        <NavLink
+          className="farmerPageNavigationLink3"
+          to="/farmerdashboard"
+          activeClassName="active"
+        >
           <div className="farmerPageNavigationLinks">Dashboard</div>
           <FaHome className="farmerPageNavigationLinksIcon" />
-        </Link>
-        <Link className="farmerPageNavigationLink4"  to = '/farmermarketplace'>
+        </NavLink>
+
+        <NavLink
+          className="farmerPageNavigationLink4"
+          to="/farmermarketplace"
+          activeClassName="active"
+        >
           <div className="farmerPageNavigationLinks">Marketplace</div>
           <FaWallet className="farmerPageNavigationLinksIcon" />
-        </Link>
-        <Link className="farmerPageNavigationLink5"  to = '/farmertransactions'>
-          <div className="farmerPageNavigationLinks">Transactions</div>
-          <FaStore className="farmerPageNavigationLinksIcon" />
-        </Link>
+        </NavLink>
+        <NavLink
+            className="farmerPageNavigationLink5"
+            to="/farmertransactions"
+            activeClassName="active"
+          >
+            <div className="farmerPageNavigationLinks">Transactions</div>
+            <FaStore className="farmerPageNavigationLinksIcon" />
+      </NavLink>
       </div>
       <div className="farmerPageNavigationProfileParent">
           <div className="farmerPageNavigationProfile">

@@ -1,4 +1,5 @@
 import React from 'react';
+import FarmerCropTrackerComponent from '../../components/farmerCropTrackerComponent';
 
 
 const FarmerCropTracker = () => {
@@ -6,7 +7,7 @@ const FarmerCropTracker = () => {
     return (
         <>
      
-        <h1>This is Farmer Crop Tracker</h1>
+        <FarmerCropTrackerComponent />
         </>
     );
 };

@@ -60,9 +60,44 @@
     justify-content: flex-start;
   }
   .farmerMarketplaceComponentCategoryWrapper {
-    font-size: 1rem;
-    
+    font-size: 1rem;    
   }
+  .farmerMarketplaceComponentButtonIcon {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    color: #fff;
+  }
+
+  .farmerMarketplaceComponentButtonText {
+    position: relative;
+    font-size: 1rem;
+    letter-spacing: 0.46px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+  }
+
+  .farmerMarketplaceComponentButton{
+    cursor: pointer;
+    border: 0;
+    padding: 0.75rem 1.13rem;
+    background-color: #27ae60;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.38rem;
+    transition: 0.5s;
+  }
+
+  .farmerMarketplaceComponentButton:hover {
+    background-color: #598025;
+  }
+
   .farmerMarketplaceComponentFrameContainer {
     gap: 0.5rem;
   }
@@ -264,6 +299,10 @@
       flex: unset;
       align-self: stretch;
     }
+    .farmerMarketplaceComponentButton{
+      margin-right: auto;
+    }
+
     .farmerMarketplaceComponentMiddleSection {
       flex-direction: column;
     }
@@ -271,6 +310,9 @@
   @media screen and (max-width: 420px) {
     .farmerMarketplaceComponentMainText{
       width: 100%;
+    }
+    .farmerMarketplaceComponentButton {
+      width: 100% !important;
     }
     .farmerMarketplaceComponentMainPanel {
       padding-left: 1.25rem;

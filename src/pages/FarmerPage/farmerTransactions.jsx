@@ -1,4 +1,5 @@
 import React from 'react';
+import FarmerTransactionsComponent from '../../components/farmerTransactionsComponent';
 
 
 const FarmerTransactions = () => {
@@ -6,7 +7,7 @@ const FarmerTransactions = () => {
     return (
         <>
    
-        <h1>This is Farmer Transactions</h1>
+        <FarmerTransactionsComponent />
         </>
     );
 };

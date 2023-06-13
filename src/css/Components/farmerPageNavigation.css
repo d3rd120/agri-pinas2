@@ -59,10 +59,15 @@
     cursor:pointer;
     transition: 0.5s
   }
+  /* Add this CSS to your stylesheet */
+.active .farmerPageNavigationLinksIcon {
+  color: #FBA403;
+}
 
-  .farmerPageNavigationLinks:hover {
+.farmerPageNavigationLinks:hover {
     color: #FBA403;
   }
+  
 
   .farmerPageNavigationLinksIcon {
     position: absolute;
