@@ -1,0 +1,183 @@
+  .adminDashboardComponentBlankLine {
+    margin: 0;
+  }
+  .adminDashboardComponentMainTextContainer {
+    align-self: stretch;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .adminDashboardComponentMainText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .adminDashboardComponentTopSection {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.88rem;
+  }
+  .adminDashboardComponentMiddleSection,
+  .adminDashboardComponentTopSection {
+    align-self: stretch;
+  }
+  .adminDashboardComponent,
+  .adminDashboardComponentMainPanel {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .adminDashboardComponentMainPanel{
+    align-self: stretch;
+    flex: 1;
+    flex-direction: column;
+    padding: 2.75rem 3.38rem;
+    gap: 3.19rem;
+    font-size: 1.31rem;
+    color: #557153;
+  }
+  .adminDashboardComponent {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 52.94rem;
+    flex-direction: row;
+    gap: 0.06rem;
+    text-align: left;
+    font-size: 1.13rem;
+    height:100%;
+    min-height:100vh;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .adminDashboardComponentOverview {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .adminDashboardComponentCard{
+    align-self: stretch;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    padding: 2.44rem 2.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    gap: 0.63rem;
+    font-size: 0.75rem;
+    color: #fff;
+  }
+
+  .adminDashboardComponentLegendSection {
+    align-self: stretch;
+    height: 9.31rem;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.56rem;
+    font-size: 0.69rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .adminDashboardComponentLegendBox {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 2.25rem 2.31rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition:0.5s;
+  }
+
+  .adminDashboardComponentLegendBox:hover{
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.20);
+  }
+  
+  .adminDashboardComponentLegendBoxWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.06rem;
+  }
+
+  .adminDashboardComponentLegendSubTitle {
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    position: relative;
+    letter-spacing: 0.04em;
+  }
+  .adminDashboardComponentLegendVector {
+    position: relative;
+    width: 5.63rem;
+    height: 1.13rem;
+  }
+
+  .adminDashboardComponentLegendChild1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(150, 236, 40, 0.52);
+    width: 5.63rem;
+    height: 1.13rem;
+  }
+  
+
+   @media screen and (max-width: 1200px) {
+    .side-bar {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .adminDashboardComponentOverview {
+        width: 100%;
+        flex: unset;
+        align-self: stretch;
+      }
+    .adminDashboardComponentMainText {
+      padding-right: 0;
+      box-sizing: border-box;
+      flex: unset;
+      align-self: stretch;
+    }
+    .adminDashboardComponentMiddleSection,
+    .adminDashboardComponentTopSection {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .adminDashboardComponentMainText {
+      width: 100%;
+    }
+    .adminDashboardComponentMainPanel {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      box-sizing: border-box;
+    }
+  }
+
+  @media screen and (max-width: 350px) { 
+
+    .adminDashboardComponentLegendBox {
+        flex: unset;
+        align-self: stretch;
+      }
+    
+    .adminDashboardComponentLegendSection {
+      flex-direction: column;
+    }
+  }
+  
+  
