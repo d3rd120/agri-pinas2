@@ -8,6 +8,7 @@ import FarmerCommunityForum from './pages/FarmerPage/farmerCommunityForum';
 import FarmerCommunityForumPost from './pages/FarmerPage/farmerCommunityForumPost';
 import FarmerCropTracker from './pages/FarmerPage/farmerCropTracker';
 import FarmerTransactions from './pages/FarmerPage/farmerTransactions';
+import AdminDashboard from './pages/AdminPage/adminDashboard';
 import Reset from './components/reset';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
@@ -30,6 +31,7 @@ const App = () => {
               <Route path="/farmercommunityforumpost" element={<FarmerCommunityForumPost />} />
               <Route path="/farmercroptracker" element={<FarmerCropTracker />} />
               <Route path="/farmertransactions" element={<FarmerTransactions />} />
+              <Route path="/admindashboard" element={<AdminDashboard />} />
             </Routes>
           </BrowserRouter>
         </>
