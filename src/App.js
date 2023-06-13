@@ -1,6 +1,11 @@
 import MainPage from './pages/MainPage/mainPage';
 import LoginPage from './pages/MainPage/loginPage';
 import SignupPage from './pages/MainPage/signupPage';
+import BuyerMarketplace from './pages/BuyerPage/buyerMarketplace';
+import BuyerMarketplacePost from './pages/BuyerPage/buyerMarketplacePost';
+import ShoppingCart from './components/shoppingCartComponent';
+import BuyerCommunityForum from './pages/BuyerPage/buyerCommunityForum';
+import BuyerCommunityForumPost from './pages/BuyerPage/buyerCommunityForumPost';
 import FarmerDashboard from './pages/FarmerPage/farmerDashboard';
 import FarmerMarketplace from './pages/FarmerPage/farmerMarketplace';
 import FarmerMarketplacePost from './pages/FarmerPage/farmerMarketplacePost';
@@ -23,6 +28,11 @@ const App = () => {
               <Route path="/login" element={<LoginPage />} />
               <Route path="/signup" element={<SignupPage />} />
               <Route path="/reset" element={<Reset />} />
+              <Route path="/buyermarketplace" element={<BuyerMarketplace />} />
+              <Route path="/buyermarketplacepost" element={<BuyerMarketplacePost />} />
+              <Route path="/buyercommunityforum" element={<BuyerCommunityForum />} />
+              <Route path="/buyercommunityforumpost" element={<BuyerCommunityForumPost />} />
+              <Route path="/shoppingcart" element={<ShoppingCart />} />
               <Route path="/farmerdashboard" element={<FarmerDashboard />} />
               <Route path="/farmermarketplace" element={<FarmerMarketplace />} />
               <Route path="/farmermarketplacepost" element={<FarmerMarketplacePost />} />

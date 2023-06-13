@@ -1,195 +1,385 @@
-.homenav1-child {
-    border: 0;
-    font-family: Averta-Bold;
-    font-size: 1.5rem;
-    background-color: #fff0f0;
-    position: absolute;
-    height: 44.92%;
-    width: 18.01%;
-    top: 26.98%;
-    right: 20.69%;
-    bottom: 38.1%;
-    left: 59.3%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    padding: 0.63rem 0.75rem;
+.buyerMarketplaceComponentPostBlankLine{
+  margin: 0;
+}
+.buyerMarketplaceComponentPostMainTextWrapper {
+  align-self: stretch;
+  position: relative;
+  text-transform: uppercase;
+}
+.buyerMarketplaceComponentPostMainTextContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.buyerMarketplaceComponentPostTopSection {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.88rem;   
+}
+.buyerMarketplaceComponentPostCard1Image {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.buyerMarketplaceComponentPostCard1{
+  flex: 1;
+  border-radius: 10.52px;
+  height: 34.94rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.56rem;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.buyerMarketplaceComponentPostSmallCardsProductName,
+.buyerMarketplaceComponentPostSmallCardsBuyerName {
+  align-self: stretch;
+  position: relative;
+  line-height: 2.73rem;
+}
+.buyerMarketplaceComponentPostSmallCardsBuyerName {
+  font-size: 0.88rem;
+  line-height: 1.23rem;
+}
+.buyerMarketplaceComponentPostSmallCardsDetails {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.buyerMarketplaceComponentPostSmallCardsFullDescription {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 1.75rem;
+}
+.buyerMarketplaceComponentPostSmallCardsDescriptionWrapper {
+  align-self: stretch;  
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1rem;  
+}
+.buyerMarketplaceComponentPostButtonIcon {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  color: grey;
+}
+.buyerMarketplaceComponentPostButtonText {
+  position: relative;
+  font-size: 0.80rem;
+  letter-spacing: 0.46px;
+  font-weight: 570;
+  color: black;
+  text-align: center;
+}
+.buyerMarketplaceComponentPostButton {
+  flex-direction: row;
+  margin-right: 10px; 
+  width: 150px;
+  cursor: pointer;
+  border: 0;
+  padding: 10px 20px;
+  background-color: #8db88d;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.buyerMarketplaceComponentPostButton:hover {
+  background-color: #9DC08B;
+}
+
+.outlinedButton {
+  width: 150px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid #9DC08B;
+  border-radius: 4px;
+  padding: 0.75rem 1.13rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.outlinedButton:hover {
+  background-color: #ebebeb;
+}
+.buyerMarketplaceComponentPostButtonContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.buyerMarketplaceComponentPostSmallCardsContent,
+.buyerMarketplaceComponentPostSmallCardsDescription,
+.buyerMarketplaceComponentPostButtonContainer,
+.buyerMarketplaceComponentPostSmallCardsHeading {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.buyerMarketplaceComponentPostSmallCardsHeading{
+  justify-content: flex-start;
+  gap: 1.94rem;
+}
+.buyerMarketplaceComponentPostSmallCardsContent,
+.buyerMarketplaceComponentPostSmallCardsDescription {
+  flex: 1;
+  justify-content: space-between;
+}
+.buyerMarketplaceComponentPostSmallCardsDescription {
+  border-radius: 10.52px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+.buyerMarketplaceComponentPostCardsContainer,
+.buyerMarketplaceComponentPostSmallCards {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+.buyerMarketplaceComponentPostSmallCards {
+  height: 34.94rem;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.buyerMarketplaceComponentPostCardsContainer {
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: row;
+  padding: 0.38rem 3rem 3.06rem 0;
+  justify-content: center;
+  gap: 1.25rem;
+}
+.buyerMarketplaceComponentPostMiddleSection {
+  align-self: stretch;
+  height: 39.44rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: 2rem;
+  color: #434343;
+}
+.buyerMarketplaceComponentPostButtonNewTitle {
+  position: relative;
+  line-height: 220.52%;
+  font-weight: 600;
+}
+.buyerMarketplaceComponentPostButtonNewCard1Title,
+.buyerMarketplaceComponentPostButtonNewCard1Image {
+  align-self: stretch;
+  position: relative;
+}
+.buyerMarketplaceComponentPostButtonNewCard1Image {
+  border-radius: 10px 10px 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 15.13rem;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.buyerMarketplaceComponentPostButtonNewCard1Title {
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: #000;
+  text-align: left;
+}
+.buyerMarketplaceComponentPostButtonNewCard1Wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.buyerMarketplaceComponentPostButtonNewCard1Details,
+.buyerMarketplaceComponentPostButtonNewCard1DetailsInner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.buyerMarketplaceComponentPostButtonNewCard1Details {
+  flex: 1;
+  border-radius: 0 0 10px 10px;
+  background-color: #fff;
+  flex-direction: column;
+  padding: 1.25rem 1rem;
+  justify-content: center;
+}
+
+.buyerMarketplaceComponentPostButtonNewCard1{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.buyerMarketplaceComponentPostButtonNewCard1 {
+  cursor: pointer;
+  border: 1px solid #ececec;
+  padding: 0;
+  background-color: transparent;
+  flex: 1;
+  border-radius: 10px;
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  height: 22.44rem;
+  flex-direction: column;
+}
+
+.buyerMarketplaceComponentPostButtonNewCourses,
+.buyerMarketplaceComponentPostButtonNew {
+  align-self: stretch;
+  gap: 0.63rem;
+}
+.buyerMarketplaceComponentPostButtonNewCourses {
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.buyerMarketplaceComponentPostButtonNew {
+  flex: 1;
+  flex-direction: column;
+  padding: 0.63rem 5.13rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
+}
+.buyerMarketplaceComponentPost,
+.buyerMarketplaceComponentPostMainPanel,
+.buyerMarketplaceComponentPostButtonNew {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.buyerMarketplaceComponentPostMainPanel {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: column;
+  padding: 2.75rem 3.38rem;
+  gap: 3.19rem;
+  font-size: 1.31rem;
+  color: #557153;
+
+}
+.buyerMarketplaceComponentPost {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 83.5rem;
+  flex-direction: row;
+  gap: 0.06rem;
+  text-align: left;
+  font-size: 1.13rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 1200px) {
+ 
+  .buyerMarketplaceComponentPostCard1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .buyerMarketplaceComponentPostMainTextContainer {
+    padding-right: 0;
     box-sizing: border-box;
+    flex: unset;
+    align-self: stretch;
+  }
+  .buyerMarketplaceComponentPostTopSection {
+    flex-direction: column;
+  }
+  .buyerMarketplaceComponentPostCard1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .buyerMarketplaceComponentPostSmallCardsDescription {
+    flex-direction: column;
+  }
+  .buyerMarketplaceComponentPostCardsContainer,
+  .buyerMarketplaceComponentPostSmallCards {
+    flex: unset;
+    align-self: stretch;
+  }
+  .buyerMarketplaceComponentPostCardsContainer,
+  .buyerarketplaceComponentPostMiddleSection {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 420px) {
+  .buyerMarketplaceComponentPostMainTextContainer {
+    width: 100%;
+  }
+  .buyerMarketplaceComponentPostCard1Image{
+    height: auto !important;
+  }
+  .buyerMarketplaceComponentPostButton,
+  .buyerMarketplaceComponentPostCard1Image{
+    width: 100% !important;
+  }
+  .buyerMarketplaceComponentPostButtonNewCard1DetailsInner {
+    flex-direction: row;
+    gap: 0;
     align-items: center;
     justify-content: flex-start;
   }
-  .messages-icon,
-  .notification-icon,
-  .profile-icon {
-    position: absolute;
-    height: 33.33%;
-    width: 3.98%;
-    top: 27.78%;
-    right: 2.69%;
-    bottom: 38.89%;
-    left: 93.33%;
-    border-radius: 5px;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    object-fit: cover;
+  .buyerMarketplaceComponentPostMainPanel {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-sizing: border-box;
   }
-  .messages-icon,
-  .notification-icon {
-    width: 4.03%;
-    right: 8.32%;
-    left: 87.65%;
-  }
-  .notification-icon {
-    right: 14%;
-    left: 81.97%;
-  }
-  .homenav1-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #557153;
-    width: 21.94rem;
-    height: 3.88rem;
-  }
-  .agripinas {
-    position: absolute;
-    top: 22%;
-    left: 10.04rem;
-    display: inline-block;
-    width: 4.03%;
-  }
-  .group-icon,
-  .icon-menu-1 {
-    position: absolute;
-    top: 22%;
-    width: 3.13rem;
-    height: .75rem;
-  }
-  .group-icon {
-    top: 0;
-    left: 0;
-  }
-  .icon-menu-1 {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    top: 50%;
-    left: 2.2rem;
-  }
-  .logo1-2-icon {
-    position: absolute;
-    top: -20%;
-    left: 5.32rem;
-    width: 5.51rem;
-    height: 5.75rem;
-    object-fit: cover;
-  }
-  .homenav1 {
-    position: relative;
-    background-color: #a9af7e;
-    width: 100%;
-    height: 3.88rem;
-    text-align: left;
-    font-size: 1.88rem;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif
-  }
-  
-  .buyerMarketplacePageLayout {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .buyerMarketplaceColumn {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .buyerMarketplaceCard {
-    background-color: #f7f7f7;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-  }
-  
-  .buyerMarketplaceImage {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .buyerMarketplaceDetails1 {
-    margin-bottom: 20px;
-  }
-  
-  .buyerMarketplaceProductName {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .buyerMarketplaceDetails2 {
-    margin-bottom: 5px;
-  }
-  
-  .buyerMarketplaceDetails2 b {
-    font-weight: bold;
-  }
-  
-  
-  .button-row {
-    display: flex;
-    gap: 10px;
-  }
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  .outlined-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: 1px solid #9DC08B;
-    border-radius: 3px;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
-  }
-  
-  .outlined-button:hover {
-    background-color: #ebebeb;
-  }
-  
-  .filled-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #9DC08B;
-    color: #fff;
-    border-radius: 3px;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .filled-button:hover {
-    background-color: #92aa92;
-  }
-  .chat-icon {
-    margin-left: 8px;
-    color: #557153;
-  }
-  
-  .chat-widget-container {
-    margin-top: 20px;
-  }
+  .buyerMarketplaceComponentPostButtonRow {
+  display: flex;
+  flex-direction: row;
+}
+.buyerMarketplaceComponentPostButton.outlinedButton {
+  width: 150px;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 0.75rem 1.13rem;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.buyerMarketplaceComponentPostButton.outlinedButton:hover {
+  background-color: #000;
+  color: #fff;
+}
+.buyerMarketplaceComponentPostButtonRow{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+}
+

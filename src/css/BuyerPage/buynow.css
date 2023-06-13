@@ -1,169 +1,635 @@
-.shoppingcartPageLayout {
-    text-align: center;
-  }
-  
-  .ShoppingCard {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 0px;
-    width: 900px;
-    height: 190px;
-  
+.cartComponentPostBlankLine{
+  margin: 0;
 }
-.ShoppingCard1 {
+.cartComponentPostMainTextWrapper {
+  align-self: stretch;
+  position: relative;
+  text-transform: uppercase;
+}
+.cartComponentPostMainTextContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.cartComponentPostTopSection {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.88rem;   
+}
+.cartComponentPostCard1Image {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.cartComponentPostCard1{
+  flex: 1;
+  border-radius: 10.52px;
+  height: 34.94rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.56rem;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.cartComponentPostSmallCardsProductName,
+.cartComponentPostSmallCardsBuyerName {
+  align-self: stretch;
+  position: relative;
+  line-height: 2.73rem;
+}
+.cartComponentPostSmallCardsBuyerName {
+  font-size: 0.88rem;
+  line-height: 1.23rem;
+}
+.cartComponentPostSmallCardsDetails {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.cartsComponentPostSmallCardsFullDescription {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 1.75rem;
+}
+.cartComponentPostSmallCardsDescriptionWrapper {
+  align-self: stretch;  
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1rem;  
+}
+.cartComponentPostButtonIcon {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  color: grey;
+}
+.cartComponentPostButtonText {
+  position: relative;
+  font-size: 0.88rem;
+  letter-spacing: 0.46px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
+.cartComponentPostButton {
+  flex-direction: row;
+  margin-right: 10px; 
+  width: 150px;
+  cursor: pointer;
+  border: 0;
+  padding: 10px 20px;
+  background-color: #8db88d;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.cartComponentPostButton:hover {
+  background-color: #9DC08B;
+}
+.cartComponentPostButtonContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.cartComponentPostSmallCardsContent,
+.cartComponentPostSmallCardsDescription,
+.cartComponentPostButtonContainer,
+.cartComponentPostSmallCardsHeading {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cartComponentPostSmallCardsHeading{
+  justify-content: flex-start;
+  gap: 1.94rem;
+}
+.cartComponentPostSmallCardsContent,
+.cartComponentPostSmallCardsDescription {
+  flex: 1;
+  justify-content: space-between;
+}
+.cartComponentPostSmallCardsDescription {
+  border-radius: 10.52px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+.cartComponentPostCardsContainer,
+.cartComponentPostSmallCards {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+.cartComponentPostSmallCards {
+  height: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.cartComponentPostCardsContainer {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: row;
+  padding: 0.38rem 3rem 3.06rem 0;
+  justify-content: center;
+  gap: 1.25rem;
+}
+.cartComponentPostMiddleSection {
+  align-self: stretch;
+  height: 39.44rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: 2rem;
+  color: #434343;
+}
+.cartComponentPostButtonNewTitle {
+  position: relative;
+  line-height: 220.52%;
+  font-weight: 600;
+}
+.cartComponentPostButtonNewCard1Title,
+.cartComponentPostButtonNewCard1Image {
+  align-self: stretch;
+  position: relative;
+}
+.cartComponentPostButtonNewCard1Image {
+  border-radius: 10px 10px 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 15.13rem;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.cartComponentPostButtonNewCard1Title {
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: #000;
+  text-align: left;
+}
+.cartComponentPostButtonNewCard1Wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.cartComponentPostButtonNewCard1Details,
+.cartComponentPostButtonNewCard1DetailsInner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cartComponentPostButtonNewCard1Details {
+  flex: 1;
+  border-radius: 0 0 10px 10px;
+  background-color: #fff;
+  flex-direction: column;
+  padding: 1.25rem 1rem;
+  justify-content: center;
+}
+
+.cartComponentPostButtonNewCard1{
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 0px;
-  width: 900px;
+  justify-content: flex-start;
+}
+.cartComponentPostButtonNewCard1 {
+  cursor: pointer;
+  border: 1px solid #ececec;
+  padding: 0;
+  background-color: transparent;
+  flex: 1;
+  border-radius: 10px;
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  height: 22.44rem;
+  flex-direction: column;
+}
+
+.cartComponentPostButtonNewCourses,
+.cartComponentPostButtonNew {
+  align-self: stretch;
+  gap: 0.63rem;
+}
+.cartComponentPostButtonNewCourses {
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.cartComponentPostButtonNew {
+  flex: 1;
+  flex-direction: column;
+  padding: 0.63rem 5.13rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
+}
+.cartComponentPost,
+.cartComponentPostMainPanel,
+.cartComponentPostButtonNew {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.cartComponentPostMainPanel {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: column;
+  padding: 2.75rem 3.38rem;
+  gap: 3.19rem;
+  font-size: 1.31rem;
+  color: #557153;
 
 }
-  .shoppingCheckbox {
-    margin-right: 5px;
-  }
-  .shoppingCheckbox input[type="checkbox"] {
-    margin-right: 5px;
-  }
-  
-  
-  .orderDetails {
-    flex-grow: 1;
-    
-  }
-  .orderBuynow {
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #557153;
-  }
-  
-  .orderBuynow .backButton {
-    margin-right: 8px;
-    margin-left: 0; 
-  }
-  
-  .shoppingImage {
-    position: relative;
-  }
-  .ShoppingcartCard {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #E6E5A3;
-    
-  }
-  
-  .shoppingImage img {
-    bottom: 50px;
-    max-width: 150%;
-    height: 100px;
-  }
-  
-  .orderProductName {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-   
-  }
-  
-  .shoppingDetails2,
-  .shoppingDetails3 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-  }
-  .backButton {
-    background-color: transparent;
-    color: #333;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .backButton:hover {
-    color: #000;
-  }
-  
-  .orderDetailsRow {
-    display: flex;
-  justify-content: space-between;
-  }
-  
-  .shoppingDetailsItem {
-    flex: 1;
-  }
-  
-  .shoppingDetailsItem b {
-    margin-right: 5px;
-  }
-  
-  
-  .shoppingActions {
-    margin-top: 10px;
-  }
-  
-  .shoppingDeleteButton {
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .shoppingDeleteButton:hover {
-    background-color: #cc0000;
-  }
-  .shoppingPageLayout {
-    display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  }  
-  .checkoutButton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
-  
-  .ordercheckoutButton2 {
-    background-color: #9DC08B;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 85%;
-  }
-  
-  .ordercheckoutButton2:hover {
-    background-color: #b1d4a0;
-  }
-  
-  .quantityInput {
-    width: 50px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-    text-align: center;
-  }
-  .shoppingImageTitle {
-    text-align: center;
-    margin-bottom: 40px;
-    position: absolute;
-    top: -30px; /* Adjust this value to move the title higher */
-    left: 0;
+.cartComponentPost {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 83.5rem;
+  flex-direction: row;
+  gap: 0.06rem;
+  text-align: left;
+  font-size: 1.13rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 1200px) {
+ 
+  .cartComponentPostCard1 {
     width: 100%;
-    text-align: center;
-    color: black;
-    padding: 5px;
   }
-  
-  
-  
-  .shoppingImageTitle span {
-    font-weight: bold;
+}
+@media screen and (max-width: 960px) {
+  .cartComponentPostMainTextContainer {
+    padding-right: 0;
+    box-sizing: border-box;
+    flex: unset;
+    align-self: stretch;
   }
+  .cartComponentPostTopSection {
+    flex-direction: column;
+  }
+  .cartComponentPostCard1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .cartComponentPostSmallCardsDescription {
+    flex-direction: column;
+  }
+  .cartComponentPostCardsContainer,
+  .cartComponentPostSmallCards {
+    flex: unset;
+    align-self: stretch;
+  }
+  .cartComponentPostCardsContainer,
+  .cartComponentPostMiddleSection {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 420px) {
+  .cartComponentPostMainTextContainer {
+    width: 100%;
+  }
+  .cartComponentPostCard1Image{
+    height: auto !important;
+  }
+  .cartComponentPostButton,
+  .cartComponentPostCard1Image{
+    width: 100% !important;
+  }
+  .cartComponentPostButtonNewCard1DetailsInner {
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .cartComponentPostMainPanel {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-sizing: border-box;
+  }
+  .cartComponentPostButtonRow {
+  display: flex;
+  flex-direction: row;
+}
+.cartComponentPostButton.outlinedButton {
+  width: 150px;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 0.75rem 1.13rem;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.cartComponentPostButton.outlinedButton:hover {
+  background-color: #000;
+  color: #fff;
+}
+.cartComponentPostButtonRow{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+}
+.table {
+  font-size:medium;
+}
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+
+.course {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+	display: flex;
+	max-width: 100%;
+	margin: 0px;
+	overflow: hidden;
+	width: 830px;
+}
+
+.course h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+  color: black;
+}
+
+.course-preview {
+	background-color: white;
+	color: black;
+	padding: 30px;
+	max-width: 250px;
+}
+
+.course-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.progress-container {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	text-align: right;
+	width: 150px;
+}
+
+.progress {
+	background-color: #ddd;
+	border-radius: 3px;
+	height: 5px;
+	width: 100%;
+}
+
+.progress::after {
+	border-radius: 3px;
+	background-color: #2A265F;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 66%;
+}
+
+.progress-text {
+	font-size: 10px;
+	opacity: 0.6;
+	letter-spacing: 1px;
+}
+
+.btn {
+	background-color: #2A265F;
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 25px;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	letter-spacing: 1px;
+}
+
+.social-panel-container {
+	position: fixed;
+	right: 0;
+	bottom: 80px;
+	transform: translateX(100%);
+	transition: transform 0.4s ease-in-out;
+}
+
+.social-panel-container.visible {
+	transform: translateX(-10px);
+}
+
+.social-panel {	
+	background-color: #fff;
+	border-radius: 16px;
+	box-shadow: 0 16px 31px -17px rgba(0,31,97,0.6);
+	border: 5px solid #001F61;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Muli';
+	position: relative;
+	height: 169px;	
+	width: 370px;
+	max-width: calc(100% - 10px);
+}
+
+.social-panel button.close-btn {
+	border: 0;
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.social-panel button.close-btn:focus {
+	outline: none;
+}
+
+.social-panel p {
+	background-color: #001F61;
+	border-radius: 0 0 10px 10px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 2px 17px 6px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin: 0;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 235px;
+}
+
+.social-panel p i {
+	margin: 0 5px;
+}
+
+.social-panel p a {
+	color: #FF7500;
+	text-decoration: none;
+}
+
+.social-panel h4 {
+	margin: 20px 0; 
+	font-family: 'Muli';	
+	font-size: 14px;	
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.social-panel ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.social-panel ul li {
+	margin: 0 10px;
+}
+
+.social-panel ul li a {
+	border: 1px solid #DCE1F2;
+	border-radius: 50%;
+	color: #001F61;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	text-decoration: none;
+}
+
+.social-panel ul li a:hover {
+	border-color: #FF6A00;
+	box-shadow: 0 9px 12px -9px #FF6A00;
+}
+
+.floating-btn {
+	border-radius: 26.5px;
+	background-color: #001F61;
+	border: 1px solid #001F61;
+	box-shadow: 0 16px 22px -17px #03153B;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 12px 20px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+}
+
+.floating-btn:hover {
+	background-color: #ffffff;
+	color: #001F61;
+}
+
+.floating-btn:focus {
+	outline: none;
+}
+
+.floating-text {
+	background-color: #001F61;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	font-family: 'Muli';
+	padding: 7px 15px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 998;
+}
+
+.floating-text a {
+	color: #FF7500;
+	text-decoration: none;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-weight: normal;
+}
+
+.table th,
+.table td {
+  padding: 5px;
+  text-align: left;
+}
+
+.shoppingCheckbox,
+.deleteButton {
+  vertical-align: middle;
+}
+
+.deleteButton {
+  display: inline-block;
+}
