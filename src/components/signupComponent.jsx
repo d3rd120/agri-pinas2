@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
 import {auth, registerWithEmailAndPassword} from "./firebase";
 import { useAuthState } from 'react-firebase-hooks/auth';
+import Logo from '../img/agriPinasLogo2.png';
 
 const Signup = () => {
   const [dateOfBirth, setDateOfBirth] = useState("");
@@ -48,6 +49,7 @@ const Signup = () => {
       <div className="signupComponentWrapper">
         <div className="signupComponentForm">
           <div className="signupComponentFormText">
+          <img className="signUpComponentLogo" alt="" src={Logo} />
             <div className="signupComponentMainText">Register</div>
           </div>
           <div className="signupComponentFormFields">

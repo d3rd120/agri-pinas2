@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { auth, logInWithEmailAndPassword as loginWithEmail } from "./firebase";
 import { getFirestore, addDoc, collection } from 'firebase/firestore';
 import React from 'react';
+import Logo from '../img/agriPinasLogo2.png'
 
 
 const LoginPage = () => {
@@ -14,7 +15,9 @@ const LoginPage = () => {
     <div className="loginComponent">
       <div className="loginComponentWrapper">
         <div className="loginComponentForm">
+          
           <div className="loginComponentFormText">
+            <img className="loginComponentLogo" alt="" src={Logo} />
             <div className="loginComponentMainText">Login</div>
           </div>
           <div className="loginComponentFormFields">
@@ -31,7 +34,7 @@ const LoginPage = () => {
             onChange={(e) => setPassword(e.target.value)} 
             placeholder="Password" />
           </div>
-          <a className="logInPageSubText2" href= "reset">Forgot Password</a>
+          <a className="logInPageSubText2" href= "reset">Forgot Password?</a>
           <button className="loginComponentButton">
             <div className="loginComponentButtonText">Login</div>
           </button>

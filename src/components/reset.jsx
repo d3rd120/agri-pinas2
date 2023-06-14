@@ -12,8 +12,8 @@ function Reset() {
 
   return (
     <div className="reset">
-      <div className="reset__container">
-        <p>Please enter your email to reset your password.</p>
+      <div className="reset__container">      
+        <p className = "resetContainerText">Please enter your email to reset your password.</p>
         <input
           type="text"
           className="reset__textBox"
@@ -26,7 +26,7 @@ function Reset() {
         </button>
 
         <div>
-          Don't have an account? <Link to="/signup">Register</Link> now.
+          Don't have an account? <Link className = "resetComponentSignupText" to="/signup">Register</Link> now.
         </div>
       </div>
     </div>
