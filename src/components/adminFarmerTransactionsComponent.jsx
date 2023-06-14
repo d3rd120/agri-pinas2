@@ -70,8 +70,7 @@ const AdminFarmerTransactions = () => {
               <th>Quantity Order</th>
               <th>Total Amount</th>
               <th>Farmer Name</th>
-              <th>Status</th>
-              <th>Edit</th>
+              <th>Status</th>              
               <th>Delete</th>
             </tr>
           </thead>
@@ -91,8 +90,7 @@ const AdminFarmerTransactions = () => {
                        <option value="option2">Cancelled</option>
                        <option value="option3">Completed</option>
                      </select>
-                 </td>
-                 <td><FaEdit /> </td> 
+                 </td>                
                  <td><FaTrash /></td>               
            </tr> 
 
@@ -112,7 +110,7 @@ const AdminFarmerTransactions = () => {
                        <option value="option3">Completed</option>
                      </select>
                  </td>
-                 <td><FaEdit /> </td> 
+              
                  <td><FaTrash /></td>               
            </tr>                   
 
@@ -132,7 +130,7 @@ const AdminFarmerTransactions = () => {
                        <option value="option3">Completed</option>
                      </select>
                  </td>
-                 <td><FaEdit /> </td> 
+                
                  <td><FaTrash /></td>               
            </tr>          
 
@@ -152,7 +150,7 @@ const AdminFarmerTransactions = () => {
                        <option value="option3">Completed</option>
                      </select>
                  </td>
-                 <td><FaEdit /> </td> 
+                
                  <td><FaTrash /></td>               
            </tr>          
 
@@ -172,7 +170,7 @@ const AdminFarmerTransactions = () => {
                        <option value="option3">Completed</option>
                      </select>
                  </td>
-                 <td><FaEdit /> </td> 
+            
                  <td><FaTrash /></td>               
            </tr>          
           </tbody>

@@ -68,8 +68,8 @@ const AdminCommunityForum = () => {
             <th>User Role</th>
             <th>Full Name</th>
             <th>Post</th>
-            <th>Image</th>           
-            <th>Edit</th>
+            <th>Image</th>         
+           
             <th>Delete</th>
           </tr>
         </thead>
@@ -85,7 +85,7 @@ const AdminCommunityForum = () => {
                   src={OnionVector}
                   />
                  </td>       
-               <td> <FaEdit /></td> 
+            
                <td> <FaTrash /></td>               
          </tr>        
 
@@ -100,7 +100,7 @@ const AdminCommunityForum = () => {
                   src={CornVector}
                   />
                  </td>       
-                 <td> <FaEdit /></td> 
+                
                <td> <FaTrash /></td>             
          </tr>
        
@@ -115,7 +115,7 @@ const AdminCommunityForum = () => {
                   src={OnionVector}
                   />
                  </td>       
-                 <td> <FaEdit /></td> 
+                
                <td> <FaTrash /></td>  
                           
          </tr>
@@ -131,7 +131,7 @@ const AdminCommunityForum = () => {
                   src={CornVector}
                   />
                  </td>       
-                 <td> <FaEdit /></td> 
+                
                <td> <FaTrash /></td>            
          </tr>
        
@@ -146,7 +146,7 @@ const AdminCommunityForum = () => {
                   src={OnionVector}
                   />
                  </td>       
-                 <td> <FaEdit /></td> 
+               
                <td> <FaTrash /></td>           
          </tr>
        

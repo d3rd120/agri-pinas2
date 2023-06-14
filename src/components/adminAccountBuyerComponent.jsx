@@ -65,8 +65,7 @@ const AdminFarmerTransactions = () => {
               <th>Contact No.</th>
               <th>Address</th>
               <th>Birthday</th>
-              <th>Age</th>    
-              <th>Edit</th>
+              <th>Age</th>             
               <th>Delete</th>
             </tr>
           </thead>
@@ -79,7 +78,7 @@ const AdminFarmerTransactions = () => {
                  <td>Tandang Sora, Quezon City</td>
                  <td>01-15-1999</td>
                  <td>23</td>       
-                 <td><FaEdit /> </td> 
+                
                  <td><FaTrash /> </td>               
            </tr>    
 
@@ -91,7 +90,7 @@ const AdminFarmerTransactions = () => {
                  <td>Tandang Sora, Quezon City</td>
                  <td>01-15-1999</td>
                  <td>23</td>       
-                 <td><FaEdit /> </td> 
+                
                  <td><FaTrash /> </td>               
            </tr>          
 
@@ -103,7 +102,7 @@ const AdminFarmerTransactions = () => {
                  <td>Tandang Sora, Quezon City</td>
                  <td>01-15-1999</td>
                  <td>23</td>       
-                 <td><FaEdit /> </td> 
+                 
                  <td><FaTrash /> </td>               
            </tr>    
 
@@ -115,7 +114,7 @@ const AdminFarmerTransactions = () => {
                  <td>Tandang Sora, Quezon City</td>
                  <td>01-15-1999</td>
                  <td>23</td>       
-                 <td><FaEdit /> </td> 
+             
                  <td><FaTrash /> </td>               
            </tr>    
 
@@ -127,7 +126,7 @@ const AdminFarmerTransactions = () => {
                  <td>Tandang Sora, Quezon City</td>
                  <td>01-15-1999</td>
                  <td>23</td>       
-                 <td><FaEdit /> </td> 
+             
                  <td><FaTrash /> </td>               
            </tr>    
           </tbody>

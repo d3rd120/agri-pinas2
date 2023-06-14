@@ -1,6 +1,6 @@
 import AdminNavigation from "./adminPageNavigation";
 import '../css/Components/adminBuyerTransactionsComponent.css';
-import { FaFolderOpen, FaEdit, FaTrash} from 'react-icons/fa';
+import { FaFolderOpen,  FaTrash} from 'react-icons/fa';
 
 
 const AdminBuyerTransactions = () => {
@@ -69,8 +69,7 @@ const AdminBuyerTransactions = () => {
               <th>Quantity Order</th>
               <th>Total Amount</th>
               <th>Farmer Name</th>
-              <th>Status</th>
-              <th>Edit</th>
+              <th>Status</th>             
               <th>Delete</th>
             </tr>
           </thead>
@@ -91,7 +90,7 @@ const AdminBuyerTransactions = () => {
                        <option value="option3">Completed</option>
                      </select>
                  </td>
-                 <td> <FaEdit /></td> 
+              
                  <td> <FaTrash /></td>               
            </tr> 
 
@@ -111,7 +110,7 @@ const AdminBuyerTransactions = () => {
                        <option value="option3">Completed</option>
                      </select>
                  </td>
-                 <td> <FaEdit /></td> 
+                
                  <td> <FaTrash /></td>               
            </tr>        
 
@@ -131,7 +130,7 @@ const AdminBuyerTransactions = () => {
                        <option value="option3">Completed</option>
                      </select>
                  </td>
-                 <td> <FaEdit /></td> 
+          
                  <td> <FaTrash /></td>               
            </tr>               
 
@@ -151,7 +150,7 @@ const AdminBuyerTransactions = () => {
                        <option value="option3">Completed</option>
                      </select>
                  </td>
-                 <td> <FaEdit /></td> 
+               
                  <td> <FaTrash /></td>               
            </tr>        
 
@@ -171,7 +170,7 @@ const AdminBuyerTransactions = () => {
                        <option value="option3">Completed</option>
                      </select>
                  </td>
-                 <td> <FaEdit /></td> 
+                
                  <td> <FaTrash /></td>               
            </tr>        
 

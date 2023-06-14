@@ -1,6 +1,6 @@
 import '../css/Components/adminAccountFarmerComponent.css';
 import AdminNavigation from '../components/adminPageNavigation';
-import { FaPeopleArrows, FaEdit, FaTrash} from 'react-icons/fa';
+import { FaPeopleArrows, FaTrash} from 'react-icons/fa';
 
 const AdminFarmerTransactions = () => {
   return (
@@ -66,7 +66,7 @@ const AdminFarmerTransactions = () => {
               <th>Address</th>
               <th>Birthday</th>
               <th>Age</th>    
-              <th>Edit</th>
+              
               <th>Delete</th>
             </tr>
           </thead>
@@ -79,7 +79,7 @@ const AdminFarmerTransactions = () => {
                  <td>Tandang Sora, Quezon City</td>
                  <td>01-15-1999</td>
                  <td>23</td>       
-                 <td> <FaEdit /> </td> 
+               
                  <td> <FaTrash /> </td>               
            </tr>         
 
@@ -91,7 +91,7 @@ const AdminFarmerTransactions = () => {
                  <td>Tandang Sora, Quezon City</td>
                  <td>01-15-1999</td>
                  <td>23</td>       
-                 <td> <FaEdit /> </td> 
+                 
                  <td> <FaTrash /> </td>               
            </tr>         
 
@@ -103,7 +103,7 @@ const AdminFarmerTransactions = () => {
                  <td>Tandang Sora, Quezon City</td>
                  <td>01-15-1999</td>
                  <td>23</td>       
-                 <td> <FaEdit /> </td> 
+                 
                  <td> <FaTrash /> </td>               
            </tr>         
 
@@ -115,7 +115,7 @@ const AdminFarmerTransactions = () => {
                  <td>Tandang Sora, Quezon City</td>
                  <td>01-15-1999</td>
                  <td>23</td>       
-                 <td> <FaEdit /> </td> 
+                  
                  <td> <FaTrash /> </td>               
            </tr>        
             
@@ -127,7 +127,7 @@ const AdminFarmerTransactions = () => {
                  <td>Tandang Sora, Quezon City</td>
                  <td>01-15-1999</td>
                  <td>23</td>       
-                 <td> <FaEdit /> </td> 
+                 
                  <td> <FaTrash /> </td>               
            </tr>         
 
