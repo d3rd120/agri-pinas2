@@ -17,6 +17,8 @@ import AdminDashboard from './pages/AdminPage/adminDashboard';
 import AdminCommunityForum from './pages/AdminPage/adminCommunityForum';
 import AdminBuyerTransactions from './pages/AdminPage/adminBuyerTransactions';
 import AdminFarmerTransactions from './pages/AdminPage/adminFarmerTransactions';
+import AdminAccountBuyer from './pages/AdminPage/adminAccountBuyer';
+import AdminAccountFarmer from './pages/AdminPage/adminAccountFarmer';
 import Reset from './components/reset';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
@@ -47,7 +49,9 @@ const App = () => {
               <Route path="/admindashboard" element={<AdminDashboard />} />
               <Route path="/admincommunityforum" element={<AdminCommunityForum />} />
               <Route path="/adminbuyertransactions" element={<AdminBuyerTransactions />} />
-              <Route path="/adminfarmertransactions" element={<AdminFarmerTransactions />} />              
+              <Route path="/adminfarmertransactions" element={<AdminFarmerTransactions />} />             
+              <Route path="/adminaccountbuyer" element={<AdminAccountBuyer />} />  
+              <Route path="/adminaccountfarmer" element={<AdminAccountFarmer />} />  
             </Routes>
           </BrowserRouter>
         </>
