@@ -5,15 +5,15 @@ import { FaFolderOpen, FaEdit, FaTrash} from 'react-icons/fa';
 
 const AdminFarmerTransactions = () => {
   return (
-    <div className="adminfarmertransactions">
+    <div className="adminFarmerTransactionsComponent">
         <FarmerNavigation /> 
-      <div className="main-panel">
-        <div className="top-section">
-          <div className="welcome-to-dashboard">
-            <b className="transactions1">
-              <p className="blank-line">&nbsp;</p>
-              <p className="blank-line">&nbsp;</p>
-              <p className="blank-line">transactions</p>
+      <div className="adminFarmerTransactionsComponentMainPanel">
+        <div className="adminFarmerTransactionsComponentTopSection">
+          <div className="adminFarmerTransactionsComponentMainText">
+            <b className="adminFarmerTransactionsComponentMainTextContainer">
+              <p className="adminFarmerTransactionsComponentBlankLine">&nbsp;</p>
+              <p className="adminFarmerTransactionsComponentBlankLine">&nbsp;</p>
+              <p className="adminFarmerTransactionsComponentBlankLine">transactions</p>
             </b>
           </div>
         </div>
@@ -42,7 +42,7 @@ const AdminFarmerTransactions = () => {
 
 
 
-        <div className="middle-section">
+        <div className="adminFarmerTransactionsComponentMiddleSection">
         <div className="adminFarmerTransactionsPageLayout1">     
             <div className="adminFarmerTransactionsPageLayout2">
         <div className="adminFarmerTransactionsCard">
