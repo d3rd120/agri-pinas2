@@ -11,14 +11,14 @@ import { RiDeleteBinLine } from 'react-icons/ri';
 import { IconButton } from '@material-ui/core';
 import Card from 'react-bootstrap/Card';
 
-const ShoppingCart = () => {
+const BuyNow  = () => {
   const [quantity, setQuantity] = useState('');
 
   const handleInputChange = (event) => {
     const inputValue = event.target.value;
     if (inputValue === '0') {
       if (window.confirm('Do you want to remove this item?')) {
-       
+        
       }
     } else {
       setQuantity(inputValue);
@@ -33,7 +33,10 @@ const ShoppingCart = () => {
             <b className="buyerMarketplaceComponentSubText">
               <p className="buyerMarketplaceComponentBlankLine">&nbsp;</p>
               <p className="buyerMarketplaceComponentBlankLine">&nbsp;</p>
-              <p className="buyerMarketplaceComponentBlankLine">Shopping Cart</p>
+            <div className="orderContainer">
+  <p className="buyerMarketplaceComponentBlankLine">Order</p>
+  <Link to="/buyermarketplace" className="backButton">&#8592;</Link>
+</div>
             </b>
           </div>
         </div>
@@ -179,6 +182,7 @@ const ShoppingCart = () => {
   </div>
 </div>
 
+
 <div class="courses-container" style={{ marginTop: "-40px" }}>
   <div class="course2">
     <div class="course-preview">
@@ -250,4 +254,4 @@ const ShoppingCart = () => {
   );
 };
 
-export default ShoppingCart;
+export default BuyNow;

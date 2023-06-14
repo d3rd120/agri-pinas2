@@ -3,6 +3,8 @@ import LoginPage from './pages/MainPage/loginPage';
 import SignupPage from './pages/MainPage/signupPage';
 import BuyerMarketplace from './pages/BuyerPage/buyerMarketplace';
 import BuyerMarketplacePost from './pages/BuyerPage/buyerMarketplacePost';
+import BuyNow from './components/buyerBuyNow';
+import Checkout from './components/buyerCheckout';
 import ShoppingCart from './components/shoppingCartComponent';
 import BuyerCommunityForum from './pages/BuyerPage/buyerCommunityForum';
 import BuyerCommunityForumPost from './pages/BuyerPage/buyerCommunityForumPost';
@@ -35,6 +37,8 @@ const App = () => {
               <Route path="/buyercommunityforum" element={<BuyerCommunityForum />} />
               <Route path="/buyercommunityforumpost" element={<BuyerCommunityForumPost />} />
               <Route path="/shoppingcart" element={<ShoppingCart />} />
+              <Route path="/buynow" element={<BuyNow />} />
+              <Route path="/checkout" element={<Checkout />} />
               <Route path="/farmerdashboard" element={<FarmerDashboard />} />
               <Route path="/farmermarketplace" element={<FarmerMarketplace />} />
               <Route path="/farmermarketplacepost" element={<FarmerMarketplacePost />} />
