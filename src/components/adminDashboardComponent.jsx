@@ -1,5 +1,5 @@
 import '../css/Components/adminDashboardComponent.css';
-import FarmerNavigation from './farmerPageNavigation';
+import AdminNavigation from './adminPageNavigation';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const AdminDashboard = () => {
@@ -16,7 +16,7 @@ const AdminDashboard = () => {
   ];
   return (
     <div className="adminDashboardComponent">
-      <FarmerNavigation />
+      <AdminNavigation />
       <div className="adminDashboardComponentMainPanel">
         <div className="adminDashboardComponentTopSection">
           <div className="adminDashboardComponentMainText">
@@ -55,21 +55,21 @@ const AdminDashboard = () => {
             </div>
             <div className="adminDashboardComponentLegendSection">
             <div className="adminDashboardComponentLegendBox">
-            <div className="adminDashboardComponentLegendBoxTitle">Wholesale</div>
+            <div className="adminDashboardComponentLegendBoxTitle">Farmers</div>
             <div className="adminDashboardComponentLegendBoxWrapper">
-            <div className="adminDashboardComponentLegendSubTitle">Php 15,232</div>
+            <div className="adminDashboardComponentLegendSubTitle">75 Users</div>
             </div>
             <div className="adminDashboardComponentLegendVector">
                   <div className="adminDashboardComponentLegendChild1" />
                 </div>              
               </div>
               <div className="adminDashboardComponentLegendBox">
-            <div className="adminDashboardComponentLegendBoxTitle">Wholesale</div>
+            <div className="adminDashboardComponentLegendBoxTitle">Buyers</div>
             <div className="adminDashboardComponentLegendBoxWrapper">
-            <div className="adminDashboardComponentLegendSubTitle">Php 15,232</div>
+            <div className="adminDashboardComponentLegendSubTitle">43 Users</div>
             </div>
             <div className="adminDashboardComponentLegendVector">
-                  <div className="adminDashboardComponentLegendChild1" />
+                  <div className="adminDashboardComponentLegendChild2" />
                 </div>
 
               
