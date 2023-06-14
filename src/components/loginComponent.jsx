@@ -1,26 +1,12 @@
-<<<<<<< Updated upstream
-import "../css/Components/loginComponent.css";
-import { Link } from 'react-router-dom';
-import { auth, logInWithEmailAndPassword as loginWithEmail } from "./firebase";
-import { getFirestore, addDoc, collection } from 'firebase/firestore';
-import React from 'react';
-import Logo from '../img/agriPinasLogo2.png'
-
-
-const LoginPage = () => {
-  const [email, setEmail] = React.useState("");
-  const [password, setPassword] = React.useState("");
-
-=======
 import React, { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../css/Components/loginComponent.css';
-
+import Logo from '../img/agriPinasLogo2.png';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore';
 import { auth } from "../components/firebase";
 
-export const LoginPage = () => {
+const LoginPage = () => {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [loggedIn, setLoggedIn] = React.useState(false);
@@ -100,39 +86,17 @@ export const LoginPage = () => {
       }
     }
   }, [loggedIn]);
->>>>>>> Stashed changes
 
   return (
     <div className="loginComponent">
       <div className="loginComponentWrapper">
         <div className="loginComponentForm">
-<<<<<<< Updated upstream
-          
           <div className="loginComponentFormText">
-            <img className="loginComponentLogo" alt="" src={Logo} />
-=======
-          <div className="loginComponentFormText">
->>>>>>> Stashed changes
+          <img className="loginComponentLogo" alt="" src={Logo} />
             <div className="loginComponentMainText">Login</div>
           </div>
           <div className="loginComponentFormFields">
             <input
-<<<<<<< Updated upstream
-              className="loginComponentInput" id = "loginComponentEmail"
-              type="text"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email Address"
-            />
-            <input 
-            className="loginComponentInput" id = "loginComponentPassword"
-            type="password"value={password}
-            onChange={(e) => setPassword(e.target.value)} 
-            placeholder="Password" />
-          </div>
-          <a className="logInPageSubText2" href= "reset">Forgot Password?</a>
-          <button className="loginComponentButton">
-=======
               className="loginComponentInput"
               id="loginComponentEmail"
               type="text"
@@ -153,19 +117,13 @@ export const LoginPage = () => {
             Forgot Password
           </a>
           <button className="loginComponentButton" onClick={handleSubmit}>
->>>>>>> Stashed changes
             <div className="loginComponentButtonText">Login</div>
           </button>
           <div className="loginComponentSubTextContainter">
             <span>{`Don’t have an account? `}</span>
-<<<<<<< Updated upstream
-            
-            <Link className="loginComponentSignUpLink" to = '/signup'>Signup</Link>
-=======
             <Link className="loginComponentSignUpLink" to="/signup">
               Signup
             </Link>
->>>>>>> Stashed changes
           </div>
         </div>
       </div>
