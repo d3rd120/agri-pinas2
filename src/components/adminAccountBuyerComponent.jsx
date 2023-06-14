@@ -1,11 +1,11 @@
 import '../css/Components/adminAccountBuyerComponent.css';
-import FarmerNavigation from './farmerPageNavigation';
+import AdminNavigation from './adminPageNavigation';
 import { FaPeopleArrows, FaEdit, FaTrash} from 'react-icons/fa';
 
 const AdminFarmerTransactions = () => {
   return (
     <div className="adminAccountBuyerComponent">
-      <FarmerNavigation />
+      <AdminNavigation />
       <div className="adminAccountBuyerComponentMainPanel">
         <div className="adminAccountBuyerComponentTopSection">
           <div className="adminAccountBuyerComponentMainText">

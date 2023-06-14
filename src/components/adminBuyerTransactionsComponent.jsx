@@ -1,4 +1,4 @@
-import FarmerNavigation from "./farmerPageNavigation";
+import AdminNavigation from "./adminPageNavigation";
 import '../css/Components/adminBuyerTransactionsComponent.css';
 import { FaFolderOpen, FaEdit, FaTrash} from 'react-icons/fa';
 
@@ -6,7 +6,7 @@ import { FaFolderOpen, FaEdit, FaTrash} from 'react-icons/fa';
 const AdminBuyerTransactions = () => {
   return (
     <div className="adminBuyerTransactionsComponent">
-        <FarmerNavigation />     
+        <AdminNavigation />     
       <div className="adminBuyerTransactionsComponentMainPanel">
         <div className="adminBuyerTransactionsComponentTopSection">
           <div className="adminBuyerTransactionsComponentMainText">

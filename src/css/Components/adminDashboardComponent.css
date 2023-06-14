@@ -129,7 +129,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(150, 236, 40, 0.52);
+    background-color: #96EC28;
+    width: 5.63rem;
+    height: 1.13rem;
+  }
+
+  .adminDashboardComponentLegendChild2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFA500;
     width: 5.63rem;
     height: 1.13rem;
   }
