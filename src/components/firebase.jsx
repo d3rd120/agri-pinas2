@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import { initializeApp } from "firebase/app"
 
 import {
@@ -15,6 +16,21 @@ import {
     collection,
     where,
     addDoc,
+=======
+import { initializeApp } from "firebase/app";
+
+import {
+    createUserWithEmailAndPassword,
+    getAuth,
+    sendPasswordResetEmail,
+    signInWithEmailAndPassword,
+    signOut
+} from "firebase/auth";
+import {
+    addDoc,
+    collection,
+    getFirestore
+>>>>>>> Stashed changes
 } from "firebase/firestore";
 const firebaseConfig = {
     apiKey: "AIzaSyDb3krID96DKYoFLdnhzu3zrId2EigC00w",
@@ -38,6 +54,7 @@ const logInWithEmailAndPassword = async(email, password) => {
     }
 };
 
+<<<<<<< Updated upstream
 const registerWithEmailAndPassword = async(name, email, password) => {
     try {
         const res = await createUserWithEmailAndPassword(auth, email, password);
@@ -47,6 +64,22 @@ const registerWithEmailAndPassword = async(name, email, password) => {
             name,
             authProvider: "local",
             email,
+=======
+const registerWithEmailAndPassword = async(fullname, contact, address, birthdate, age, email, role, password ) => {
+    try {
+        const res = await createUserWithEmailAndPassword(auth, email, password);
+        const user = res.user;
+        await addDoc(collection(db, "Users"), {
+            uid: user.uid,
+            fullname,
+            contact,
+            address,
+            age,
+            birthdate,
+            email,
+            role,
+            password
+>>>>>>> Stashed changes
         });
     } catch (err) {
         console.error(err);
@@ -71,8 +104,14 @@ const logout = () => {
 export {
     auth,
     db,
+<<<<<<< Updated upstream
     logInWithEmailAndPassword,
     registerWithEmailAndPassword,
     sendPasswordReset,
     logout,
 };
+=======
+    logInWithEmailAndPassword, logout, registerWithEmailAndPassword,
+    sendPasswordReset
+};
+>>>>>>> Stashed changes
