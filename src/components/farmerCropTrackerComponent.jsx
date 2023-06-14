@@ -47,7 +47,7 @@ const FarmerCropTracker = () => {
         <div className="farmerCropTrackerComponentMiddleSection">      
       <div className="farmerCropTrackerPageLayout2">        
       <div className="farmerCropTrackerCard">
-          <div className="farmerCropTrackerSubTitle"><FaFolderOpen /> Farmer Transactions
+          <div className="farmerCropTrackerSubTitle"><FaFolderOpen /> Your Inventory
           </div>
           <br></br>
          <div className = "farmerCropTrackerShow">Show:   

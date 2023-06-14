@@ -44,7 +44,7 @@ const FarmerTransactions = () => {
         <div className="farmerTransactionsPageLayout1">  
             <div className="farmerTransactionsPageLayout2">
         <div className="farmerTransactionsCard">
-            <div className="farmerTransactionsSubTitle"><FaFolderOpen /> Farmer Transactions
+            <div className="farmerTransactionsSubTitle"><FaFolderOpen /> Your Transactions
             </div>
             <br></br>
            <div className = "farmerTransactionsShow">Show:   
