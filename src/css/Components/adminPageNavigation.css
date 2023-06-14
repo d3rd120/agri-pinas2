@@ -54,7 +54,7 @@
     top: 0;
     left: 2.51rem;
     display: inline-block;
-    width: 8rem;
+    width: 12rem;
     height: 1.38rem;
     cursor:pointer;
     transition: 0.5s
@@ -222,7 +222,65 @@
     border-radius: 50%;
     background-color: #fba403;
   }
- 
+
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #557153;
+    padding: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+  }
+  
+  .dropdown a:hover {
+    background-color: #FBA403;
+  }
+  
+  .adminPageNavigationLink2.active .dropdown,
+  .adminPageNavigationLink5.active .dropdown {
+    display: block;
+  }
+  
+  .adminPageNavigationLink2:hover .adminPageNavigationLink5,
+  .adminPageNavigationLink5:hover .adminPageNavigationProfileParent {
+    transform: translateY(3.81rem);
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #557153;
+    padding: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+    transform: translateY(-100%);
+  }
+  
+  
+  .adminPageNavigationLink2:hover .dropdown,
+  .adminPageNavigationLink5:hover .dropdown {
+    transform: translateY(0);
+  }
+
+  .adminPageNavigationLinks {
+    display: flex;
+    align-items: center;  
+  }
+  
+  
+
 
   @media screen and (max-width: 1200px) {
     .adminPageNavigation {
