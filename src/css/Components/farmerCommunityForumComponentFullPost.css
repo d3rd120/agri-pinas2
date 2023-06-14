@@ -304,6 +304,13 @@
     font-family: Arial, Helvetica, sans-serif;
     
   }
+
+  @media screen and (max-width: 1366px) {
+    .farmerCommunityForumComponentFullPostMiddleSection {
+      font-size: 0.8rem;
+    }
+  }
+  
   @media screen and (max-width: 1200px) {   
     .farmerCommunityForumComponentFullPostCard1 {
       width: 100%;

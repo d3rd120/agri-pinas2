@@ -1,21 +1,17 @@
-import { initializeApp } from "firebase/app"
-
+import { initializeApp } from "firebase/app";
 import {
-    getAuth,
-    signInWithPopup,
-    signInWithEmailAndPassword,
     createUserWithEmailAndPassword,
+    getAuth,
     sendPasswordResetEmail,
-    signOut,
+    signInWithEmailAndPassword,
+    signOut
 } from "firebase/auth";
 import {
-    getFirestore,
-    query,
-    getDocs,
-    collection,
-    where,
     addDoc,
+    collection,
+    getFirestore
 } from "firebase/firestore";
+
 const firebaseConfig = {
     apiKey: "AIzaSyDb3krID96DKYoFLdnhzu3zrId2EigC00w",
     authDomain: "agripinas-1883d.firebaseapp.com",
@@ -25,11 +21,12 @@ const firebaseConfig = {
     appId: "1:1073034058383:web:d48fdb15cc1441ee942efa",
     measurementId: "G-DXZDVXVS3T"
 };
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-const logInWithEmailAndPassword = async(email, password) => {
+const logInWithEmailAndPassword = async (email, password) => {
     try {
         await signInWithEmailAndPassword(auth, email, password);
     } catch (err) {
@@ -38,15 +35,20 @@ const logInWithEmailAndPassword = async(email, password) => {
     }
 };
 
-const registerWithEmailAndPassword = async(name, email, password) => {
+const registerWithEmailAndPassword = async (fullname, contact, address, birthdate, age, email, role, password) => {
     try {
         const res = await createUserWithEmailAndPassword(auth, email, password);
         const user = res.user;
-        await addDoc(collection(db, "users"), {
+        await addDoc(collection(db, "Users"), {
             uid: user.uid,
-            name,
-            authProvider: "local",
+            fullname,
+            contact,
+            address,
+            birthdate,
+            age,
             email,
+            role,
+            password
         });
     } catch (err) {
         console.error(err);
@@ -54,7 +56,7 @@ const registerWithEmailAndPassword = async(name, email, password) => {
     }
 };
 
-const sendPasswordReset = async(email) => {
+const sendPasswordReset = async (email) => {
     try {
         await sendPasswordResetEmail(auth, email);
         alert("Password reset link sent!");
@@ -74,5 +76,5 @@ export {
     logInWithEmailAndPassword,
     registerWithEmailAndPassword,
     sendPasswordReset,
-    logout,
+    logout
 };

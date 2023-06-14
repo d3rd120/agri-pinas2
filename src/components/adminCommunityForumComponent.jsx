@@ -1,5 +1,5 @@
 import '../css/Components/adminCommunityForumComponent.css';
-import FarmerNavigation from '../components/farmerPageNavigation';
+import AdminNavigation from '../components/adminPageNavigation';
 import { FaComments, FaEdit, FaTrash} from 'react-icons/fa';
 import CornVector from '../img/cornVector.png'
 import OnionVector from '../img/onionVector.png';
@@ -9,7 +9,7 @@ import OnionVector from '../img/onionVector.png';
 const AdminCommunityForum = () => {
   return (
     <div className="adminCommunityForumComponent">
-     <FarmerNavigation />
+     <AdminNavigation />
       <div className="adminCommunityForumComponentMainPanel">
         <div className="adminCommunityForumComponentTopSection">
           <div className="adminCommunityForumComponentMainText">
@@ -68,8 +68,8 @@ const AdminCommunityForum = () => {
             <th>User Role</th>
             <th>Full Name</th>
             <th>Post</th>
-            <th>Image</th>           
-            <th>Edit</th>
+            <th>Image</th>         
+           
             <th>Delete</th>
           </tr>
         </thead>
@@ -85,7 +85,7 @@ const AdminCommunityForum = () => {
                   src={OnionVector}
                   />
                  </td>       
-               <td> <FaEdit /></td> 
+            
                <td> <FaTrash /></td>               
          </tr>        
 
@@ -100,7 +100,7 @@ const AdminCommunityForum = () => {
                   src={CornVector}
                   />
                  </td>       
-                 <td> <FaEdit /></td> 
+                
                <td> <FaTrash /></td>             
          </tr>
        
@@ -115,7 +115,7 @@ const AdminCommunityForum = () => {
                   src={OnionVector}
                   />
                  </td>       
-                 <td> <FaEdit /></td> 
+                
                <td> <FaTrash /></td>  
                           
          </tr>
@@ -131,7 +131,7 @@ const AdminCommunityForum = () => {
                   src={CornVector}
                   />
                  </td>       
-                 <td> <FaEdit /></td> 
+                
                <td> <FaTrash /></td>            
          </tr>
        
@@ -146,7 +146,7 @@ const AdminCommunityForum = () => {
                   src={OnionVector}
                   />
                  </td>       
-                 <td> <FaEdit /></td> 
+               
                <td> <FaTrash /></td>           
          </tr>
        

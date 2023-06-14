@@ -1,38 +1,38 @@
-  .adminCommunityForumComponentBlankLine {
+  .adminAccountFarmerComponentBlankLine {
     margin: 0;
-    color: #557153;
     font-size: 1.31rem;
+    color: #557153;
   }
-  .adminCommunityForumComponentMainTextContainer {
+  .adminAccountFarmerComponentMainTextContainer {
     align-self: stretch;
     position: relative;
     text-transform: uppercase;
   }
-  .adminCommunityForumComponentMainText {
+  .adminAccountFarmerComponentMainText {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
   }
-  .adminCommunityForumComponentTopSection {
+  .adminAccountFarmerComponentTopSection {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1.88rem;
   }
-  .adminCommunityForumComponentMiddleSection,
-  .adminCommunityForumComponentTopSection {
+  .adminAccountFarmerComponentMiddleSection,
+  .adminAccountFarmerComponentTopSection {
     align-self: stretch;
   }
-  .adminCommunityForumComponent,
-  .adminCommunityForumComponentMainPanel {
+  .adminAccountFarmerComponent,
+  .adminAccountFarmerComponentMainPanel {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .adminCommunityForumComponentMainPanel {
+  .adminAccountFarmerComponentMainPanel {
     align-self: stretch;
     flex: 1;
     flex-direction: column;
@@ -41,7 +41,7 @@
     font-size: 1rem;
     color: #434343;
   }
-  .adminCommunityForumComponent {
+  .adminAccountFarmerComponent {
     position: relative;
     background-color: #fff;
     width: 100%;
@@ -50,28 +50,27 @@
     gap: 0.06rem;
     text-align: left;
     font-size: 1.13rem;
-    color: #fff;
-    height:100%;
+    height: 100%;
     min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
   }
 
-  .adminCommunityForumTitleLayout {
+  .adminFarmerAccountManagementTitleLayout {
     text-align: center;
   }
-  .adminCommunityForumTitleCard {
+  .adminFarmerAccountManagementTitleCard {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
     background-color: #E6E5A3;
     
   }
-  .adminCommunityForumTitleDetails {
+  .adminFarmerAccountManagementTitleDetails {
     flex-grow: 1;
     
   }
   
-  .adminCommunityForumTitleName {
+  .adminFarmerAccountManagementTitleName {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -81,28 +80,28 @@
   }
   
   
-  .adminCommunityForumTable {
+  .adminFarmerAccountManagementTable {
       width: 100%;
       border-collapse: collapse;
     }
     
-    .adminCommunityForumTable th, .adminCommunityForumTable td {
+    .adminFarmerAccountManagementTable th, .adminFarmerAccountManagementTable td {
       padding: 10px;
       border: 1px solid #ccc;
     }
     
-    .adminCommunityForumTable th {
+    .adminFarmerAccountManagementTable th {
       background-color: #f2f2f2;
       font-weight: bold;
     }
     
-    .adminCommunityForumTable tbody tr:nth-child(even) {
+    .adminFarmerAccountManagementTable tbody tr:nth-child(even) {
       background-color: #f9f9f9;
     }
     
-    .adminCommunityForumTable tbody tr:hover {
+    .adminFarmerAccountManagementTable tbody tr:hover {
     }
-    .adminCommunityForumCard {
+    .adminFarmerAccountManagementCard {
       background-color: #f7f7f7;
       border-radius: 5px; 
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -115,116 +114,99 @@
     }
     
     
-    .adminCommunityForumPageLayout1 {
+    .adminFarmerAccountManagementPageLayout1 {
       text-align: center;
     }
   
-    .adminCommunityForumPageLayout2 {
+    .adminFarmerAccountManagementPageLayout2 {
       display: flex;
     justify-content: center;
     margin-bottom: 20px;
     }  
   
     
-    .adminCommunityForumSubTitle {
+    .adminFarmerAccountManagementSubTitle {
       background-color: #e7e7e7;
       padding: 10px;
       margin-right: 8px;
       margin-left: 30px; 
       text-align: start;
-      font-size: 1rem;     
       font-weight: 600;
     }
-    .adminCommunityForumRowSelect{
+    .adminFarmerAccountManagementRowSelect{
       padding: 8px;
       border: 1px solid #7D8F69;
       border-radius: 4px;
       font-size: 14px;
     }
     
-    .adminCommunityForumRowSelect:focus {
+    .adminFarmerAccountManagementRowSelect:focus {
       outline: none;
       border-color: #557153;
     }
-    .adminCommunityForumShow {
+    .adminFarmerAccountManagementShow {
       text-align:justify;
       font-weight:500;
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       margin-right: 8px;
       margin-left: 40px; 
       text-align: start;
     }
+
+    .adminAccountFarmerComponentCategories {
+        flex-direction: row;
+        padding: 0 0.75rem 0 0;
+        align-items: center;
+        gap: 0.63rem;
+        font-size: 1.06rem;    
+        align-self: stretch;
+        display: flex;
+        justify-content: flex-start;
+      }  
+    
+      .adminAccountFarmerComponentPaginationContainer {
+         border-radius: 6px;
+        border: 1px solid #bac2d6;
+        display: flex;
+        flex-direction: column;
+        padding: 0.88rem 1.88rem;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+    
+      .adminAccountFarmerComponentPaginationContainer:hover {
+        background-color: #E5FCE7;
+      }
+    
+      .adminAccountFarmerComponentPaginationNumber {
+        position: relative;
+        letter-spacing: -0.02em;
+        line-height: 2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+      }  
+    
     
   
-  .adminCommunityForumImage {
-    width: 350px;
-    height: 350px;
-  }
-
-  .adminCommunityForumComponentCategories {
-    flex-direction: row;
-    padding: 0 0.75rem 0 0;
-    align-items: center;
-    gap: 0.63rem;
-    font-size: 1.06rem;    
-    align-self: stretch;
-    display: flex;
-    justify-content: flex-start;
-  }  
-
-   .adminCommunityForumComponentPaginationContainer {
-     border-radius: 6px;
-    border: 1px solid #bac2d6;
-    display: flex;
-    flex-direction: column;
-    padding: 0.88rem 1.88rem;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-
-  .adminCommunityForumComponentPaginationContainer:hover {
-    background-color: #E5FCE7;
-  }
-
-  .adminCommunityForumComponentPaginationNumber {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2rem;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-
-
-
-
-  @media screen and (max-width: 1366px) {
-    .adminCommunityForumImage {
-        width: 300px;
-        height: 300px;
-      }
-  }
-
- 
   @media screen and (max-width: 960px) {
-    .adminCommunityForumComponentMainText {
+    .adminAccountFarmerComponentMainText {
       padding-right: 0;
       box-sizing: border-box;
       flex: unset;
       align-self: stretch;
     }
-    .adminCommunityForumComponentMiddleSection,
-    .adminCommunityForumComponentTopSection {
+    .adminAccountFarmerComponentMiddleSection,
+    .adminAccountFarmerComponentTopSection {
       flex-direction: column;
     }
   }
   @media screen and (max-width: 420px) {
-    .adminCommunityForumComponentMainText {
+    .adminAccountFarmerComponentMainText {
       width: 100%;
     }
-    .adminCommunityForumComponentMainPanel {
+    .adminAccountFarmerComponentMainPanel {
       padding-left: 1.25rem;
       padding-right: 1.25rem;
       box-sizing: border-box;
