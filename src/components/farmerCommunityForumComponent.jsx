@@ -5,9 +5,23 @@ import CornVector from '../img/cornVector.png';
 import ProfileVector1 from '../img/profileVector1.png';
 import ProfileVector2 from '../img/profileVector2.png';
 import {Link} from 'react-router-dom';
-import { FaEdit } from 'react-icons/fa';
+import { FaEdit, FaTimes } from 'react-icons/fa';
+import React, { useState } from 'react';
+import FarmerCommunityForumAddPost from '../pages/FarmerPage/farmerCommunityForumAddPost';
+
 
 const FarmerCommunityForumComponent = () => {
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
     <div className="farmerCommunityForumComponent">
      <FarmerNavigation />
@@ -21,10 +35,24 @@ const FarmerCommunityForumComponent = () => {
             </b>
           </div>
         </div>
-        <button className="farmerCommunityForumComponentButton">
-        <FaEdit className="farmerCommunityForumComponentButtonIcon" />
+
+
+        <button className="farmerCommunityForumComponentButton" onClick={handleButtonClick}>
+          <FaEdit className="farmerCommunityForumComponentButtonIcon" />
           <div className="farmerCommunityForumComponentButtonText">Write a Post</div>
         </button>
+
+
+        {showPopup && (
+           <div id="farmerCommunityForumComponentPopupWindow" className="farmerCommunityForumComponentPopupWindow">
+           <div className="farmerCommunityForumComponentPopupContent">      
+           <span className="farmerCommunityForumComponentCloseButton" onClick={closePopup}><FaTimes/></span>          
+             <FarmerCommunityForumAddPost/>                     
+           </div>
+         </div>
+        )}
+
+
         <div className="farmerCommunityForumComponentMiddleSection">
           <div className="farmerCommunityForumComponentFrameParent">
             <div className="farmerCommunityForumComponentFrameWrapper">
