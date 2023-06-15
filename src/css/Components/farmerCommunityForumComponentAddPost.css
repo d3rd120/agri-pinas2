@@ -1,15 +1,20 @@
-.farmerCommunityForumAddPostComponentMainText {
+
+  .farmerCommunityForumAddPostComponentMainText,
+  .farmerCommunityForumAddPostComponentTitle{
+    align-self: stretch;
+    position: relative;
+    font-size: 1rem;
+    
+  }
+
+  .farmerCommunityForumAddPostComponentMainText {
     font-size: 1.5rem;
     line-height: 2.13rem;
     font-weight: 600;
     color: #557153;
     margin-bottom: 1rem;
   }
-  .farmerCommunityForumAddPostComponentMainText,
-  .farmerCommunityForumAddPostComponentTitle{
-    align-self: stretch;
-    position: relative;
-  }
+  
   .farmerCommunityForumAddPostComponentInput1 {
     border: 1px solid #dee3eb;
     background-color: #fff;
@@ -22,6 +27,7 @@
     align-items: center;
     justify-content: flex-start;
     width: 20rem;
+    margin-bottom: 0.5rem;
   }
   .farmerCommunityForumAddPostComponentInput1:focus {
     outline: 0;
@@ -62,6 +68,7 @@
     background-color: #fff;
     overflow: hidden;
     outline: 0;
+    margin-bottom: 0.5rem;
   }
   .farmerCommunityForumAddPostComponentFrameParent {
     align-self: stretch;
@@ -78,7 +85,7 @@
     align-self: stretch;
     border-radius: 6px;
     box-sizing: border-box;
-    height: 6.13rem;
+    height: 10rem;
     overflow: hidden;
     flex-shrink: 0;
     display: flex;
