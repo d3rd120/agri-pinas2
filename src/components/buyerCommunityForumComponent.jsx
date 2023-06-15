@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import BuyerNavigation from '../components/buyerNavigation';
 import "../css/BuyerPage/buyerCommunityForumComponent.css"
 import OnionVector from '../img/onionVector.png';
@@ -8,6 +9,17 @@ import {Link} from 'react-router-dom';
 import { FaEdit } from 'react-icons/fa';
 
 const BuyerCommunityForumComponent = () => {
+  const [postContent, setPostContent] = useState('');
+
+  const handlePostChange = (e) => {
+    setPostContent(e.target.value);
+  };
+
+  const handlePostSubmit = () => {
+    // Handle post submission logic
+    console.log(`Post content: ${postContent}`);
+    setPostContent('');
+  };
   return (
     <div className="buyerCommunityForumComponent">
      <BuyerNavigation />
@@ -21,10 +33,17 @@ const BuyerCommunityForumComponent = () => {
             </b>
           </div>
         </div>
-        <button className="buyerCommunityForumComponentButton">
-        <FaEdit className="buyerCommunityForumComponentButtonIcon" />
-          <div className="buyerCommunityForumComponentButtonText">Write a Post</div>
-        </button>
+        <div className="facebookPostBox">
+      <textarea
+        className="postTextArea"
+        placeholder="What's on your mind?"
+        value={postContent}
+        onChange={handlePostChange}
+      ></textarea>
+      <button className="postButton" onClick={handlePostSubmit}>
+        Post
+      </button>
+    </div>
         <div className="buyerCommunityForumComponentMiddleSection">
           <div className="buyerCommunityForumComponentFrameParent">
             <div className="buyerCommunityForumComponentFrameWrapper">

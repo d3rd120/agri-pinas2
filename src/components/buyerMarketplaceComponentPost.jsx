@@ -152,6 +152,7 @@ const BuyerMarketplace = () => {
                 <div className="buyerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="buyerMarketplaceComponentPostButtonNewCard1Wrapper">
                     <div className="buyerMarketplaceComponentPostButtonNewCard1Title">Tomato</div>
+                    <div className="buyerMarketplaceComponentPostButtonNewCard1Price">₱5,000</div>
                   </div>
                 </div>
               </div>
@@ -166,6 +167,7 @@ const BuyerMarketplace = () => {
                 <div className="buyerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="buyerMarketplaceComponentPostButtonNewCard1Wrapper">
                     <div className="buyerMarketplaceComponentPostButtonNewCard1Title">Onion</div>
+                    <div className="buyerMarketplaceComponentPostButtonNewCard1Price">₱3,000</div>
                   </div>
                 </div>
               </div>
@@ -180,6 +182,7 @@ const BuyerMarketplace = () => {
                 <div className="buyerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="buyerMarketplaceComponentPostButtonNewCard1Wrapper">
                     <div className="buyerMarketplaceComponentPostButtonNewCard1Title">Rice</div>
+                    <div className="buyerMarketplaceComponentPostButtonNewCard1Price">₱2,000</div>
                   </div>
                 </div>
               </div>
@@ -211,7 +214,7 @@ const BuyerMarketplace = () => {
                 handleEnd={handleEnd}
                 botDelay={300}
                 opened={showChatBot}
-                hideUserAvatar // Optionally hide the user avatar in the chatbot
+                hideUserAvatar 
                 headerTitle="Arriane Gatpo"
                 hideHeader={false}
                 floating={true}

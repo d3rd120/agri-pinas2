@@ -188,9 +188,10 @@
 }
 .buyerMarketplaceComponentPostButtonNewTitle {
   position: relative;
-  line-height: 220.52%;
-  font-weight: 600;
+  line-height: 200.0%;
+  font-weight: 500;
 }
+.buyerMarketplaceComponentPostButtonNewCard1Price,
 .buyerMarketplaceComponentPostButtonNewCard1Title,
 .buyerMarketplaceComponentPostButtonNewCard1Image {
   align-self: stretch;
@@ -209,6 +210,13 @@
   letter-spacing: 0.02em;
   font-weight: 500;
   color: #000;
+  text-align: left;
+}
+.buyerMarketplaceComponentPostButtonNewCard1Price{
+  font-size: 1.0rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: #27AE60;
   text-align: left;
 }
 .buyerMarketplaceComponentPostButtonNewCard1Wrapper {

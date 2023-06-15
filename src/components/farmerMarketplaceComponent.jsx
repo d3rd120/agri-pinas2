@@ -1,13 +1,26 @@
+import React, { useState } from 'react';
 import '../css/Components/farmerMarketplaceComponent.css';
 import FarmerNavigation from '../components/farmerPageNavigation';
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
 import RiceVector from '../img/riceCardImage.png';
 import ProfileVector2 from '../img/profileVector2.png';
-import {Link} from 'react-router-dom';
-import { FaPlus } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaPlus, FaTimes } from 'react-icons/fa';
+import FarmerMarketplaceAddProduct from '../pages/FarmerPage/farmerMarketplaceAddProduct';
 
 const FarmerMarketplace = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const openPopup = () => {
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
+
+
   return (
     <div className="farmerMarketplaceComponent">
       <FarmerNavigation />
@@ -23,10 +36,20 @@ const FarmerMarketplace = () => {
         </div>
             
 
-        <button className="farmerMarketplaceComponentButton">
-        <FaPlus className="farmerMarketplaceComponentButtonIcon" />
+        <button className="farmerMarketplaceComponentButton" onClick={openPopup}>
+          <FaPlus className="farmerMarketplaceComponentButtonIcon" />
           <div className="farmerMarketplaceComponentButtonText">Add a Product</div>
         </button>
+
+        {showPopup && (
+          <div id="farmerMarketplaceComponentPopupWindow" className="farmerMarketplaceComponentPopupWindow">
+            <div className="farmerMarketplaceComponentPopupContent">      
+            <span className="farmerMarketplaceComponentCloseButton" onClick={closePopup}><FaTimes/></span>          
+              <FarmerMarketplaceAddProduct/>                     
+            </div>
+          </div>
+        )}
+
 
         <div className="farmerMarketplaceComponentMiddleSection">
           <div className="farmerMarketplaceComponentFrameParent">

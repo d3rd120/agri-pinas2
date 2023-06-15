@@ -63,7 +63,7 @@ const LoginPage = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent form submission
     try {
       const { user } = await signInWithEmailAndPassword(auth, email, password);
       console.log('User logged in');
@@ -113,6 +113,12 @@ const LoginPage = () => {
     return <div className="content">Checking Authentication...</div>
   }
 
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSubmit(e);
+    }
+  };
+
   useEffect(() => {
     if (loggedIn) {
       const userUid = sessionStorage.getItem('userUid');
@@ -131,7 +137,7 @@ const LoginPage = () => {
       <div className="loginComponentWrapper">
         <div className="loginComponentForm">
           <div className="loginComponentFormText">
-          <img className="loginComponentLogo" alt="" src={Logo} />
+            <img className="loginComponentLogo" alt="" src={Logo} />
             <div className="loginComponentMainText">Login</div>
           </div>
           <div className="loginComponentFormFields">
@@ -150,6 +156,7 @@ const LoginPage = () => {
               value={password}
               onChange={handlePasswordChange}
               placeholder="Password"
+              onKeyPress={handleKeyPress} // Trigger handleSubmit on Enter key press
             />
           </div>
           <a className="logInPageSubText2" href="reset">
