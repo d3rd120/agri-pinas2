@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import 'firebase/database';
 import {
     createUserWithEmailAndPassword,
     getAuth,
@@ -76,5 +77,5 @@ export {
     logInWithEmailAndPassword,
     registerWithEmailAndPassword,
     sendPasswordReset,
-    logout
+    logout,
 };
