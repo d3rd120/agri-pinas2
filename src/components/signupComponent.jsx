@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import "../css/Components/signupComponent.css";
@@ -47,6 +47,22 @@ const Signup = () => {
     if (user) navigate("/signup");
   }, [user, loading]);
 
+  const registerButtonRef = useRef(null);
+
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === "Enter") {
+        registerButtonRef.current.click();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyPress);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyPress);
+    };
+  }, []);
+
   return (
     <div className="signupComponent">
       <div className="signupComponentWrapper">
@@ -75,7 +91,7 @@ const Signup = () => {
             <input className="signupComponentFormInput" id={password} type="password" onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
             <input className="signupComponentFormInput" id={confirmpassword} type="password" onChange={(e) => setConfirmPassword(e.target.value)} placeholder="Confirm Password" required />
           </div>
-          <button className="signupComponentButton" onClick={register}>
+          <button ref={registerButtonRef} className="signupComponentButton" onClick={register}>
             <div className="signupComponentButtonText">Register</div>
           </button>
           <div className="signupComponentSubTextContainer">
