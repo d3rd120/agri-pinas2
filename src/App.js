@@ -22,41 +22,93 @@ import AdminAccountFarmer from './pages/AdminPage/adminAccountFarmer';
 import Reset from './components/reset';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
-
+import PrivateRoutes from './Util/PrivateRoutes';
+import PublicRoutes from './Util/PublicRoutes';
 
 const App = () => {
 
-    return (
-        <>
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<MainPage />} />
-              <Route path="/login" element={<LoginPage />} />
-              <Route path="/signup" element={<SignupPage />} />
-              <Route path="/reset" element={<Reset />} />
-              <Route path="/buyermarketplace" element={<BuyerMarketplace />} />
-              <Route path="/buyermarketplacepost" element={<BuyerMarketplacePost />} />
-              <Route path="/buyercommunityforum" element={<BuyerCommunityForum />} />
-              <Route path="/buyercommunityforumpost" element={<BuyerCommunityForumPost />} />
-              <Route path="/shoppingcart" element={<ShoppingCart />} />
-              <Route path="/farmerdashboard" element={<FarmerDashboard />} />
-              <Route path="/farmermarketplace" element={<FarmerMarketplace />} />
-              <Route path="/farmermarketplacepost" element={<FarmerMarketplacePost />} />
-              <Route path="/farmercommunityforum" element={<FarmerCommunityForum />} />
-              <Route path="/farmercommunityforumpost" element={<FarmerCommunityForumPost />} />
-              <Route path="/farmercroptracker" element={<FarmerCropTracker />} />
-              <Route path="/farmertransactions" element={<FarmerTransactions />} />
-              <Route path="/admindashboard" element={<AdminDashboard />} />
-              <Route path="/admincommunityforum" element={<AdminCommunityForum />} />
-              <Route path="/adminbuyertransactions" element={<AdminBuyerTransactions />} />
-              <Route path="/adminfarmertransactions" element={<AdminFarmerTransactions />} />             
-              <Route path="/adminaccountbuyer" element={<AdminAccountBuyer />} />  
-              <Route path="/adminaccountfarmer" element={<AdminAccountFarmer />} />  
-            </Routes>
-          </BrowserRouter>
-        </>
-      );
-      
+    return ( <
+        >
+        <
+        BrowserRouter >
+        <
+        Routes >
+        <
+        Route path = "/"
+        element = { < MainPage / > }
+        /> <
+        Route path = "/login"
+        element = { < LoginPage / > }
+        /> <
+        Route path = "/signup"
+        element = { < SignupPage / > }
+        /> <
+        Route path = "/reset"
+        element = { < Reset / > }
+        /> <
+        Route path = "/buyermarketplace"
+        element = { < BuyerMarketplace / > }
+        /> <
+        Route path = "/buyermarketplacepost"
+        element = { < BuyerMarketplacePost / > }
+        /> <
+        Route path = "/buyercommunityforum"
+        element = { < BuyerCommunityForum / > }
+        /> <
+        Route path = "/buyercommunityforumpost"
+        element = { < BuyerCommunityForumPost / > }
+        /> <
+        Route path = "/shoppingcart"
+        element = { < ShoppingCart / > }
+        /> <
+        Route path = "/farmerdashboard"
+        element = { < FarmerDashboard / > }
+        /> <
+        Route path = "/farmermarketplace"
+        element = { < FarmerMarketplace / > }
+        /> <
+        Route path = "/farmermarketplacepost"
+        element = { < FarmerMarketplacePost / > }
+        /> <
+        Route path = "/farmercommunityforum"
+        element = { < FarmerCommunityForum / > }
+        /> <
+        Route path = "/farmercommunityforumpost"
+        element = { < FarmerCommunityForumPost / > }
+        /> <
+        Route path = "/farmercroptracker"
+        element = { < FarmerCropTracker / > }
+        /> <
+        Route path = "/farmertransactions"
+        element = { < FarmerTransactions / > }
+        /> <
+        Route path = "/admindashboard"
+        element = { < AdminDashboard / > }
+        /> <
+        Route path = "/admincommunityforum"
+        element = { < AdminCommunityForum / > }
+        /> <
+        Route path = "/adminbuyertransactions"
+        element = { < AdminBuyerTransactions / > }
+        /> <
+        Route path = "/adminfarmertransactions"
+        element = { < AdminFarmerTransactions / > }
+        />              <
+        Route path = "/adminaccountbuyer"
+        element = { < AdminAccountBuyer / > }
+        />   <
+        Route path = "/adminaccountfarmer"
+        element = { < AdminAccountFarmer / > }
+        />   <
+        Route element = { < PublicRoutes / > }
+        /> <
+        Route element = { < PrivateRoutes / > }
+        /> <
+        /Routes> <
+        /BrowserRouter> <
+        />
+    );
+
 };
 
 export default App;
