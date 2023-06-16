@@ -7,7 +7,7 @@ import RiceVector from '../img/riceCardImage.png';
 import ProfileVector2 from '../img/profileVector2.png';
 import { Link } from 'react-router-dom';
 import { FaPlus, FaTimes } from 'react-icons/fa';
-import FarmerMarketplaceAddProduct from '../pages/FarmerPage/farmerMarketplaceAddProduct';
+import FarmerMarketplaceAddProductComponent from '../components/farmerMarketplaceComponentAddProduct';
 
 const FarmerMarketplace = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -45,7 +45,7 @@ const FarmerMarketplace = () => {
           <div id="farmerMarketplaceComponentPopupWindow" className="farmerMarketplaceComponentPopupWindow">
             <div className="farmerMarketplaceComponentPopupContent">      
             <span className="farmerMarketplaceComponentCloseButton" onClick={closePopup}><FaTimes/></span>          
-              <FarmerMarketplaceAddProduct/>                     
+              <FarmerMarketplaceAddProductComponent/>                     
             </div>
           </div>
         )}

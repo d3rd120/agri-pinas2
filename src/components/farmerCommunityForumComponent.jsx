@@ -7,7 +7,7 @@ import ProfileVector2 from '../img/profileVector2.png';
 import {Link} from 'react-router-dom';
 import { FaEdit, FaTimes } from 'react-icons/fa';
 import React, { useState } from 'react';
-import FarmerCommunityForumAddPost from '../pages/FarmerPage/farmerCommunityForumAddPost';
+import FarmerCommunityForumComponentAddPost from '../components/farmerCommunityForumComponentAddPost';
 
 
 const FarmerCommunityForumComponent = () => {
@@ -47,7 +47,7 @@ const FarmerCommunityForumComponent = () => {
            <div id="farmerCommunityForumComponentPopupWindow" className="farmerCommunityForumComponentPopupWindow">
            <div className="farmerCommunityForumComponentPopupContent">      
            <span className="farmerCommunityForumComponentCloseButton" onClick={closePopup}><FaTimes/></span>          
-             <FarmerCommunityForumAddPost/>                     
+             <FarmerCommunityForumComponentAddPost/>                     
            </div>
          </div>
         )}

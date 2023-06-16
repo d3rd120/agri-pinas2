@@ -1,4 +1,36 @@
-  .farmerMarketplaceComponentPostBlankLine{
+.farmerMarketplaceComponentPostPopupWindow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Set a higher z-index value */
+ 
+}
+
+.farmerMarketplaceComponentPostPopupContent {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 100%;
+  text-align: center;
+
+}
+
+.farmerMarketplaceComponentPostCloseButton {
+  cursor: pointer;   
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.farmerMarketplaceComponentPostBlankLine{
     margin: 0;
   }
   .farmerMarketplaceComponentPostMainTextWrapper {
