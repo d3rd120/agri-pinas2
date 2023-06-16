@@ -4,9 +4,35 @@ import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
 import RiceVector from '../img/riceCardImage.png';
 import TomatoVector from '../img/tomatoVector.png';
-import { FaEdit, FaTrash } from 'react-icons/fa';
+import FarmerMarketplaceEditProduct from '../components/farmerMarketplaceComponentEditProduct';
+import FarmerMarketplaceDeleteProduct from '../components/farmerMarketplaceComponentDeleteProduct';
+import React, { useState } from 'react';
+import { FaEdit, FaTrash, FaTimes } from 'react-icons/fa';
 
 const FarmerMarketplace = () => {
+
+  const [showPopup1, setShowPopup1] = useState(false);
+  const [showPopup2, setShowPopup2] = useState(false);
+
+  const openPopup1 = () => {
+    setShowPopup1(true);
+  };
+
+  const closePopup1 = () => {
+    setShowPopup1(false);
+  };
+
+  const openPopup2 = () => {
+    setShowPopup2(true);
+  };
+
+  const closePopup2 = () => {
+    setShowPopup2(false);
+  };
+
+
+
+
   return (
     <div className="farmerMarketplaceComponentPost">
      <FarmerNavigation />
@@ -69,14 +95,31 @@ const FarmerMarketplace = () => {
                       </div>
                     </div>
                     <div className="farmerMarketplaceComponentPostButtonContainer">
-                        <button className="farmerMarketplaceComponentPostButton">
-                            <FaEdit className="farmerMarketplaceComponentPostButtonIcon" />
-                            <div className="farmerMarketplaceComponentPostButtonText">Edit</div>
-                        </button>
-                        <button className="farmerMarketplaceComponentPostButton">
+                         <button className="farmerMarketplaceComponentPostButton" onClick={openPopup1}>
+                        <FaEdit className="farmerMarketplaceComponentPostButtonIcon" />
+                        <div className="farmerMarketplaceComponentPostButtonText">Edit</div>
+                      </button>
+
+                      {showPopup1 && (
+                      <div id="farmerMarketplaceComponentPostPopupWindow" className="farmerMarketplaceComponentPopupWindow">
+                        <div className="farmerMarketplaceComponentPostPopupContent">                                
+                          <FarmerMarketplaceEditProduct closePopup1={closePopup1}/>                  
+                        </div>
+                      </div>
+                    )}
+
+                  <button className="farmerMarketplaceComponentPostButton" onClick={openPopup2}>
                             <FaTrash className="farmerMarketplaceComponentPostButtonIcon" />
                             <div className="farmerMarketplaceComponentPostButtonText">Delete</div>
-                        </button>
+                          </button>
+
+                          {showPopup2 && (
+                            <div id="farmerMarketplaceComponentPostPopupWindow" className="farmerMarketplaceComponentPopupWindow">
+                              <div className="farmerMarketplaceComponentPostPopupContent">                               
+                                <FarmerMarketplaceDeleteProduct closePopup={closePopup2} />
+                              </div>
+                            </div>
+                          )}
                     </div>
                   </div>
                 </div>
