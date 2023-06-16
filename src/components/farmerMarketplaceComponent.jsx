@@ -1,13 +1,26 @@
+import React, { useState } from 'react';
 import '../css/Components/farmerMarketplaceComponent.css';
 import FarmerNavigation from '../components/farmerPageNavigation';
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
 import RiceVector from '../img/riceCardImage.png';
 import ProfileVector2 from '../img/profileVector2.png';
-import {Link} from 'react-router-dom';
-import { FaPlus } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
+import { FaPlus, FaTimes } from 'react-icons/fa';
+import FarmerMarketplaceAddProductComponent from '../components/farmerMarketplaceComponentAddProduct';
 
 const FarmerMarketplace = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const openPopup = () => {
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
+
+
   return (
     <div className="farmerMarketplaceComponent">
       <FarmerNavigation />
@@ -23,15 +36,25 @@ const FarmerMarketplace = () => {
         </div>
             
 
-        <button className="farmerMarketplaceComponentButton">
-        <FaPlus className="farmerMarketplaceComponentButtonIcon" />
+        <button className="farmerMarketplaceComponentButton" onClick={openPopup}>
+          <FaPlus className="farmerMarketplaceComponentButtonIcon" />
           <div className="farmerMarketplaceComponentButtonText">Add a Product</div>
         </button>
+
+        {showPopup && (
+          <div id="farmerMarketplaceComponentPopupWindow" className="farmerMarketplaceComponentPopupWindow">
+            <div className="farmerMarketplaceComponentPopupContent">      
+            <span className="farmerMarketplaceComponentCloseButton" onClick={closePopup}><FaTimes/></span>          
+              <FarmerMarketplaceAddProductComponent/>                     
+            </div>
+          </div>
+        )}
+
 
         <div className="farmerMarketplaceComponentMiddleSection">
           <div className="farmerMarketplaceComponentFrameParent">
             <div className="farmerMarketplaceComponentFrameWrapper">
-              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'   activeClassName="active">
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -78,8 +101,8 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </Link>              
-              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              </NavLink>              
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -126,9 +149,9 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </Link>     
+              </NavLink>     
 
-              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -175,12 +198,12 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </Link>     
+              </NavLink>     
               
             </div>
 
             <div className="farmerMarketplaceComponentFrameWrapper">
-              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -227,8 +250,8 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </Link>              
-              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              </NavLink>              
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -275,9 +298,9 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </Link>     
+              </NavLink>     
 
-              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -324,7 +347,7 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </Link>     
+              </NavLink>     
               
             </div>
             <div className="farmerMarketplaceComponentCategories">
