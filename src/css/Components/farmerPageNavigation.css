@@ -46,6 +46,7 @@
     width: 9.14rem;
     height: 1.38rem;
     color: inherit;
+  
   }
   
 
@@ -53,7 +54,9 @@
     position: absolute;
     top: 0;
     left: 2.51rem;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
     width: 8rem;
     height: 1.38rem;
     cursor:pointer;

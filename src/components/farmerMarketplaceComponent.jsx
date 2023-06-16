@@ -5,7 +5,7 @@ import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
 import RiceVector from '../img/riceCardImage.png';
 import ProfileVector2 from '../img/profileVector2.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FaPlus, FaTimes } from 'react-icons/fa';
 import FarmerMarketplaceAddProductComponent from '../components/farmerMarketplaceComponentAddProduct';
 
@@ -54,7 +54,7 @@ const FarmerMarketplace = () => {
         <div className="farmerMarketplaceComponentMiddleSection">
           <div className="farmerMarketplaceComponentFrameParent">
             <div className="farmerMarketplaceComponentFrameWrapper">
-              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'   activeClassName="active">
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -101,8 +101,8 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </Link>              
-              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              </NavLink>              
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -149,9 +149,9 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </Link>     
+              </NavLink>     
 
-              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -198,12 +198,12 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </Link>     
+              </NavLink>     
               
             </div>
 
             <div className="farmerMarketplaceComponentFrameWrapper">
-              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -250,8 +250,8 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </Link>              
-              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              </NavLink>              
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -298,9 +298,9 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </Link>     
+              </NavLink>     
 
-              <Link className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -347,7 +347,7 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </Link>     
+              </NavLink>     
               
             </div>
             <div className="farmerMarketplaceComponentCategories">
