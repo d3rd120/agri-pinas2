@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: flex-start;
     cursor:pointer;
+    top: 9000%;
   }
 
   .farmerPageNavigationLogoIcon {
@@ -59,7 +60,7 @@
     cursor:pointer;
     transition: 0.5s
   }
-  /* Add this CSS to your stylesheet */
+
 .active .farmerPageNavigationLinksIcon {
   color: #FBA403;
 }
@@ -130,7 +131,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left: 64%;
+    left: 1300%;
     border-radius: 50%;
     max-width: 100%;
     overflow: hidden;
@@ -138,6 +139,7 @@
     object-fit: cover;
     transition: 0.5s;
     cursor: pointer;
+    color: #A9AF7E;
   }
 
   .farmerPageNavigationProfile:hover {
@@ -188,13 +190,14 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 4910%;
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
     color: white;
     transition: 0.5s;
     cursor: pointer;
+    color: #A9AF7E
   }
 
   .farmerPageNavigationBell:hover {
@@ -210,6 +213,52 @@
     bottom: 0;
     left: 0;
   }
+  
+  .farmerPageNavigationMessageParent {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    height: 74.07%;
+    width: 24%;
+    top: 12.96%;
+    right: 76%;
+    bottom: 12.96%;
+    left: 0;
+  }
+  
+  .farmerPageNavigationMessage{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 5190%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #A9AF7E
+  }
+
+  .farmerPageNavigationMessage:hover {
+    color: #FBA403;
+  }
+  
+  .farmerPageNavigationMessage svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
 
   .farmerPageNavigationInner {
     position: absolute;
