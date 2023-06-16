@@ -3,13 +3,18 @@
     line-height: 2.13rem;
     font-weight: 600;
     color: #557153;
-    margin-bottom: 1rem;
+    margin-bottom: 1.38rem;
   }
   .farmerMarketplaceEditProductComponentMainText,
   .farmerMarketplaceEditProductComponentTitle{
     align-self: stretch;
     position: relative;
   }
+
+  .farmerMarketplaceEditProductComponentTitleDescription {
+    font-size: 1.5rem;
+  }
+  
   .farmerMarketplaceEditProductComponentInput1 {
     border: 1px solid #dee3eb;
     background-color: #fff;
@@ -136,7 +141,7 @@
     gap: 1.06rem;
     text-align: left;
     color: #636363;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   
   }
 
@@ -145,14 +150,6 @@
     gap: 1rem;
   }
   
-  @media screen and (max-width:1366px) {
-    .farmerMarketplaceEditProductComponent {
-      margin-bottom: 1rem;
-    }
-    .farmerMarketplaceEditProductComponentTitle {
-      font-size: 1rem;
-    }
-  }
   
   @media screen and (max-width: 960px) {
     .farmerMarketplaceEditProductComponentMainText {

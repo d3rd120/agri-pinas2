@@ -72,9 +72,11 @@ const farmerMarketplaceEditProductComponent = ({closePopup1}) => {
           </div>
         </div>
       </div>
+      <span className = "farmerMarketplaceEditProductComponentTitleDescription">
       <div className="farmerMarketplaceEditProductComponentTitle">
         Description
       </div>
+      </span>
       <textarea
         className="farmerMarketplaceEditProductComponentInput4"
         placeholder="Enter your new description"
