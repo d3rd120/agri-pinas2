@@ -1,5 +1,7 @@
 import "../css/Components/farmerDashboardComponent.css";
 import FarmerNavigation from '../components/farmerPageNavigation';
+import TopNav from '../components/topPageNavigation';
+
 import {
   LineChart,
   Line,
@@ -12,7 +14,14 @@ import {
 } from 'recharts';
 
 
+
+
+
 const FarmerDashboard = () => {
+
+
+
+ 
 
   const data = [
     {
@@ -96,12 +105,12 @@ const FarmerDashboard = () => {
     <>   
     <div className="farmerDashboardComponent">
       <FarmerNavigation />      
-      <div className="farmerDashboardComponentMainPanel">
+      <div className="farmerDashboardComponentMainPanel">  
+      <TopNav />  
         <div className="farmerDashboardComponentTopSection">
           <div className="farmerDashboardComponentMainText1">
-            <b className="farmerDashboardComponentMainText1Container">
-              <p className="farmerDashboardComponentBlankLine">&nbsp;</p>
-              <p className="farmerDashboardComponentBlankLine">&nbsp;</p>
+            <b className="farmerDashboardComponentMainText1Container"> 
+             <p className="farmerMarketplaceComponentBlankLine">&nbsp;</p>                
               <p className="farmerDashboardComponentBlankLine">Welcome back, farmer</p>
             </b>
           </div>

@@ -8,6 +8,7 @@ import {Link} from 'react-router-dom';
 import { FaEdit, FaTimes } from 'react-icons/fa';
 import React, { useState } from 'react';
 import FarmerCommunityForumComponentAddPost from '../components/farmerCommunityForumComponentAddPost';
+import TopNav from '../components/topPageNavigation';
 
 
 const FarmerCommunityForumComponent = () => {
@@ -26,10 +27,10 @@ const FarmerCommunityForumComponent = () => {
     <div className="farmerCommunityForumComponent">
      <FarmerNavigation />
       <div className="farmerCommunityForumComponentMainPanel">
+        <TopNav />
         <div className="farmerCommunityForumComponentTopSection">
           <div className="farmerCommunityForumComponentMainText1">
-            <b className="farmerCommunityForumComponentMainText2">
-              <p className="farmerCommunityForumComponentBlankLine">&nbsp;</p>
+            <b className="farmerCommunityForumComponentMainText2">             
               <p className="farmerCommunityForumComponentBlankLine">&nbsp;</p>
               <p className="farmerCommunityForumComponentBlankLine">Community Forum</p>
             </b>

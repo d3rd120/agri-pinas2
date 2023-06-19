@@ -5,17 +5,18 @@ import CornVector from '../img/cornVector.png';
 import RiceVector from '../img/riceCardImage.png';
 import TomatoVector from '../img/tomatoVector.png';
 import { FaThumbsUp } from 'react-icons/fa';
+import TopNav from '../components/topPageNavigation';
 
 const FarmerMarketplace = () => {
   return (
     <div className="farmerCommunityForumComponentFullPost">
         <FarmerNavigation />      
       <div className="farmerCommunityForumComponentFullPostMainPanel">
+        <TopNav />
         <div className="farmerCommunityForumComponentFullPostTopSection">
           <div className="farmerCommunityForumComponentFullPostMainTextContainer">
             <b className="farmerCommunityForumComponentFullPostMainText1">
-              <p className="farmerCommunityForumComponentFullPostBlankLine">&nbsp;</p>
-              <p className="farmerCommunityForumComponentFullPostBlankLine">&nbsp;</p>
+              <p className="farmerCommunityForumComponentFullPostBlankLine">&nbsp;</p>   
               <p className="farmerCommunityForumComponentFullPostBlankLine">Community Forum</p>
             </b>
           </div>
