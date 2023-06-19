@@ -9,7 +9,7 @@ import { FaThumbsUp } from 'react-icons/fa';
 const BuyerMarketplace = () => {
   return (
     <div className="farmerCommunityForumComponentFullPost">
-        <FarmerNavigation />      
+        <BuyerNavigation />      
       <div className="farmerCommunityForumComponentFullPostMainPanel">
         <div className="farmerCommunityForumComponentFullPostTopSection">
           <div className="farmerCommunityForumComponentFullPostMainTextContainer">

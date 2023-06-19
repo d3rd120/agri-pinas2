@@ -3,8 +3,8 @@ import "../css/BuyerPage/buyermarketplace.css"
 import BuyerNavigation from "./buyerNavigation";
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
-import RiceVector from '../img/riceCardImage.png';
 import TomatoVector from '../img/tomatoVector.png';
+import talong from '../img/talong.png';
 import { FaCartArrowDown, FaCartPlus, FaCommentDots, FaComments, FaEdit, FaTrash } from 'react-icons/fa';
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
@@ -15,8 +15,9 @@ import {Link} from 'react-router-dom';
 const CustomHeaderTitle = styled.div`
   background-color: #557153;
   color: #fff;
-  /* Additional styles for the header title */
+ 
 `;
+
 
 const BuyerMarketplace = () => {
   const theme = {
@@ -52,6 +53,16 @@ const BuyerMarketplace = () => {
     setMinimizedChatBot(false);
   };
 
+  const handleAddToCart = () => {
+    var popupMessage = document.getElementById("popupMessage");
+    popupMessage.style.display = "block";
+
+    setTimeout(function () {
+      popupMessage.style.display = "none";
+    }, 2000);
+  };
+
+  
   return (
     <div className="buyerMarketplaceComponentPost">
       <BuyerNavigation />
@@ -82,6 +93,7 @@ const BuyerMarketplace = () => {
                       <b className="buyerMarketplaceComponentPostSmallCardsProductName">Corn</b>
                       <b className="buyerMarketplaceComponentPostSmallCardsBuyerName">Farmer: Jenkins Mesina</b>
                     </div>
+                    
                     <div className="buyerMarketplaceComponentPostSmallCardsDescriptionWrapper">
                       <div className="buyerMarketplaceComponentPostSmallCardsFullDescription">
                         <p className="buyerMarketplaceComponentPostBlankLine">
@@ -114,25 +126,27 @@ const BuyerMarketplace = () => {
                       </div>
                     </div>
                     <div className="buyerMarketplaceComponentPostButtonContainer">
-                      <div className="buyerMarketplaceComponentPostButtonRow">
-                        <button className="buyerMarketplaceComponentPostButton outlinedButton" onClick={handleChatButtonClick}>
-                          <FaCommentDots className="buyerMarketplaceComponentPostButtonIcon" />
-                          <div className="buyerMarketplaceComponentPostButtonText">Chat</div>
-                        </button>
-                        <a href="/shoppingcart">
-                          <button className="buyerMarketplaceComponentPostButton outlinedButton">
-                            <FaCartArrowDown className="buyerMarketplaceComponentPostButtonIcon" />
-                            <div className="buyerMarketplaceComponentPostButtonText">Add to Cart</div>
-                          </button>
-                        </a>
-                        <a href="/buynow" style={{ textDecoration: 'none' }}>
-                           <button className="buyerMarketplaceComponentPostButton outlinedButton">
-                              <FaCartArrowDown className="buyerMarketplaceComponentPostButtonIcon" />
-                              <div className="buyerMarketplaceComponentPostButtonText">Buy Now</div>
-                           </button>
-                        </a>
-                      </div>
-                    </div>
+  <div className="buyerMarketplaceComponentPostButtonRow">
+    <button className="buyerMarketplaceComponentPostButton outlinedButton" onClick={handleChatButtonClick}>
+      <FaCommentDots className="buyerMarketplaceComponentPostButtonIcon" />
+      <div className="buyerMarketplaceComponentPostButtonText">Chat</div>
+    </button>
+    <div id="popupMessage" className="popupMessage">
+      <span className="popupText">Item has been added to your shopping cart</span>
+    </div>
+    <button className="buyerMarketplaceComponentPostButton outlinedButton" onClick={handleAddToCart}>
+      <FaCartArrowDown className="buyerMarketplaceComponentPostButtonIcon" />
+      <div className="buyerMarketplaceComponentPostButtonText">Add to Cart</div>
+    </button>
+    <a href="/shoppingcart" style={{ textDecoration: 'none' }}>
+      <button className="buyerMarketplaceComponentPostButton1">
+        <div className="buyerMarketplaceComponentPostButtonText1">Buy Now</div>
+      </button>
+    </a>
+  </div>
+</div>
+
+
                   </div>
                 </div>
               </div>
@@ -176,18 +190,22 @@ const BuyerMarketplace = () => {
               <img
                 className="buyerMarketplaceComponentPostButtonNewCard1Image"
                 alt=""
-                src={RiceVector}
+                src={talong}
               />
               <div className="buyerMarketplaceComponentPostButtonNewCard1Details">
                 <div className="buyerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="buyerMarketplaceComponentPostButtonNewCard1Wrapper">
-                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">Rice</div>
+                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">Eggplant</div>
                     <div className="buyerMarketplaceComponentPostButtonNewCard1Price">₱2,000</div>
                   </div>
                 </div>
               </div>
             </Link>
           </div>
+
+          
+
+
         </div>
       </div>
       {showChatBot && !minimizedChatBot && (

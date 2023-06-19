@@ -8,11 +8,39 @@ import TomatoVector from '../img/tomatoVector.png';
 import ProfileVector1 from '../img/profileVector1.png';
 import {Link} from 'react-router-dom';
 import { RiDeleteBinLine } from 'react-icons/ri';
-import { IconButton } from '@material-ui/core';
+import { IconButton, Modal, TextField, Button } from '@material-ui/core';
 import { RiEdit2Line } from 'react-icons/ri';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const Checkout  = () => {
+  const [open, setOpen] = useState(false);
+  const [name, setName] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [barangay, setBarangay] = useState('');
+  const [address, setAddress] = useState('');
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handlePhoneNumberChange = (e) => {
+    const value = e.target.value;
+    // Remove non-numeric characters from the input value
+    const numericValue = value.replace(/\D/g, '');
+    setPhoneNumber(numericValue);
+  };
+
+
+  const handleSave = () => {
+    // Perform saving logic here
+    // You can access the updated values in the state variables: name, phoneNumber, barangay, and address
+    handleClose();
+  };
+
+
   return (
     <div className="buyerMarketplaceComponent">
       <BuyerNavigation />
@@ -24,7 +52,7 @@ const Checkout  = () => {
               <p className="buyerMarketplaceComponentBlankLine">&nbsp;</p>
             <div className="orderContainer">
   <p className="buyerMarketplaceComponentBlankLine">Checkout</p>
-  <Link to="/buynow" className="backButton">&#8592;</Link>
+  <Link to="/shoppingcart" className="backButton">&#8592;</Link>
 </div>
             </b>
           </div>
@@ -52,10 +80,66 @@ const Checkout  = () => {
   <th class="address">Tungkong Mangga, San Jose Del Monte City, North Luzon, Bulacan</th>
   <th> 
   <div>
-    <IconButton className="editButton" aria-label="Edit">
-      <RiEdit2Line />
-    </IconButton>
-  </div>
+      <IconButton className="editButton" aria-label="Edit" onClick={handleOpen}>
+        <RiEdit2Line />
+      </IconButton>
+      <Modal open={open} onClose={handleClose}>
+        <div className="editModal">
+          <h2>Edit your Address</h2>
+          <br></br>
+          <div className="farmerMarketplaceEditProductComponentInputParent">
+            <div className="farmerMarketplaceEditProductComponentTitle">
+              Full Name
+            </div>
+            <input
+              className="farmerMarketplaceEditProductComponentInput2"
+              type="text"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div className="farmerMarketplaceEditProductComponentInputParent">
+      <div className="farmerMarketplaceEditProductComponentTitle">
+        Phone number
+      </div>
+      <input
+        className="farmerMarketplaceEditProductComponentInput2"
+        type="text"
+        placeholder="Enter your phone number"
+        value={phoneNumber}
+        onChange={handlePhoneNumberChange}
+      />
+    </div>
+          <div className="farmerMarketplaceEditProductComponentInputParent">
+            <div className="farmerMarketplaceEditProductComponentTitle">
+              Barangay
+            </div>
+            <input
+              className="farmerMarketplaceEditProductComponentInput2"
+              type="text"
+              placeholder="Enter your barangay"
+            />
+          </div>
+          <div className="farmerMarketplaceEditProductComponentInputParent">
+            <div className="farmerMarketplaceEditProductComponentTitle">
+             Address
+            </div>
+            <input
+              className="farmerMarketplaceEditProductComponentInput2"
+              type="text"
+              placeholder="Enter your full address"
+            />
+          </div>
+          <div className="buttonContainer">
+            <Button variant="contained" color="primary" onClick={handleClose} className="cancelButton">
+              Cancel
+            </Button>
+            <Button variant="contained" color="secondary" onClick={handleSave} className="saveButton">
+              Save
+            </Button>
+          </div>
+        </div>
+      </Modal>
+    </div>
 </th>
 </tr>
         </thead>

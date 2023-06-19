@@ -2,13 +2,11 @@ import React from 'react';
 import  Checkout from '../../components/buyerCheckout';
 
 
-const Checkout = () => {
+const BuyerCheckout = () => {
 
     return (
-        <>
-        <Checkout />       
-        </>
+        <Checkout />    
     );
 };
 
-export default Checkout;
+export default BuyerCheckout;

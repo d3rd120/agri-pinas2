@@ -6,6 +6,8 @@ import BuyerMarketplacePost from './pages/BuyerPage/buyerMarketplacePost';
 import ShoppingCart from './components/shoppingCartComponent';
 import BuyerCommunityForum from './pages/BuyerPage/buyerCommunityForum';
 import BuyerCommunityForumPost from './pages/BuyerPage/buyerCommunityForumPost';
+import Checkout from './pages/BuyerPage/checkout';
+import BuyerTransaction from './pages/BuyerPage/buyerTransac';
 import FarmerDashboard from './pages/FarmerPage/farmerDashboard';
 import FarmerMarketplace from './pages/FarmerPage/farmerMarketplace';
 import FarmerMarketplacePost from './pages/FarmerPage/farmerMarketplacePost';
@@ -40,6 +42,8 @@ const App = () => {
               <Route path="/buyercommunityforum" element={<BuyerCommunityForum />} />
               <Route path="/buyercommunityforumpost" element={<BuyerCommunityForumPost />} />
               <Route path="/shoppingcart" element={<ShoppingCart />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/buyertransactions" element={<BuyerTransaction />} />
               <Route path="/farmerdashboard" element={<FarmerDashboard />} />
               <Route path="/farmermarketplace" element={<FarmerMarketplace />} />
               <Route path="/farmermarketplacepost" element={<FarmerMarketplacePost />} />

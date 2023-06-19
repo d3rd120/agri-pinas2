@@ -78,7 +78,7 @@
   position: relative;
   width: 1rem;
   height: 1rem;
-  color: grey;
+  color: rgb(48, 47, 47)
 }
 .buyerMarketplaceComponentPostButtonText {
   position: relative;
@@ -89,21 +89,32 @@
   text-align: center;
 }
 .buyerMarketplaceComponentPostButton {
-  flex-direction: row;
-  margin-right: 10px; 
+  flex: 1;
+  margin-right: 10px;
+  background-color: #9DC08B;
   width: 150px;
-  cursor: pointer;
-  border: 0;
-  padding: 10px 20px;
-  background-color: #8db88d;
-  border-radius: 4px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  transition: 0.3s;
+  padding: 10px;
+  border-radius: 5px;
+}
+.buyerMarketplaceComponentPostButtonText1 {
+  position: relative;
+  font-size: 0.80rem;
+  letter-spacing: 0.46px;
+  font-weight: 570;
+  color: white;
+  text-align: center;
+}
+.buyerMarketplaceComponentPostButton1:hover {
+  background-color: #27AE60; 
+}
+
+.buyerMarketplaceComponentPostButton1 {
+  flex: 1;
+  background-color: #9DC08B;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: -100px;
 }
 
 .buyerMarketplaceComponentPostButton:hover {
@@ -117,7 +128,7 @@
   justify-content: center;
   background-color: transparent;
   border: 2px solid #9DC08B;
-  border-radius: 4px;
+  border-radius: 5px;
   padding: 0.75rem 1.13rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -129,9 +140,17 @@
 }
 .buyerMarketplaceComponentPostButtonContainer {
   display: flex;
-  justify-content: flex-start;
-  gap: 15px;
+  justify-content: space-between;
 }
+
+.buyerMarketplaceComponentPostButtonContainer button {
+  margin-bottom: 10px;
+}
+.buyerMarketplaceComponentPostButtonContainer .buyerMarketplaceComponentPostButton {
+  flex: 1;
+  margin-right: 10px;
+}
+
 
 .buyerMarketplaceComponentPostSmallCardsContent,
 .buyerMarketplaceComponentPostSmallCardsDescription,
@@ -365,10 +384,7 @@
     padding-right: 1.25rem;
     box-sizing: border-box;
   }
-  .buyerMarketplaceComponentPostButtonRow {
-  display: flex;
-  flex-direction: row;
-}
+ 
 .buyerMarketplaceComponentPostButton.outlinedButton {
   width: 150px;
   background-color: transparent;
@@ -379,15 +395,27 @@
   transition: background-color 0.3s ease;
 }
 
-.buyerMarketplaceComponentPostButton.outlinedButton:hover {
-  background-color: #000;
-  color: #fff;
-}
-.buyerMarketplaceComponentPostButtonRow{
+.buyerMarketplaceComponentPostButtonRow {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
+}
+.popupMessage {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(88, 88, 88, 0.8);
+  padding: 10px 20px;
+  border-radius: 4px;
+  z-index: 9999;
+}
+
+.popupText {
+  color: white;
+  font-size: 18px;
 }
 

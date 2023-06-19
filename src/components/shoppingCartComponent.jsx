@@ -12,18 +12,40 @@ import { IconButton } from '@material-ui/core';
 import Card from 'react-bootstrap/Card';
 
 const ShoppingCart = () => {
-  const [quantity, setQuantity] = useState('');
+  const [quantity, setQuantity] = useState(1);
+  const [showModal, setShowModal] = useState(false);
 
-  const handleInputChange = (event) => {
-    const inputValue = event.target.value;
-    if (inputValue === '0') {
-      if (window.confirm('Do you want to remove this item?')) {
-       
-      }
+  const handleInputChange = (e) => {
+    let value = parseInt(e.target.value);
+    if (value < 1) {
+      setQuantity(1);
+      setShowModal(true);
     } else {
-      setQuantity(inputValue);
+      setQuantity(value);
+      setShowModal(false);
     }
   };
+
+  const handleModalConfirm = () => {
+    setShowModal(false);
+  };
+
+  const handleModalCancel = () => {
+    setShowModal(false);
+  };
+
+  const handleMinusClick = () => {
+    if (quantity === 1) {
+      setShowModal(true);
+    } else {
+      setQuantity(quantity - 1);
+    }
+  };
+
+  const handlePlusClick = () => {
+    setQuantity(quantity + 1);
+  };
+
   return (
     <div className="buyerMarketplaceComponent">
       <BuyerNavigation />
@@ -104,33 +126,30 @@ const ShoppingCart = () => {
 <div class="courses-container" style={{ marginTop: "-40px" }}>
   <div class="course1">
     <div class="course-preview">
-      <table class="table">
-        <thead>
-          <tr>
-            <div class="inputContainer">
-              <input type="checkbox" class="shoppingCheckbox" />
-              <div class="image-container">
-                <div className="buyerMarketplaceComponentAuthor">
-                  <img className="cartAvatarIcon" alt="" src={ProfileVector1} />
-                  <div className="buyerMarketplaceComponentAuthorText">
-                    <div className="buyerMarketplaceComponentAuthorName">Jenkins Mesina</div>
-                    <div className="buyerMarketplaceComponentSubName">Farmer</div>
-                  </div>
+    <table className="table">
+      <thead>
+        <tr>
+          <div className="inputContainer">
+            <input type="checkbox" className="shoppingCheckbox" />
+            <div className="image-container">
+              <div className="buyerMarketplaceComponentAuthor">
+                <img className="cartAvatarIcon" alt="" src={ProfileVector1} />
+                <div className="buyerMarketplaceComponentAuthorText">
+                  <div className="buyerMarketplaceComponentAuthorName">Jenkins Mesina</div>
+                  <div className="buyerMarketplaceComponentSubName">Farmer</div>
                 </div>
-                <img src={CornVector} alt="Corn" className="img-container" />
               </div>
-              
-              <div className="cartPostSmallCardsFullDescription">
+              <img src={CornVector} alt="Corn" className="img-container" />
+            </div>
+
+            <div className="cartPostSmallCardsFullDescription">
               <div className="buyerMarketplaceComponentCardWrapper">
-                      <b className="cartCardText">Corn</b>
-                    </div>
-  <div className="cartPostBlankLine">
-    <b>{`Category: Packaging:`}</b>
-    <span className="cartPostCategory">Vegetable Sack</span>
-  </div>
-</div>
-
-
+                <b className="cartCardText">Corn</b>
+              </div>
+              <div className="cartPostBlankLine">
+                <b>{`Category: Packaging:`}</b>
+                <span className="cartPostCategory">Vegetable Sack</span>
+              </div>
             </div>
 
             <th>&nbsp;</th>
@@ -142,39 +161,65 @@ const ShoppingCart = () => {
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
-          <th class="unit-price-header">₱5,000.00</th>
+            <th className="unit-price-header">₱5,000.00</th>
             <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th> 
+            <th></th>
             <th>
-            <input
-                 type="number"
-                 className="quantityInput"
-                 min="0"
-                 value={quantity}
-                 onChange={handleInputChange}
-            />
+            <td>
+            <div className="inputContainer">
+            <div className="quantityControl">
+  <button className="quantityButton" onClick={handleMinusClick}>
+    -
+  </button>
+  <input
+    type="text"
+    className="quantityInput"
+    value={quantity}
+    onChange={handleInputChange}
+  />
+  <button className="quantityButton" onClick={handlePlusClick}>
+    +
+  </button>
+</div>
+
+
+      {showModal && (
+        <div className="modalBackdrop">
+          <div className="modal">
+          <div className="modalContent">
+  <h3>Do you want to remove this item?</h3>
+  <div className="buttonContainer">
+    <br></br>
+    <button className="confirmButton" onClick={handleModalConfirm}>
+      Yes
+    </button>
+    <button className="cancelButton" onClick={handleModalCancel}>
+      No
+    </button>
+  </div>
+</div>
+
+          </div>
+        </div>
+      )}
+    </div>
+          </td>
             </th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th> 
-            <th class="total-price-header">₱10,000.00</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th> 
-              <div>
-                 <IconButton className="deleteButton" aria-label="Delete">
-                    <RiDeleteBinLine />
-                  </IconButton>
-              </div>
-            </th>
-          </tr>
-        </thead>
-      </table>
+          </div>
+          <th>&nbsp;</th>
+          <th className="total-price-header">₱10,000.00</th>
+          <th>&nbsp;</th>
+          <th>&nbsp;</th>
+          <th>
+            <div>
+              <IconButton className="deleteButton" aria-label="Delete">
+                <RiDeleteBinLine />
+              </IconButton>
+            </div>
+          </th>
+        </tr>
+      </thead>
+    </table>
     </div>
   </div>
 </div>

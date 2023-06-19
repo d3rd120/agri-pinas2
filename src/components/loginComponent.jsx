@@ -17,6 +17,14 @@ const LoginPage = () => {
   const [authLoading, setAuthLoading] = React.useState(true);
   const navigate = useNavigate();
 
+  const setUserSession = (token, user) => {
+    // Implementation logic for setting user session
+  };
+
+  const removeUserSession = () => {
+    // Implementation logic for removing user session
+  };
+
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
@@ -76,8 +84,8 @@ const LoginPage = () => {
       // Send POST request to the server
       axios
         .post('http://localhost:3000/Users/login', {
-          username: username.value,
-          password: password.value
+          username: email,
+          password: password,
         })
         .then(response => {
           setLoading(false);
@@ -93,20 +101,21 @@ const LoginPage = () => {
     }
   };
   
- 
   useEffect(() => {
     const token = sessionStorage.getItem('token');
     if (!token) {
       return;
     }
   
-    axios.get(`http://localhost:3000/verifyToken?token=${token}`).then(response => {
-      setUserSession(response.data.token, response.data.user);
-      setAuthLoading(false);
-    }).catch(error => {
-      removeUserSession();
-      setAuthLoading(false);
-    });
+    axios.get(`http://localhost:3000/verifyToken?token=${token}`)
+      .then(response => {
+        setUserSession(response.data.token, response.data.user);
+        setAuthLoading(false);
+      })
+      .catch(error => {
+        removeUserSession();
+        setAuthLoading(false);
+      });
   }, []);
  
   if (authLoading && getToken()) {
