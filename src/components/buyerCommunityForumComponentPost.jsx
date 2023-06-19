@@ -31,14 +31,14 @@ const BuyerCommunityForum = () => {
             </div>
             <div className="buyerCommunityForumComponentFullPostSmallCards">
               <div className="buyerCommunityForumComponentFullPostSmallCardsDescription">
-                <div className="buyerCommunityForumComponentFullPostSmallCardsContent">
-                  <div className="buyerCommunityForumComponentFullPostSmallCardsHeading">
-                    <div className="buyerCommunityForumComponentFullPostSmallCardsDetails">
-                      <b className="buyerCommunityForumComponentFullPostSmallCardsMainText">What is the SRP of Onions?</b>
-                      <b className="buyerCommunityForumComponentFullPostSmallCardsDescription1">Posted by: Jenkins Mesina</b>
+              <div className="farmerCommunityForumComponentFullPostSmallCardsContent">
+                  <div className="farmerCommunityForumComponentFullPostSmallCardsHeading">
+                    <div className="farmerCommunityForumComponentFullPostSmallCardsDetails">
+                      <b className="farmerCommunityForumComponentFullPostSmallCardsMainText">What is the SRP of Onions?</b>
+                      <b className="farmerCommunityForumComponentFullPostSmallCardsDescription1">Posted by: Jenkins Mesina</b>
                     </div>
-                    <div className="buyerCommunityForumComponentFullPostSmallCardsDescriptionWrapper">
-                      <div className="buyerCommunityForumComponentFullPostSmallCardsFullDescription">
+                    <div className="farmerCommunityForumComponentFullPostSmallCardsDescriptionWrapper">
+                      <div className="farmerCommunityForumComponentFullPostSmallCardsFullDescription">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -50,33 +50,35 @@ const BuyerCommunityForum = () => {
                         anim id est laborum.
                       </div>
                     </div>
-                    <b className="buyerCommunityForumComponentFullPostSmallCardsDescription2">24 people liked this post.</b>
-                    <button className="buyerCommunityForumComponentFullPostButton">
-                        <FaThumbsUp className="buyerCommunityForumComponentFullPostButtonIcon" />
-                        <div className="buyerCommunityForumComponentFullPostButtonText">Like</div>
+                    <b className="farmerCommunityForumComponentFullPostSmallCardsDescription2">24 people liked this post.</b>
+                    <button className="farmerCommunityForumComponentFullPostButton">
+                        <FaThumbsUp className="farmerCommunityForumComponentFullPostButtonIcon" />
+                        <div className="farmerCommunityForumComponentFullPostButtonText">Like</div>
                     </button>
                   </div>
-                  <input
-                    className="buyerCommunityForumComponentFullPostCommentInput"
-                    type="text"
-                    placeholder="Comment Here"
-                  />
-                  <div className="buyerCommunityForumComponentFullPostSmallCardsDescriptionWrapper">
-                    <div className="buyerCommunityForumComponentFullPostSmallCardsFullDescription">
-                      <p className="buyerCommunityForumComponentFullPostBlankLine">
+                  <div class="farmerCommunityForumComponentFullPostCommentInputWrapper">
+                   <input
+                       class="farmerCommunityForumComponentFullPostCommentInput"type="text"placeholder="Comment Here"/>
+                     <button class="farmerCommunityForumComponentFullPostCommentInputButton">
+                       <i class="fa fa-arrow-right"></i>
+                      </button>
+                  </div>
+                  <div className="farmerCommunityForumComponentFullPostSmallCardsDescriptionWrapper">
+                    <div className="farmerCommunityForumComponentFullPostSmallCardsFullDescription">
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>Comments:</b>
                       </p>
-                      <p className="buyerCommunityForumComponentFullPostBlankLine">
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>&nbsp;</b>
                       </p>
-                      <p className="buyerCommunityForumComponentFullPostBlankLine">
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>{`Ryan Edward Amador: `}</b>
                         <span>{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `}</span>
                       </p>
-                      <p className="buyerCommunityForumComponentFullPostBlankLine">
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>&nbsp;</b>
                       </p>
-                      <p className="buyerCommunityForumComponentFullPostBlankLine">
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>{`Marievic Anes: `}</b>
                         <span>
                           Ut enim ad minim veniam, quis nostrud exercitation
@@ -84,10 +86,10 @@ const BuyerCommunityForum = () => {
                           consequat.
                         </span>
                       </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>

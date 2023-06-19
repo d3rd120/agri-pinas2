@@ -16,7 +16,6 @@ const BuyerCommunityForumComponent = () => {
   };
 
   const handlePostSubmit = () => {
-    // Handle post submission logic
     console.log(`Post content: ${postContent}`);
     setPostContent('');
   };

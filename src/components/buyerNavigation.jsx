@@ -1,20 +1,45 @@
 import React from 'react';
-import { FaUsers, FaGlobe, FaHome, FaWallet, FaStore, FaShoppingBag, FaCartPlus } from 'react-icons/fa';
-import { FaUserCircle, FaBell } from 'react-icons/fa';
-import {NavLink, Link} from 'react-router-dom';
+import { FaUsers, FaGlobe, FaHome, FaWallet, FaStore, FaShoppingBag, FaCartPlus, FaEnvelope, FaUserCircle, FaBell } from 'react-icons/fa';
+import { NavLink, Link } from 'react-router-dom';
 import '../css/Components/farmerPageNavigation.css';
 
 import Logo from '../img/agriPinasLogo.png';
 
 const BuyerNavigation = () => {
+  const handleProfileClick = () => {
+  };
+
+  const handleMessageClick = () => {
+  };
+
+  const handleBellClick = () => {
+  };
+
   return (
     <div className="farmerPageNavigation">
+      <div className="farmerPageNavigationTop">
+        <div className="farmerPageNavigationProfileParent">
+          <button className="farmerPageNavigationProfile" onClick={handleProfileClick}>
+            <FaUserCircle />
+          </button>
+          <button className="farmerPageNavigationMessageParent" onClick={handleMessageClick}>
+            <div className="farmerPageNavigationMessage">
+              <FaEnvelope />
+            </div>
+          </button>
+          <button className="farmerPageNavigationBellParent" onClick={handleBellClick}>
+            <div className="farmerPageNavigationBell">
+              <FaBell />
+            </div>
+          </button>
+        </div>
+      </div>
       <div className="farmerPageNavigationLogoParent">
         <img className="farmerPageNavigationLogoIcon" alt="" src={Logo} />
         <div className="farmerPageNavigationMainText">AgriPinas</div>
       </div>
-<div className="farmerPageNavigationGroupParent">
-<NavLink
+      <div className="farmerPageNavigationGroupParent">
+        <NavLink
           className="farmerPageNavigationLink1"
           to="/farmercommunityforum"
           activeClassName="active"
@@ -34,7 +59,7 @@ const BuyerNavigation = () => {
 
         <NavLink
           className="farmerPageNavigationLink3"
-          to="/buyermarketplace" 
+          to="/buyermarketplace"
           activeClassName="active"
         >
           <div className="farmerPageNavigationLinks">Marketplace</div>
@@ -50,18 +75,6 @@ const BuyerNavigation = () => {
           <FaCartPlus className="farmerPageNavigationLinksIcon" />
         </NavLink>
       </div>
-      <div className="farmerPageNavigationProfileParent">
-          <div className="farmerPageNavigationProfile">
-            <FaUserCircle />
-          </div>
-          <div className="farmerPageNavigationGroupItem" />
-          <button className="farmerPageNavigationBellParent">
-            <div className="farmerPageNavigationBell">
-              <FaBell />
-            </div>
-            <div className="farmerPageNavigationInner" />
-          </button>
-        </div>
     </div>
   );
 };
