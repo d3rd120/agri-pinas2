@@ -1,17 +1,18 @@
 import "../css/Components/farmerTransactionsComponent.css";
 import FarmerNavigation from '../components/farmerPageNavigation';
 import { FaFolderOpen, FaEdit, FaTrash } from 'react-icons/fa';
+import TopNav from '../components/topPageNavigation';
 
 const FarmerTransactions = () => {
   return (
     <div className="farmerTransactionsComponent">
       <FarmerNavigation />  
       <div className="farmerTransactionsComponentMainPanel">
+        <TopNav />
         <div className="farmerTransactionsComponentTopSection">
           <div className="farmerTransactionsComponentMainText">
             <b className="farmerTransactionsComponentMainTextContainer">
-              <p className="farmerTransactionsComponentBlankLine">&nbsp;</p>
-              <p className="farmerTransactionsComponentBlankLine">&nbsp;</p>
+              <p className="farmerTransactionsComponentBlankLine">&nbsp;</p>             
               <p className="farmerTransactionsComponentBlankLine">Transactions</p>
             </b>
           </div>

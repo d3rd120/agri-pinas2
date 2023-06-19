@@ -61,14 +61,7 @@ const FarmerNavigation = () => {
       <div className="farmerPageNavigationProfileParent">
           <div className="farmerPageNavigationProfile">
             <FaUserCircle />
-          </div>
-          <div className="farmerPageNavigationGroupItem" />
-          <button className="farmerPageNavigationBellParent">
-            <div className="farmerPageNavigationBell">
-              <FaBell />
-            </div>
-            <div className="farmerPageNavigationInner" />
-          </button>
+          </div>       
         </div>
     </div>
   );

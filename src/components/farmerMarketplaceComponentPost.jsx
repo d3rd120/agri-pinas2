@@ -8,6 +8,7 @@ import FarmerMarketplaceEditProduct from '../components/farmerMarketplaceCompone
 import FarmerMarketplaceDeleteProduct from '../components/farmerMarketplaceComponentDeleteProduct';
 import React, { useState } from 'react';
 import { FaEdit, FaTrash, FaTimes } from 'react-icons/fa';
+import TopNav from '../components/topPageNavigation';
 
 const FarmerMarketplace = () => {
 
@@ -37,10 +38,10 @@ const FarmerMarketplace = () => {
     <div className="farmerMarketplaceComponentPost">
      <FarmerNavigation />
       <div className="farmerMarketplaceComponentPostMainPanel">
+        <TopNav />
         <div className="farmerMarketplaceComponentPostTopSection">
           <div className="farmerMarketplaceComponentPostMainTextContainer">
-            <b className="farmerMarketplaceComponentPostMainTextWrapper">
-              <p className="farmerMarketplaceComponentPostBlankLine">&nbsp;</p>
+            <b className="farmerMarketplaceComponentPostMainTextWrapper">     
               <p className="farmerMarketplaceComponentPostBlankLine">&nbsp;</p>
               <p className="farmerMarketplaceComponentPostBlankLine">Marketplace</p>
             </b>

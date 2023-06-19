@@ -7,17 +7,18 @@ import CornVector from '../img/cornVector.png';
 import OnionVector from '../img/onionVector.png';
 import FarmerNavigation from '../components/farmerPageNavigation';
 import { FaFolderOpen, FaEdit, FaTrash } from 'react-icons/fa';
+import TopNav from '../components/topPageNavigation';
 
 const FarmerCropTracker = () => {
   return (
     <div className="farmerCropTrackerComponent">
       <FarmerNavigation />
       <div className="farmerCropTrackerComponentMainPanel">
+        <TopNav />
         <div className="farmerCropTrackerComponentTopSection">
           <div className="farmerCropTrackerComponentMainText">
             <b className="farmerCropTrackerComponentMainTextContainer">
-              <p className="farmerCropTrackerComponentBlankLine">&nbsp;</p>
-              <p className="farmerCropTrackerComponentBlankLine">&nbsp;</p>
+              <p className="farmerCropTrackerComponentBlankLine">&nbsp;</p>           
               <p className="farmerCropTrackerComponentBlankLine">Crop Tracker</p>
             </b>
           </div>
