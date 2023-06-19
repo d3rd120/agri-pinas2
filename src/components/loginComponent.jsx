@@ -73,7 +73,7 @@ const LoginPage = () => {
       const userUid = user.uid;
       sessionStorage.setItem('userUid', userUid);
   
-      // Send POST request to the server
+  
       axios
         .post('http://localhost:3000/Users/login', {
           username: username.value,
@@ -82,10 +82,10 @@ const LoginPage = () => {
         .then(response => {
           setLoading(false);
           setUserSession(response.data.token, response.data.user);
-          // Handle the response data as needed
+        
         })
         .catch(error => {
-          // Handle the error
+          
           console.error('Error during sign in:', error);
         });
     } catch (error) {

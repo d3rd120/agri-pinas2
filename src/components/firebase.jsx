@@ -70,6 +70,22 @@ const sendPasswordReset = async (email) => {
 const logout = () => {
     signOut(auth);
 };
+const addProduct = async (productName, price, category, kilogramPerUnit, packaging, image) => {
+    try {
+      await addDoc(collection(db, "Products"), {
+        productName,
+        price,
+        category,
+        kilogramPerUnit,
+        packaging,
+        image,
+      });
+      console.log("Product added successfully!");
+    } catch (err) {
+      console.error(err);
+      alert(err.message);
+    }
+  };
 
 export {
     auth,
@@ -78,4 +94,5 @@ export {
     registerWithEmailAndPassword,
     sendPasswordReset,
     logout,
+    addProduct,
 };
