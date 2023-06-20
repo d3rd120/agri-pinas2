@@ -9,8 +9,7 @@ const AdminFarmerTransactions = () => {
       <div className="adminAccountBuyerComponentMainPanel">
         <div className="adminAccountBuyerComponentTopSection">
           <div className="adminAccountBuyerComponentMainText">
-            <b className="adminAccountBuyerComponentMainTextContainer">
-              <p className="adminAccountBuyerComponentBlankLine">&nbsp;</p>
+            <b className="adminAccountBuyerComponentMainTextContainer">              
               <p className="adminAccountBuyerComponentBlankLine">&nbsp;</p>
               <p className="adminAccountBuyerComponentBlankLine">transactions</p>
             </b>

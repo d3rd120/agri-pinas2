@@ -21,8 +21,7 @@ const AdminDashboard = () => {
         <div className="adminDashboardComponentTopSection">
           <div className="adminDashboardComponentMainText">
             <b className="adminDashboardComponentMainTextContainer">
-              <p className="adminDashboardComponentBlankLine">&nbsp;</p>
-              <p className="adminDashboardComponentBlankLine">&nbsp;</p>
+              <p className="adminDashboardComponentBlankLine">&nbsp;</p>             
               <p className="adminDashboardComponentBlankLine">Welcome Back, Admin</p>
             </b>
           </div>

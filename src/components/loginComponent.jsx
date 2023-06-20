@@ -80,7 +80,7 @@ const LoginPage = () => {
       setLoggedIn(true);
       const userUid = user.uid;
       sessionStorage.setItem('userUid', userUid);
-  
+
       // Send POST request to the server
       axios
         .post('http://localhost:3000/Users/login', {
@@ -100,13 +100,13 @@ const LoginPage = () => {
       console.error('Error logging in:', error.message);
     }
   };
-  
+
   useEffect(() => {
     const token = sessionStorage.getItem('token');
     if (!token) {
       return;
     }
-  
+
     axios.get(`http://localhost:3000/verifyToken?token=${token}`)
       .then(response => {
         setUserSession(response.data.token, response.data.user);
@@ -117,16 +117,6 @@ const LoginPage = () => {
         setAuthLoading(false);
       });
   }, []);
- 
-  if (authLoading && getToken()) {
-    return <div className="content">Checking Authentication...</div>
-  }
-
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      handleSubmit(e);
-    }
-  };
 
   useEffect(() => {
     if (loggedIn) {
@@ -140,6 +130,16 @@ const LoginPage = () => {
       }
     }
   }, [loggedIn]);
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSubmit(e);
+    }
+  };
+
+  if (authLoading && getToken()) {
+    return <div className="content">Checking Authentication...</div>
+  }
 
   return (
     <div className="loginComponent">
