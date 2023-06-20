@@ -6,34 +6,10 @@ import '../css/Components/farmerPageNavigation.css';
 import Logo from '../img/agriPinasLogo.png';
 
 const BuyerNavigation = () => {
-  const handleProfileClick = () => {
-  };
-
-  const handleMessageClick = () => {
-  };
-
-  const handleBellClick = () => {
-  };
+ 
 
   return (
     <div className="farmerPageNavigation">
-      <div className="farmerPageNavigationTop">
-        <div className="farmerPageNavigationProfileParent">
-          <button className="farmerPageNavigationProfile" onClick={handleProfileClick}>
-            <FaUserCircle />
-          </button>
-          <button className="farmerPageNavigationMessageParent" onClick={handleMessageClick}>
-            <div className="farmerPageNavigationMessage">
-              <FaEnvelope />
-            </div>
-          </button>
-          <button className="farmerPageNavigationBellParent" onClick={handleBellClick}>
-            <div className="farmerPageNavigationBell">
-              <FaBell />
-            </div>
-          </button>
-        </div>
-      </div>
       <div className="farmerPageNavigationLogoParent">
         <img className="farmerPageNavigationLogoIcon" alt="" src={Logo} />
         <div className="farmerPageNavigationMainText">AgriPinas</div>

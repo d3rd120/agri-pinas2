@@ -1,5 +1,5 @@
 import '../css/Components/farmerCommunityForumComponentFullPost.css';
-import FarmerNavigation from './farmerPageNavigation';
+import BuyerTopNav from '../components/buyerTopNav';
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
 import RiceVector from '../img/riceCardImage.png';
@@ -10,7 +10,8 @@ const BuyerMarketplace = () => {
   return (
     <div className="farmerCommunityForumComponentFullPost">
         <BuyerNavigation />      
-      <div className="farmerCommunityForumComponentFullPostMainPanel">
+        <div className="farmerMarketplaceComponentMainPanel">
+        <BuyerTopNav />
         <div className="farmerCommunityForumComponentFullPostTopSection">
           <div className="farmerCommunityForumComponentFullPostMainTextContainer">
             <b className="farmerCommunityForumComponentFullPostMainText1">

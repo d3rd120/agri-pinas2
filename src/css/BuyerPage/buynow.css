@@ -928,11 +928,12 @@
     justify-content: center;
     align-items: center;
   }
-  
-  .modal {
+  .modal1 {
     background-color: #fff;
     border-radius: 4px;
     padding: 20px;
+    height: 200px;
+    width: 450px;
   }
   
   .modalContent {
@@ -1023,3 +1024,9 @@
   .buttonContainer .cancelButton:hover{
     background-color: #A9AF7E;
   }
+ 
+  .error input {
+    border: 1px solid red;
+    outline-color: red;
+  }
+  

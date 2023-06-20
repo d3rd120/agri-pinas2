@@ -2,12 +2,15 @@ import "../css/Components/farmerCommunityForumComponent.css";
 import BuyerNavigation from './buyerNavigation';
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
+import tomatoVector from '../img/tomatoVector.png'
+import sitaw from '../img/sitaw.png';
 import ProfileVector1 from '../img/profileVector1.png';
 import ProfileVector2 from '../img/profileVector2.png';
 import {Link} from 'react-router-dom';
 import { FaEdit, FaTimes } from 'react-icons/fa';
 import React, { useState } from 'react';
 import FarmerCommunityForumComponentAddPost from '../components/farmerCommunityForumComponentAddPost';
+import BuyerTopNav from '../components/buyerTopNav';
 
 
 const FarmerCommunityForumComponent = () => {
@@ -25,7 +28,8 @@ const FarmerCommunityForumComponent = () => {
   return (
     <div className="farmerCommunityForumComponent">
      <BuyerNavigation />
-      <div className="farmerCommunityForumComponentMainPanel">
+     <div className="farmerMarketplaceComponentMainPanel">
+        <BuyerTopNav /> 
         <div className="farmerCommunityForumComponentTopSection">
           <div className="farmerCommunityForumComponentMainText1">
             <b className="farmerCommunityForumComponentMainText2">
@@ -57,20 +61,20 @@ const FarmerCommunityForumComponent = () => {
           <div className="farmerCommunityForumComponentFrameParent">
             <div className="farmerCommunityForumComponentFrameWrapper">
 
-              <Link className="farmerCommunityForumComponentRectangleParent"  to = '/farmercommunityforumpost'>
+              <Link className="farmerCommunityForumComponentRectangleParent"  to = '/buyercommunityforumpost'>
                 <img
                   className="farmerCommunityForumComponentFrameChild"
                   alt=""
-                  src={OnionVector}
+                  src={tomatoVector}
                 />
                 <div className="farmerCommunityForumComponentFrameGroup">
                   <div className="farmerCommunityForumComponentFrameContainer">
                     <div className="farmerCommunityForumComponentSubText1Wrapper">
-                      <b className="farmerCommunityForumComponentSubText1">What is the SRP of Onions?</b>
+                      <b className="farmerCommunityForumComponentSubText1">Is tomato a good crop and profitable? </b>
                     </div>
                     <div className="farmerCommunityForumComponentSubText2Wrapper2">
                       <div className="farmerCommunityForumComponentSubText2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua....
                       </div>
@@ -87,16 +91,16 @@ const FarmerCommunityForumComponent = () => {
                 </div>
               </Link>
 
-              <Link className="farmerCommunityForumComponentRectangleParent" to = '/farmercommunityforumpost'>
+              <Link className="farmerCommunityForumComponentRectangleParent" to = '/buyercommunityforumpost'>
                 <img
                   className="farmerCommunityForumComponentFrameChild"
                   alt=""
-                  src={CornVector}
+                  src={sitaw}
                 />
                 <div className="farmerCommunityForumComponentFrameGroup">
                   <div className="farmerCommunityForumComponentFrameContainer">
                     <div className="farmerCommunityForumComponentSubText1Wrapper">
-                      <b className="farmerCommunityForumComponentSubText1">How corn grows?</b>
+                      <b className="farmerCommunityForumComponentSubText1">What is the SRP of Sitaw?</b>
                     </div>
                     <div className="farmerCommunityForumComponentSubText2Wrapper2">
                       <div className="farmerCommunityForumComponentSubText2">
@@ -120,7 +124,7 @@ const FarmerCommunityForumComponent = () => {
               
             </div>
              <div className="farmerCommunityForumComponentFrameWrapper">
-              <Link className="farmerCommunityForumComponentRectangleParent" to = '/farmercommunityforumpost'>
+              <Link className="farmerCommunityForumComponentRectangleParent" to = '/buyercommunityforumpost'>
                 <img
                   className="farmerCommunityForumComponentFrameChild"
                   alt=""
@@ -150,7 +154,7 @@ const FarmerCommunityForumComponent = () => {
                 </div>
               </Link>
 
-              <Link className="farmerCommunityForumComponentRectangleParent" to = '/farmercommunityforumpost'>
+              <Link className="farmerCommunityForumComponentRectangleParent" to = '/buyercommunityforumpost'>
                 <img
                   className="farmerCommunityForumComponentFrameChild"
                   alt=""

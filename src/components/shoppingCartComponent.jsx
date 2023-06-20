@@ -9,7 +9,8 @@ import ProfileVector1 from '../img/profileVector1.png';
 import {Link} from 'react-router-dom';
 import { RiDeleteBinLine } from 'react-icons/ri';
 import { IconButton } from '@material-ui/core';
-import Card from 'react-bootstrap/Card';
+import BuyerTopNav from '../components/buyerTopNav';
+
 
 const ShoppingCart = () => {
   const [quantity, setQuantity] = useState(1);
@@ -49,7 +50,8 @@ const ShoppingCart = () => {
   return (
     <div className="buyerMarketplaceComponent">
       <BuyerNavigation />
-      <div className="buyerMarketplaceComponentMainPanel">
+      <div className="farmerMarketplaceComponentMainPanel">
+        <BuyerTopNav />
         <div className="buyerMarketplaceComponentTopSection">
           <div className="buyerMarketplaceComponentMainText">
             <b className="buyerMarketplaceComponentSubText">
@@ -185,7 +187,7 @@ const ShoppingCart = () => {
 
       {showModal && (
         <div className="modalBackdrop">
-          <div className="modal">
+          <div className="modal1">
           <div className="modalContent">
   <h3>Do you want to remove this item?</h3>
   <div className="buttonContainer">

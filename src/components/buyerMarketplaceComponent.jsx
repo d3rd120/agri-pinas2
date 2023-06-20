@@ -13,14 +13,17 @@ import squash from '../img/squash.png';
 import talong from '../img/talong.png';
 import RiceVector from '../img/riceCardImage.png';
 import ProfileVector2 from '../img/profileVector2.png';
+import ProfileVector1 from '../img/profileVector1.png';
 import {Link} from 'react-router-dom';
 import { FaPlus } from 'react-icons/fa';
+import BuyerTopNav from '../components/buyerTopNav';
 
 const BuyerMarketplace = () => {
   return (
     <div className="buyerMarketplaceComponent">
       <BuyerNavigation />
-      <div className="buyerMarketplaceComponentMainPanel">
+      <div className="farmerMarketplaceComponentMainPanel">
+        <BuyerTopNav />
         <div className="buyerMarketplaceComponentTopSection">
           <div className="buyerMarketplaceComponentMainText">
             <b className="buyerMarketplaceComponentSubText">
@@ -77,7 +80,7 @@ const BuyerMarketplace = () => {
                   <div className="buyerMarketplaceComponentAuthor">
                     <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
                     <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="buyerMarketplaceComponentAuthorName">Daniella Tungol</div>
                       <div className="buyerMarketplaceComponentSubName">Farmer</div>
                     </div>
                   </div>
@@ -125,7 +128,7 @@ const BuyerMarketplace = () => {
                   <div className="buyerMarketplaceComponentAuthor">
                     <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
                     <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="buyerMarketplaceComponentAuthorName">Arriane Gatpo</div>
                       <div className="buyerMarketplaceComponentSubName">Farmer</div>
                     </div>
                   </div>
@@ -172,9 +175,9 @@ const BuyerMarketplace = () => {
                   </div>
                   <div className="buyerMarketplaceComponentFrameItem" />
                   <div className="buyerMarketplaceComponentAuthor">
-                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
+                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
                     <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="buyerMarketplaceComponentAuthorName">Romeo London</div>
                       <div className="buyerMarketplaceComponentSubName">Farmer</div>
                     </div>
                   </div>
@@ -226,9 +229,9 @@ const BuyerMarketplace = () => {
                   </div>
                   <div className="buyerMarketplaceComponentFrameItem" />
                   <div className="buyerMarketplaceComponentAuthor">
-                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
+                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
                     <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="buyerMarketplaceComponentAuthorName">Jenkins Mesina</div>
                       <div className="buyerMarketplaceComponentSubName">Farmer</div>
                     </div>
                   </div>
@@ -274,9 +277,9 @@ const BuyerMarketplace = () => {
                   </div>
                   <div className="buyerMarketplaceComponentFrameItem" />
                   <div className="buyerMarketplaceComponentAuthor">
-                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
+                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
                     <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="buyerMarketplaceComponentAuthorName">Ryan Amador</div>
                       <div className="buyerMarketplaceComponentSubName">Farmer</div>
                     </div>
                   </div>
@@ -323,9 +326,9 @@ const BuyerMarketplace = () => {
                   </div>
                   <div className="buyerMarketplaceComponentFrameItem" />
                   <div className="buyerMarketplaceComponentAuthor">
-                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
+                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
                     <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="buyerMarketplaceComponentAuthorName">Yagerobi Doria</div>
                       <div className="buyerMarketplaceComponentSubName">Farmer</div>
                     </div>
                   </div>
@@ -378,9 +381,9 @@ const BuyerMarketplace = () => {
                   </div>
                   <div className="buyerMarketplaceComponentFrameItem" />
                   <div className="buyerMarketplaceComponentAuthor">
-                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
+                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
                     <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="buyerMarketplaceComponentAuthorName">Daniel Ribaya</div>
                       <div className="buyerMarketplaceComponentSubName">Farmer</div>
                     </div>
                   </div>
@@ -477,7 +480,7 @@ const BuyerMarketplace = () => {
                   <div className="buyerMarketplaceComponentAuthor">
                     <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
                     <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="buyerMarketplaceComponentAuthorName">Arriane Gatpo</div>
                       <div className="buyerMarketplaceComponentSubName">Farmer</div>
                     </div>
                   </div>
@@ -530,9 +533,9 @@ const BuyerMarketplace = () => {
                   </div>
                   <div className="buyerMarketplaceComponentFrameItem" />
                   <div className="buyerMarketplaceComponentAuthor">
-                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
+                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
                     <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="buyerMarketplaceComponentAuthorName">Romeo London</div>
                       <div className="buyerMarketplaceComponentSubName">Farmer</div>
                     </div>
                   </div>
@@ -578,9 +581,9 @@ const BuyerMarketplace = () => {
                   </div>
                   <div className="buyerMarketplaceComponentFrameItem" />
                   <div className="buyerMarketplaceComponentAuthor">
-                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
+                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
                     <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="buyerMarketplaceComponentAuthorName">Jenkins Mesina</div>
                       <div className="buyerMarketplaceComponentSubName">Farmer</div>
                     </div>
                   </div>
@@ -629,7 +632,7 @@ const BuyerMarketplace = () => {
                   <div className="buyerMarketplaceComponentAuthor">
                     <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
                     <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="buyerMarketplaceComponentAuthorName">Arriane Gatpo</div>
                       <div className="buyerMarketplaceComponentSubName">Farmer</div>
                     </div>
                   </div>

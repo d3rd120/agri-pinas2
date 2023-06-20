@@ -408,7 +408,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(88, 88, 88, 0.8);
+  background-color: rgba(165, 170, 127, 0.8);
   padding: 10px 20px;
   border-radius: 4px;
   z-index: 9999;
@@ -418,4 +418,72 @@
   color: white;
   font-size: 18px;
 }
+.popup-menu {
+  position: relative;
+  display: inline-block;
+  top: -80px;
+  right: -520px;
+}
 
+.dot {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  display: none;
+}
+.popup-menu:hover .menu {
+  display: block;
+}
+
+.edit-button,
+.delete-button {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: rgb(211, 207, 207)
+}
+.dots-menu {
+  position: absolute;
+  top: 100%;
+  left: -8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.popup-menu:hover .dots-menu {
+  visibility: visible;
+  opacity: 1;
+}

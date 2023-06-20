@@ -11,6 +11,7 @@ import { ThemeProvider } from 'styled-components';
 import styled from 'styled-components';
 import { RiChat1Line } from 'react-icons/ri';
 import {Link} from 'react-router-dom';
+import BuyerTopNav from '../components/buyerTopNav';
 
 const CustomHeaderTitle = styled.div`
   background-color: #557153;
@@ -66,7 +67,8 @@ const BuyerMarketplace = () => {
   return (
     <div className="buyerMarketplaceComponentPost">
       <BuyerNavigation />
-      <div className="buyerMarketplaceComponentPostMainPanel">
+      <div className="farmerMarketplaceComponentMainPanel">
+        <BuyerTopNav />
         <div className="buyerMarketplaceComponentPostTopSection">
           <div className="buyerMarketplaceComponentPostMainTextContainer">
             <b className="buyerMarketplaceComponentPostMainTextWrapper">

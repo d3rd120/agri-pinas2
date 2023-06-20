@@ -362,3 +362,109 @@
       box-sizing: border-box;
     }
   }
+  .farmerCommunityForumComponentFullPostSmallCardsFullDescription1 {
+    margin-top: -50px;
+  }
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    outline: none;
+    width: 450px;
+    height: 530px;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 50px;
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+  }
+  .deleteModal h2 {
+    text-align: center;
+  }
+  .deleteModal p {
+    text-align: center;
+  }
+  
+  .modal button {
+    margin-top: 10px;
+  }
+  .deleteModal {
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    background: white;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    outline: none;
+    border-radius: 4px;
+    height: 170px;
+  }
+
+  .deleteModal h2 {
+    margin-top: 0;
+  }
+
+  .deleteModal p {
+    margin-bottom: 20px;
+  }
+
+  .buttonContainer1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .buttonContainer1 .cancelButton1{
+    background-color: #A9AF7E;
+    right: -77px;
+  }
+  .buttonContainer1 .deleteButton{
+    background-color: #27AE60;
+    left: -80px;
+  }
+  .cancelButton1 {
+    margin-right: 20px;
+  }
+
+  .deleteButton {
+    color: white;
+    background-color: #27AE60;
+  }
+  .buttonContainer1 .deleteButton:hover{
+    background-color: #27AE60;
+  }
+  .buttonContainer1 .cancelButton1:hover{
+    background-color: #A9AF7E;
+  }
+  .popup-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+  
+  .dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-bottom: 5px;
+    margin-left: -3rem;
+  }
+  
+  .menu {
+    margin-top: -15px;
+    align-self: flex-start;
+  }
+  

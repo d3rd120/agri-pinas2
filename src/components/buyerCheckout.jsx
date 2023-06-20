@@ -7,7 +7,7 @@ import RiceVector from '../img/riceCardImage.png';
 import TomatoVector from '../img/tomatoVector.png';
 import ProfileVector1 from '../img/profileVector1.png';
 import {Link} from 'react-router-dom';
-import { RiDeleteBinLine } from 'react-icons/ri';
+import BuyerTopNav from '../components/buyerTopNav';
 import { IconButton, Modal, TextField, Button } from '@material-ui/core';
 import { RiEdit2Line } from 'react-icons/ri';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
@@ -18,33 +18,73 @@ const Checkout  = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [barangay, setBarangay] = useState('');
   const [address, setAddress] = useState('');
+  const [nameError, setNameError] = useState(false);
+  const [phoneNumberError, setPhoneNumberError] = useState(false);
+  const [barangayError, setBarangayError] = useState(false);
+  const [addressError, setAddressError] = useState(false);
 
   const handleOpen = () => {
     setOpen(true);
   };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
   const handlePhoneNumberChange = (e) => {
     const value = e.target.value;
-    // Remove non-numeric characters from the input value
     const numericValue = value.replace(/\D/g, '');
     setPhoneNumber(numericValue);
   };
-
-
+ 
   const handleSave = () => {
-    // Perform saving logic here
-    // You can access the updated values in the state variables: name, phoneNumber, barangay, and address
+    let hasError = false;
+
+    if (!name) {
+      hasError = true;
+      setNameError(true);
+    } else {
+      setNameError(false);
+    }
+  
+    if (!phoneNumber) {
+      hasError = true;
+      setPhoneNumberError(true);
+    } else {
+      setPhoneNumberError(false);
+    }
+  
+    if (!barangay) {
+      hasError = true;
+      setBarangayError(true);
+    } else {
+      setBarangayError(false);
+    }
+  
+    if (!address) {
+      hasError = true;
+      setAddressError(true);
+    } else {
+      setAddressError(false);
+    }
+    if (hasError) {
+      return;
+    }
+    setName('');
+    setPhoneNumber('');
+    setBarangay('');
+    setAddress('');
+  
     handleClose();
-  };
-
-
+};
+  const handleClose = () => {
+   setName('');
+   setPhoneNumber('');
+   setBarangay('');
+   setAddress('');
+   setOpen(false);
+};
+  
   return (
     <div className="buyerMarketplaceComponent">
       <BuyerNavigation />
-      <div className="buyerMarketplaceComponentMainPanel">
+      <div className="farmerMarketplaceComponentMainPanel">
+        <BuyerTopNav />
         <div className="buyerMarketplaceComponentTopSection">
           <div className="buyerMarketplaceComponentMainText">
             <b className="buyerMarketplaceComponentSubText">
@@ -86,47 +126,45 @@ const Checkout  = () => {
       <Modal open={open} onClose={handleClose}>
         <div className="editModal">
           <h2>Edit your Address</h2>
-          <br></br>
-          <div className="farmerMarketplaceEditProductComponentInputParent">
-            <div className="farmerMarketplaceEditProductComponentTitle">
-              Full Name
-            </div>
+          <br />
+          <div className={`farmerMarketplaceEditProductComponentInputParent ${nameError ? 'error' : ''}`}>
+            <div className="farmerMarketplaceEditProductComponentTitle">Full Name</div>
             <input
-              className="farmerMarketplaceEditProductComponentInput2"
+              className={`farmerMarketplaceEditProductComponentInput2 ${nameError ? 'error' : ''}`}
               type="text"
               placeholder="Enter your name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
           </div>
-          <div className="farmerMarketplaceEditProductComponentInputParent">
-      <div className="farmerMarketplaceEditProductComponentTitle">
-        Phone number
-      </div>
-      <input
-        className="farmerMarketplaceEditProductComponentInput2"
-        type="text"
-        placeholder="Enter your phone number"
-        value={phoneNumber}
-        onChange={handlePhoneNumberChange}
-      />
-    </div>
-          <div className="farmerMarketplaceEditProductComponentInputParent">
-            <div className="farmerMarketplaceEditProductComponentTitle">
-              Barangay
-            </div>
+          <div className={`farmerMarketplaceEditProductComponentInputParent ${phoneNumberError ? 'error' : ''}`}>
+            <div className="farmerMarketplaceEditProductComponentTitle">Phone number</div>
             <input
-              className="farmerMarketplaceEditProductComponentInput2"
+              className={`farmerMarketplaceEditProductComponentInput2 ${phoneNumberError ? 'error' : ''}`}
+              type="text"
+              placeholder="Enter your phone number"
+              value={phoneNumber}
+              onChange={handlePhoneNumberChange}
+            />
+          </div>
+          <div className={`farmerMarketplaceEditProductComponentInputParent ${barangayError ? 'error' : ''}`}>
+            <div className="farmerMarketplaceEditProductComponentTitle">Barangay</div>
+            <input
+              className={`farmerMarketplaceEditProductComponentInput2 ${barangayError ? 'error' : ''}`}
               type="text"
               placeholder="Enter your barangay"
+              value={barangay}
+              onChange={(e) => setBarangay(e.target.value)}
             />
           </div>
-          <div className="farmerMarketplaceEditProductComponentInputParent">
-            <div className="farmerMarketplaceEditProductComponentTitle">
-             Address
-            </div>
+          <div className={`farmerMarketplaceEditProductComponentInputParent ${addressError ? 'error' : ''}`}>
+            <div className="farmerMarketplaceEditProductComponentTitle">Address</div>
             <input
-              className="farmerMarketplaceEditProductComponentInput2"
+              className={`farmerMarketplaceEditProductComponentInput2 ${addressError ? 'error' : ''}`}
               type="text"
               placeholder="Enter your full address"
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
             />
           </div>
           <div className="buttonContainer">
@@ -291,7 +329,7 @@ const Checkout  = () => {
   <span class="buttonText" style={{ marginLeft: "67px" }}>₱10,040.00</span>
   
 </div>
-<Link to="/checkout" className="ordercheckoutButton3">
+<Link to="/buyertransactions" className="ordercheckoutButton3">
     PLACE ORDER
   </Link>
 
