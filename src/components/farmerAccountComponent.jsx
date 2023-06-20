@@ -2,9 +2,32 @@ import FarmerNavigation from '../components/farmerPageNavigation';
 import '../css/Components/farmerAccountComponent.css';
 import ProfileVector from '../img/profileVector3.png';
 import TopNav from '../components/topPageNavigation';
-import {FaEdit} from 'react-icons/fa';
+import { FaEdit } from 'react-icons/fa';
+import { useState } from 'react';
 
 const FarmerAccountComponent = () => {
+  const [isEditing, setIsEditing] = useState(false);
+  const [fullName, setFullName] = useState('Ryan Edward Amador');
+  const [birthdate, setBirthdate] = useState('01 - 01 - 1999');
+  const [emailAddress, setEmailAddress] = useState('ryan@gmail.com');
+  const [age, setAge] = useState('23 years old');
+  const [address, setAddress] = useState('Antipolo');
+  const [contactNumber, setContactNumber] = useState('(+63)9123456789');
+
+  const handleEditClick = () => {
+    setIsEditing(true);
+  };
+
+  const handleSaveClick = () => {
+    setIsEditing(false);
+
+  };
+
+  const handleCancelClick = () => {
+    setIsEditing(false);
+   
+  };
+
   return (
     <div className="FarmerAccountComponent">
       <FarmerNavigation />
@@ -12,7 +35,7 @@ const FarmerAccountComponent = () => {
         <TopNav />
         <div className="FarmerAccountComponentTopSection">
           <div className="FarmerAccountComponentMainText">
-            <b className="FarmerAccountComponentSubText">      
+            <b className="FarmerAccountComponentSubText">
               <p className="FarmerAccountComponentBlankLine">&nbsp;</p>
               <p className="FarmerAccountComponentBlankLine">Account profile</p>
             </b>
@@ -30,7 +53,7 @@ const FarmerAccountComponent = () => {
                 <div className="FarmerAccountComponentFrameWrapper">
                   <div className="FarmerAccountComponentFrameGroup">
                     <div className="FarmerAccountComponentNameTextWrapper">
-                      <b className="FarmerAccountComponentNameText">Marievic Anes</b>
+                      <b className="FarmerAccountComponentNameText">{fullName}</b>
                     </div>
                     <div className="FarmerAccountComponentDetailsChild" />
                     <div className="FarmerAccountComponentRoleWrapper">
@@ -52,45 +75,102 @@ const FarmerAccountComponent = () => {
                       <div className="FarmerAccountComponentSmallCardsDetailsChild" />
                     </div>
                     <div className="FarmerAccountComponentFullDescriptionWrapper">
-                      <div className="FarmerAccountComponentFullDescription">
-                        <p className="FarmerAccountComponentBlankLine">
-                          <b className="FarmerAccountComponentCategory">{`Full Name: `}</b>
-                          <span>Ryan Edward Amador</span>
-                        </p>
-                        <p className="FarmerAccountComponentBlankLine">
-                          <b className="FarmerAccountComponentCategory">{`Birthdate: `}</b>
-                          <span>01 - 01 - 1999</span>
-                        </p>
-                        <p className="FarmerAccountComponentBlankLine">
-                          <b>{`Email Address: `}</b>
-                          <span className="FarmerAccountComponentCategory">ryan@gmail.com</span>
-                        </p>
-                        <p className="FarmerAccountComponentBlankLine">
-                          <b className="FarmerAccountComponentCategory">{`Age: `}</b>
-                          <span>23 years old</span>
-                        </p>
-                      </div>
-                    </div>
-                    <div className="FarmerAccountComponentFullDescriptionWrapper">
-                      <div className="FarmerAccountComponentFullDescription">
-                        <p className="FarmerAccountComponentBlankLine">
-                          <b>{`Address: `}</b>
-                          <span className="FarmerAccountComponentCategory">Antipolo</span>
-                        </p>
-                        <p className="FarmerAccountComponentBlankLine">
-                          <b>{`Contact Number: `}</b>
-                          <span className="FarmerAccountComponentCategory">(+63)9123456789</span>
-                        </p>
-                        <p className="FarmerAccountComponentBlankLine">
-                          <b>Password: ***********</b>
-                        </p>
-                      </div>
+                      {isEditing ? (
+                        <div className="FarmerAccountComponentFullDescription">
+                          <p className="FarmerAccountComponentBlankLine">
+                            <b className="FarmerAccountComponentCategory">{`Full Name: `}</b>
+                            <input
+                              className="FarmerAccountComponentCategoryInput"
+                              value={fullName}
+                              onChange={(e) => setFullName(e.target.value)}
+                            />
+                          </p>
+                          <p className="FarmerAccountComponentBlankLine">
+                            <b className="FarmerAccountComponentCategory">{`Birthdate: `}</b>
+                            <input
+                              className="FarmerAccountComponentCategoryInput"
+                              value={birthdate}
+                              onChange={(e) => setBirthdate(e.target.value)}
+                            />
+                          </p>
+                          <p className="FarmerAccountComponentBlankLine">
+                            <b>{`Email Address: `}</b>
+                            <input
+                              className="FarmerAccountComponentCategoryInput"
+                              value={emailAddress}
+                              onChange={(e) => setEmailAddress(e.target.value)}
+                            />
+                          </p>
+                          <p className="FarmerAccountComponentBlankLine">
+                            <b className="FarmerAccountComponentCategory">{`Age: `}</b>
+                            <input
+                              className="FarmerAccountComponentCategoryInput"
+                              value={age}
+                              onChange={(e) => setAge(e.target.value)}
+                            />
+                          </p>
+                          <p className="FarmerAccountComponentBlankLine">
+                            <b>{`Address: `}</b>
+                            <input
+                              className="FarmerAccountComponentCategoryInput"
+                              value={address}
+                              onChange={(e) => setAddress(e.target.value)}
+                            />
+                          </p>
+                          <p className="FarmerAccountComponentBlankLine">
+                            <b>{`Contact Number: `}</b>
+                            <input
+                              className="FarmerAccountComponentCategoryInput"
+                              value={contactNumber}
+                              onChange={(e) => setContactNumber(e.target.value)}
+                            />
+                          </p>
+                        </div>
+                      ) : (
+                        <div className="FarmerAccountComponentFullDescription">
+                          <p className="FarmerAccountComponentBlankLine">
+                            <b className="FarmerAccountComponentCategory">{`Full Name: `}</b>
+                            <span>{fullName}</span>
+                          </p>
+                          <p className="FarmerAccountComponentBlankLine">
+                            <b className="FarmerAccountComponentCategory">{`Birthdate: `}</b>
+                            <span>{birthdate}</span>
+                          </p>
+                          <p className="FarmerAccountComponentBlankLine">
+                            <b>{`Email Address: `}</b>
+                            <span className="FarmerAccountComponentCategory">{emailAddress}</span>
+                          </p>
+                          <p className="FarmerAccountComponentBlankLine">
+                            <b className="FarmerAccountComponentCategory">{`Age: `}</b>
+                            <span>{age}</span>
+                          </p>
+                          <p className="FarmerAccountComponentBlankLine">
+                            <b>{`Address: `}</b>
+                            <span className="FarmerAccountComponentCategory">{address}</span>
+                          </p>
+                          <p className="FarmerAccountComponentBlankLine">
+                            <b>{`Contact Number: `}</b>
+                            <span className="FarmerAccountComponentCategory">{contactNumber}</span>
+                          </p>
+                        </div>
+                      )}
                     </div>
                     <div className="FarmerAccountComponentNameTextWrapper">
-                        <button className="FarmerAccountComponentButton">
-                        <FaEdit className="FarmerAccountComponentButtonIcon" />
-                        <div className="FarmerAccountComponentButtonText">Edit Information</div>
+                      {isEditing ? (
+                        <>
+                          <button className="FarmerAccountComponentButton" onClick={handleSaveClick}>
+                            <div className="FarmerAccountComponentButtonText">Save</div>
+                          </button>
+                          <button className="FarmerAccountComponentButton" onClick={handleCancelClick}>
+                            <div className="FarmerAccountComponentButtonText">Cancel</div>
+                          </button>
+                        </>
+                      ) : (
+                        <button className="FarmerAccountComponentButton" onClick={handleEditClick}>
+                          <FaEdit className="FarmerAccountComponentButtonIcon" />
+                          <div className="FarmerAccountComponentButtonText">Edit Information</div>
                         </button>
+                      )}
                     </div>
                   </div>
                 </div>
