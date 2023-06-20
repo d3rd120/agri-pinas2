@@ -59,9 +59,12 @@ const FarmerNavigation = () => {
       </NavLink>
       </div>
       <div className="farmerPageNavigationProfileParent">
+         <NavLink 
+         to = '/farmeraccount'>
           <div className="farmerPageNavigationProfile">
             <FaUserCircle />
-          </div>       
+          </div>  
+          </NavLink>     
         </div>
     </div>
   );
