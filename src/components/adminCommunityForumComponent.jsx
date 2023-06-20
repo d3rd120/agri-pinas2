@@ -14,8 +14,7 @@ const AdminCommunityForum = () => {
         <div className="adminCommunityForumComponentTopSection">
           <div className="adminCommunityForumComponentMainText">
             <b className="adminCommunityForumComponentMainTextContainer">
-              <p className="adminCommunityForumComponentBlankLine">&nbsp;</p>
-              <p className="adminCommunityForumComponentBlankLine">&nbsp;</p>
+              <p className="adminCommunityForumComponentBlankLine">&nbsp;</p>              
               <p className="adminCommunityForumComponentBlankLine">Community Forum</p>
             </b>
           </div>

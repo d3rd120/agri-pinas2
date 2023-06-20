@@ -11,8 +11,7 @@ const AdminBuyerTransactions = () => {
         <div className="adminBuyerTransactionsComponentTopSection">
           <div className="adminBuyerTransactionsComponentMainText">
             <b className="adminBuyerTransactionsComponentMainTextContainer">
-              <p className="adminBuyerTransactionsComponentBlankLine">&nbsp;</p>
-              <p className="adminBuyerTransactionsComponentBlankLine">&nbsp;</p>
+              <p className="adminBuyerTransactionsComponentBlankLine">&nbsp;</p>             
               <p className="adminBuyerTransactionsComponentBlankLine">transactions</p>
             </b>
           </div>

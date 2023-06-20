@@ -107,14 +107,7 @@ const AdminNavigation = () => {
       <div className="adminPageNavigationProfileParent">
         <div className="adminPageNavigationProfile">
           <FaUserCircle />
-        </div>
-        <div className="adminPageNavigationGroupItem" />
-        <button className="adminPageNavigationBellParent">
-          <div className="adminPageNavigationBell">
-            <FaBell />
-          </div>
-          <div className="adminPageNavigationInner" />
-        </button>
+        </div>      
       </div>
     </div>
   );
