@@ -103,7 +103,8 @@ const FarmerMarketplace = () => {
                     </div>
                   </div>
                 </div>
-              </NavLink>              
+              </NavLink>   
+
               <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
                   className="farmerMarketplaceComponentFrameChild"
@@ -152,6 +153,7 @@ const FarmerMarketplace = () => {
                   </div>
                 </div>
               </NavLink>     
+              
 
               <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
                 <img
@@ -352,6 +354,157 @@ const FarmerMarketplace = () => {
               </NavLink>     
               
             </div>
+                <div className="farmerMarketplaceComponentFrameWrapper">
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+                <img
+                  className="farmerMarketplaceComponentFrameChild"
+                  alt=""
+                  src={CornVector}
+                />
+                <div className="farmerMarketplaceComponentFrameGroup">
+                  <div className="farmerMarketplaceComponentFrameContainer">
+                    <div className="farmerMarketplaceComponentCardWrapper">
+                      <b className="farmerMarketplaceComponentCardText">Corn</b>
+                    </div>
+                    <div className="farmerMarketplaceComponentCategoryWrapper">
+                      <div className="farmerMarketplaceComponentCategoryContainer">
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b>{`Category: `}</b>
+                          <span className="farmerMarketplaceComponentCategory">Vegetable</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b>{`Packaging: `}</b>
+                          <span className="farmerMarketplaceComponentCategory">Sack</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b className="farmerMarketplaceComponentCategory">{`Price: `}</b>
+                          <span>Php 3,000</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b>{`Kilogram per unit: `}</b>
+                          <span className="farmerMarketplaceComponentCategory">50 kgs</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
+                          <span>
+                            A red round vegetable with a good storage quality......
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="farmerMarketplaceComponentFrameItem" />
+                  <div className="farmerMarketplaceComponentAuthor">
+                    <img className="farmerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
+                    <div className="farmerMarketplaceComponentAuthorText">
+                      <div className="farmerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="farmerMarketplaceComponentSubName">Farmer</div>
+                    </div>
+                  </div>
+                </div>
+              </NavLink>              
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+                <img
+                  className="farmerMarketplaceComponentFrameChild"
+                  alt=""
+                  src={OnionVector}
+                />
+                <div className="farmerMarketplaceComponentFrameGroup">
+                  <div className="farmerMarketplaceComponentFrameContainer">
+                    <div className="farmerMarketplaceComponentCardWrapper">
+                      <b className="farmerMarketplaceComponentCardText">Onions</b>
+                    </div>
+                    <div className="farmerMarketplaceComponentCategoryWrapper">
+                      <div className="farmerMarketplaceComponentCategoryContainer">
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b>{`Category: `}</b>
+                          <span className="farmerMarketplaceComponentCategory">Vegetable</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b>{`Packaging: `}</b>
+                          <span className="farmerMarketplaceComponentCategory">Sack</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b className="farmerMarketplaceComponentCategory">{`Price: `}</b>
+                          <span>Php 3,000</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b>{`Kilogram per unit: `}</b>
+                          <span className="farmerMarketplaceComponentCategory">50 kgs</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
+                          <span>
+                            A red round vegetable with a good storage quality.....
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="farmerMarketplaceComponentFrameItem" />
+                  <div className="farmerMarketplaceComponentAuthor">
+                    <img className="farmerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
+                    <div className="farmerMarketplaceComponentAuthorText">
+                      <div className="farmerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="farmerMarketplaceComponentSubName">Farmer</div>
+                    </div>
+                  </div>
+                </div>
+              </NavLink>     
+
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+                <img
+                  className="farmerMarketplaceComponentFrameChild"
+                  alt=""
+                  src={RiceVector}
+                />
+                <div className="farmerMarketplaceComponentFrameGroup">
+                  <div className="farmerMarketplaceComponentFrameContainer">
+                    <div className="farmerMarketplaceComponentCardWrapper">
+                      <b className="farmerMarketplaceComponentCardText">Rice</b>
+                    </div>
+                    <div className="farmerMarketplaceComponentCategoryWrapper">
+                      <div className="farmerMarketplaceComponentCategoryContainer">
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b>{`Category: `}</b>
+                          <span className="farmerMarketplaceComponentCategory">Vegetable</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b>{`Packaging: `}</b>
+                          <span className="farmerMarketplaceComponentCategory">Sack</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b className="farmerMarketplaceComponentCategory">{`Price: `}</b>
+                          <span>Php 3,000</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b>{`Kilogram per unit: `}</b>
+                          <span className="farmerMarketplaceComponentCategory">50 kgs</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
+                          <span>
+                            A red round vegetable with a good storage quality.....
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="farmerMarketplaceComponentFrameItem" />
+                  <div className="farmerMarketplaceComponentAuthor">
+                    <img className="farmerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
+                    <div className="farmerMarketplaceComponentAuthorText">
+                      <div className="farmerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="farmerMarketplaceComponentSubName">Farmer</div>
+                    </div>
+                  </div>
+                </div>
+              </NavLink>     
+              
+            </div>
+
+
+            
             <div className="farmerMarketplaceComponentCategories">
               <div className="farmerMarketplaceComponentPaginationContainer">
                 <div className="farmerMarketplaceComponentPaginationNumber">1</div>

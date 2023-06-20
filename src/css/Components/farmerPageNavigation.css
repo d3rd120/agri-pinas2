@@ -142,7 +142,7 @@
     object-fit: cover;
     transition: 0.5s;
     cursor: pointer;
-    color: #A9AF7E;
+    color: white;
   }
 
   .farmerPageNavigationProfile:hover {

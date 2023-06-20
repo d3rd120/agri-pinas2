@@ -13,6 +13,7 @@ import FarmerCommunityForum from './pages/FarmerPage/farmerCommunityForum';
 import FarmerCommunityForumPost from './pages/FarmerPage/farmerCommunityForumPost';
 import FarmerCropTracker from './pages/FarmerPage/farmerCropTracker';
 import FarmerTransactions from './pages/FarmerPage/farmerTransactions';
+import FarmerAccount from './pages/FarmerPage/farmerAccount';
 import AdminDashboard from './pages/AdminPage/adminDashboard';
 import AdminCommunityForum from './pages/AdminPage/adminCommunityForum';
 import AdminBuyerTransactions from './pages/AdminPage/adminBuyerTransactions';
@@ -47,6 +48,7 @@ const App = () => {
               <Route path="/farmercommunityforumpost" element={<FarmerCommunityForumPost />} />
               <Route path="/farmercroptracker" element={<FarmerCropTracker />} />
               <Route path="/farmertransactions" element={<FarmerTransactions />} />
+              <Route path="/farmeraccount" element={<FarmerAccount />} />
               <Route path="/admindashboard" element={<AdminDashboard />} />
               <Route path="/admincommunityforum" element={<AdminCommunityForum />} />
               <Route path="/adminbuyertransactions" element={<AdminBuyerTransactions />} />
