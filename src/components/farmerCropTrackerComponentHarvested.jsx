@@ -4,7 +4,7 @@ import TopNav from '../components/topPageNavigation';
 import CropTrackerNav from '../components/farmerCropTrackerNavigation';
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
-import {FaEdit, FaTrash} from 'react-icons/fa';
+import {FaEdit, FaTrash, FaFolderOpen} from 'react-icons/fa';
 
 const FarmerCropTrackerComponent = () => {
   return (
@@ -21,6 +21,21 @@ const FarmerCropTrackerComponent = () => {
           </div>
         </div>    
         <CropTrackerNav />
+
+        <div className="farmerCropTrackerComponentHarvestedCard">
+            <div className="farmerCropTrackerComponentHarvestedSubTitle"><FaFolderOpen /> Your Inventory
+            </div>
+            <br></br>
+           <div className = "farmerCropTrackerComponentHarvestedShow">Show:   
+           <select className="farmerCropTrackerComponentHarvestedRowSelect" onchange="updateRows(this.value)">
+                   <option value="5">5</option>
+                   <option value="10">10</option>
+                   <option value="15">15</option>
+                   <option value="20">20</option>
+            </select>
+            </div> 
+            <br></br>     
+    
         <div className="farmerCropTrackerComponentHarvestedMiddleSection">
         <div className="farmerCropTrackerComponentHarvestedFrameParent">
 
@@ -123,6 +138,8 @@ const FarmerCropTrackerComponent = () => {
         </div>
       </div>
     </div>
+    </div>
+    
   );
 };
 
