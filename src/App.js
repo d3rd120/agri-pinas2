@@ -15,8 +15,10 @@ import FarmerMarketplace from './pages/FarmerPage/farmerMarketplace';
 import FarmerMarketplacePost from './pages/FarmerPage/farmerMarketplacePost';
 import FarmerCommunityForum from './pages/FarmerPage/farmerCommunityForum';
 import FarmerCommunityForumPost from './pages/FarmerPage/farmerCommunityForumPost';
-import FarmerCropTracker from './pages/FarmerPage/farmerCropTracker';
+import FarmerCropTrackerHarvest from './pages/FarmerPage/farmerCropTrackerHarvest';
+import FarmerCropTrackerHarvested from './pages/FarmerPage/farmerCropTrackerHarvested';
 import FarmerTransactions from './pages/FarmerPage/farmerTransactions';
+import FarmerTransactionsPending from './pages/FarmerPage/farmerTransactionsPending';
 import FarmerAccount from './pages/FarmerPage/farmerAccount';
 import AdminDashboard from './pages/AdminPage/adminDashboard';
 import AdminCommunityForum from './pages/AdminPage/adminCommunityForum';
@@ -53,9 +55,11 @@ const App = () => {
               <Route path="/farmermarketplace" element={<FarmerMarketplace />} />
               <Route path="/farmermarketplacepost" element={<FarmerMarketplacePost />} />
               <Route path="/farmercommunityforum" element={<FarmerCommunityForum />} />
-              <Route path="/farmercommunityforumpost" element={<FarmerCommunityForumPost />} />
-              <Route path="/farmercroptracker" element={<FarmerCropTracker />} />
+              <Route path="/farmercommunityforumpost" element={<FarmerCommunityForumPost />} />              
+              <Route path="/farmercroptrackerharvest" element={<FarmerCropTrackerHarvest />} />
+              <Route path="/farmercroptrackerharvested" element={<FarmerCropTrackerHarvested />} />
               <Route path="/farmertransactions" element={<FarmerTransactions />} />
+              <Route path="/farmertransactionspending" element={<FarmerTransactionsPending />} />
               <Route path="/farmeraccount" element={<FarmerAccount />} />
               <Route path="/admindashboard" element={<AdminDashboard />} />
               <Route path="/admincommunityforum" element={<AdminCommunityForum />} />

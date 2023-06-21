@@ -338,6 +338,7 @@
     cursor: pointer;
     border: 0;
     padding: 0.75rem 1.13rem;
+    margin: 0.1rem;
     background-color: #27ae60;
     border-radius: 4px;
     overflow: hidden;
@@ -381,13 +382,14 @@
   }
   .FarmerAccountComponentSmallCards {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-    align-items: flex-start;
-    justify-content: flex-start;
+    overflow: hidden;    
+    display: grid;
+    place-items: center;   
     text-align: left;
-    font-size: 1rem;
- 
+    font-size: 1rem;   
+   
   }
+  
   .FarmerAccountComponentCardsContainer,
   .FarmerAccountComponentMiddleSection {
     align-self: stretch;
@@ -410,9 +412,10 @@
     font-size: 1.63rem;
     color: #1a202e;   
     display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
   }
   .FarmerAccountComponent,
   .FarmerAccountComponentMainPanel {
@@ -443,6 +446,15 @@
     color: #fff;
     min-height: 100vh; /* Set a minimum height of 100 viewport height units */
     height: 100%; /* Use 100% height to fill the available space */
+  }
+
+  @media screen and (max-width: 1600px) {
+    .FarmerAccountComponentSmallCards {
+      display: flex;    
+    }
+    .FarmerAccountComponentMiddleSection{
+      width:100%;
+    }
   }
 
  

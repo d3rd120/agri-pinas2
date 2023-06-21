@@ -140,10 +140,10 @@
   .farmerMarketplaceComponentPostButtonContainer {
     justify-content: flex-start;
     gap: 0.63rem;
+    display: flex;
   }
   .farmerMarketplaceComponentPostSmallCardsContent,
   .farmerMarketplaceComponentPostSmallCardsDescription,
-  .farmerMarketplaceComponentPostButtonContainer,
   .farmerMarketplaceComponentPostSmallCardsHeading {
     align-self: stretch;
     display: flex;

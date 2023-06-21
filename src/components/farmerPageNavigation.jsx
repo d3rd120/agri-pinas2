@@ -25,7 +25,7 @@ const FarmerNavigation = () => {
 
         <NavLink
           className="farmerPageNavigationLink2"
-          to="/farmercroptracker"
+          to="/farmercroptrackerharvest"
           activeClassName="active"
         >
           <div className="farmerPageNavigationLinks">Crop Tracker</div>
@@ -51,7 +51,7 @@ const FarmerNavigation = () => {
         </NavLink>
         <NavLink
             className="farmerPageNavigationLink5"
-            to="/farmertransactions"
+            to="/farmertransactionspending"
             activeClassName="active"
           >
             <div className="farmerPageNavigationLinks">Transactions</div>
