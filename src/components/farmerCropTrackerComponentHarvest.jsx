@@ -4,7 +4,7 @@ import TopNav from '../components/topPageNavigation';
 import CropTrackerNav from '../components/farmerCropTrackerNavigation';
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
-import {FaEdit, FaTrash} from 'react-icons/fa';
+import {FaEdit, FaTrash,FaFolderOpen} from 'react-icons/fa';
 
 const FarmerCommunityForumComponent = () => {
   return (
@@ -21,6 +21,24 @@ const FarmerCommunityForumComponent = () => {
           </div>
         </div>    
         <CropTrackerNav />
+
+        
+        <div className="farmerCropTrackerComponentHarvestCard">
+            <div className="farmerCropTrackerComponentHarvestSubTitle"><FaFolderOpen /> Your Inventory
+            </div>
+            <br></br>
+           <div className = "farmerCropTrackerComponentHarvestShow">Show:   
+           <select className="farmerCropTrackerComponentHarvestRowSelect" onchange="updateRows(this.value)">
+                   <option value="5">5</option>
+                   <option value="10">10</option>
+                   <option value="15">15</option>
+                   <option value="20">20</option>
+            </select>
+            </div> 
+            <br></br>     
+    
+     
+
         <div className="farmerCropTrackerComponentHarvestMiddleSection">
         <div className="farmerCropTrackerComponentHarvestFrameParent">
 
@@ -96,7 +114,8 @@ const FarmerCommunityForumComponent = () => {
                 </div>         
                 </div>
               </a>  
-            </div>          
+            </div>    
+               
 
 
             <div className="farmerCropTrackerComponentHarvestForumNumber">
@@ -120,9 +139,11 @@ const FarmerCommunityForumComponent = () => {
               </div>
             </div>
           </div>
+          </div> 
         </div>
       </div>
     </div>
+
   );
 };
 
