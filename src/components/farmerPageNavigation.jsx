@@ -25,7 +25,7 @@ const FarmerNavigation = () => {
 
         <NavLink
           className="farmerPageNavigationLink2"
-          to="/farmercroptracker"
+          to="/farmercroptrackerharvest"
           activeClassName="active"
         >
           <div className="farmerPageNavigationLinks">Crop Tracker</div>
