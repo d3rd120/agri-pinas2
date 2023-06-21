@@ -965,7 +965,6 @@
   }
   
   .cancelButton {
-    background-color: #A9AF7E;
     color: #fff;
     border-radius: 5px;
     padding: 10px;
@@ -1029,4 +1028,12 @@
     border: 1px solid red;
     outline-color: red;
   }
-  
+  .checkboxAddress {
+    margin-top: 18px;
+    margin-left: 4px;
+  }
+  .setDefaultAddress {
+    margin-top: -24px;
+    margin-left: 28px;
+    font-size: 15px;
+  }

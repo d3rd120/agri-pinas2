@@ -40,15 +40,14 @@ const BuyerCommunityForum = () => {
           <BuyerNavigation />     
           <div className="farmerMarketplaceComponentMainPanel">
         <BuyerTopNav /> 
-        <div className="buyerCommunityForumComponentFullPostMainPanel">
-          <div className="buyerCommunityForumComponentFullPostTopSection">
-            <div className="buyerCommunityForumComponentFullPostMainTextContainer">
-              <b className="buyerCommunityForumComponentFullPostMainText1">
-                <p className="buyerCommunityForumComponentFullPostBlankLine">Community Forum</p>
-              </b>
-            </div>
+        <div className="farmerCommunityForumComponentTopSection">
+          <div className="farmerCommunityForumComponentMainText1">
+            <b className="farmerCommunityForumComponentMainText2">             
+              <p className="farmerCommunityForumComponentBlankLine">&nbsp;</p>
+              <p className="farmerCommunityForumComponentBlankLine">Community Forum</p>
+            </b>
           </div>
-          </div>
+        </div>
           
           <div className="buyerCommunityForumComponentFullPostMiddleSection">
             <div className="buyerCommunityForumComponentFullPostCardsContainer">

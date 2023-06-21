@@ -30,12 +30,11 @@ const BuyerTransactions = () => {
       <BuyerNavigation />
       <div className="farmerMarketplaceComponentMainPanel">
         <BuyerTopNav />
-        <div className="buyerMarketplaceComponentTopSection">
-          <div className="buyerMarketplaceComponentMainText">
-            <b className="buyerMarketplaceComponentSubText">
-              <p className="buyerMarketplaceComponentBlankLine">&nbsp;</p>
-              <p className="buyerMarketplaceComponentBlankLine">&nbsp;</p>
-              <p className="buyerMarketplaceComponentBlankLine">Transactions</p>
+        <div className="farmerCommunityForumComponentTopSection">
+          <div className="farmerCommunityForumComponentMainText1">
+            <b className="farmerCommunityForumComponentMainText2">             
+              <p className="farmerCommunityForumComponentBlankLine">&nbsp;</p>
+              <p className="farmerCommunityForumComponentBlankLine">Transactions</p>
             </b>
           </div>
         </div>

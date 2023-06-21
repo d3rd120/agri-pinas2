@@ -34,7 +34,6 @@ const FarmerCommunityForumComponent = () => {
           <div className="farmerCommunityForumComponentMainText1">
             <b className="farmerCommunityForumComponentMainText2">
               <p className="farmerCommunityForumComponentBlankLine">&nbsp;</p>
-              <p className="farmerCommunityForumComponentBlankLine">&nbsp;</p>
               <p className="farmerCommunityForumComponentBlankLine">Community Forum</p>
             </b>
           </div>

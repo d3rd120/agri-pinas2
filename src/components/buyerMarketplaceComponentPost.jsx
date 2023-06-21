@@ -69,12 +69,10 @@ const BuyerMarketplace = () => {
       <BuyerNavigation />
       <div className="farmerMarketplaceComponentMainPanel">
         <BuyerTopNav />
-        <div className="buyerMarketplaceComponentPostTopSection">
-          <div className="buyerMarketplaceComponentPostMainTextContainer">
-            <b className="buyerMarketplaceComponentPostMainTextWrapper">
-              <p className="buyerMarketplaceComponentPostBlankLine">&nbsp;</p>
-              <p className="buyerMarketplaceComponentPostBlankLine">&nbsp;</p>
-              <p className="buyerMarketplaceComponentPostBlankLine">Marketplace</p>
+        <div className="farmerCommunityForumComponentTopSection">
+          <div className="farmerCommunityForumComponentMainText1">
+            <b className="farmerCommunityForumComponentMainText2">             
+              <p className="farmerCommunityForumComponentBlankLine">Marketplace</p>
             </b>
           </div>
         </div>
