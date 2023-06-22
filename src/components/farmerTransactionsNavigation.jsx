@@ -7,8 +7,8 @@ const FarmerTransactionsNavigation = () => {
             <div className="farmerTransactionsNavigation">
                 <div className="farmerTransactionsNavigationParent">
                     <NavLink activeClassName="active" className="farmerTransactionsNavigationText" exact to='/farmertransactionspending'>Pending</NavLink>
-                    <NavLink activeClassName="active" className="farmerTransactionsNavigationText" exact to='/farmercroptrackerharvested'>Cancelled</NavLink>
-                    <NavLink activeClassName="active" className="farmerTransactionsNavigationText" exact to='/farmercroptrackerharvested'>Completed</NavLink>
+                    <NavLink activeClassName="active" className="farmerTransactionsNavigationText" exact to='/farmertransactionscancelled'>Cancelled</NavLink>
+                    <NavLink activeClassName="active" className="farmerTransactionsNavigationText" exact to='/farmertransactionscompleted'>Completed</NavLink>
                 </div>
             </div>
         </>
