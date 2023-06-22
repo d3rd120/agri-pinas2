@@ -19,6 +19,8 @@ import FarmerCropTrackerHarvest from './pages/FarmerPage/farmerCropTrackerHarves
 import FarmerCropTrackerHarvested from './pages/FarmerPage/farmerCropTrackerHarvested';
 import FarmerTransactions from './pages/FarmerPage/farmerTransactions';
 import FarmerTransactionsPending from './pages/FarmerPage/farmerTransactionsPending';
+import FarmerTransactionsCancelled from './pages/FarmerPage/farmerTransactionsCancelled';
+import FarmerTransactionsCompleted from './pages/FarmerPage/farmerTransactionsCompleted';
 import FarmerAccount from './pages/FarmerPage/farmerAccount';
 import AdminDashboard from './pages/AdminPage/adminDashboard';
 import AdminCommunityForum from './pages/AdminPage/adminCommunityForum';
@@ -60,6 +62,8 @@ const App = () => {
               <Route path="/farmercroptrackerharvested" element={<FarmerCropTrackerHarvested />} />
               <Route path="/farmertransactions" element={<FarmerTransactions />} />
               <Route path="/farmertransactionspending" element={<FarmerTransactionsPending />} />
+              <Route path="/farmertransactionscancelled" element={<FarmerTransactionsCancelled />} />
+              <Route path="/farmertransactionscompleted" element={<FarmerTransactionsCompleted />} />              
               <Route path="/farmeraccount" element={<FarmerAccount />} />
               <Route path="/admindashboard" element={<AdminDashboard />} />
               <Route path="/admincommunityforum" element={<AdminCommunityForum />} />

@@ -114,7 +114,155 @@ const FarmerCommunityForumComponent = () => {
                 </div>         
                 </div>
               </a>  
-            </div>    
+            </div>  
+
+            <div className="farmerCropTrackerComponentHarvestFrameWrapper">
+              <a className="farmerCropTrackerComponentHarvestRectangleParent">
+                <img
+                  className="farmerCropTrackerComponentHarvestFrameChild"
+                  alt=""
+                  src={OnionVector}
+                />
+                <div className="farmerCropTrackerComponentHarvestFrameGroup">
+                  <div className="farmerCropTrackerComponentHarvestFrameContainer">
+                    <div className="farmerCropTrackerComponentHarvestSubText1Wrapper">
+                      <b className="farmerCropTrackerComponentHarvestSubText1">Onions</b>
+                    </div>
+                    <div className="farmerCropTrackerComponentHarvestSubText2Wrapper2">
+                      <div className="farmerCropTrackerComponentHarvestSubText2">
+                       <b>Quantity(KG):</b> 20kgs
+                      </div>
+                      <div className="farmerCropTrackerComponentHarvestSubText2">
+                       <b>Status:</b> Ready to Harvest
+                      </div>
+                    </div>
+                  </div>
+                  <div className="farmerCropTrackerComponentHarvestFrameItem" />
+                  <div className="farmerCropTrackerComponentHarvestDetails">
+                  <button className="farmerCropTrackerComponentHarvestButton">
+                    <FaEdit className="farmerCropTrackerComponentHarvestButtonIcon" />
+                    <div className="farmerCropTrackerComponentHarvestButtonText">Edit</div>
+                  </button>
+                  <button className="farmerCropTrackerComponentHarvestButton">
+                    <FaTrash className="farmerCropTrackerComponentHarvestButtonIcon" />
+                    <div className="farmerCropTrackerComponentHarvestButtonText">Delete</div>
+                  </button>
+                </div>         
+                </div>
+              </a> 
+            </div>
+
+            
+             <div className="farmerCropTrackerComponentHarvestFrameWrapper">
+
+              <a className="farmerCropTrackerComponentHarvestRectangleParent">
+                <img
+                  className="farmerCropTrackerComponentHarvestFrameChild"
+                  alt=""
+                  src={CornVector}
+                />
+                <div className="farmerCropTrackerComponentHarvestFrameGroup">
+                  <div className="farmerCropTrackerComponentHarvestFrameContainer">
+                    <div className="farmerCropTrackerComponentHarvestSubText1Wrapper">
+                      <b className="farmerCropTrackerComponentHarvestSubText1">Corn</b>
+                    </div>
+                    <div className="farmerCropTrackerComponentHarvestSubText2Wrapper2">
+                      <div className="farmerCropTrackerComponentHarvestSubText2">
+                       <b>Quantity(KG):</b> 30kgs
+                      </div>
+                      <div className="farmerCropTrackerComponentHarvestSubText2">
+                       <b>Status:</b> Ready to Harvest
+                      </div>
+                    </div>
+                  </div>
+                  <div className="farmerCropTrackerComponentHarvestFrameItem" />
+                  <div className="farmerCropTrackerComponentHarvestDetails">
+                  <button className="farmerCropTrackerComponentHarvestButton">
+                    <FaEdit className="farmerCropTrackerComponentHarvestButtonIcon" />
+                    <div className="farmerCropTrackerComponentHarvestButtonText">Edit</div>
+                  </button>
+                  <button className="farmerCropTrackerComponentHarvestButton">
+                    <FaTrash className="farmerCropTrackerComponentHarvestButtonIcon" />
+                    <div className="farmerCropTrackerComponentHarvestButtonText">Delete</div>
+                  </button>
+                </div>         
+                </div>
+              </a>  
+            </div>  
+            
+            <div className="farmerCropTrackerComponentHarvestFrameWrapper">
+              <a className="farmerCropTrackerComponentHarvestRectangleParent">
+                <img
+                  className="farmerCropTrackerComponentHarvestFrameChild"
+                  alt=""
+                  src={OnionVector}
+                />
+                <div className="farmerCropTrackerComponentHarvestFrameGroup">
+                  <div className="farmerCropTrackerComponentHarvestFrameContainer">
+                    <div className="farmerCropTrackerComponentHarvestSubText1Wrapper">
+                      <b className="farmerCropTrackerComponentHarvestSubText1">Onions</b>
+                    </div>
+                    <div className="farmerCropTrackerComponentHarvestSubText2Wrapper2">
+                      <div className="farmerCropTrackerComponentHarvestSubText2">
+                       <b>Quantity(KG):</b> 20kgs
+                      </div>
+                      <div className="farmerCropTrackerComponentHarvestSubText2">
+                       <b>Status:</b> Ready to Harvest
+                      </div>
+                    </div>
+                  </div>
+                  <div className="farmerCropTrackerComponentHarvestFrameItem" />
+                  <div className="farmerCropTrackerComponentHarvestDetails">
+                  <button className="farmerCropTrackerComponentHarvestButton">
+                    <FaEdit className="farmerCropTrackerComponentHarvestButtonIcon" />
+                    <div className="farmerCropTrackerComponentHarvestButtonText">Edit</div>
+                  </button>
+                  <button className="farmerCropTrackerComponentHarvestButton">
+                    <FaTrash className="farmerCropTrackerComponentHarvestButtonIcon" />
+                    <div className="farmerCropTrackerComponentHarvestButtonText">Delete</div>
+                  </button>
+                </div>         
+                </div>
+              </a> 
+            </div>
+
+             
+            <div className="farmerCropTrackerComponentHarvestFrameWrapper">
+
+                <a className="farmerCropTrackerComponentHarvestRectangleParent">
+                  <img
+                    className="farmerCropTrackerComponentHarvestFrameChild"
+                    alt=""
+                    src={CornVector}
+                  />
+                  <div className="farmerCropTrackerComponentHarvestFrameGroup">
+                    <div className="farmerCropTrackerComponentHarvestFrameContainer">
+                      <div className="farmerCropTrackerComponentHarvestSubText1Wrapper">
+                        <b className="farmerCropTrackerComponentHarvestSubText1">Corn</b>
+                      </div>
+                      <div className="farmerCropTrackerComponentHarvestSubText2Wrapper2">
+                        <div className="farmerCropTrackerComponentHarvestSubText2">
+                        <b>Quantity(KG):</b> 30kgs
+                        </div>
+                        <div className="farmerCropTrackerComponentHarvestSubText2">
+                        <b>Status:</b> Ready to Harvest
+                        </div>
+                      </div>
+                    </div>
+                    <div className="farmerCropTrackerComponentHarvestFrameItem" />
+                    <div className="farmerCropTrackerComponentHarvestDetails">
+                    <button className="farmerCropTrackerComponentHarvestButton">
+                      <FaEdit className="farmerCropTrackerComponentHarvestButtonIcon" />
+                      <div className="farmerCropTrackerComponentHarvestButtonText">Edit</div>
+                    </button>
+                    <button className="farmerCropTrackerComponentHarvestButton">
+                      <FaTrash className="farmerCropTrackerComponentHarvestButtonIcon" />
+                      <div className="farmerCropTrackerComponentHarvestButtonText">Delete</div>
+                    </button>
+                  </div>         
+                  </div>
+                </a>  
+                </div>  
                
 
 
