@@ -8,7 +8,7 @@ import profile1 from '../img/profileVector1.png';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-const BuyerProfileNav = () => {
+const BuyerProfileNav = ({ onUserInfoChange }) => {
   const [showEditModal, setShowEditModal] = useState(false);
   const [open, setOpen] = useState(false);
   const [name, setName] = useState('');
@@ -36,21 +36,12 @@ const BuyerProfileNav = () => {
   };
  
   const handleSave = () => {
-    setName('');
-    setPhoneNumber('');
-    setBarangay('');
-    setEmail('');
-    setDateOfBirth(null);
+    onUserInfoChange({ name, phoneNumber, email, dateOfBirth });
     handleClose();
   };
   
   const handleClose = () => {
     setOpen(false);
-    setName('');
-    setPhoneNumber('');
-    setBarangay('');
-    setEmail('');
-    setDateOfBirth(null);
   };
   
 
@@ -86,7 +77,7 @@ const BuyerProfileNav = () => {
 
         <div className="buyerNavigationLink3">
           <img src={profile1} alt="Account Icon" className="accountIcon" /> 
-          <div className="buyerNavigationLinks1">Jenkins Mesina</div>
+          <div className="buyerNavigationLinks1">{name}</div>
           <div className="buyerNavigationLinks2" onClick={handleEditProfileClick}>Edit Profile</div>
           <FaEdit className="buyerNavigationLinksIcon1" onClick={handleEditProfileClick} />
         </div>
@@ -105,18 +96,16 @@ const BuyerProfileNav = () => {
         <div className="editModal">
           <h2>Edit your Profile</h2>
           <br />
-          <div class="buyerNavEditProductComponentInputParent">
-  <div class="buyerNavEditProductComponentTitle1">
-    <img src={profile1} class="accountIcon1"/>
-    Select Image
-  </div>
-  <input
-    type="file"
-    placeholder="Enter your name"
-    value={name}
-    onChange={(e) => setName(e.target.value)}
-  />
-</div>
+                <div class="buyerNavEditProductComponentInputParent">
+        <div class="buyerNavEditProductComponentTitle1">
+          <img src={profile1} class="accountIcon1"/>
+          Select Image
+        </div>
+        <input
+          type="file"
+          placeholder="Select your image"
+        />
+      </div>
 
           <div className="buyerNavEditProductComponentInputParent">
             <div className="buyerNavEditProductComponentTitle1">Full Name</div>
