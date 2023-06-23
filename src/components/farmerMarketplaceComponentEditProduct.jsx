@@ -1,6 +1,18 @@
-import "../css/Components/farmerMarketplaceComponentEditProduct.css";
+import React, { useState } from 'react';
+import '../css/Components/farmerMarketplaceComponentEditProduct.css';
 
-const farmerMarketplaceEditProductComponent = ({closePopup1}) => {
+const FarmerMarketplaceEditProductComponent = ({ closePopup1, handleSave }) => {
+  const [editedCategory, setEditedCategory] = useState('');
+  const [editedPackaging, setEditedPackaging] = useState('');
+  const [editedPrice, setEditedPrice] = useState('');
+  const [editedKilogram, setEditedKilogram] = useState('');
+  const [editedDescription, setEditedDescription] = useState('');
+
+  const handleSaveClick = () => {
+  
+    handleSave(editedCategory, editedPackaging, editedPrice, editedKilogram, editedDescription);
+    closePopup1();
+  };
   return (
     <div className="farmerMarketplaceEditProductComponent">
       <div className="farmerMarketplaceEditProductComponentMainText">
@@ -15,7 +27,6 @@ const farmerMarketplaceEditProductComponent = ({closePopup1}) => {
             <input
               className="farmerMarketplaceEditProductComponentInput1"
               type="text"
-              placeholder="Enter your new product name"
             />
           </div>
           <div className="farmerMarketplaceEditProductComponentInputParent">
@@ -26,6 +37,8 @@ const farmerMarketplaceEditProductComponent = ({closePopup1}) => {
               className="farmerMarketplaceEditProductComponentInput1"
               type="text"
               placeholder="Enter your new category"
+              value={editedCategory}
+              onChange={(e) => setEditedCategory(e.target.value)}
             />
           </div>
           <div className="farmerMarketplaceEditProductComponentInputParent">
@@ -36,6 +49,8 @@ const farmerMarketplaceEditProductComponent = ({closePopup1}) => {
               className="farmerMarketplaceEditProductComponentInput1"
               type="text"
               placeholder="Enter your new packaging"
+              value={editedPackaging}
+              onChange={(e) => setEditedPackaging(e.target.value)}
             />
           </div>
         </div>
@@ -48,6 +63,8 @@ const farmerMarketplaceEditProductComponent = ({closePopup1}) => {
               className="farmerMarketplaceEditProductComponentInput2"
               type="text"
               placeholder="Enter your new price"
+              value={editedPrice}
+              onChange={(e) => setEditedPrice(e.target.value)}
             />
           </div>
           <div className="farmerMarketplaceEditProductComponentInputParent">
@@ -58,6 +75,8 @@ const farmerMarketplaceEditProductComponent = ({closePopup1}) => {
               className="farmerMarketplaceEditProductComponentInput2"
               type="text"
               placeholder="Enter your new kilogram"
+              value={editedKilogram}
+              onChange={(e) => setEditedKilogram(e.target.value)}
             />
           </div>
           <div className="farmerMarketplaceEditProductComponentInputParent">
@@ -72,22 +91,28 @@ const farmerMarketplaceEditProductComponent = ({closePopup1}) => {
           </div>
         </div>
       </div>
-      <span className = "farmerMarketplaceEditProductComponentTitleDescription">
       <div className="farmerMarketplaceEditProductComponentTitle">
         Description
       </div>
-      </span>
       <textarea
         className="farmerMarketplaceEditProductComponentInput4"
         placeholder="Enter your new description"
+        value={editedDescription}
+        onChange={(e) => setEditedDescription(e.target.value)}
       />
       <div className="farmerMarketplaceEditProductComponentButtonGroup">
-        <button className="farmerMarketplaceEditProductComponentButton">
+        <button
+          className="farmerMarketplaceEditProductComponentButton"
+          onClick={handleSaveClick}
+        >
           <div className="farmerMarketplaceEditProductComponentButtonText">
             Save
           </div>
         </button>
-        <button className="farmerMarketplaceEditProductComponentButton" onClick = {closePopup1}>
+        <button
+          className="farmerMarketplaceEditProductComponentButton"
+          onClick={closePopup1}
+        >
           <div className="farmerMarketplaceEditProductComponentButtonText">
             Cancel
           </div>
@@ -98,4 +123,4 @@ const farmerMarketplaceEditProductComponent = ({closePopup1}) => {
   );
 };
 
-export default farmerMarketplaceEditProductComponent;
+export default FarmerMarketplaceEditProductComponent;
