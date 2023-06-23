@@ -1,6 +1,6 @@
 import "../css/Components/farmerCropTrackerComponentHarvested.css";
 import FarmerNavigation from '../components/farmerPageNavigation';
-import TopNav from '../components/topPageNavigation';
+import FarmerTopNav from '../components/farmerTopNav';
 import CropTrackerNav from '../components/farmerCropTrackerNavigation';
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
@@ -11,11 +11,10 @@ const FarmerCropTrackerComponent = () => {
     <div className="farmerCropTrackerComponentHarvested">
       <FarmerNavigation />
       <div className="farmerCropTrackerComponentHarvestedMainPanel">
-        <TopNav />
+        <FarmerTopNav />
         <div className="farmerCropTrackerComponentHarvestedTopSection">
           <div className="farmerCropTrackerComponentHarvestedMainText">
-            <b className="farmerCropTrackerComponentHarvestedMainTextWrapper">             
-              <p className="farmerCropTrackerComponentHarvestedBlankLine">&nbsp;</p>
+            <b className="farmerCropTrackerComponentHarvestedMainTextWrapper">        
               <p className="farmerCropTrackerComponentHarvestedBlankLine">Crop Tracker</p>
             </b>
           </div>

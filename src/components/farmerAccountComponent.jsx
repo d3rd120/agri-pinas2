@@ -1,11 +1,13 @@
 import FarmerNavigation from '../components/farmerPageNavigation';
 import '../css/Components/farmerAccountComponent.css';
-import TopNav from '../components/topPageNavigation';
-import { FaEdit, FaUpload} from 'react-icons/fa';
+import { FaEdit, FaUpload } from 'react-icons/fa';
 import { useState } from 'react';
 import { doc, updateDoc } from 'firebase/firestore';
 import { db } from './firebase';
 import React, { useEffect } from 'react';
+
+import ProfileVector from '../img/profileVector3.png';
+import FarmerTopNav from '../components/farmerTopNav';
 
 const FarmerAccountComponent = () => {
   const [isEditing, setIsEditing] = useState(false);
@@ -16,11 +18,10 @@ const FarmerAccountComponent = () => {
   const [address, setAddress] = useState('Antipolo');
   const [contactNumber, setContactNumber] = useState('(+63)9123456789');
   const [imageUpload, setImageUpload] = useState(false);
-  const [profileImage, setProfileImage] = useState(null); 
+  const [profileImage, setProfileImage] = useState(null);
   const defaultProfileImagePath = 'path/to/default-profile-image.jpg';
- 
+
   useEffect(() => {
-    
     const fetchUserData = async () => {
       try {
         const userRef = doc(db, 'Users');
@@ -41,6 +42,7 @@ const FarmerAccountComponent = () => {
 
     fetchUserData();
   }, []);
+
   const handleEditClick = () => {
     setIsEditing(true);
   };
@@ -49,7 +51,6 @@ const FarmerAccountComponent = () => {
     setIsEditing(false);
 
     try {
-      
       const userRef = doc(db, 'Users');
       await updateDoc(userRef, {
         fullname: fullName,
@@ -57,7 +58,7 @@ const FarmerAccountComponent = () => {
         email: emailAddress,
         age: age,
         address: address,
-        contact: contactNumber
+        contact: contactNumber,
       });
 
       console.log('User information updated successfully!');
@@ -65,15 +66,13 @@ const FarmerAccountComponent = () => {
       console.error('Error updating user information:', error);
     }
 
-  
     if (profileImage) {
-    
+      // Handle profile image upload
     }
   };
 
   const handleCancelClick = () => {
     setIsEditing(false);
-    
     setProfileImage(null);
   };
 
@@ -92,7 +91,7 @@ const FarmerAccountComponent = () => {
     <div className="FarmerAccountComponent">
       <FarmerNavigation />
       <div className="FarmerAccountComponentMainPanel">
-        <TopNav />
+        <FarmerTopNav />
         <div className="FarmerAccountComponentTopSection">
           <div className="FarmerAccountComponentMainText">
             <b className="FarmerAccountComponentSubText">
@@ -111,33 +110,36 @@ const FarmerAccountComponent = () => {
                   src={profileImage || defaultProfileImagePath}
                 />
                 <div className="FarmerAccountComponentFrameWrapper">
-                <div className="FarmerAccountComponentFrameGroup">
-                  <div className="FarmerAccountComponentNameTextWrapper">
-                    <b className="FarmerAccountComponentNameText">{fullName}</b>
+                  <div className="FarmerAccountComponentFrameGroup">
+                    <div className="FarmerAccountComponentNameTextWrapper">
+                      <b className="FarmerAccountComponentNameText">{fullName}</b>
+                    </div>
+                    <div className="FarmerAccountComponentDetailsChild" />
+                    <div className="FarmerAccountComponentRoleWrapper">
+                      <div className="FarmerAccountComponentRole">
+                        <b>{`Role: `}</b>
+                        <span>Farmer</span>
+                      </div>
+                    </div>
+                    {imageUpload ? (
+                      <div className="FarmerAccountComponentImageUploadWrapper">
+                        <input
+                          type="file"
+                          accept="image/*"
+                          className="FarmerAccountComponentImageUploadInput"
+                          onChange={handleImageUpload}
+                        />
+                      </div>
+                    ) : (
+                      <div
+                        className="FarmerAccountComponentImageUploadButton"
+                        onClick={() => setImageUpload(true)}
+                      >
+                        <FaUpload className="FarmerAccountComponentImageUploadIcon" />
+                        <span className="FarmerAccountComponentImageUploadText">Upload Image</span>
+                      </div>
+                    )}
                   </div>
-                  <div className="FarmerAccountComponentDetailsChild" />
-                  <div className="FarmerAccountComponentRoleWrapper">
-                    <div className="FarmerAccountComponentRole">
-                      <b>{`Role: `}</b>
-                      <span>Farmer</span>
-                    </div>
-                  </div>
-                  {imageUpload ? (
-                    <div className="FarmerAccountComponentImageUploadWrapper">
-                      <input
-                        type="file"
-                        accept="image/*"
-                        className="FarmerAccountComponentImageUploadInput"
-                        onChange={handleImageUpload}
-                      />
-                    </div>
-                  ) : (
-                    <div className="FarmerAccountComponentImageUploadButton" onClick={() => setImageUpload(true)}>
-                      <FaUpload className="FarmerAccountComponentImageUploadIcon" />
-                      <span className="FarmerAccountComponentImageUploadText">Upload Image</span>
-                    </div>
-                  )}
-                </div>
                 </div>
               </a>
             </div>

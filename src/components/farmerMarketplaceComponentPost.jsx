@@ -8,6 +8,7 @@ import TomatoVector from '../img/tomatoVector.png';
 import FarmerMarketplaceEditProduct from '../components/farmerMarketplaceComponentEditProduct';
 import FarmerMarketplaceDeleteProduct from '../components/farmerMarketplaceComponentDeleteProduct';
 import { FaEdit, FaTrash, FaTimes } from 'react-icons/fa';
+import FarmerTopNav from '../components/farmerTopNav';
 
 const FarmerMarketplace = () => {
   const [showPopup1, setShowPopup1] = useState(false);
@@ -47,11 +48,11 @@ const FarmerMarketplace = () => {
     <div className="farmerMarketplaceComponentPost">
       <FarmerNavigation />
       <div className="farmerMarketplaceComponentPostMainPanel">
+        <FarmerTopNav />
         <div className="farmerMarketplaceComponentPostTopSection">
           <div className="farmerMarketplaceComponentPostMainTextContainer">
-            <b className="farmerMarketplaceComponentPostMainTextWrapper">
-              <p className="farmerMarketplaceComponentPostBlankLine">&nbsp;</p>
-              <p className="farmerMarketplaceComponentPostBlankLine">&nbsp;</p>
+            <b className="farmerMarketplaceComponentPostMainTextWrapper">              
+
               <p className="farmerMarketplaceComponentPostBlankLine">Marketplace</p>
             </b>
           </div>

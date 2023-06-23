@@ -1,6 +1,6 @@
 import "../css/Components/farmerDashboardComponent.css";
 import FarmerNavigation from '../components/farmerPageNavigation';
-import TopNav from '../components/topPageNavigation';
+import FarmerTopNav from '../components/farmerTopNav';
 
 import {
   LineChart,
@@ -106,11 +106,10 @@ const FarmerDashboard = () => {
     <div className="farmerDashboardComponent">
       <FarmerNavigation />      
       <div className="farmerDashboardComponentMainPanel">  
-      <TopNav />  
+      <FarmerTopNav />  
         <div className="farmerDashboardComponentTopSection">
           <div className="farmerDashboardComponentMainText1">
-            <b className="farmerDashboardComponentMainText1Container"> 
-             <p className="farmerMarketplaceComponentBlankLine">&nbsp;</p>                
+            <b className="farmerDashboardComponentMainText1Container">                         
               <p className="farmerDashboardComponentBlankLine">Welcome back, farmer</p>
             </b>
           </div>
