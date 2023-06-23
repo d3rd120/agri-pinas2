@@ -1,7 +1,7 @@
 import TransactionsNav from '../components/farmerTransactionsNavigation';
 import "../css/Components/farmerTransactionsCancelledComponent.css";
 import FarmerNavigation from '../components/farmerPageNavigation';
-import TopNav from '../components/topPageNavigation';
+import FarmerTopNav from '../components/farmerTopNav';
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
 import {FaEdit, FaTrash,FaFolderOpen} from 'react-icons/fa';
@@ -11,11 +11,10 @@ const FarmerCommunityForumComponent = () => {
     <div className="farmerTransactionsCancelledComponent">
       <FarmerNavigation />
       <div className="farmerTransactionsCancelledComponentMainPanel">
-        <TopNav />
+        <FarmerTopNav />
         <div className="farmerTransactionsCancelledComponentTopSection">
           <div className="farmerTransactionsCancelledComponentMainText">
-            <b className="farmerTransactionsCancelledComponentMainTextWrapper">             
-              <p className="farmerTransactionsCancelledComponentBlankLine">&nbsp;</p>
+            <b className="farmerTransactionsCancelledComponentMainTextWrapper">  
               <p className="farmerTransactionsCancelledComponentBlankLine">Transactions</p>
             </b>
           </div>

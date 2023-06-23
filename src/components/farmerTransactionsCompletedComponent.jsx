@@ -1,7 +1,7 @@
 import TransactionsNav from '../components/farmerTransactionsNavigation';
 import "../css/Components/farmerTransactionsCompletedComponent.css";
 import FarmerNavigation from '../components/farmerPageNavigation';
-import TopNav from '../components/topPageNavigation';
+import FarmerTopNav from '../components/farmerTopNav';
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
 import RiceVector from '../img/riceCardImage.png';
@@ -12,11 +12,10 @@ const FarmerCommunityForumComponent = () => {
     <div className="farmerTransactionsCompletedComponent">
       <FarmerNavigation />
       <div className="farmerTransactionsCompletedComponentMainPanel">
-        <TopNav />
+        <FarmerTopNav />
         <div className="farmerTransactionsCompletedComponentTopSection">
           <div className="farmerTransactionsCompletedComponentMainText">
-            <b className="farmerTransactionsCompletedComponentMainTextWrapper">
-              <p className="farmerTransactionsCompletedComponentBlankLine">&nbsp;</p>
+            <b className="farmerTransactionsCompletedComponentMainTextWrapper">   
               <p className="farmerTransactionsCompletedComponentBlankLine">Transactions</p>
             </b>
           </div>
