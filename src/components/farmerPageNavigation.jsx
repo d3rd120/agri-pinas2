@@ -57,15 +57,7 @@ const FarmerNavigation = () => {
             <div className="farmerPageNavigationLinks">Transactions</div>
             <FaStore className="farmerPageNavigationLinksIcon" />
       </NavLink>
-      </div>
-      <div className="farmerPageNavigationProfileParent">
-         <NavLink 
-         to = '/farmeraccount'>
-          <div className="farmerPageNavigationProfile">
-            <FaUserCircle />
-          </div>  
-          </NavLink>     
-        </div>
+      </div>     
     </div>
   );
 };

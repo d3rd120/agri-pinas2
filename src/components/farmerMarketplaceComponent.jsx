@@ -8,7 +8,7 @@ import ProfileVector2 from '../img/profileVector2.png';
 import { NavLink } from 'react-router-dom';
 import { FaPlus, FaTimes } from 'react-icons/fa';
 import FarmerMarketplaceAddProductComponent from '../components/farmerMarketplaceComponentAddProduct';
-import TopNav from '../components/topPageNavigation';
+import FarmerTopNav from '../components/farmerTopNav';
 
 
 const FarmerMarketplace = () => {
@@ -27,11 +27,10 @@ const FarmerMarketplace = () => {
     <div className="farmerMarketplaceComponent">
       <FarmerNavigation />
       <div className="farmerMarketplaceComponentMainPanel">
-        <TopNav />
+        <FarmerTopNav />
         <div className="farmerMarketplaceComponentTopSection">
           <div className="farmerMarketplaceComponentMainText">
-            <b className="farmerMarketplaceComponentSubText">              
-              <p className="farmerMarketplaceComponentBlankLine">&nbsp;</p>
+            <b className="farmerMarketplaceComponentSubText">      
               <p className="farmerMarketplaceComponentBlankLine">Marketplace</p>
             </b>
           </div>

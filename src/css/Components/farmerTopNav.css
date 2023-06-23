@@ -1,11 +1,11 @@
-.buyerComponentGroupChild2,
-.buyerComponentGroupInner2 {
+.farmerComponentGroupChild2,
+.farmerComponentGroupInner2 {
   position: absolute;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
 }
-.buyerComponentGroupChild2 {
+.farmerComponentGroupChild2 {
   color: #557153;
   height: 100%;
   width: 36%;
@@ -17,7 +17,7 @@
   position: relative;
   z-index: 1;
 }
-.buyerComponentGroupChild3 {
+.farmerComponentGroupChild3 {
   color: #557153;
   height: 100%;
   width: 36%;
@@ -30,7 +30,7 @@
   z-index: 1;
 }
 
-.buyerComponentGroupInner2 {
+.farmerComponentGroupInner2 {
   color: #557153;
   height: 74.07%;
   width: 24%;
@@ -39,7 +39,7 @@
   bottom: 12.96%;
   left: -1.5rem;
 }
-.buyerComponentEllipseParent2 {
+.farmerComponentEllipseParent2 {
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -50,17 +50,17 @@
   z-index: 9999; 
 }
 
-.buyerComponentGroupChild2:hover {
+.farmerComponentGroupChild2:hover {
   color: #fba403;
   transition: 0.5s;
 }
-.buyerComponentGroupChild3:hover {
+.farmerComponentGroupChild3:hover {
   color: #fba403;
   transition: 0.5s;
 }
 
 
-.buyerComponentGroupInner2:hover {
+.farmerComponentGroupInner2:hover {
   color: #fba403;
   transition: 0.5s;
 }
@@ -91,13 +91,13 @@
   background-color: #f0f0f0;
   font-weight: bold;
 }
-.searchBar {
+.farmersearchBar {
   display: flex;
   align-items: center;
   border-radius: 4px;
 }
 
-.searchIcon {
+.farmersearchIcon {
   position:absolute;
   font-size: 18px;
   margin-right: 5px;
@@ -111,7 +111,7 @@ input[type="text"] {
   border: 1px solid #ccc;
   outline: none;
 }
-.buyerTopNavContainer {
+.farmerTopNavContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,7 +121,7 @@ input[type="text"] {
   margin-top: -1.3rem;
  
 }
-.notificationsModal {
+.farmernotificationsModal {
   position: absolute;
   top: 70px;
   right: 10px;
@@ -134,19 +134,19 @@ input[type="text"] {
   z-index: 9999999;
 }
 
-.notificationsModal h2 {
+.farmernotificationsModal h2 {
   font-size: 18px;
   margin: 0 0 10px;
   color: #333333;
   text-align: center;
 }
 
-.notificationList {
+.farmernotificationList {
   list-style-type: none;
   padding: 0;
 }
 
-.notificationItem {
+.farmernotificationItem {
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
@@ -155,17 +155,17 @@ input[type="text"] {
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
-.notificationItem:hover {
+.farmernotificationItem:hover {
   background-color: #f5f5f5;
 }
-.notificationMessage {
+.farmernotificationMessage {
   margin-top: -10px;
   font-weight: 300;
   font-size: 13px;
   color: #333333;
 }
 
-.notificationTime {
+.farmernotificationTime {
   color: #888888;
   font-size: 13px;
 }
@@ -185,13 +185,10 @@ input[type="text"] {
 .closeButton:hover {
   background-color: #999999;
 }
-.profileImage {
+.farmerprofileImage {
   width: 25px;
   height: 25px;
 }
-.notificationSender {
+.farmernotificationSender {
  font-size: 13px;
 }
-
-
-

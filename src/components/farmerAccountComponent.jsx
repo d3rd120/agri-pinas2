@@ -1,7 +1,7 @@
 import FarmerNavigation from '../components/farmerPageNavigation';
 import '../css/Components/farmerAccountComponent.css';
 import ProfileVector from '../img/profileVector3.png';
-import TopNav from '../components/topPageNavigation';
+import FarmerTopNav from '../components/farmerTopNav';
 import { FaEdit } from 'react-icons/fa';
 import { useState } from 'react';
 
@@ -32,7 +32,7 @@ const FarmerAccountComponent = () => {
     <div className="FarmerAccountComponent">
       <FarmerNavigation />
       <div className="FarmerAccountComponentMainPanel">
-        <TopNav />
+        <FarmerTopNav />
         <div className="FarmerAccountComponentTopSection">
           <div className="FarmerAccountComponentMainText">
             <b className="FarmerAccountComponentSubText">
