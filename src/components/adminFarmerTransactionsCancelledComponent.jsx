@@ -1,8 +1,8 @@
 import TransactionsNav from '../components/adminFarmerTransactionsNavigation';
 import "../css/Components/adminFarmerTransactionsCancelledComponent.css";
 import AdminNavigation from '../components/adminPageNavigation';
-import RiceVector from '../img/riceCardImage.png';
-import CornVector from '../img/cornVector.png';
+import SitawVector from '../img/sitaw.png';
+import OkraVector from '../img/okra.png';
 import { FaEdit, FaTrash, FaFolderOpen } from 'react-icons/fa';
 
 const AdminFarmerTransactionsCancelledComponent = () => {
@@ -38,17 +38,19 @@ const AdminFarmerTransactionsCancelledComponent = () => {
 
           <div className="adminFarmerTransactionsCancelledComponentMiddleSection">
             <div className="adminFarmerTransactionsCancelledComponentFrameParent">
+
+
               <div className="adminFarmerTransactionsCancelledComponentFrameWrapper">
                 <a className="adminFarmerTransactionsCancelledComponentRectangleParent">
                   <img
                     className="adminFarmerTransactionsCancelledComponentFrameChild"
                     alt=""
-                    src={CornVector}
+                    src={OkraVector}
                   />
                   <div className="adminFarmerTransactionsCancelledComponentFrameGroup">
                     <div className="adminFarmerTransactionsCancelledComponentFrameContainer">
                       <div className="adminFarmerTransactionsCancelledComponentSubText1Wrapper">
-                        <b className="adminFarmerTransactionsCancelledComponentSubText1">Corn</b>
+                        <b className="adminFarmerTransactionsCancelledComponentSubText1">Okra</b>
                       </div>
                       <div className="adminFarmerTransactionsCancelledComponentSubText2Wrapper2">
                         <div className="adminFarmerTransactionsCancelledComponentSubText2">
@@ -90,6 +92,62 @@ const AdminFarmerTransactionsCancelledComponent = () => {
                   </div>
                 </a>
               </div>
+
+                 
+              <div className="adminFarmerTransactionsCancelledComponentFrameWrapper">
+                <a className="adminFarmerTransactionsCancelledComponentRectangleParent">
+                  <img
+                    className="adminFarmerTransactionsCancelledComponentFrameChild"
+                    alt=""
+                    src={SitawVector}
+                  />
+                  <div className="adminFarmerTransactionsCancelledComponentFrameGroup">
+                    <div className="adminFarmerTransactionsCancelledComponentFrameContainer">
+                      <div className="adminFarmerTransactionsCancelledComponentSubText1Wrapper">
+                        <b className="adminFarmerTransactionsCancelledComponentSubText1">Sitaw</b>
+                      </div>
+                      <div className="adminFarmerTransactionsCancelledComponentSubText2Wrapper2">
+                        <div className="adminFarmerTransactionsCancelledComponentSubText2">
+                          <b>User ID:</b> B001
+                        </div>
+                        <div className="adminFarmerTransactionsCancelledComponentSubText2">
+                          <b>Item ID:</b> N001
+                        </div>
+                        <div className="adminFarmerTransactionsCancelledComponentSubText2">
+                          <b>Buyer Name:</b> Ryan Edward Amador
+                        </div>
+                        <div className="adminFarmerTransactionsCancelledComponentSubText2">
+                          <b>Date Ordered:</b> 02 / 01 / 2023
+                        </div>
+                        <div className="adminFarmerTransactionsCancelledComponentSubText2">
+                          <b>Unit Price:</b> 400
+                        </div>
+                        <div className="adminFarmerTransactionsCancelledComponentSubText2">
+                          <b>Quantity Order:</b> 2
+                        </div>
+                        <div className="adminFarmerTransactionsCancelledComponentSubText2">
+                          <b>Total Amount:</b> 800
+                        </div>
+                        <div className="adminFarmerTransactionsCancelledComponentSubText2">
+                          <b>Farmer Name:</b> Arriane Gatpo
+                        </div>
+                        <div className="adminFarmerTransactionsCancelledComponentSubText2">
+                          <b>Status:</b> Cancelled
+                        </div>
+                      </div>
+                    </div>
+                    <div className="adminFarmerTransactionsCancelledComponentFrameItem" />
+                    <div className="adminFarmerTransactionsCancelledComponentDetails">
+                      <button className="adminFarmerTransactionsCancelledComponentButton">
+                        <FaTrash className="adminFarmerTransactionsCancelledComponentButtonIcon" />
+                        <div className="adminFarmerTransactionsCancelledComponentButtonText">Delete</div>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+
               <div className="adminFarmerTransactionsCancelledComponentForumNumber">
                 <div className="adminFarmerTransactionsCancelledComponentForumContainer">
                   <div className="adminFarmerTransactionsCancelledComponentForumNumberBox">1</div>

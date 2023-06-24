@@ -1,8 +1,8 @@
 import TransactionsNav from '../components/adminBuyerTransactionsNavigation';
 import "../css/Components/adminBuyerPendingTransactionsComponent.css";
 import AdminNavigation from '../components/adminPageNavigation';
-import RiceVector from '../img/riceCardImage.png';
-import CornVector from '../img/cornVector.png';
+import OkraVector from '../img/okra.png';
+import SitawVector from '../img/sitaw.png';
 import { FaEdit, FaTrash, FaFolderOpen } from 'react-icons/fa';
 
 const AdminBuyerTransactionsPendingComponent = () => {
@@ -38,17 +38,19 @@ const AdminBuyerTransactionsPendingComponent = () => {
 
           <div className="adminBuyerTransactionsPendingComponentMiddleSection">
             <div className="adminBuyerTransactionsPendingComponentFrameParent">
+
+
               <div className="adminBuyerTransactionsPendingComponentFrameWrapper">
                 <a className="adminBuyerTransactionsPendingComponentRectangleParent">
                   <img
                     className="adminBuyerTransactionsPendingComponentFrameChild"
                     alt=""
-                    src={CornVector}
+                    src={OkraVector}
                   />
                   <div className="adminBuyerTransactionsPendingComponentFrameGroup">
                     <div className="adminBuyerTransactionsPendingComponentFrameContainer">
                       <div className="adminBuyerTransactionsPendingComponentSubText1Wrapper">
-                        <b className="adminBuyerTransactionsPendingComponentSubText1">Corn</b>
+                        <b className="adminBuyerTransactionsPendingComponentSubText1">Okra</b>
                       </div>
                       <div className="adminBuyerTransactionsPendingComponentSubText2Wrapper2">
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
@@ -90,6 +92,63 @@ const AdminBuyerTransactionsPendingComponent = () => {
                   </div>
                 </a>
               </div>
+
+              <div className="adminBuyerTransactionsPendingComponentFrameWrapper">
+                <a className="adminBuyerTransactionsPendingComponentRectangleParent">
+                  <img
+                    className="adminBuyerTransactionsPendingComponentFrameChild"
+                    alt=""
+                    src={SitawVector}
+                  />
+                  <div className="adminBuyerTransactionsPendingComponentFrameGroup">
+                    <div className="adminBuyerTransactionsPendingComponentFrameContainer">
+                      <div className="adminBuyerTransactionsPendingComponentSubText1Wrapper">
+                        <b className="adminBuyerTransactionsPendingComponentSubText1">Sitaw</b>
+                      </div>
+                      <div className="adminBuyerTransactionsPendingComponentSubText2Wrapper2">
+                        <div className="adminBuyerTransactionsPendingComponentSubText2">
+                          <b>User ID:</b> B001
+                        </div>
+                        <div className="adminBuyerTransactionsPendingComponentSubText2">
+                          <b>Item ID:</b> N001
+                        </div>
+                        <div className="adminBuyerTransactionsPendingComponentSubText2">
+                          <b>Buyer Name:</b> Ryan Edward Amador
+                        </div>
+                        <div className="adminBuyerTransactionsPendingComponentSubText2">
+                          <b>Date Ordered:</b> 02 / 01 / 2023
+                        </div>
+                        <div className="adminBuyerTransactionsPendingComponentSubText2">
+                          <b>Unit Price:</b> 400
+                        </div>
+                        <div className="adminBuyerTransactionsPendingComponentSubText2">
+                          <b>Quantity Order:</b> 2
+                        </div>
+                        <div className="adminBuyerTransactionsPendingComponentSubText2">
+                          <b>Total Amount:</b> 800
+                        </div>
+                        <div className="adminBuyerTransactionsPendingComponentSubText2">
+                          <b>Farmer Name:</b> Arriane Gatpo
+                        </div>
+                        <div className="adminBuyerTransactionsPendingComponentSubText2">
+                          <b>Status:</b> Pending
+                        </div>
+                      </div>
+                    </div>
+                    <div className="adminBuyerTransactionsPendingComponentFrameItem" />
+                    <div className="adminBuyerTransactionsPendingComponentDetails">
+                      <button className="adminBuyerTransactionsPendingComponentButton">
+                        <FaTrash className="adminBuyerTransactionsPendingComponentButtonIcon" />
+                        <div className="adminBuyerTransactionsPendingComponentButtonText">Delete</div>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+
+
+
               <div className="adminBuyerTransactionsPendingComponentForumNumber">
                 <div className="adminBuyerTransactionsPendingComponentForumContainer">
                   <div className="adminBuyerTransactionsPendingComponentForumNumberBox">1</div>

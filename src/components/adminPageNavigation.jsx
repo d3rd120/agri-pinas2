@@ -71,7 +71,7 @@ const AdminNavigation = () => {
 
         <NavLink
           className="adminPageNavigationLink4"
-          to="/farmermarketplace"
+          to="/adminmarketplace"
           activeClassName="active"
         >
           <div className="adminPageNavigationLinks">Marketplace</div>
@@ -104,11 +104,9 @@ const AdminNavigation = () => {
           )}
         </div>
       </div>
-      <div className="adminPageNavigationProfileParent">
-        <div className="adminPageNavigationProfile">
-          <FaUserCircle />
-        </div>      
-      </div>
+      <NavLink className="adminPageNavigationProfileParent" to = '/login'>       
+            Log Out           
+      </NavLink>
     </div>
   );
 };

@@ -4,6 +4,9 @@ import AdminNavigation from '../components/adminPageNavigation';
 import FarmerTopNav from '../components/farmerTopNav';
 import RiceVector from '../img/riceCardImage.png';
 import CornVector from '../img/cornVector.png';
+import SiliVector from '../img/sili.png';
+import OnionVector from '../img/onionVector.png';
+import SquashVector from '../img/squash.png';
 import { FaTrash, FaComments } from 'react-icons/fa';
 
 const AdminCommunityForumComponent = () => {
@@ -46,26 +49,163 @@ const AdminCommunityForumComponent = () => {
                 <img
                   className="adminCommunityForumComponentFrameChild"
                   alt=""
-                  src={CornVector}
+                  src={OnionVector}
                 />
                 <div className="adminCommunityForumComponentFrameGroup">
                   <div className="adminCommunityForumComponentFrameContainer">
                     <div className="adminCommunityForumComponentSubText1Wrapper">
-                      <b className="adminCommunityForumComponentSubText1">Corn</b>
+                      <b className="adminCommunityForumComponentSubText1">What is the current SRP of onions?</b>
                     </div>
                     <div className="adminCommunityForumComponentSubText2Wrapper2">
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>User ID:</b> B001
+                       <b>User ID:</b> F001
                       </div>
                       <div className="adminCommunityForumComponentSubText2">
                        <b>User Role</b> Farmer
                       </div>
                       <div className="adminCommunityForumComponentSubText2">
                        <b>Full Name:</b> Ryan Edward Amador
+                      </div>                                         
+                    </div>
+                  </div>
+                  <div className="adminCommunityForumComponentFrameItem" />
+                  <div className="adminCommunityForumComponentDetails">                
+                  <button className="adminCommunityForumComponentButton">
+                    <FaTrash className="adminCommunityForumComponentButtonIcon" />
+                    <div className="adminCommunityForumComponentButtonText">Delete</div>
+                  </button>
+                </div>         
+                </div>
+              </a> 
+            </div>  
+
+            <div className="adminCommunityForumComponentFrameWrapper">
+              <a className="adminCommunityForumComponentRectangleParent">
+                <img
+                  className="adminCommunityForumComponentFrameChild"
+                  alt=""
+                  src={CornVector}
+                />
+                <div className="adminCommunityForumComponentFrameGroup">
+                  <div className="adminCommunityForumComponentFrameContainer">
+                    <div className="adminCommunityForumComponentSubText1Wrapper">
+                      <b className="adminCommunityForumComponentSubText1">What happens to corn on drought?</b>
+                    </div>
+                    <div className="adminCommunityForumComponentSubText2Wrapper2">
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>User ID:</b> F002
                       </div>
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>Post:</b> What is the current SRP of onions?
-                      </div>                     
+                       <b>User Role</b> Farmer
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>Full Name:</b> Marievic Anes
+                      </div>                                     
+                    </div>
+                  </div>
+                  <div className="adminCommunityForumComponentFrameItem" />
+                  <div className="adminCommunityForumComponentDetails">                
+                  <button className="adminCommunityForumComponentButton">
+                    <FaTrash className="adminCommunityForumComponentButtonIcon" />
+                    <div className="adminCommunityForumComponentButtonText">Delete</div>
+                  </button>
+                </div>         
+                </div>
+              </a> 
+            </div>  
+
+            <div className="adminCommunityForumComponentFrameWrapper">
+              <a className="adminCommunityForumComponentRectangleParent">
+                <img
+                  className="adminCommunityForumComponentFrameChild"
+                  alt=""
+                  src={RiceVector}
+                />
+                <div className="adminCommunityForumComponentFrameGroup">
+                  <div className="adminCommunityForumComponentFrameContainer">
+                    <div className="adminCommunityForumComponentSubText1Wrapper">
+                      <b className="adminCommunityForumComponentSubText1">How do you plant Rice efficiently?</b>
+                    </div>
+                    <div className="adminCommunityForumComponentSubText2Wrapper2">
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>User ID:</b> B001
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>User Role</b> Buyer
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>Full Name:</b> Jenkins Mesina
+                      </div>                           
+                    </div>
+                  </div>
+                  <div className="adminCommunityForumComponentFrameItem" />
+                  <div className="adminCommunityForumComponentDetails">                
+                  <button className="adminCommunityForumComponentButton">
+                    <FaTrash className="adminCommunityForumComponentButtonIcon" />
+                    <div className="adminCommunityForumComponentButtonText">Delete</div>
+                  </button>
+                </div>         
+                </div>
+              </a> 
+            </div>  
+
+            <div className="adminCommunityForumComponentFrameWrapper">
+              <a className="adminCommunityForumComponentRectangleParent">
+                <img
+                  className="adminCommunityForumComponentFrameChild"
+                  alt=""
+                  src={SquashVector}
+                />
+                <div className="adminCommunityForumComponentFrameGroup">
+                  <div className="adminCommunityForumComponentFrameContainer">
+                    <div className="adminCommunityForumComponentSubText1Wrapper">
+                      <b className="adminCommunityForumComponentSubText1">Can Squash be alternative to pumpkins?</b>
+                    </div>
+                    <div className="adminCommunityForumComponentSubText2Wrapper2">
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>User ID:</b> B002
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>User Role</b> Buyer
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>Full Name:</b> Arriane Clarisse Gatpo
+                      </div>                                    
+                    </div>
+                  </div>
+                  <div className="adminCommunityForumComponentFrameItem" />
+                  <div className="adminCommunityForumComponentDetails">                
+                  <button className="adminCommunityForumComponentButton">
+                    <FaTrash className="adminCommunityForumComponentButtonIcon" />
+                    <div className="adminCommunityForumComponentButtonText">Delete</div>
+                  </button>
+                </div>         
+                </div>
+              </a> 
+            </div>  
+
+            <div className="adminCommunityForumComponentFrameWrapper">
+              <a className="adminCommunityForumComponentRectangleParent">
+                <img
+                  className="adminCommunityForumComponentFrameChild"
+                  alt=""
+                  src={SiliVector}
+                />
+                <div className="adminCommunityForumComponentFrameGroup">
+                  <div className="adminCommunityForumComponentFrameContainer">
+                    <div className="adminCommunityForumComponentSubText1Wrapper">
+                      <b className="adminCommunityForumComponentSubText1">Does the price of Siling Labuyo decreased?</b>
+                    </div>
+                    <div className="adminCommunityForumComponentSubText2Wrapper2">
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>User ID:</b> F003
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>User Role</b> Farmer
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>Full Name:</b> Daniella Tungol
+                      </div>                                      
                     </div>
                   </div>
                   <div className="adminCommunityForumComponentFrameItem" />

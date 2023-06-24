@@ -39,6 +39,8 @@ const AdminBuyerTransactionsCompletedComponent = () => {
 
           <div className="adminBuyerTransactionsCompletedComponentMiddleSection">
             <div className="adminBuyerTransactionsCompletedComponentFrameParent">
+
+
               <div className="adminBuyerTransactionsCompletedComponentFrameWrapper">
                 <a className="adminBuyerTransactionsCompletedComponentRectangleParent">
                   <img
@@ -49,7 +51,7 @@ const AdminBuyerTransactionsCompletedComponent = () => {
                   <div className="adminBuyerTransactionsCompletedComponentFrameGroup">
                     <div className="adminBuyerTransactionsCompletedComponentFrameContainer">
                       <div className="adminBuyerTransactionsCompletedComponentSubText1Wrapper">
-                        <b className="adminBuyerTransactionsCompletedComponentSubText1">Corn</b>
+                        <b className="adminBuyerTransactionsCompletedComponentSubText1">Onions</b>
                       </div>
                       <div className="adminBuyerTransactionsCompletedComponentSubText2Wrapper2">
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
@@ -91,6 +93,62 @@ const AdminBuyerTransactionsCompletedComponent = () => {
                   </div>
                 </a>
               </div>
+
+                
+              <div className="adminBuyerTransactionsCompletedComponentFrameWrapper">
+                <a className="adminBuyerTransactionsCompletedComponentRectangleParent">
+                  <img
+                    className="adminBuyerTransactionsCompletedComponentFrameChild"
+                    alt=""
+                    src={RiceVector}
+                  />
+                  <div className="adminBuyerTransactionsCompletedComponentFrameGroup">
+                    <div className="adminBuyerTransactionsCompletedComponentFrameContainer">
+                      <div className="adminBuyerTransactionsCompletedComponentSubText1Wrapper">
+                        <b className="adminBuyerTransactionsCompletedComponentSubText1">Rice</b>
+                      </div>
+                      <div className="adminBuyerTransactionsCompletedComponentSubText2Wrapper2">
+                        <div className="adminBuyerTransactionsCompletedComponentSubText2">
+                          <b>User ID:</b> B001
+                        </div>
+                        <div className="adminBuyerTransactionsCompletedComponentSubText2">
+                          <b>Item ID:</b> N001
+                        </div>
+                        <div className="adminBuyerTransactionsCompletedComponentSubText2">
+                          <b>Buyer Name:</b> Ryan Edward Amador
+                        </div>
+                        <div className="adminBuyerTransactionsCompletedComponentSubText2">
+                          <b>Date Ordered:</b> 02 / 01 / 2023
+                        </div>
+                        <div className="adminBuyerTransactionsCompletedComponentSubText2">
+                          <b>Unit Price:</b> 400
+                        </div>
+                        <div className="adminBuyerTransactionsCompletedComponentSubText2">
+                          <b>Quantity Order:</b> 2
+                        </div>
+                        <div className="adminBuyerTransactionsCompletedComponentSubText2">
+                          <b>Total Amount:</b> 800
+                        </div>
+                        <div className="adminBuyerTransactionsCompletedComponentSubText2">
+                          <b>Farmer Name:</b> Arriane Gatpo
+                        </div>
+                        <div className="adminBuyerTransactionsCompletedComponentSubText2">
+                          <b>Status:</b> Completed
+                        </div>
+                      </div>
+                    </div>
+                    <div className="adminBuyerTransactionsCompletedComponentFrameItem" />
+                    <div className="adminBuyerTransactionsCompletedComponentDetails">
+                      <button className="adminBuyerTransactionsCompletedComponentButton">
+                        <FaTrash className="adminBuyerTransactionsCompletedComponentButtonIcon" />
+                        <div className="adminBuyerTransactionsCompletedComponentButtonText">Delete</div>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+
               <div className="adminBuyerTransactionsCompletedComponentForumNumber">
                 <div className="adminBuyerTransactionsCompletedComponentForumContainer">
                   <div className="adminBuyerTransactionsCompletedComponentForumNumberBox">1</div>

@@ -3,6 +3,10 @@ import "../css/Components/adminFarmerTransactionsPendingComponent.css";
 import AdminNavigation from '../components/adminPageNavigation';
 import RiceVector from '../img/riceCardImage.png';
 import CornVector from '../img/cornVector.png';
+import SiliVector from '../img/sili.png';
+import SquashVector from '../img/squash.png';
+import OnionVector from '../img/onionVector.png';
+
 import { FaEdit, FaTrash, FaFolderOpen } from 'react-icons/fa';
 
 const AdminFarmerTransactionsPendingComponent = () => {
@@ -38,17 +42,128 @@ const AdminFarmerTransactionsPendingComponent = () => {
 
           <div className="adminFarmerTransactionsPendingComponentMiddleSection">
             <div className="adminFarmerTransactionsPendingComponentFrameParent">
+
+
               <div className="adminFarmerTransactionsPendingComponentFrameWrapper">
                 <a className="adminFarmerTransactionsPendingComponentRectangleParent">
                   <img
                     className="adminFarmerTransactionsPendingComponentFrameChild"
                     alt=""
-                    src={CornVector}
+                    src={SiliVector}
                   />
                   <div className="adminFarmerTransactionsPendingComponentFrameGroup">
                     <div className="adminFarmerTransactionsPendingComponentFrameContainer">
                       <div className="adminFarmerTransactionsPendingComponentSubText1Wrapper">
-                        <b className="adminFarmerTransactionsPendingComponentSubText1">Corn</b>
+                        <b className="adminFarmerTransactionsPendingComponentSubText1">Siling Labuyo</b>
+                      </div>
+                      <div className="adminFarmerTransactionsPendingComponentSubText2Wrapper2">
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>User ID:</b> F002
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Item ID:</b> N002
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Buyer Name:</b> Jenkins Mesina
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Date Ordered:</b> 02 / 01 / 2023
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Unit Price:</b> 400
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Quantity Order:</b> 2
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Total Amount:</b> 800
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Farmer Name:</b> Arriane Gatpo
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Status:</b> Pending
+                        </div>
+                      </div>
+                    </div>
+                    <div className="adminFarmerTransactionsPendingComponentFrameItem" />
+                    <div className="adminFarmerTransactionsPendingComponentDetails">
+                      <button className="adminFarmerTransactionsPendingComponentButton">
+                        <FaTrash className="adminFarmerTransactionsPendingComponentButtonIcon" />
+                        <div className="adminFarmerTransactionsPendingComponentButtonText">Delete</div>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              
+
+              
+              <div className="adminFarmerTransactionsPendingComponentFrameWrapper">
+                <a className="adminFarmerTransactionsPendingComponentRectangleParent">
+                  <img
+                    className="adminFarmerTransactionsPendingComponentFrameChild"
+                    alt=""
+                    src={RiceVector}
+                  />
+                  <div className="adminFarmerTransactionsPendingComponentFrameGroup">
+                    <div className="adminFarmerTransactionsPendingComponentFrameContainer">
+                      <div className="adminFarmerTransactionsPendingComponentSubText1Wrapper">
+                        <b className="adminFarmerTransactionsPendingComponentSubText1">Rice</b>
+                      </div>
+                      <div className="adminFarmerTransactionsPendingComponentSubText2Wrapper2">
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>User ID:</b> B002
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Item ID:</b> N009
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Buyer Name:</b> Romeo London III
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Date Ordered:</b> 05 / 05 / 2023
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Unit Price:</b> 400
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Quantity Order:</b> 2
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Total Amount:</b> 800
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Farmer Name:</b> Daniella Tungol
+                        </div>
+                        <div className="adminFarmerTransactionsPendingComponentSubText2">
+                          <b>Status:</b> Pending
+                        </div>
+                      </div>
+                    </div>
+                    <div className="adminFarmerTransactionsPendingComponentFrameItem" />
+                    <div className="adminFarmerTransactionsPendingComponentDetails">
+                      <button className="adminFarmerTransactionsPendingComponentButton">
+                        <FaTrash className="adminFarmerTransactionsPendingComponentButtonIcon" />
+                        <div className="adminFarmerTransactionsPendingComponentButtonText">Delete</div>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              
+              <div className="adminFarmerTransactionsPendingComponentFrameWrapper">
+                <a className="adminFarmerTransactionsPendingComponentRectangleParent">
+                  <img
+                    className="adminFarmerTransactionsPendingComponentFrameChild"
+                    alt=""
+                    src={SquashVector}
+                  />
+                  <div className="adminFarmerTransactionsPendingComponentFrameGroup">
+                    <div className="adminFarmerTransactionsPendingComponentFrameContainer">
+                      <div className="adminFarmerTransactionsPendingComponentSubText1Wrapper">
+                        <b className="adminFarmerTransactionsPendingComponentSubText1">Squash</b>
                       </div>
                       <div className="adminFarmerTransactionsPendingComponentSubText2Wrapper2">
                         <div className="adminFarmerTransactionsPendingComponentSubText2">
@@ -89,7 +204,9 @@ const AdminFarmerTransactionsPendingComponent = () => {
                     </div>
                   </div>
                 </a>
-              </div>
+              </div>              
+           
+
               <div className="adminFarmerTransactionsPendingComponentForumNumber">
                 <div className="adminFarmerTransactionsPendingComponentForumContainer">
                   <div className="adminFarmerTransactionsPendingComponentForumNumberBox">1</div>
