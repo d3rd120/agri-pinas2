@@ -364,15 +364,15 @@ color: #FBA403;
   
 }
 .accountIcon {
-    width: 40px; /* Adjust the width as needed */
-    height: 40px; /* Adjust the height as needed */
-    margin-right: 5px; /* Add some spacing between the image and the text */
+    width: 50px;
+    height: 50px; 
+    margin-right: 4px; 
   }
   .accountIcon1 {
     width: 30px; 
     height: 30px; 
     margin-right: 5px;
-    margin-top: -16px; 
+    margin-top: -10px; 
   }
   .MuiModal-root {
     display: flex;
@@ -640,6 +640,11 @@ color: #FBA403;
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+.nameUser{
+  margin-top: -24.5rem;
+  font-size: 13.5px;
+  margin-left: 3rem;
 }
 
 h2 {

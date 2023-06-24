@@ -91,7 +91,7 @@ const BuyerProfileNav = ({ onUserInfoChange }) => {
           <FaUser className="buyerNavigationLinksIcon" />
         </NavLink>
       </div>
-
+      <div className="nameUser">Jenkins Mesina</div>
       <Modal open={open} onClose={handleClose}>
         <div className="editModal">
           <h2>Edit your Profile</h2>
