@@ -11,7 +11,7 @@ const AdminFarmerTransactions = () => {
           <div className="adminAccountFarmerComponentMainText">
             <b className="adminAccountFarmerComponentMainTextContainer">
               <p className="adminAccountFarmerComponentBlankLine">&nbsp;</p>          
-              <p className="adminAccountFarmerComponentBlankLine">transactions</p>
+              <p className="adminAccountFarmerComponentBlankLine">accounts</p>
             </b>
           </div>
         </div>
@@ -71,60 +71,60 @@ const AdminFarmerTransactions = () => {
           </thead>
           <tbody>
           <tr> 
-                 <td>B001</td>
-                 <td>Arrianne Clarisse Gatpo</td>
-                 <td>arriane@gmail.com</td>
-                 <td>(+63)9234567891</td>
-                 <td>Tandang Sora, Quezon City</td>
-                 <td>01-15-1999</td>
+                 <td>F001</td>
+                 <td>Ryan Edward Amador</td>
+                 <td>ryan@gmail.com</td>
+                 <td>(+63)9123456789</td>
+                 <td>Antipolo</td>
+                 <td>01-01-1999</td>
                  <td>23</td>       
                
                  <td> <FaTrash /> </td>               
            </tr>         
 
            <tr> 
-                 <td>B001</td>
-                 <td>Arrianne Clarisse Gatpo</td>
-                 <td>arriane@gmail.com</td>
-                 <td>(+63)9234567891</td>
-                 <td>Tandang Sora, Quezon City</td>
-                 <td>01-15-1999</td>
+                 <td>F002</td>
+                 <td>Daniel Raymond Ribaya</td>
+                 <td>daniel@gmail.com</td>
+                 <td>(+63)9987654321</td>
+                 <td>Rizal</td>
+                 <td>02-02-1999</td>
                  <td>23</td>       
                  
                  <td> <FaTrash /> </td>               
            </tr>         
 
            <tr> 
-                 <td>B001</td>
-                 <td>Arrianne Clarisse Gatpo</td>
-                 <td>arriane@gmail.com</td>
-                 <td>(+63)9234567891</td>
-                 <td>Tandang Sora, Quezon City</td>
-                 <td>01-15-1999</td>
+                 <td>F003</td>
+                 <td>Yagerobi Doria</td>
+                 <td>yage@gmail.com</td>
+                 <td>(+63)9876543219</td>
+                 <td>Tondo, Manila</td>
+                 <td>03-03-1999</td>
                  <td>23</td>       
                  
                  <td> <FaTrash /> </td>               
            </tr>         
 
            <tr> 
-                 <td>B001</td>
-                 <td>Arrianne Clarisse Gatpo</td>
-                 <td>arriane@gmail.com</td>
-                 <td>(+63)9234567891</td>
-                 <td>Tandang Sora, Quezon City</td>
-                 <td>01-15-1999</td>
+                 <td>F004</td>
+                 <td>Enzio James Reyes</td>
+                 <td>enzio@gmail.com</td>
+                 <td>(+63)9765432198</td>
+                 <td>Novaliches, Quezon City</td>
+                 <td>04-04-1999</td>
                  <td>23</td>       
                   
                  <td> <FaTrash /> </td>               
            </tr>        
             
            <tr> 
-                 <td>B001</td>
-                 <td>Arrianne Clarisse Gatpo</td>
-                 <td>arriane@gmail.com</td>
-                 <td>(+63)9234567891</td>
-                 <td>Tandang Sora, Quezon City</td>
-                 <td>01-15-1999</td>
+                 <td>F005</td>
+                 <td>Joebert Edward Torres</td>
+                 <td>joebert@gmail.com</td>
+                 <td>(+63)9654321987</td>
+                 <td>Sta. Mesa, Manila</td>
+                 <td>05-05-1999</td>
                  <td>23</td>       
                  
                  <td> <FaTrash /> </td>               

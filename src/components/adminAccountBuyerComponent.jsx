@@ -11,7 +11,7 @@ const AdminFarmerTransactions = () => {
           <div className="adminAccountBuyerComponentMainText">
             <b className="adminAccountBuyerComponentMainTextContainer">              
               <p className="adminAccountBuyerComponentBlankLine">&nbsp;</p>
-              <p className="adminAccountBuyerComponentBlankLine">transactions</p>
+              <p className="adminAccountBuyerComponentBlankLine">accounts</p>
             </b>
           </div>
         </div>
@@ -82,47 +82,47 @@ const AdminFarmerTransactions = () => {
            </tr>    
 
             <tr> 
-                 <td>B001</td>
-                 <td>Arrianne Clarisse Gatpo</td>
-                 <td>arriane@gmail.com</td>
+                 <td>B002</td>
+                 <td>Romeo London III</td>
+                 <td>romeo@gmail.com</td>
                  <td>(+63)9234567891</td>
-                 <td>Tandang Sora, Quezon City</td>
-                 <td>01-15-1999</td>
+                 <td>Sampaloc, Manila</td>
+                 <td>07-12-1999</td>
                  <td>23</td>       
                 
                  <td><FaTrash /> </td>               
            </tr>          
 
            <tr> 
-                 <td>B001</td>
-                 <td>Arrianne Clarisse Gatpo</td>
-                 <td>arriane@gmail.com</td>
+                 <td>B003</td>
+                 <td>Daniella Tungol</td>
+                 <td>daniella@gmail.com</td>
                  <td>(+63)9234567891</td>
                  <td>Tandang Sora, Quezon City</td>
-                 <td>01-15-1999</td>
+                 <td>12-15-1999</td>
                  <td>23</td>       
                  
                  <td><FaTrash /> </td>               
            </tr>    
 
            <tr> 
-                 <td>B001</td>
-                 <td>Arrianne Clarisse Gatpo</td>
-                 <td>arriane@gmail.com</td>
+                 <td>B004</td>
+                 <td>Marievic Anes</td>
+                 <td>marievic@gmail.com</td>
                  <td>(+63)9234567891</td>
-                 <td>Tandang Sora, Quezon City</td>
-                 <td>01-15-1999</td>
-                 <td>23</td>       
+                 <td>East Avenue, Quezon City</td>
+                 <td>08-12-2000</td>
+                 <td>22</td>       
              
                  <td><FaTrash /> </td>               
            </tr>    
 
            <tr> 
-                 <td>B001</td>
-                 <td>Arrianne Clarisse Gatpo</td>
-                 <td>arriane@gmail.com</td>
+                 <td>B005</td>
+                 <td>Jenkins Mesina</td>
+                 <td>jenkins@gmail.com</td>
                  <td>(+63)9234567891</td>
-                 <td>Tandang Sora, Quezon City</td>
+                 <td>Sta Mesa, Manila City</td>
                  <td>01-15-1999</td>
                  <td>23</td>       
              
