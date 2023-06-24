@@ -71,18 +71,14 @@ const FarmerTopNav = () => {
       <li className="farmernotificationItem">
         <span className="farmernotificationMessage">You have a new message.</span>
         <span className="farmernotificationTime">2 hours ago</span>
-      </li>
-      <li className="farmernotificationItem">
-        <span className="farmernotificationMessage">Your order has been shipped.</span>
-        <span className="farmernotificationTime">1 day ago</span>
-      </li>
+      </li>     
       <li className="farmernotificationItem">
         <span className="farmernotificationMessage">New deals are available.</span>
         <span className="farmernotificationTime">3 days ago</span>
       </li>
       <li className="farmernotificationItem">
-        <span className="farmernotificationMessage">Your order has been cancelled.</span>
-        <span className="farmernotificationTime">4 days ago</span>
+        <span className="farmernotificationMessage">Your product has been cancelled.</span>
+        <span className="farmernotificationTime">1 hour ago</span>
       </li>
     </ul>
   </div>
@@ -94,7 +90,7 @@ const FarmerTopNav = () => {
       <li className="farmernotificationItem">
         <div className="farmernotificationProfile">
           <img src={profile1} className="farmerprofileImage" />
-          <span className="farmernotificationSender">Jenkins Mesina</span>
+          <span className="farmernotificationSender">Yagerobi Doria</span>
         </div>
         <div className="farmernotificationContent">
           <span className="farmernotificationMessage">You have a new message.</span>
@@ -104,33 +100,13 @@ const FarmerTopNav = () => {
       <li className="farmernotificationItem">
         <div className="farmernotificationProfile">
           <img src={profile2} alt="Profile" className="farmerprofileImage" />
-          <span className="farmernotificationSender">Arriane Gatpo</span>
-        </div>
-        <div className="farmernotificationContent">
-          <span className="farmernotificationMessage">Your order has been shipped.</span>
-          <span className="farmernotificationTime">1d ago</span>
-        </div>
-      </li>
-      <li className="farmernotificationItem">
-        <div className="farmernotificationProfile">
-          <img src={profile1} className="farmerprofileImage" />
-          <span className="farmernotificationSender">Romeo London</span>
-        </div>
-        <div className="farmernotificationContent">
-          <span className="farmernotificationMessage">New deals are available.</span>
-          <span className="farmernotificationTime">3d ago</span>
-        </div>
-      </li>
-      <li className="farmernotificationItem">
-        <div className="farmernotificationProfile">
-          <img src={profile2} alt="Profile" className="farmerprofileImage" />
           <span className="farmernotificationSender">Daniella Tungol</span>
         </div>
         <div className="farmernotificationContent">
-          <span className="farmernotificationMessage">Your order has been cancelled.</span>
-          <span className="farmernotificationTime">4d ago</span>
+          <span className="farmernotificationMessage">Your product has been shipped.</span>
+          <span className="farmernotificationTime">1d ago</span>
         </div>
-      </li>
+      </li>    
     </ul>
   </div>
 )}

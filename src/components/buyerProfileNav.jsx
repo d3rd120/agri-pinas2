@@ -47,10 +47,10 @@ const BuyerProfileNav = ({ onUserInfoChange }) => {
 
   return (
     <div className="buyerNavigation">
-      <div className="buyerNavigationLogoParent">
+      <NavLink className="buyerNavigationLogoParent" to = '/buyermarketplace'>
         <img className="buyerNavigationLogoIcon" alt="" src={Logo} />
         <div className="buyerNavigationMainText">AgriPinas</div>
-      </div>
+      </NavLink>
       <div className="buyerNavigationGroupParent">
         <NavLink
           className="buyerNavigationLink1"

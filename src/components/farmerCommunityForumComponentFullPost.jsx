@@ -3,7 +3,7 @@ import FarmerNavigation from './farmerPageNavigation';
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
 import RiceVector from '../img/riceCardImage.png';
-import TomatoVector from '../img/tomatoVector.png';
+import SquashVector from '../img/squash.png';
 import { FaThumbsUp } from 'react-icons/fa';
 import FarmerTopNav from '../components/farmerTopNav';
 
@@ -39,15 +39,10 @@ const FarmerMarketplace = () => {
                     </div>
                     <div className="farmerCommunityForumComponentFullPostSmallCardsDescriptionWrapper">
                       <div className="farmerCommunityForumComponentFullPostSmallCardsFullDescription">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                      The Shortage Risk Premium (SRP) of onions refers to an additional cost or price increase imposed on onions due to the potential 
+                      scarcity or limited availability of the commodity. The SRP reflects the market's anticipation of reduced onion supply, 
+                      often caused by factors such as adverse weather conditions, natural disasters, pests, or disruptions in the onion production 
+                      or distribution chain.
                       </div>
                     </div>
                     <b className="farmerCommunityForumComponentFullPostSmallCardsDescription2">24 people liked this post.</b>
@@ -71,7 +66,7 @@ const FarmerMarketplace = () => {
                       </p>
                       <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>{`Ryan Edward Amador: `}</b>
-                        <span>{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `}</span>
+                        <span>{`I've been thinking about this for a very long time, thanks for making this as a topic. `}</span>
                       </p>
                       <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>&nbsp;</b>
@@ -79,9 +74,7 @@ const FarmerMarketplace = () => {
                       <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>{`Marievic Anes: `}</b>
                         <span>
-                          Ut enim ad minim veniam, quis nostrud exercitation
-                          ullamco laboris nisi ut aliquip ex ea commodo
-                          consequat.
+                         Ohhhh, That's nice to read that srp of onions is going down
                         </span>
                       </p>
                     </div>
@@ -118,7 +111,7 @@ const FarmerMarketplace = () => {
               <div className="farmerCommunityForumComponentFullPostNewCardDetails">
                 <div className="farmerCommunityForumComponentFullPostNewCardInner">
                   <div className="farmerCommunityForumComponentFullPostNewCardTitleWrapper">
-                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">Rice Planting</div>
+                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">How to plant rice efficiently?</div>
                   </div>
                 </div>
               </div>
@@ -128,12 +121,12 @@ const FarmerMarketplace = () => {
               <img
                 className="farmerCommunityForumComponentFullPostNewCardImage"
                 alt=""
-                src={TomatoVector}
+                src={SquashVector}
               />
               <div className="farmerCommunityForumComponentFullPostNewCardDetails">
                 <div className="farmerCommunityForumComponentFullPostNewCardInner">
                   <div className="farmerCommunityForumComponentFullPostNewCardTitleWrapper">
-                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">How to plant Tomatoes?</div>
+                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">Can squash survive summer?</div>
                   </div>
                 </div>
               </div>

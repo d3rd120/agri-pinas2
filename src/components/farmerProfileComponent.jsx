@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import "../css/Components/farmerProfileComponent.css";
 import FarmerProfileNav from '../components/farmerProfileNav';
-import ProfileVector1 from '../img/profileVector1.png';
+import ProfileVector2 from '../img/profileVector2.png';
 import FarmerTopNav from '../components/farmerTopNav';
 
 const BuyerProfile = () => {
-  const [name, setName] = useState(' Jenkins Mesina');
+  const [name, setName] = useState(' Marievic Anes');
   const [phoneNumber, setPhoneNumber] = useState('0987654321');
-  const [email, setEmail] = useState('jenkins123@gmail.com ');
+  const [email, setEmail] = useState('mavic123@gmail.com ');
   const [dateOfBirth, setDateOfBirth] = useState('2000-01-01');
 
   const handleUserInfoChange = (userInfo) => {
@@ -49,8 +49,8 @@ const BuyerProfile = () => {
               <div class="farmerProfileComponentFullName">Name</div>
               <div class="farmerProfileComponentName">{name}</div>
               <div class="farmerProfileComponentRole">Role</div>
-              <img src={ProfileVector1} class="farmerselectImageIcon" />
-              <div class="farmerProfileComponentRole2">Buyer</div>
+              <img src={ProfileVector2} class="farmerselectImageIcon" />
+              <div class="farmerProfileComponentRole2">Farmer</div>
               <div class="farmerProfileComponentEmail1">Email</div>
               <div class="farmerProfileComponentEmail2">{email}</div>
               <div class="farmerProfileComponentPhoneNumber">Phone Number</div>
