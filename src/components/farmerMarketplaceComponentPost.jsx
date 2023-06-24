@@ -78,23 +78,23 @@ const FarmerMarketplace = () => {
                       <div className="farmerMarketplaceComponentPostSmallCardsFullDescription">
                         <p className="farmerMarketplaceComponentPostBlankLine">
                           <b>Category: </b>
-                          <span className="farmerMarketplaceComponentPostBlankLine">{editedCategory}</span>
+                          <span className="farmerMarketplaceComponentPostBlankLine">Vegetable{editedCategory}</span>
                         </p>
                         <p className="farmerMarketplaceComponentPostBlankLine">
                           <b>Packaging: </b>
-                          <span className="farmerMarketplaceComponentPostCategory">{editedPackaging}</span>
+                          <span className="farmerMarketplaceComponentPostCategory">Sack{editedPackaging}</span>
                         </p>
                         <p className="farmerMarketplaceComponentPostBlankLine">
-                          <b>Price: </b>
-                          <span>{editedPrice}</span>
+                          <b>Price:  </b>
+                          <span>Php 5,000{editedPrice}</span>
                         </p>
                         <p className="farmerMarketplaceComponentPostBlankLine">
                           <b>Kilogram per unit: </b>
-                          <span className="farmerMarketplaceComponentPostCategory">{editedKilogram}</span>
+                          <span className="farmerMarketplaceComponentPostCategory">50 kgs{editedKilogram}</span>
                         </p>
                         <p className="farmerMarketplaceComponentPostBlankLine">
                           <b>Description: </b>
-                          <span>{editedDescription}</span>
+                          <span>An onion is a round vegetable with a brown skin that grows underground. It has many white layers on its inside which have a strong, sharp smell and taste.{editedDescription}</span>
                         </p>
                       </div>
                     </div>

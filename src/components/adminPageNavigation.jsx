@@ -45,13 +45,13 @@ const AdminNavigation = () => {
           {showDropdown2 && (
             <div className="dropdown">
               <NavLink
-                to="/adminfarmertransactions"
+                to="/adminfarmerpendingtransactions"
                 activeClassName="active"
               >
                 Farmer
               </NavLink>
               <NavLink
-                to="/adminbuyertransactions"
+                to="/adminbuyerpendingtransactions"
                 activeClassName="active"
               >
                 Buyer

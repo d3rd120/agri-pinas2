@@ -17,8 +17,6 @@
     justify-content: flex-start;
     cursor:pointer;
     top: 9000%;
-    text-decoration: none;
-    color: white;
   }
 
   .buyerNavigationLogoIcon {
@@ -440,17 +438,7 @@ color: #FBA403;
   .dateOfBirthField {
     width:25.4rem;
   }
-.courseProfile {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 2px rgba(2, 0, 0, 0.1);
-  display: flex;
-  max-width: 100%;
-  margin: 0;
-  overflow: hidden;
-  width: 850px;
-  height:300px;
-}
+
 .courseAddress{
   background-color: #fff;
   border-radius: 10px;
@@ -465,58 +453,8 @@ color: #FBA403;
 .course-field {
     width: 1000px;
 }
-.fname,
-.role,
-.email1{
-    font-weight: 600;
-    font-size: 17px;
-    color: black;
-    margin-left: 5rem;
-    margin-top: 0.5rem;
-}
-.name,
-.role1,
-.email
- {
-    font-weight: 400;
-    font-size: 14px;
-    margin-left: 6rem;
-}
-.info {
-    font-size: 14px;
-    font-weight: 300;
-    margin-top: 0.1rem;;
-}
-.fname {
-  margin-top: 3rem;
-}
-.pnumber,
-.bdaydate {
-  font-weight: 600;
-  font-size: 17px;
-  color: black;
-  margin-left: 20rem;
-  margin-top: -6.2rem;
-}
 
-.number,
-.bdate{
-  font-weight: 400;
-  font-size: 14px;
-  margin-left: 21.5rem;
-}
-.selectImageIcon {
-  margin-left: 40rem;
-  margin-top: -30rem;
-}
-.role1{
-  margin-top: -2rem;
-}
-.info1 {
-  font-size: 14px;
-  font-weight: 300;
-  margin-top: 0.4rem;;
-}
+
 .nameAddress{
   font-weight: 600;
   font-size: 17px;
