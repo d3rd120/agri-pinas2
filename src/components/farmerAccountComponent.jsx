@@ -1,9 +1,13 @@
 import FarmerNavigation from '../components/farmerPageNavigation';
 import '../css/Components/farmerAccountComponent.css';
+import { FaEdit, FaUpload } from 'react-icons/fa';
+import { useState } from 'react';
+import { doc, updateDoc } from 'firebase/firestore';
+import { db } from './firebase';
+import React, { useEffect } from 'react';
+
 import ProfileVector from '../img/profileVector3.png';
 import FarmerTopNav from '../components/farmerTopNav';
-import { FaEdit } from 'react-icons/fa';
-import { useState } from 'react';
 
 const FarmerAccountComponent = () => {
   const [isEditing, setIsEditing] = useState(false);
@@ -13,19 +17,74 @@ const FarmerAccountComponent = () => {
   const [age, setAge] = useState('23 years old');
   const [address, setAddress] = useState('Antipolo');
   const [contactNumber, setContactNumber] = useState('(+63)9123456789');
+  const [imageUpload, setImageUpload] = useState(false);
+  const [profileImage, setProfileImage] = useState(null);
+  const defaultProfileImagePath = 'path/to/default-profile-image.jpg';
+
+  useEffect(() => {
+    const fetchUserData = async () => {
+      try {
+        const userRef = doc(db, 'Users');
+        const snapshot = await userRef.get();
+        const userData = snapshot.data();
+        if (userData) {
+          setFullName(userData.fullname || '');
+          setBirthdate(userData.birthdate || '');
+          setEmailAddress(userData.email || '');
+          setAge(userData.age || '');
+          setAddress(userData.address || '');
+          setContactNumber(userData.contact || '');
+        }
+      } catch (error) {
+        console.error('Error fetching user information:', error);
+      }
+    };
+
+    fetchUserData();
+  }, []);
 
   const handleEditClick = () => {
     setIsEditing(true);
   };
 
-  const handleSaveClick = () => {
+  const handleSaveClick = async () => {
     setIsEditing(false);
 
+    try {
+      const userRef = doc(db, 'Users');
+      await updateDoc(userRef, {
+        fullname: fullName,
+        birthdate: birthdate,
+        email: emailAddress,
+        age: age,
+        address: address,
+        contact: contactNumber,
+      });
+
+      console.log('User information updated successfully!');
+    } catch (error) {
+      console.error('Error updating user information:', error);
+    }
+
+    if (profileImage) {
+      // Handle profile image upload
+    }
   };
 
   const handleCancelClick = () => {
     setIsEditing(false);
-   
+    setProfileImage(null);
+  };
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setProfileImage(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
   };
 
   return (
@@ -48,7 +107,7 @@ const FarmerAccountComponent = () => {
                 <img
                   className="FarmerAccountComponentFrameItem"
                   alt=""
-                  src={ProfileVector}
+                  src={profileImage || defaultProfileImagePath}
                 />
                 <div className="FarmerAccountComponentFrameWrapper">
                   <div className="FarmerAccountComponentFrameGroup">
@@ -62,6 +121,24 @@ const FarmerAccountComponent = () => {
                         <span>Farmer</span>
                       </div>
                     </div>
+                    {imageUpload ? (
+                      <div className="FarmerAccountComponentImageUploadWrapper">
+                        <input
+                          type="file"
+                          accept="image/*"
+                          className="FarmerAccountComponentImageUploadInput"
+                          onChange={handleImageUpload}
+                        />
+                      </div>
+                    ) : (
+                      <div
+                        className="FarmerAccountComponentImageUploadButton"
+                        onClick={() => setImageUpload(true)}
+                      >
+                        <FaUpload className="FarmerAccountComponentImageUploadIcon" />
+                        <span className="FarmerAccountComponentImageUploadText">Upload Image</span>
+                      </div>
+                    )}
                   </div>
                 </div>
               </a>

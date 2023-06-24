@@ -1,20 +1,29 @@
-.adminCommunityForumComponentBlankLine {
+.adminBuyerTransactionsPendingComponentForumContainer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+.adminBuyerTransactionsPendingComponentBlankLine {
   margin: 0;
   color: #557153;
 }
-.adminCommunityForumComponentMainTextWrapper{
+
+.adminBuyerTransactionsPendingComponentMainTextWrapper{
   align-self: stretch;
   position: relative;
   text-transform: uppercase;
 }
-.adminCommunityForumComponentMainText {
+
+.adminBuyerTransactionsPendingComponentMainText {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
-.adminCommunityForumComponentTopSection {
+
+.adminBuyerTransactionsPendingComponentTopSection {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -22,12 +31,14 @@
   justify-content: flex-start;
   gap: 1.88rem;
 }
-.adminCommunityForumComponentButtonIcon {
+
+.adminBuyerTransactionsPendingComponentButtonIcon {
   position: relative;
   width: 1rem;
   height: 1rem;
   color: white;
 }
+
 .button {
   position: relative;
   font-size: 1.13rem;
@@ -36,7 +47,8 @@
   color: #fff;
   text-align: center;
 }
-.adminCommunityForumComponentButton {
+
+.adminBuyerTransactionsPendingComponentButton {
   cursor: pointer;
   border: 0;
   padding: 0.75rem 1.13rem;
@@ -50,20 +62,21 @@
   gap: 0.38rem;
   transition: 0.3s;
 }
-.adminCommunityForumComponentButton:hover {
+
+.adminBuyerTransactionsPendingComponentButton:hover {
   background-color: #598025;
 }
 
-.adminCommunityForumComponentButtonText {
+.adminBuyerTransactionsPendingComponentButtonText {
   position: relative;
   font-size: 0.88rem;
   letter-spacing: 0.46px;
   font-weight: 600;    
   color: #fff;
   text-align: center;
-}  
-  
-.adminCommunityForumComponentDetails{
+}
+
+.adminBuyerTransactionsPendingComponentDetails {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -71,25 +84,27 @@
   align-self: stretch; 
 }
 
-.adminCommunityForumComponentMiddleSection {
+.adminBuyerTransactionsPendingComponentMiddleSection {
   align-self: stretch;
   display: flex;
   justify-content: flex-start;
 }
 
-.adminCommunityForumComponentMiddleSection {
+.adminBuyerTransactionsPendingComponentMiddleSection {
   flex-direction: row;
   align-items: flex-end;
   font-size: 1.63rem;
   color: #1a202e;   
 }
-.adminCommunityForumComponent,
-.adminCommunityForumComponentMainPanel {
+
+.adminBuyerTransactionsPendingComponent,
+.adminBuyerTransactionsPendingComponentMainPanel {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.adminCommunityForumComponentMainPanel {
+
+.adminBuyerTransactionsPendingComponentMainPanel {
   align-self: stretch;
   flex: 1;
   flex-direction: column;
@@ -98,7 +113,8 @@
   font-size: 1.31rem;
   color: #151630;
 }
-.adminCommunityForumComponent {
+
+.adminBuyerTransactionsPendingComponent {
   position: relative;
   background-color: #fff;
   width: 100%;
@@ -112,7 +128,7 @@
   min-height: 100vh;
 }
 
-.adminCommunityForumComponentFrameParent {
+.adminBuyerTransactionsPendingComponentFrameParent {
   align-self: stretch;
   display: flex;
   justify-content: flex-start;
@@ -122,7 +138,7 @@
   gap: 1.88rem;
 }
 
-.adminCommunityForumComponentFrameWrapper {
+.adminBuyerTransactionsPendingComponentFrameWrapper {
   align-self: stretch;
   flex-direction: row;
   flex-wrap: wrap;
@@ -131,7 +147,7 @@
   justify-content: flex-start;
 }
 
-.adminCommunityForumComponentRectangleParent {
+.adminBuyerTransactionsPendingComponentRectangleParent {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -152,11 +168,11 @@
   margin-right:1rem;
 }
 
-.adminCommunityForumComponentRectangleParent:hover {
+.adminBuyerTransactionsPendingComponentRectangleParent:hover {
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
 }
 
-.adminCommunityForumComponentFrameChild {
+.adminBuyerTransactionsPendingComponentFrameChild {
   align-self: stretch;
   position: relative;
   max-width: 100%;
@@ -166,7 +182,7 @@
   object-fit: cover;
 }
 
-.adminCommunityForumComponentFrameGroup {
+.adminBuyerTransactionsPendingComponentFrameGroup {
   align-self: stretch;
   flex-direction: column;
   padding: 1rem;
@@ -176,7 +192,7 @@
   justify-content: flex-start;
 }
 
-.adminCommunityForumComponentFrameContainer {
+.adminBuyerTransactionsPendingComponentFrameContainer {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -185,7 +201,7 @@
   gap: 0.5rem;
 }
 
-.adminCommunityForumComponentSubText1Wrapper {
+.adminBuyerTransactionsPendingComponentSubText1Wrapper {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -193,14 +209,14 @@
   justify-content: flex-start;
 }
 
-.adminCommunityForumComponentSubText1 {
+.adminBuyerTransactionsPendingComponentSubText1 {
   align-self: stretch;
   position: relative;
   letter-spacing: 0.02em;
   line-height: 2.13rem;
 }
 
-.adminCommunityForumComponentSubText2Wrapper2 {
+.adminBuyerTransactionsPendingComponentSubText2Wrapper2 {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -209,14 +225,14 @@
   font-size: 1rem;   
 }
 
-.adminCommunityForumComponentSubText2{
+.adminBuyerTransactionsPendingComponentSubText2 {
   align-self: stretch;
   position: relative;
   letter-spacing: 0.01em;
   line-height: 1.75rem;
 }
 
-.adminCommunityForumComponentFrameItem {
+.adminBuyerTransactionsPendingComponentFrameItem {
   align-self: stretch;
   position: relative;
   border-top: 0.7px solid #ecf0f6;
@@ -224,7 +240,7 @@
   height: 0.04rem;
 }
 
-.adminCommunityForumComponentForumNumber {
+.adminBuyerTransactionsPendingComponentForumNumber {
   flex-direction: row;
   padding: 0 0.75rem 0 0;
   align-items: center;
@@ -235,7 +251,7 @@
   justify-content: flex-start;
 }
 
-.adminCommunityForumComponentForumContainer {
+.adminBuyerTransactionsPendingComponentForumContainer {
   border-radius: 6px;
   border: 1px solid #bac2d6;
   display: flex;
@@ -248,12 +264,11 @@
   transition: 0.5s;
 }
 
-.adminCommunityForumComponentForumContainer:hover {
-  background-color : #E5FCE7;
-
+.adminBuyerTransactionsPendingComponentForumContainer:hover {
+  background-color: #E5FCE7;
 }
 
-.adminCommunityForumComponentForumNumberBox {
+.adminBuyerTransactionsPendingComponentForumNumberBox {
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2rem;
@@ -261,7 +276,7 @@
   font-weight: 600;
 }
 
-.adminCommunityForumComponentCard {
+.adminBuyerTransactionsPendingComponentCard {
   background-color: #f7f7f7;
   border-radius: 5px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -273,7 +288,7 @@
   justify-content: center;
 }
 
-.adminCommunityForumComponentSubTitle {
+.adminBuyerTransactionsPendingComponentSubTitle {
   background-color: #e7e7e7;
   padding: 10px;
   margin-right: 8px;
@@ -283,69 +298,66 @@
   font-weight: 600;
 }
 
-.adminCommunityForumComponentShow {
-    text-align:justify;
-    font-weight:500;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-right: 8px;
-    margin-left: 40px; 
-    text-align: start;
-  }  
+.adminBuyerTransactionsPendingComponentShow {
+  text-align: justify;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: 8px;
+  margin-left: 40px; 
+  text-align: start;
+}  
 
-    .adminCommunityForumComponentRowSelect {
-    padding: 8px;
-    border: 1px solid #7D8F69;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  .adminCommunityForumComponentRowSelect:focus {
-    outline: none;
-    border-color: #557153;
-  }
+.adminBuyerTransactionsPendingComponentRowSelect {
+  padding: 8px;
+  border: 1px solid #7D8F69;
+  border-radius: 4px;
+  font-size: 14px;
+}
 
-
-
-
+.adminBuyerTransactionsPendingComponentRowSelect:focus {
+  outline: none;
+  border-color: #557153;
+}
 
 @media screen and (max-width: 1200px) {  
-
-  .adminCommunityForumComponentForumContainer {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      box-sizing: border-box;
-    }
+  .adminBuyerTransactionsPendingComponentForumContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
 }
+
 @media screen and (max-width: 960px) {
-  .adminCommunityForumComponentMainText {
+  .adminBuyerTransactionsPendingComponentMainText {
     padding-right: 0;
     box-sizing: border-box;
     flex: unset;
     align-self: stretch;
   }
-  .adminCommunityForumComponentTopSection {
+  .adminBuyerTransactionsPendingComponentTopSection {
     flex-direction: column;
   }
-  .adminCommunityForumComponentButton {
+  .adminBuyerTransactionsPendingComponentButton {
     margin-right: auto;
   }
-  
-  .adminCommunityForumComponentMiddleSection {
+
+  .adminBuyerTransactionsPendingComponentMiddleSection {
     flex-direction: column;
   }
-  .adminCommunityForumComponentFrameParent {
-      flex: unset;
-      align-self: stretch;
-    }
+  .adminBuyerTransactionsPendingComponentFrameParent {
+    flex: unset;
+    align-self: stretch;
+  }
 }
+
 @media screen and (max-width: 420px) {
-  .adminCommunityForumComponentMainText {
+  .adminBuyerTransactionsPendingComponentMainText {
     width: 100%;
   }
-  .adminCommunityForumComponentButton {
+  .adminBuyerTransactionsPendingComponentButton {
     width: 100% !important;
   }
-  .adminCommunityForumComponentMainPanel {
+  .adminBuyerTransactionsPendingComponentMainPanel {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     box-sizing: border-box;
