@@ -21,9 +21,17 @@ import FarmerTransactions from './pages/FarmerPage/farmerTransactions';
 import FarmerTransactionsPending from './pages/FarmerPage/farmerTransactionsPending';
 import FarmerTransactionsCancelled from './pages/FarmerPage/farmerTransactionsCancelled';
 import FarmerTransactionsCompleted from './pages/FarmerPage/farmerTransactionsCompleted';
+import FarmerProfile from './pages/FarmerPage/farmerProfile';
+import FarmerAddress from './pages/FarmerPage/farmerAddress';
 import FarmerAccount from './pages/FarmerPage/farmerAccount';
 import AdminDashboard from './pages/AdminPage/adminDashboard';
 import AdminCommunityForum from './pages/AdminPage/adminCommunityForum';
+import AdminBuyerPendingTransactions from './pages/AdminPage/adminBuyerPendingTransactions';
+import AdminBuyerCancelledTransactions from './pages/AdminPage/adminBuyerCancelledTransactions';
+import AdminBuyerCompletedTransactions from './pages/AdminPage/adminBuyerCompletedTransactions';
+import AdminFarmerPendingTransactions from './pages/AdminPage/adminFarmerPendingTransactions';
+import AdminFarmerCancelledTransactions from './pages/AdminPage/adminFarmerCancelledTransactions';
+import AdminFarmerCompletedTransactions from './pages/AdminPage/adminFarmerCompletedTransactions';
 import AdminBuyerTransactions from './pages/AdminPage/adminBuyerTransactions';
 import AdminFarmerTransactions from './pages/AdminPage/adminFarmerTransactions';
 import AdminAccountBuyer from './pages/AdminPage/adminAccountBuyer';
@@ -55,7 +63,7 @@ const App = () => {
               <Route path="/buyeraddress" element={<BuyerAdd />} />
               <Route path="/farmerdashboard" element={<FarmerDashboard />} />
               <Route path="/farmermarketplace" element={<FarmerMarketplace />} />
-              <Route path="/farmermarketplacepost" element={<FarmerMarketplacePost />} />
+              <Route path="/farmermarketplacepost" element={<FarmerMarketplacePost />} />            
               <Route path="/farmercommunityforum" element={<FarmerCommunityForum />} />
               <Route path="/farmercommunityforumpost" element={<FarmerCommunityForumPost />} />              
               <Route path="/farmercroptrackerharvest" element={<FarmerCropTrackerHarvest />} />
@@ -63,11 +71,19 @@ const App = () => {
               <Route path="/farmertransactions" element={<FarmerTransactions />} />
               <Route path="/farmertransactionspending" element={<FarmerTransactionsPending />} />
               <Route path="/farmertransactionscancelled" element={<FarmerTransactionsCancelled />} />
-              <Route path="/farmertransactionscompleted" element={<FarmerTransactionsCompleted />} />              
+              <Route path="/farmertransactionscompleted" element={<FarmerTransactionsCompleted />} />
+              <Route path="/farmerprofile" element={<FarmerProfile />} />  
+              <Route path="/farmeraddress" element={<FarmerAddress />} />                                          
               <Route path="/farmeraccount" element={<FarmerAccount />} />
               <Route path="/admindashboard" element={<AdminDashboard />} />
               <Route path="/admincommunityforum" element={<AdminCommunityForum />} />
+              <Route path="/adminbuyerpendingtransactions" element={<AdminBuyerPendingTransactions />} />  
+              <Route path="/adminbuyercancelledtransactions" element={<AdminBuyerCancelledTransactions />} />                           
+              <Route path="/adminbuyercompletedtransactions" element={<AdminBuyerCompletedTransactions />} />                              
               <Route path="/adminbuyertransactions" element={<AdminBuyerTransactions />} />
+              <Route path="/adminfarmerpendingtransactions" element={<AdminFarmerPendingTransactions />} />   
+              <Route path="/adminfarmercancelledtransactions" element={<AdminFarmerCancelledTransactions />} /> 
+              <Route path="/adminfarmercompletedtransactions" element={<AdminFarmerCompletedTransactions />} />                                 
               <Route path="/adminfarmertransactions" element={<AdminFarmerTransactions />} />             
               <Route path="/adminaccountbuyer" element={<AdminAccountBuyer />} />  
               <Route path="/adminaccountfarmer" element={<AdminAccountFarmer />} />  

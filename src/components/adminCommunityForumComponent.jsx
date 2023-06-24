@@ -1,164 +1,114 @@
-import '../css/Components/adminCommunityForumComponent.css';
+import TransactionsNav from '../components/farmerTransactionsNavigation';
+import "../css/Components/adminCommunityForumComponent.css";
 import AdminNavigation from '../components/adminPageNavigation';
-import { FaComments, FaEdit, FaTrash} from 'react-icons/fa';
-import CornVector from '../img/cornVector.png'
-import OnionVector from '../img/onionVector.png';
+import FarmerTopNav from '../components/farmerTopNav';
+import RiceVector from '../img/riceCardImage.png';
+import CornVector from '../img/cornVector.png';
+import { FaTrash, FaComments } from 'react-icons/fa';
 
-
-
-const AdminCommunityForum = () => {
+const AdminCommunityForumComponent = () => {
   return (
     <div className="adminCommunityForumComponent">
-     <AdminNavigation />
-      <div className="adminCommunityForumComponentMainPanel">
+      <AdminNavigation />
+      <div className="adminCommunityForumComponentMainPanel">   
         <div className="adminCommunityForumComponentTopSection">
           <div className="adminCommunityForumComponentMainText">
-            <b className="adminCommunityForumComponentMainTextContainer">
-              <p className="adminCommunityForumComponentBlankLine">&nbsp;</p>              
-              <p className="adminCommunityForumComponentBlankLine">Community Forum</p>
+            <b className="adminCommunityForumComponentMainTextWrapper">       
+            <p className="adminCommunityForumComponentBlankLine">&nbsp;</p>
+              <p className="adminCommunityForumComponentBlankLine">Community forum</p>
             </b>
           </div>
-        </div>
-
-
-        <div className="adminCommunityForumComponentCategories">
-              <div className="adminCommunityForumComponentPaginationContainer">
-                <div className="adminCommunityForumComponentPaginationNumber">1</div>
-              </div>
-              <div className="adminCommunityForumComponentPaginationContainer">
-                <div className="adminCommunityForumComponentPaginationNumber">2</div>
-              </div>
-              <div className="adminCommunityForumComponentPaginationContainer">
-                <div className="adminCommunityForumComponentPaginationNumber">3</div>
-              </div>
-              <div className="adminCommunityForumComponentPaginationContainer">
-                <div className="adminCommunityForumComponentPaginationNumber">4</div>
-              </div>
-              <div className="adminCommunityForumComponentPaginationContainer">
-                <div className="adminCommunityForumComponentPaginationNumber">5</div>
-              </div>
-              <div className="adminCommunityForumComponentPaginationContainer">
-                <div className="adminCommunityForumComponentPaginationNumber">6</div>
-              </div>
+        </div>    
+    
+        
+        <div className="adminCommunityForumComponentCard">
+            <div className="adminCommunityForumComponentSubTitle"><FaComments /> Post Management
             </div>
-
+            <br></br>
+           <div className="adminCommunityForumComponentShow">Show:   
+           <select className="adminCommunityForumComponentRowSelect" onchange="updateRows(this.value)">
+                   <option value="5">5</option>
+                   <option value="10">10</option>
+                   <option value="15">15</option>
+                   <option value="20">20</option>
+            </select>
+            </div> 
+            <br></br>     
+    
+     
 
         <div className="adminCommunityForumComponentMiddleSection">
-        <div className="adminCommunityForumPageLayout1">          
-          <div className="adminCommunityForumPageLayout2">
-      <div className="adminCommunityForumCard">
-          <div className="adminCommunityForumSubTitle"><FaComments /> Post Management
-          </div>
-          <br></br>
-         <div className = "adminCommunityForumShow">Show:   
-         <select className="adminCommunityForumRowSelect" onchange="updateRows(this.value)">
-                 <option value="5">5</option>
-                 <option value="10">10</option>
-                 <option value="15">15</option>
-                 <option value="20">20</option>
-          </select>
-          </div> 
-          <br></br>
-         
-      <table className="adminCommunityForumTable">
-        <thead>
-          <tr>
-            <th>User ID</th>
-            <th>User Role</th>
-            <th>Full Name</th>
-            <th>Post</th>
-            <th>Image</th>         
-           
-            <th>Delete</th>
-          </tr>
-        </thead>
-        <tbody>
-        <tr> 
-               <td>F001</td>
-               <td>Farmer</td>
-               <td>Arrianne Clarisse Gatpo</td>
-               <td>What is the current SRP of onions?</td>    
-               <td>
-                 <img className = "adminCommunityForumImage"                
-                  alt=""
-                  src={OnionVector}
-                  />
-                 </td>       
-            
-               <td> <FaTrash /></td>               
-         </tr>        
+        <div className="adminCommunityForumComponentFrameParent">
 
-         <tr> 
-               <td>F001</td>
-               <td>Farmer</td>
-               <td>Arrianne Clarisse Gatpo</td>
-               <td>What is the current SRP of onions?</td>    
-               <td>
-               <img className = "adminCommunityForumImage"             
+
+            <div className="adminCommunityForumComponentFrameWrapper">
+              <a className="adminCommunityForumComponentRectangleParent">
+                <img
+                  className="adminCommunityForumComponentFrameChild"
                   alt=""
                   src={CornVector}
-                  />
-                 </td>       
-                
-               <td> <FaTrash /></td>             
-         </tr>
-       
-         <tr> 
-               <td>F001</td>
-               <td>Farmer</td>
-               <td>Arrianne Clarisse Gatpo</td>
-               <td>What is the current SRP of onions?</td>    
-               <td>
-               <img className = "adminCommunityForumImage"                   
-                  alt=""
-                  src={OnionVector}
-                  />
-                 </td>       
-                
-               <td> <FaTrash /></td>  
-                          
-         </tr>
-       
-         <tr> 
-               <td>F001</td>
-               <td>Farmer</td>
-               <td>Arrianne Clarisse Gatpo</td>
-               <td>What is the current SRP of onions?</td>    
-               <td>
-               <img className = "adminCommunityForumImage"               
-                  alt=""
-                  src={CornVector}
-                  />
-                 </td>       
-                
-               <td> <FaTrash /></td>            
-         </tr>
-       
-           <tr> 
-               <td>F001</td>
-               <td>Farmer</td>
-               <td>Arrianne Clarisse Gatpo</td>
-               <td>What is the current SRP of onions?</td>    
-               <td>
-               <img className = "adminCommunityForumImage"               
-                  alt=""
-                  src={OnionVector}
-                  />
-                 </td>       
+                />
+                <div className="adminCommunityForumComponentFrameGroup">
+                  <div className="adminCommunityForumComponentFrameContainer">
+                    <div className="adminCommunityForumComponentSubText1Wrapper">
+                      <b className="adminCommunityForumComponentSubText1">Corn</b>
+                    </div>
+                    <div className="adminCommunityForumComponentSubText2Wrapper2">
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>User ID:</b> B001
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>User Role</b> Farmer
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>Full Name:</b> Ryan Edward Amador
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>Post:</b> What is the current SRP of onions?
+                      </div>                     
+                    </div>
+                  </div>
+                  <div className="adminCommunityForumComponentFrameItem" />
+                  <div className="adminCommunityForumComponentDetails">                
+                  <button className="adminCommunityForumComponentButton">
+                    <FaTrash className="adminCommunityForumComponentButtonIcon" />
+                    <div className="adminCommunityForumComponentButtonText">Delete</div>
+                  </button>
+                </div>         
+                </div>
+              </a> 
+            </div>  
+          
                
-               <td> <FaTrash /></td>           
-         </tr>
-       
-       
-        </tbody>
-      </table>
-      </div>
-      </div>
-    </div>
+
+
+            <div className="adminCommunityForumComponentForumNumber">
+              <div className="adminCommunityForumComponentForumContainer">
+                <div className="adminCommunityForumComponentForumNumberBox">1</div>
+              </div>
+              <div className="adminCommunityForumComponentForumContainer">
+                <div className="adminCommunityForumComponentForumNumberBox">2</div>
+              </div>
+              <div className="adminCommunityForumComponentForumContainer">
+                <div className="adminCommunityForumComponentForumNumberBox">3</div>
+              </div>
+              <div className="adminCommunityForumComponentForumContainer">
+                <div className="adminCommunityForumComponentForumNumberBox">4</div>
+              </div>
+              <div className="adminCommunityForumComponentForumContainer">
+                <div className="adminCommunityForumComponentForumNumberBox">5</div>
+              </div>
+              <div className="adminCommunityForumComponentForumContainer">
+                <div className="adminCommunityForumComponentForumNumberBox">6</div>
+              </div>
+            </div>
+          </div>
+          </div> 
         </div>
       </div>
     </div>
+
   );
 };
 
-export default AdminCommunityForum;
+export default AdminCommunityForumComponent;

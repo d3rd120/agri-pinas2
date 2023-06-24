@@ -54,7 +54,7 @@ const FarmerTopNav = () => {
             className={`farmerComponentGroupChild2${showMessages ? ' active' : ''}`}
             onClick={handleEnvelopeClick}
           />
-          <NavLink to="/farmeraccount">
+          <NavLink to="/farmerprofile">
             <FaUser className="farmerComponentGroupChild3" />
           </NavLink>
         </div>
