@@ -56,67 +56,13 @@ const FarmerCommunityForumComponent = () => {
                     </div>
                     <div className="farmerTransactionsCancelledComponentSubText2Wrapper2">
                       <div className="farmerTransactionsCancelledComponentSubText2">
-                       <b>User ID:</b> B001
+                       <b>User ID:</b> B005
                       </div>
                       <div className="farmerTransactionsCancelledComponentSubText2">
-                       <b>Item ID:</b> N001
+                       <b>Item ID:</b> N005
                       </div>
                       <div className="farmerTransactionsCancelledComponentSubText2">
-                       <b>Buyer Name:</b> Ryan Edward Amador
-                      </div>
-                      <div className="farmerTransactionsCancelledComponentSubText2">
-                       <b>Date Ordered:</b> 02 / 01 / 2023
-                      </div>
-                      <div className="farmerTransactionsCancelledComponentSubText2">
-                       <b>Unit Price:</b> 400
-                      </div>
-                      <div className="farmerTransactionsCancelledComponentSubText2">
-                       <b>Quantity Order:</b> 2
-                      </div>
-                      <div className="farmerTransactionsCancelledComponentSubText2">
-                       <b>Total Amount:</b> 800
-                      </div>
-                      <div className="farmerTransactionsCancelledComponentSubText2">
-                       <b>Status:</b> Pending
-                      </div>
-                    </div>
-                  </div>
-                  <div className="farmerTransactionsCancelledComponentFrameItem" />
-                  <div className="farmerTransactionsCancelledComponentDetails">
-                  <button className="farmerTransactionsCancelledComponentButton">
-                    <FaEdit className="farmerTransactionsCancelledComponentButtonIcon" />
-                    <div className="farmerTransactionsCancelledComponentButtonText">Edit</div>
-                  </button>
-                  <button className="farmerTransactionsCancelledComponentButton">
-                    <FaTrash className="farmerTransactionsCancelledComponentButtonIcon" />
-                    <div className="farmerTransactionsCancelledComponentButtonText">Delete</div>
-                  </button>
-                </div>         
-                </div>
-              </a> 
-            </div>
-
-            <div className="farmerTransactionsCancelledComponentFrameWrapper">
-              <a className="farmerTransactionsCancelledComponentRectangleParent">
-                <img
-                  className="farmerTransactionsCancelledComponentFrameChild"
-                  alt=""
-                  src={CornVector}
-                />
-                <div className="farmerTransactionsCancelledComponentFrameGroup">
-                  <div className="farmerTransactionsCancelledComponentFrameContainer">
-                    <div className="farmerTransactionsCancelledComponentSubText1Wrapper">
-                      <b className="farmerTransactionsCancelledComponentSubText1">Corn</b>
-                    </div>
-                    <div className="farmerTransactionsCancelledComponentSubText2Wrapper2">
-                      <div className="farmerTransactionsCancelledComponentSubText2">
-                       <b>User ID:</b> B001
-                      </div>
-                      <div className="farmerTransactionsCancelledComponentSubText2">
-                       <b>Item ID:</b> N001
-                      </div>
-                      <div className="farmerTransactionsCancelledComponentSubText2">
-                       <b>Buyer Name:</b> Ryan Edward Amador
+                       <b>Buyer Name:</b> Marco Pangilinan
                       </div>
                       <div className="farmerTransactionsCancelledComponentSubText2">
                        <b>Date Ordered:</b> 02 / 01 / 2023
@@ -148,8 +94,7 @@ const FarmerCommunityForumComponent = () => {
                 </div>         
                 </div>
               </a> 
-            </div>
-          
+            </div>      
                
 
 

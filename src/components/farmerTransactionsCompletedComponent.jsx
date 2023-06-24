@@ -2,9 +2,8 @@ import TransactionsNav from '../components/farmerTransactionsNavigation';
 import "../css/Components/farmerTransactionsCompletedComponent.css";
 import FarmerNavigation from '../components/farmerPageNavigation';
 import FarmerTopNav from '../components/farmerTopNav';
-import OnionVector from '../img/onionVector.png';
+import SquashVector from '../img/squash.png';
 import CornVector from '../img/cornVector.png';
-import RiceVector from '../img/riceCardImage.png';
 import { FaEdit, FaTrash, FaFolderOpen } from 'react-icons/fa';
 
 const FarmerCommunityForumComponent = () => {
@@ -43,22 +42,22 @@ const FarmerCommunityForumComponent = () => {
                   <img
                     className="farmerTransactionsCompletedComponentFrameChild"
                     alt=""
-                    src={RiceVector}
+                    src={SquashVector}
                   />
                   <div className="farmerTransactionsCompletedComponentFrameGroup">
                     <div className="farmerTransactionsCompletedComponentFrameContainer">
                       <div className="farmerTransactionsCompletedComponentSubText1Wrapper">
-                        <b className="farmerTransactionsCompletedComponentSubText1">Rice</b>
+                        <b className="farmerTransactionsCompletedComponentSubText1">Squash</b>
                       </div>
                       <div className="farmerTransactionsCompletedComponentSubText2Wrapper2">
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>User ID:</b> B001
+                          <b>User ID:</b> B006
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Item ID:</b> N001
+                          <b>Item ID:</b> N006
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Buyer Name:</b> Ryan Edward Amador
+                          <b>Buyer Name:</b> Marievic Anes
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
                           <b>Date Ordered:</b> 02 / 01 / 2023
@@ -97,22 +96,22 @@ const FarmerCommunityForumComponent = () => {
                   <img
                     className="farmerTransactionsCompletedComponentFrameChild"
                     alt=""
-                    src={OnionVector}
+                    src={CornVector}
                   />
                   <div className="farmerTransactionsCompletedComponentFrameGroup">
                     <div className="farmerTransactionsCompletedComponentFrameContainer">
                       <div className="farmerTransactionsCompletedComponentSubText1Wrapper">
-                        <b className="farmerTransactionsCompletedComponentSubText1">Onions</b>
+                        <b className="farmerTransactionsCompletedComponentSubText1">Corn</b>
                       </div>
                       <div className="farmerTransactionsCompletedComponentSubText2Wrapper2">
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>User ID:</b> B001
+                          <b>User ID:</b> B007
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Item ID:</b> N001
+                          <b>Item ID:</b> N007
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Buyer Name:</b> Ryan Edward Amador
+                          <b>Buyer Name:</b> Jenkins Mesina
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
                           <b>Date Ordered:</b> 02 / 01 / 2023

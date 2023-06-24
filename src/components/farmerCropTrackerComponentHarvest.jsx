@@ -4,6 +4,9 @@ import FarmerTopNav from '../components/farmerTopNav';
 import CropTrackerNav from '../components/farmerCropTrackerNavigation';
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
+import SitawVector from '../img/sitaw.png';
+import SquashVector from '../img/squash.png';
+import SiliVector from '../img/sili.png';
 import {FaEdit, FaTrash,FaFolderOpen} from 'react-icons/fa';
 
 const FarmerCommunityForumComponent = () => {
@@ -120,16 +123,16 @@ const FarmerCommunityForumComponent = () => {
                 <img
                   className="farmerCropTrackerComponentHarvestFrameChild"
                   alt=""
-                  src={OnionVector}
+                  src={SitawVector}
                 />
                 <div className="farmerCropTrackerComponentHarvestFrameGroup">
                   <div className="farmerCropTrackerComponentHarvestFrameContainer">
                     <div className="farmerCropTrackerComponentHarvestSubText1Wrapper">
-                      <b className="farmerCropTrackerComponentHarvestSubText1">Onions</b>
+                      <b className="farmerCropTrackerComponentHarvestSubText1">Sitaw</b>
                     </div>
                     <div className="farmerCropTrackerComponentHarvestSubText2Wrapper2">
                       <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Quantity(KG):</b> 20kgs
+                       <b>Quantity(KG):</b> 30kgs
                       </div>
                       <div className="farmerCropTrackerComponentHarvestSubText2">
                        <b>Status:</b> Ready to Harvest
@@ -158,16 +161,16 @@ const FarmerCommunityForumComponent = () => {
                 <img
                   className="farmerCropTrackerComponentHarvestFrameChild"
                   alt=""
-                  src={CornVector}
+                  src={SiliVector}
                 />
                 <div className="farmerCropTrackerComponentHarvestFrameGroup">
                   <div className="farmerCropTrackerComponentHarvestFrameContainer">
                     <div className="farmerCropTrackerComponentHarvestSubText1Wrapper">
-                      <b className="farmerCropTrackerComponentHarvestSubText1">Corn</b>
+                      <b className="farmerCropTrackerComponentHarvestSubText1">Siling Labuyo</b>
                     </div>
                     <div className="farmerCropTrackerComponentHarvestSubText2Wrapper2">
                       <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Quantity(KG):</b> 30kgs
+                       <b>Quantity(KG):</b> 80kgs
                       </div>
                       <div className="farmerCropTrackerComponentHarvestSubText2">
                        <b>Status:</b> Ready to Harvest
@@ -194,16 +197,16 @@ const FarmerCommunityForumComponent = () => {
                 <img
                   className="farmerCropTrackerComponentHarvestFrameChild"
                   alt=""
-                  src={OnionVector}
+                  src={SquashVector}
                 />
                 <div className="farmerCropTrackerComponentHarvestFrameGroup">
                   <div className="farmerCropTrackerComponentHarvestFrameContainer">
                     <div className="farmerCropTrackerComponentHarvestSubText1Wrapper">
-                      <b className="farmerCropTrackerComponentHarvestSubText1">Onions</b>
+                      <b className="farmerCropTrackerComponentHarvestSubText1">Squash</b>
                     </div>
                     <div className="farmerCropTrackerComponentHarvestSubText2Wrapper2">
                       <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Quantity(KG):</b> 20kgs
+                       <b>Quantity(KG):</b> 100kgs
                       </div>
                       <div className="farmerCropTrackerComponentHarvestSubText2">
                        <b>Status:</b> Ready to Harvest
@@ -224,46 +227,7 @@ const FarmerCommunityForumComponent = () => {
                 </div>
               </a> 
             </div>
-
-             
-            <div className="farmerCropTrackerComponentHarvestFrameWrapper">
-
-                <a className="farmerCropTrackerComponentHarvestRectangleParent">
-                  <img
-                    className="farmerCropTrackerComponentHarvestFrameChild"
-                    alt=""
-                    src={CornVector}
-                  />
-                  <div className="farmerCropTrackerComponentHarvestFrameGroup">
-                    <div className="farmerCropTrackerComponentHarvestFrameContainer">
-                      <div className="farmerCropTrackerComponentHarvestSubText1Wrapper">
-                        <b className="farmerCropTrackerComponentHarvestSubText1">Corn</b>
-                      </div>
-                      <div className="farmerCropTrackerComponentHarvestSubText2Wrapper2">
-                        <div className="farmerCropTrackerComponentHarvestSubText2">
-                        <b>Quantity(KG):</b> 30kgs
-                        </div>
-                        <div className="farmerCropTrackerComponentHarvestSubText2">
-                        <b>Status:</b> Ready to Harvest
-                        </div>
-                      </div>
-                    </div>
-                    <div className="farmerCropTrackerComponentHarvestFrameItem" />
-                    <div className="farmerCropTrackerComponentHarvestDetails">
-                    <button className="farmerCropTrackerComponentHarvestButton">
-                      <FaEdit className="farmerCropTrackerComponentHarvestButtonIcon" />
-                      <div className="farmerCropTrackerComponentHarvestButtonText">Edit</div>
-                    </button>
-                    <button className="farmerCropTrackerComponentHarvestButton">
-                      <FaTrash className="farmerCropTrackerComponentHarvestButtonIcon" />
-                      <div className="farmerCropTrackerComponentHarvestButtonText">Delete</div>
-                    </button>
-                  </div>         
-                  </div>
-                </a>  
-                </div>  
-               
-
+         
 
             <div className="farmerCropTrackerComponentHarvestForumNumber">
               <div className="farmerCropTrackerComponentHarvestForumContainer">

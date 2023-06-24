@@ -4,7 +4,9 @@ import FarmerNavigation from '../components/farmerPageNavigation';
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
 import RiceVector from '../img/riceCardImage.png';
-import TomatoVector from '../img/tomatoVector.png';
+import SitawVector from '../img/sitaw.png';
+import SquashVector from '../img/squash.png';
+import SiliVector from '../img/sili.png';
 import FarmerMarketplaceEditProduct from '../components/farmerMarketplaceComponentEditProduct';
 import FarmerMarketplaceDeleteProduct from '../components/farmerMarketplaceComponentDeleteProduct';
 import { FaEdit, FaTrash, FaTimes } from 'react-icons/fa';
@@ -72,13 +74,13 @@ const FarmerMarketplace = () => {
                   <div className="farmerMarketplaceComponentPostSmallCardsHeading">
                     <div className="farmerMarketplaceComponentPostSmallCardsDetails">
                       <b className="farmerMarketplaceComponentPostSmallCardsProductName">Corn</b>
-                      <b className="farmerMarketplaceComponentPostSmallCardsFarmerName">Farmer: Jenkins Mesina</b>
+                      <b className="farmerMarketplaceComponentPostSmallCardsFarmerName">Farmer: Marievic Anes</b>
                     </div>
                     <div className="farmerMarketplaceComponentPostSmallCardsDescriptionWrapper">
                       <div className="farmerMarketplaceComponentPostSmallCardsFullDescription">
                         <p className="farmerMarketplaceComponentPostBlankLine">
                           <b>Category: </b>
-                          <span className="farmerMarketplaceComponentPostBlankLine">Vegetable{editedCategory}</span>
+                          <span className="farmerMarketplaceComponentPostBlankLine">Fruit{editedCategory}</span>
                         </p>
                         <p className="farmerMarketplaceComponentPostBlankLine">
                           <b>Packaging: </b>
@@ -86,15 +88,15 @@ const FarmerMarketplace = () => {
                         </p>
                         <p className="farmerMarketplaceComponentPostBlankLine">
                           <b>Price:  </b>
-                          <span>Php 5,000{editedPrice}</span>
+                          <span>Php 10,000{editedPrice}</span>
                         </p>
                         <p className="farmerMarketplaceComponentPostBlankLine">
                           <b>Kilogram per unit: </b>
-                          <span className="farmerMarketplaceComponentPostCategory">50 kgs{editedKilogram}</span>
+                          <span className="farmerMarketplaceComponentPostCategory">80 kgs{editedKilogram}</span>
                         </p>
                         <p className="farmerMarketplaceComponentPostBlankLine">
                           <b>Description: </b>
-                          <span>An onion is a round vegetable with a brown skin that grows underground. It has many white layers on its inside which have a strong, sharp smell and taste.{editedDescription}</span>
+                          <span>Corn, also known as maize, is a tall annual cereal plant that belongs to the grass family. It is one of the most widely cultivated and consumed staple crops in the world.{editedDescription}</span>
                         </p>
                       </div>
                     </div>
@@ -146,12 +148,12 @@ const FarmerMarketplace = () => {
               <img
                 className="farmerMarketplaceComponentPostButtonNewCard1Image"
                 alt=""
-                src={TomatoVector}
+                src={SitawVector}
               />
               <div className="farmerMarketplaceComponentPostButtonNewCard1Details">
                 <div className="farmerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="farmerMarketplaceComponentPostButtonNewCard1Wrapper">
-                    <div className="farmerMarketplaceComponentPostButtonNewCard1Title">Tomato</div>
+                    <div className="farmerMarketplaceComponentPostButtonNewCard1Title">Sitaw</div>
                   </div>
                 </div>
               </div>
@@ -160,12 +162,12 @@ const FarmerMarketplace = () => {
               <img
                 className="farmerMarketplaceComponentPostButtonNewCard1Image"
                 alt=""
-                src={OnionVector}
+                src={SiliVector}
               />
               <div className="farmerMarketplaceComponentPostButtonNewCard1Details">
                 <div className="farmerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="farmerMarketplaceComponentPostButtonNewCard1Wrapper">
-                    <div className="farmerMarketplaceComponentPostButtonNewCard1Title">Onion</div>
+                    <div className="farmerMarketplaceComponentPostButtonNewCard1Title">Siling Labuyo</div>
                   </div>
                 </div>
               </div>
@@ -174,12 +176,12 @@ const FarmerMarketplace = () => {
               <img
                 className="farmerMarketplaceComponentPostButtonNewCard1Image"
                 alt=""
-                src={RiceVector}
+                src={SquashVector}
               />
               <div className="farmerMarketplaceComponentPostButtonNewCard1Details">
                 <div className="farmerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="farmerMarketplaceComponentPostButtonNewCard1Wrapper">
-                    <div className="farmerMarketplaceComponentPostButtonNewCard1Title">Rice</div>
+                    <div className="farmerMarketplaceComponentPostButtonNewCard1Title">Squash</div>
                   </div>
                 </div>
               </div>

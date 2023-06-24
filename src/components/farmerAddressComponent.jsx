@@ -113,7 +113,7 @@ const BuyerAddress = () => {
           <div class="courseAddress">
             <div class="course-preview1">
               <div class="info1 ">Address</div>
-              <div class="nameAddress">Jenkins Mesina</div>
+              <div class="nameAddress">Marievic Anes</div>
               <div class="numberAddress"> | 09675046713</div>
               <div class="locAddress1">Timog Ave.</div>
               <div class="locAddress2">Kristong Hari, Quezon City, Metro Manila, Metro Manila</div>
@@ -175,10 +175,10 @@ const BuyerAddress = () => {
         </div>
       </Modal>
 
-              <div class="nameAddress1">Jenkins Mesina</div>
+              <div class="nameAddress1">Marievic Anes</div>
               <div class="numberAddress"> | 09675046713</div>
-              <div class="locAddress1">Timog Ave.</div>
-              <div class="locAddress2">Kristong Hari, Quezon City, Metro Manila, Metro Manila</div>
+              <div class="locAddress1">East Ave</div>
+              <div class="locAddress2">48 - Magalang Street Brgy. Pinyahan Quezon City</div>
               <FaEdit className="EditIconAddress1" onClick={handleOpenEditModal2} />
               <Modal open={openEditModal2} onClose={handleClose}>
         <div className="editModal">

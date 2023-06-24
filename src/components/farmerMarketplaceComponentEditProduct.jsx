@@ -27,6 +27,7 @@ const FarmerMarketplaceEditProductComponent = ({ closePopup1, handleSave }) => {
             <input
               className="farmerMarketplaceEditProductComponentInput1"
               type="text"
+              placeholder = "Enter your new product name"
             />
           </div>
           <div className="farmerMarketplaceEditProductComponentInputParent">

@@ -1,12 +1,12 @@
-import TransactionsNav from '../components/farmerTransactionsNavigation';
+
 import "../css/Components/adminCommunityForumComponent.css";
 import AdminNavigation from '../components/adminPageNavigation';
-import FarmerTopNav from '../components/farmerTopNav';
 import RiceVector from '../img/riceCardImage.png';
 import CornVector from '../img/cornVector.png';
 import SiliVector from '../img/sili.png';
 import OnionVector from '../img/onionVector.png';
 import SquashVector from '../img/squash.png';
+import TomatoVector from '../img/tomatoVector.png';
 import { FaTrash, FaComments } from 'react-icons/fa';
 
 const AdminCommunityForumComponent = () => {
@@ -89,7 +89,7 @@ const AdminCommunityForumComponent = () => {
                 <div className="adminCommunityForumComponentFrameGroup">
                   <div className="adminCommunityForumComponentFrameContainer">
                     <div className="adminCommunityForumComponentSubText1Wrapper">
-                      <b className="adminCommunityForumComponentSubText1">What happens to corn on drought?</b>
+                      <b className="adminCommunityForumComponentSubText1">How corn grows?</b>
                     </div>
                     <div className="adminCommunityForumComponentSubText2Wrapper2">
                       <div className="adminCommunityForumComponentSubText2">
@@ -159,7 +159,7 @@ const AdminCommunityForumComponent = () => {
                 <div className="adminCommunityForumComponentFrameGroup">
                   <div className="adminCommunityForumComponentFrameContainer">
                     <div className="adminCommunityForumComponentSubText1Wrapper">
-                      <b className="adminCommunityForumComponentSubText1">Can Squash be alternative to pumpkins?</b>
+                      <b className="adminCommunityForumComponentSubText1">Can Squash survive summer?</b>
                     </div>
                     <div className="adminCommunityForumComponentSubText2Wrapper2">
                       <div className="adminCommunityForumComponentSubText2">
@@ -194,7 +194,7 @@ const AdminCommunityForumComponent = () => {
                 <div className="adminCommunityForumComponentFrameGroup">
                   <div className="adminCommunityForumComponentFrameContainer">
                     <div className="adminCommunityForumComponentSubText1Wrapper">
-                      <b className="adminCommunityForumComponentSubText1">Does the price of Siling Labuyo decreased?</b>
+                      <b className="adminCommunityForumComponentSubText1">What are alternatives for sili?</b>
                     </div>
                     <div className="adminCommunityForumComponentSubText2Wrapper2">
                       <div className="adminCommunityForumComponentSubText2">
@@ -218,6 +218,43 @@ const AdminCommunityForumComponent = () => {
                 </div>
               </a> 
             </div>  
+
+            
+            <div className="adminCommunityForumComponentFrameWrapper">
+              <a className="adminCommunityForumComponentRectangleParent">
+                <img
+                  className="adminCommunityForumComponentFrameChild"
+                  alt=""
+                  src={TomatoVector}
+                />
+                <div className="adminCommunityForumComponentFrameGroup">
+                  <div className="adminCommunityForumComponentFrameContainer">
+                    <div className="adminCommunityForumComponentSubText1Wrapper">
+                      <b className="adminCommunityForumComponentSubText1">Is tomato good source?</b>
+                    </div>
+                    <div className="adminCommunityForumComponentSubText2Wrapper2">
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>User ID:</b> F003
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>User Role</b> Farmer
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>Full Name:</b> Daniella Tungol
+                      </div>                                      
+                    </div>
+                  </div>
+                  <div className="adminCommunityForumComponentFrameItem" />
+                  <div className="adminCommunityForumComponentDetails">                
+                  <button className="adminCommunityForumComponentButton">
+                    <FaTrash className="adminCommunityForumComponentButtonIcon" />
+                    <div className="adminCommunityForumComponentButtonText">Delete</div>
+                  </button>
+                </div>         
+                </div>
+              </a> 
+            </div>  
+            
           
                
 
