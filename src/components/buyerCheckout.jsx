@@ -329,7 +329,7 @@ const Checkout  = () => {
   <span class="buttonText" style={{ marginLeft: "67px" }}>₱10,040.00</span>
   
 </div>
-<Link to="/buyertransactions" className="ordercheckoutButton3">
+<Link to="/buyertoreceive" className="ordercheckoutButton3">
     PLACE ORDER
   </Link>
 

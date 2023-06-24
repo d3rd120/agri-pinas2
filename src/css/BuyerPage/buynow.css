@@ -677,9 +677,11 @@
 
 .product,
 .unit-price-header,
-.total-price-header {
+.total-price-header,
+.status {
   white-space: nowrap;
 }
+
 .name,
 .number,
 .address {

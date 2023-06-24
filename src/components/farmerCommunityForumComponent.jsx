@@ -37,9 +37,9 @@ const FarmerCommunityForumComponent = () => {
         </div>
 
 
-        <button className="farmerCommunityForumComponentButton" onClick={handleButtonClick}>
-          <FaEdit className="farmerCommunityForumComponentButtonIcon" />
-          <div className="farmerCommunityForumComponentButtonText">Write a Post</div>
+        <button className="farmerCommunityForumComponentButton1" onClick={handleButtonClick}>
+          <FaEdit className="farmerCommunityForumComponentButtonIcon1" />
+          <div className="farmerCommunityForumComponentButtonText1">Write a Post</div>
         </button>
 
 

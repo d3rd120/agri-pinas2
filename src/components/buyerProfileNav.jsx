@@ -118,8 +118,8 @@ const BuyerProfileNav = () => {
   />
 </div>
 
-          <div className="buyerNavEditProductComponentInputParent">
-            <div className="buyerNavEditProductComponentTitle1">Full Name</div>
+          <div className="buyerNavEditInputParent">
+            <div className="buyerNavEditFullName">Full Name</div>
             <input
               className="buyerNavEditProductComponentInput2"
               type="text"
@@ -128,28 +128,8 @@ const BuyerProfileNav = () => {
               onChange={(e) => setName(e.target.value)}
             />
           </div>
-          <div className="buyerNavEditProductComponentInputParent">
-            <div className="buyerNavEditProductComponentTitle1">Phone number</div>
-            <input
-              className="buyerNavEditProductComponentInput2"
-              type="text"
-              placeholder="Enter your phone number"
-              value={phoneNumber}
-              onChange={handlePhoneNumberChange}
-            />
-          </div>
-          <div className="buyerNavEditProductComponentInputParent">
-            <div className="buyerNavEditProductComponentTitle1">Email</div>
-            <input
-              className="buyerNavEditProductComponentInput2"
-              type="text"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div className="buyerNavEditProductComponentInputParent dateOfBirthFieldParent">
-            <div className="buyerNavEditProductComponentTitle1">Date of Birth</div>
+          <div className="buyerNavEditInputParent dateOfBirthFieldParent">
+            <div className="buyerNavEditDBirth">Date of Birth</div>
             <DatePicker
               className="buyerNavEditProductComponentInput2 dateOfBirthField"
               selected={dateOfBirth}
@@ -158,6 +138,39 @@ const BuyerProfileNav = () => {
               dateFormat="yyyy-MM-dd"
             />
           </div>
+          <div className="buyerNavEditInputParent">
+            <div className="buyerNavEditEmail">Email</div>
+            <input
+              className="buyerNavEditProductComponentInput2"
+              type="text"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="buyerNavEditInputParent">
+            <div className="buyerNavEditAge">Age</div>
+            <input
+              className="buyerNavEditProductComponentInput2"
+              type="text"
+              placeholder="Enter your age"
+              value={phoneNumber}
+              onChange={handlePhoneNumberChange}
+            />
+          </div>
+          <div className="buyerNavEditInputParent">
+            <div className="buyerNavEditPNum">Phone number</div>
+            <input
+              className="buyerNavEditProductComponentInput2"
+              type="text"
+              placeholder="Enter your phone number"
+              value={phoneNumber}
+              onChange={handlePhoneNumberChange}
+            />
+          </div>
+         
+       
+       
 
           <div className="buttonContainer1">
             <Button variant="contained" color="primary" onClick={handleClose} className="cancelButton">

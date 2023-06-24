@@ -3,7 +3,8 @@ import '../css/BuyerPage/buyerCommunityForumPost.css';
 import BuyerProfileNav from '../components/buyerProfileNav';
 import { IconButton, Modal, TextField, Button } from '@material-ui/core';
 import BuyerTopNav from '../components/buyerTopNav';
-import { FaTrashAlt, FaEdit } from 'react-icons/fa';
+import { FaTrashAlt, FaEdit, FaPlus } from 'react-icons/fa';
+
 
 const BuyerAddress = () => {
   const [openEditModal1, setOpenEditModal1] = useState(false);
@@ -17,8 +18,16 @@ const BuyerAddress = () => {
   const [barangayError, setBarangayError] = useState(false);
   const [addressError, setAddressError] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [openEditModal3, setOpenEditModal3] = useState(false);
   
 
+  const handleAddAddress = () => {
+    setOpenEditModal3(true);
+  };
+
+  const handleOpenEditModal3 = () => {
+    setOpenEditModal3(true);
+  };
   const handleModalConfirm = () => {
     setShowModal(false);
   };
@@ -95,6 +104,7 @@ const BuyerAddress = () => {
     setAddress('');
     setOpenEditModal1(false);
     setOpenEditModal2(false);
+    setOpenEditModal3(false);
   };
 
   return (
@@ -109,6 +119,78 @@ const BuyerAddress = () => {
             </b>
           </div>
         </div>
+        <div className="addressTopSection">
+      <div className="addressMainText1">
+        <button className="addressMainText2" onClick={handleAddAddress}>
+          <p className="addressBlankLine">Add New Address</p>
+          <FaPlus className="farmerCommunityForumComponentPlusIcon" onClick={handleOpenEditModal3} />
+        </button>
+        <Modal open={openEditModal3} onClose={handleClose}>
+          <div className="editModal">
+            <h2>New Address</h2>
+            <br />
+            <div className={`farmerMarketplaceEditProductComponentInputParent ${nameError ? 'error' : ''}`}>
+              <div className="farmerMarketplaceEditProductComponentTitle">Full Name</div>
+              <input
+                className={`farmerMarketplaceEditProductComponentInput2 ${nameError ? 'error' : ''}`}
+                type="text"
+                placeholder="Enter your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </div>
+            <div className={`farmerMarketplaceEditProductComponentInputParent ${phoneNumberError ? 'error' : ''}`}>
+              <div className="farmerMarketplaceEditProductComponentTitle">Phone number</div>
+              <input
+                className={`farmerMarketplaceEditProductComponentInput2 ${phoneNumberError ? 'error' : ''}`}
+                type="text"
+                placeholder="Enter your phone number"
+                value={phoneNumber}
+                onChange={handlePhoneNumberChange}
+              />
+            </div>
+            <div className={`farmerMarketplaceEditProductComponentInputParent ${barangayError ? 'error' : ''}`}>
+              <div className="farmerMarketplaceEditProductComponentTitle">Barangay</div>
+              <input
+                className={`farmerMarketplaceEditProductComponentInput2 ${barangayError ? 'error' : ''}`}
+                type="text"
+                placeholder="Enter your barangay"
+                value={barangay}
+                onChange={(e) => setBarangay(e.target.value)}
+              />
+            </div>
+            <div className={`farmerMarketplaceEditProductComponentInputParent ${addressError ? 'error' : ''}`}>
+              <div className="farmerMarketplaceEditProductComponentTitle">Address</div>
+              <input
+                className={`farmerMarketplaceEditProductComponentInput2 ${addressError ? 'error' : ''}`}
+                type="text"
+                placeholder="Enter your full address"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+              />
+            </div>
+            <div className="farmerMarketplaceEditProductComponentInputParent">
+              <input
+                className="checkboxAddress"
+                type="checkbox"
+                value={false}
+                onChange={(e) => console.log(e.target.value)}
+              />
+              <div className="setDefaultAddress">Set as Default Address</div>
+            </div>
+            <div className="buttonContainer">
+              <Button variant="contained" color="primary" onClick={handleClose} className="cancelButton">
+                Cancel
+              </Button>
+              <Button variant="contained" color="secondary" onClick={handleSave} className="saveButton">
+                Save
+              </Button>
+            </div>
+          </div>
+        </Modal>
+      </div>
+    </div>
+
         <div class="courses-container" style={{ marginTop: '-40px' }}>
           <div class="courseAddress">
             <div class="course-preview1">

@@ -389,8 +389,8 @@ color: #FBA403;
     margin-top: 0;
   }
   
-  .buyerNavEditProductComponentInputParent {
-    margin-bottom: 20px;
+  .buyerNavEditInputParent {
+    margin-bottom: 6px;
   }
   
   .buyerNavEditProductComponentTitle {
@@ -463,23 +463,22 @@ color: #FBA403;
 .course-field {
     width: 1000px;
 }
-.fname,
-.role,
-.email1{
-    font-weight: 600;
-    font-size: 17px;
-    color: black;
-    margin-left: 5rem;
-    margin-top: 0.5rem;
-}
-.name,
-.role1,
-.email
+.name
  {
     font-weight: 400;
     font-size: 14px;
     margin-left: 6rem;
+    margin-top: -1.8rem;
 }
+.bdate
+ {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 5.4rem;
+    margin-top: -1.8rem;
+}
+
+
 .info {
     font-size: 14px;
     font-weight: 300;
@@ -488,8 +487,7 @@ color: #FBA403;
 .fname {
   margin-top: 3rem;
 }
-.pnumber,
-.bdaydate {
+.pnumber {
   font-weight: 600;
   font-size: 17px;
   color: black;
@@ -497,12 +495,7 @@ color: #FBA403;
   margin-top: -6.2rem;
 }
 
-.number,
-.bdate{
-  font-weight: 400;
-  font-size: 14px;
-  margin-left: 21.5rem;
-}
+
 .selectImageIcon {
   margin-left: 40rem;
   margin-top: -30rem;
@@ -514,6 +507,12 @@ color: #FBA403;
   font-size: 14px;
   font-weight: 300;
   margin-top: 0.4rem;;
+}
+.addressButton{
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: -2rem;
+  margin-left: 48rem;
 }
 .nameAddress{
   font-weight: 600;
@@ -604,7 +603,7 @@ color: #FBA403;
   height: 1.35rem;
   color: inherit;
 }
-/* Styles for the modal */
+
 .modal {
   display: none;
   position: fixed;
@@ -645,4 +644,89 @@ h2 {
   color: #000;
   margin-top: 0;
   font-size: 20px;
+}
+.address
+ {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 5rem;
+    margin-top: -1.8rem;
+}
+.age
+ {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 2.6rem;
+    margin-top: -1.8rem;
+}
+.email
+ {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 8rem;
+    margin-top: -1.8rem;
+}
+.number
+ {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 9.3rem;
+    margin-top: -1.8rem;
+}
+
+.buyerNavEditFullName,
+.buyerNavEditDBirth,
+.buyerNavEditEmail,
+.buyerNavEditPNum {
+  font-size: 14px;
+}
+.addressTopSection{
+
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-left: 43rem;
+  margin-top: -5.5rem;
+}
+.farmerCommunityForumComponentButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.farmerCommunityForumComponentIcon {
+  margin-right: 5px;
+}
+.addressMainText2{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 160px; 
+  height: 35px; 
+  background-color: #9DC08B; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.addressMainText2:hover{
+  background-color:  #FBA403;
+}
+.farmerCommunityForumComponentPlusIcon {
+  margin-left: -140px;
+  color: white; 
+  margin-top: -3px;
+
+}
+.addressBlankLine{
+  font-size: 13.2px;
+  color: white;
+  font-weight: 600;
+  margin-left: 28px;
 }

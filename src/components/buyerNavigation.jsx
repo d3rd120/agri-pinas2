@@ -17,7 +17,7 @@ const BuyerNavigation = () => {
       <div className="farmerPageNavigationGroupParent">
         <NavLink
           className="farmerPageNavigationLink1"
-          to="/buyertransactions"
+          to="/buyertoreceive"
           activeClassName="active"
         >
           <div className="farmerPageNavigationLinks">Transactions</div>

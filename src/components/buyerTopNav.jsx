@@ -11,6 +11,31 @@ const BuyerTopNav = () => {
   const [showNotifications, setShowNotifications] = useState(false);
   const [showMessages, setShowMessages] = useState(false);
 
+  const [messages, setMessages] = useState([
+    {
+      sender: 'Jenkins Mesina',
+      senderImage: profile1,
+      content: 'Your order has beem shipped',
+      timestamp: '2h ago',
+    },
+    {
+      sender: 'Arriane Gatpo',
+      senderImage: profile2,
+      content: 'You have a new message',
+      timestamp: '4h ago',
+    },
+    {
+      sender: 'Romeo London',
+      senderImage: profile1,
+      content: 'New deals are available',
+      timestamp: '8h ago',
+    },
+  ]);
+
+  const handleDismiss = () => {
+    setMessages([]);
+  };
+
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -30,7 +55,6 @@ const BuyerTopNav = () => {
   const handleEnvelopeClick = () => {
     setShowMessages(prevState => !prevState);
   };
-
   return (
     <div className="buyerTopNavContainer">
       <div className="searchBar" style={{ width: '300px' }}>
@@ -87,53 +111,31 @@ const BuyerTopNav = () => {
           </ul>
         </div>
       )}
-      {showMessages && (
+     {showMessages && (
       <div className="notificationsModal">
       <h2>Messages</h2>
       <ul className="notificationList">
-        <li className="notificationItem">
-          <div className="notificationProfile">
-            <img src={profile1}  className="profileImage" />
-            <span className="notificationSender">Jenkins Mesina</span>
+        
+      <div className="notification-body">
+        {messages.map((message, index) => (
+          <div key={index} className="message">
+            <div className="message-sender">
+              <img src={message.senderImage} alt="Sender" className="sender-image" />
+              {message.sender}
+            </div>
+            
+            <span className="message-content">{message.content}</span>
+            <span className="message-time">{message.timestamp}</span>
           </div>
-          <div className="notificationContent">
-            <span className="notificationMessage">You have a new message.</span>
-            <span className="notificationTime">2h ago</span>
-          </div>
-        </li>
-        <li className="notificationItem">
-          <div className="notificationProfile">
-            <img src={profile2} alt="Profile" className="profileImage" />
-            <span className="notificationSender">Arriane Gatpo</span>
-          </div>
-          <div className="notificationContent">
-            <span className="notificationMessage">Your order has been shipped.</span>
-            <span className="notificationTime">1d ago</span>
-          </div>
-        </li>
-        <li className="notificationItem">
-          <div className="notificationProfile">
-          <img src={profile1}  className="profileImage" />
-            <span className="notificationSender">Romeo London</span>
-          </div>
-          <div className="notificationContent">
-            <span className="notificationMessage">New deals are available.</span>
-            <span className="notificationTime">3d ago</span>
-          </div>
-        </li>
-        <li className="notificationItem">
-          <div className="notificationProfile">
-          <img src={profile2} alt="Profile" className="profileImage" />
-            <span className="notificationSender">Daniella Tungol</span>
-          </div>
-          <div className="notificationContent">
-            <span className="notificationMessage">Your order has been cancelled.</span>
-            <span className="notificationTime">4d ago</span>
-          </div>
-        </li>
+          
+           ))}
+           </div>
+        
+        
       </ul>
     </div>
       )}
+
     </div>
   );
 };

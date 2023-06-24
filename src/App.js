@@ -10,6 +10,9 @@ import Checkout from './pages/BuyerPage/checkout';
 import BuyerTransaction from './pages/BuyerPage/buyerTransac';
 import BuyerProf from './pages/BuyerPage/buyerProfile';
 import BuyerAdd from './pages/BuyerPage/buyerAddress';
+import BuyerTransactionCancelled from './pages/BuyerPage/buyerTransactCancelled';
+import BuyerTransacComp from './pages/BuyerPage/buyerTransacComp';
+import BuyerTransactionToReceive from './pages/BuyerPage/buyerTransactToReceive';
 import FarmerDashboard from './pages/FarmerPage/farmerDashboard';
 import FarmerMarketplace from './pages/FarmerPage/farmerMarketplace';
 import FarmerMarketplacePost from './pages/FarmerPage/farmerMarketplacePost';
@@ -53,6 +56,9 @@ const App = () => {
               <Route path="/buyertransactions" element={<BuyerTransaction />} />
               <Route path="/buyerprofile" element={<BuyerProf />} />
               <Route path="/buyeraddress" element={<BuyerAdd />} />
+              <Route path="/buyercomplete" element={<BuyerTransacComp  />} /> 
+              <Route path="/buyercancelled" element={<BuyerTransactionCancelled />} /> 
+              <Route path="/buyertoreceive" element={<BuyerTransactionToReceive />} /> 
               <Route path="/farmerdashboard" element={<FarmerDashboard />} />
               <Route path="/farmermarketplace" element={<FarmerMarketplace />} />
               <Route path="/farmermarketplacepost" element={<FarmerMarketplacePost />} />

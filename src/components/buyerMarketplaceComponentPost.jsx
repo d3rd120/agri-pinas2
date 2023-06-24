@@ -15,10 +15,9 @@ import BuyerTopNav from '../components/buyerTopNav';
 
 const CustomHeaderTitle = styled.div`
   background-color: #557153;
-  color: #fff;
+  color: white;
  
 `;
-
 
 const BuyerMarketplace = () => {
   const theme = {
