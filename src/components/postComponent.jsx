@@ -1,9 +1,11 @@
 import "../css/Components/postComponent.css";
-import FarmingCardImage from '../img/farmingCardImage.png';
-import OnionCardImage from '../img/onionCardImage.png';
-import ElNinoCardImage from '../img/elNinoCardImage.png';
-import CarrotCardImage from '../img/carrotCardImage.png';
+
+import SiliVector from '../img/sili.png';
+import TomatoVector from '../img/tomatoVector.png';
+import SquashVector from '../img/squash.png';
 import RiceCardImage from '../img/riceCardImage.png';
+import OnionVector from '../img/onionVector.png'
+import CornVector from '../img/cornVector.png';
 
 
 const PostComponent = () => {
@@ -18,15 +20,14 @@ const PostComponent = () => {
           <img
             className="postComponentCard1Image"
             alt=""
-            src={CarrotCardImage}
+            src={OnionVector}
           />
           <div className="postComponentCard1Details">
-            <b className="postComponentCard1Title">Recent Price Hike on Carrots</b>
+            <b className="postComponentCard1Title">What is the SRP of Onions?</b>
             <div className="postComponentCard1DescriptionContainer">
               <span>
-                The recent price hike on carrots has sparked concerns and drawn
-                public attention to the escalating cost of this commonly
-                consumed vegetable...
+              The Shortage Risk Premium (SRP) of onions refers to an additional cost or 
+              price increase imposed on onions due to the potential scarcity...
               </span>
               <span className="postComponentCard1ViewBlog">view full blog</span>
             </div>
@@ -37,14 +38,14 @@ const PostComponent = () => {
             <img
               className="postComponentCard2Image"
               alt=""
-              src={OnionCardImage}
+              src={CornVector}
             />
             <div className="postComponentCard2Details">
-              <b className="postComponentCard1Title">How to Plant Onions?</b>
+              <b className="postComponentCard1Title">How corn grows?</b>
               <div className="postComponentCard1DescriptionContainer">
                 <span>
-                  Onions are a versatile and widely consumed vegetable that can
-                  be grown in various climates and regions...
+                Corn is grown for various purposes, including human consumption, animal feed, 
+                and industrial uses such as biofuel production...
                 </span>
                 <span className="postComponentCard1ViewBlog1">view full blog</span>
               </div>
@@ -55,14 +56,14 @@ const PostComponent = () => {
             <img
               className="postComponentCard2Image"
               alt=""
-              src={ElNinoCardImage}
+              src={SiliVector}
             />
             <div className="postComponentCard2Details">
-              <b className="postComponentCard1Title">El Nino</b>
+              <b className="postComponentCard1Title">What are alternatives for sili?</b>
               <div className="postComponentCard1DescriptionContainer">
                 <span>
-                El Niño, a natural climate phenomenon, has long captured the fascination and curiosity of scientists, 
-                researchers, and the general public alike...
+                Bell peppers are mild and have a crunchy texture, making them a suitable alternative 
+                  if you prefer a milder flavor. They come in various colors, such as...
                 </span>
                 <span className="postComponentCard1ViewBlog1">view full blog</span>
               </div>
@@ -74,14 +75,14 @@ const PostComponent = () => {
             <img
               className="postComponentCard2Image"
               alt=""
-              src={FarmingCardImage}
+              src={SquashVector}
             />
             <div className="postComponentCard2Details">
-              <b className="postComponentCard1Title">Farming Tips</b>
+              <b className="postComponentCard1Title">Can Squash survive summer?</b>
               <div className="postComponentCard1DescriptionContainer">
                 <span>
-                Farming, the backbone of human civilization, has evolved significantly over the centuries. 
-                Today, farmers face numerous challenges, including climate change...
+                Squash plants have relatively high water needs, especially during the summer when evaporation rates are high. 
+                    Adequate irrigation is crucial to ensure the...
                 </span>
                 <span className="postComponentCard1ViewBlog1">view full blog</span>
               </div>
@@ -92,14 +93,14 @@ const PostComponent = () => {
             <img
               className="postComponentCard2Image"
               alt=""
-              src={RiceCardImage}
+              src={TomatoVector}
             />
             <div className="postComponentCard2Details">
-              <b className="postComponentCard1Title">Rice Planting</b>
+              <b className="postComponentCard1Title">Is Tomato a good source?</b>
               <div className="postComponentCard1DescriptionContainer">
                 <span>
-                Rice, a staple food for more than half of the world's population, 
-                plays a vital role in global food security....
+                Vitamins and minerals: Tomatoes are rich in essential vitamins and minerals. 
+                    They are an excellent source of vitamin C, which supports immune function and...
                 </span>
                 <span className="postComponentCard1ViewBlog1">view full blog</span>
               </div>

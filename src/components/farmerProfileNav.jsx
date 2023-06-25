@@ -4,7 +4,7 @@ import { NavLink, Link } from 'react-router-dom';
 import "../css/Components/farmerProfileNav.css";
 import { IconButton, Modal, TextField, Button } from '@material-ui/core';
 import Logo from '../img/agriPinasLogo.png';
-import profile1 from '../img/profileVector1.png';
+import profile2 from '../img/profileVector2.png';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
@@ -76,7 +76,7 @@ const BuyerProfileNav = ({ onUserInfoChange }) => {
         </NavLink>
 
         <div className="buyerNavigationLink3">
-          <img src={profile1} alt="Account Icon" className="accountIcon" /> 
+          <img src={profile2} alt="Account Icon" className="accountIcon" /> 
           <div className="buyerNavigationLinks1">{name}</div>
           <div className="buyerNavigationLinks2" onClick={handleEditProfileClick}>Edit Profile</div>
           <FaEdit className="buyerNavigationLinksIcon1" onClick={handleEditProfileClick} />
@@ -98,7 +98,7 @@ const BuyerProfileNav = ({ onUserInfoChange }) => {
           <br />
                 <div class="buyerNavEditProductComponentInputParent">
         <div class="buyerNavEditProductComponentTitle1">
-          <img src={profile1} class="accountIcon1"/>
+          <img src={profile2} class="accountIcon1"/>
           Select Image
         </div>
         <input
