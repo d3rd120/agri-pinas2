@@ -28,11 +28,12 @@ const AboutComponent = () => {
       <div className="aboutComponentAgriPinas">
         <b className="aboutComponentAgriPinasText">About AgriPinas</b>
         <div className="aboutComponentText">
-          <p className="aboutComponentParagraph">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  `}</p>
+          <p className="aboutComponentParagraph">{`AgriPinas is an innovative mobile and web application designed to revolutionize the agricultural industry, specifically targeting farmers in Cabiao, Nueva Ecija, Philippines. The region, known as the "Rice Granary" of the Philippines, faces challenges such as low profits, 
+          insufficient government support. `}</p>
           <p className="aboutComponentParagraph">&nbsp;</p>
           <p className="aboutComponentParagraph">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          hrough AgriPinas, farmers in Cabiao, Nueva Ecija, have the opportunity to leverage modern technology, gain market visibility, 
+          and connect directly with consumers. 
           </p>
         </div>       
       </div>
