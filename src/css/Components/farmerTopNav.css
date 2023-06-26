@@ -158,12 +158,22 @@ input[type="text"] {
 .farmernotificationItem:hover {
   background-color: #f5f5f5;
 }
-.farmernotificationMessage {
+.farmernotificationMessage { 
   margin-top: -10px;
   font-weight: 300;
   font-size: 13px;
   color: #333333;
-}
+ 
+ }
+
+ .farmernotificationMessage2 {
+  position: relative;
+  margin-top: 1rem;
+  font-weight: 300;
+  font-size: 13px;
+  color: #333333;
+  left: 5rem;
+ }
 
 .farmernotificationTime {
   color: #888888;

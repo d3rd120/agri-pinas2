@@ -4,12 +4,57 @@ import '../css/Components/farmerTopNav.css';
 import profile1 from '../img/profileVector1.png';
 import profile2 from '../img/profileVector2.png';
 import { NavLink, Link } from 'react-router-dom';
+import { FaCartArrowDown, FaCartPlus, FaCommentDots, FaComments, FaEdit, FaTrash } from 'react-icons/fa';
+import ChatBot from 'react-simple-chatbot';
+import { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
+import { RiChat1Line } from 'react-icons/ri';
+
+const CustomHeaderTitle = styled.div`
+  background-color: #557153;
+  color: white;
+ 
+`;
 
 const FarmerTopNav = () => {
+
+  const theme = {
+    background: 'white',
+    headerBgColor: '#9DC08B',
+    headerFontSize: '20px',
+    botBubbleColor: '#e0e0e0',
+    headerFontColor: 'white',
+    botFontColor: 'black',
+    userBubbleColor: 'white',
+    userFontColor: 'black',
+  };
+
+  const handleEnd = () => {
+    setShowChatBot(false);
+    setMinimizedChatBot(false);
+  };
+
   const [isHovered, setIsHovered] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [showNotifications, setShowNotifications] = useState(false);
   const [showMessages, setShowMessages] = useState(false);
+
+  const [showChatBot, setShowChatBot] = useState(false);
+  const [minimizedChatBot, setMinimizedChatBot] = useState(false);
+
+  const handleChatButtonClick = () => {
+    setShowChatBot(!showChatBot);
+    setMinimizedChatBot(false);
+  };
+
+  const handleChatBotClose = () => {
+    setShowChatBot(false);
+    setMinimizedChatBot(false);
+  };
+
+  const handleChatBotMinimize = () => {
+    setMinimizedChatBot(true);
+  };
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -32,7 +77,7 @@ const FarmerTopNav = () => {
   };
 
   return (
-    <div className="farmerTopNavContainer">
+    <div className="farmerTopNavContainer">       
       <div className="farmersearchBar" style={{ width: '300px' }}>
         <input
           type="text"
@@ -87,7 +132,7 @@ const FarmerTopNav = () => {
   <div className="farmernotificationsModal">
     <h2>Messages</h2>
     <ul className="farmernotificationList">
-      <li className="farmernotificationItem">
+      <li className="farmernotificationItem" onClick={handleChatButtonClick}>
         <div className="farmernotificationProfile">
           <img src={profile1} className="farmerprofileImage" />
           <span className="farmernotificationSender">Yagerobi Doria</span>
@@ -97,7 +142,7 @@ const FarmerTopNav = () => {
           <span className="farmernotificationTime">2h ago</span>
         </div>
       </li>
-      <li className="farmernotificationItem">
+      <li className="farmernotificationItem" onClick={handleChatButtonClick}>
         <div className="farmernotificationProfile">
           <img src={profile2} alt="Profile" className="farmerprofileImage" />
           <span className="farmernotificationSender">Daniella Tungol</span>
@@ -106,10 +151,59 @@ const FarmerTopNav = () => {
           <span className="farmernotificationMessage">Your product has been shipped.</span>
           <span className="farmernotificationTime">1d ago</span>
         </div>
-      </li>    
+      </li>   
+      <li className="farmernotificationItem" >        
+        <div className="farmernotificationContent">
+          <NavLink className="farmernotificationMessage2" to = '/farmerinbox'>See all messages</NavLink>         
+        </div>
+      </li>     
     </ul>
   </div>
 )}
+
+{showChatBot && !minimizedChatBot && (
+            <div className="chatbot-container">
+              <ThemeProvider theme={theme}>
+              <ChatBot
+                steps={[
+                  {
+                    id: '1',
+                    message: 'Do you sale corn as wholesale?',
+                    trigger: '2',
+                  },
+                  {
+                    id: '2',
+                    user: true,
+                    trigger: '3',
+                  },
+                  {
+                    id: '3',
+                    message: 'You said: {previousValue}',
+                    trigger: '2',
+                  },
+                ]}
+                handleEnd={handleEnd}
+                botDelay={300}
+                opened={showChatBot}
+                hideUserAvatar 
+                headerTitle="Yagerobi Doria"
+                hideHeader={false}
+                floating={true}
+                floatingIcon={<RiChat1Line />}
+                customHeaderComponent={<CustomHeaderTitle />}
+                
+              />
+              </ThemeProvider>
+            </div>
+          )}
+          {minimizedChatBot && (
+            <div className="chatbot-minimized">
+              <button className="chatbot-minimized-button" onClick={() => setMinimizedChatBot(false)}>
+                <RiChat1Line className="chatbot-minimized-icon" />
+              </button>
+            </div>
+          )}
+
 
     </div>
   );

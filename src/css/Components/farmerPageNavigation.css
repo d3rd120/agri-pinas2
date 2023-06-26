@@ -7,7 +7,10 @@
     align-items: center;
     justify-content: flex-start;
     gap: 5.81rem;
+
   }
+
+  
 
   .farmerPageNavigationLogoParent {
     height: 1.84rem;
@@ -17,6 +20,8 @@
     justify-content: flex-start;
     cursor:pointer;
     top: 9000%;
+    position: sticky;
+    top: 2rem;
   }
 
   .farmerPageNavigationLogoIcon {
@@ -37,6 +42,9 @@
     position: relative;
     width: 9.56rem;
     height: 16.28rem;
+    position: sticky;
+    top: 10rem;
+    
   }
 
   .farmerPageNavigationLink1{
@@ -272,7 +280,7 @@
     bottom: 60.12%;
     left: 60.02%;
     border-radius: 50%;
-    background-color: #fba403;
+    background-color: #fba403;  
   }
  
 

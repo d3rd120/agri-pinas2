@@ -17,6 +17,8 @@
     align-items: center;
     justify-content: flex-start;
     cursor:pointer;
+    top: 2rem;
+    position: sticky;
   }
 
   .adminPageNavigationLogoIcon {
@@ -37,6 +39,8 @@
     position: relative;
     width: 9.56rem;
     height: 16.28rem;
+    top: 10rem;
+    position: sticky;
   }
 
   .adminPageNavigationLink1{
@@ -119,19 +123,18 @@
   }
 
   .adminPageNavigationProfileParent {
-    position: relative;
-    width: 6.25rem;
-    height: 2.25rem;
-    left: 1.3rem;
-    cursor: pointer;
-    transition: 0.5s;
-    font-size: 1rem;
+    top: 32rem; 
+    position: sticky;
     text-decoration: none;
-    color: white;
+    color:white;
+    transition: 0.5s;
   }
+
+  
+
   
   .adminPageNavigationProfileParent:hover {
-    color: red;
+    color: #FBA403;
   }
 
   .adminPageNavigationProfile {
