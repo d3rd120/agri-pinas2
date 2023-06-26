@@ -7,6 +7,8 @@ import '../css/Components/farmerPageNavigation.css';
 import Logo from '../img/agriPinasLogo.png';
 
 const FarmerNavigation = () => {
+  
+  
   return (
     <div className="farmerPageNavigation">
       <div className="farmerPageNavigationLogoParent">

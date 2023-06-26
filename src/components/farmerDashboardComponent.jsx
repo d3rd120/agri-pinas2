@@ -1,6 +1,7 @@
 import "../css/Components/farmerDashboardComponent.css";
 import FarmerNavigation from '../components/farmerPageNavigation';
 import FarmerTopNav from '../components/farmerTopNav';
+import ChatBot from 'react-simple-chatbot';
 
 import {
   LineChart,

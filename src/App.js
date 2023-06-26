@@ -27,6 +27,7 @@ import FarmerTransactionsCompleted from './pages/FarmerPage/farmerTransactionsCo
 import FarmerProfile from './pages/FarmerPage/farmerProfile';
 import FarmerAddress from './pages/FarmerPage/farmerAddress';
 import FarmerAccount from './pages/FarmerPage/farmerAccount';
+import FarmerInbox from './components/farmerInboxComponent';
 import AdminDashboard from './pages/AdminPage/adminDashboard';
 import AdminCommunityForum from './pages/AdminPage/adminCommunityForum';
 import AdminBuyerPendingTransactions from './pages/AdminPage/adminBuyerPendingTransactions';
@@ -40,6 +41,7 @@ import AdminBuyerTransactions from './pages/AdminPage/adminBuyerTransactions';
 import AdminFarmerTransactions from './pages/AdminPage/adminFarmerTransactions';
 import AdminAccountBuyer from './pages/AdminPage/adminAccountBuyer';
 import AdminAccountFarmer from './pages/AdminPage/adminAccountFarmer';
+
 import Reset from './components/reset';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
@@ -95,6 +97,8 @@ const App = () => {
               <Route path = "/adminmarketplace" element = {<AdminMarketplace/>} />       
               <Route path="/adminaccountbuyer" element={<AdminAccountBuyer />} />  
               <Route path="/adminaccountfarmer" element={<AdminAccountFarmer />} />  
+              <Route path="/farmerinbox" element={<FarmerInbox />} />  
+              
               <Route element={<PublicRoutes />}/>
               <Route element={<PrivateRoutes />}/>
             </Routes>

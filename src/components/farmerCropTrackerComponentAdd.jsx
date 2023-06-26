@@ -19,13 +19,13 @@ const farmerCropTrackerComponentAdd  = () =>  {
               <div className="farmerCropTrackerComponentAddTitle">Date Planted</div>
                 <input
                   className="farmerCropTrackerComponentAddInput1"
-                  type="text"
+                  type="date"
                   placeholder="Enter your date planted"
                 />
                 <div className="farmerCropTrackerComponentAddTitle">Estimated Date to Harvest</div>
                 <input
                   className="farmerCropTrackerComponentAddInput1"
-                  type="text"
+                  type="date"
                   placeholder="Enter your estimated date to harvest"
                 />
                 <div className="farmerCropTrackerComponentAddTitle">Status</div>
