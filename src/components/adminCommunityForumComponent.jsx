@@ -7,7 +7,7 @@ import SiliVector from '../img/sili.png';
 import OnionVector from '../img/onionVector.png';
 import SquashVector from '../img/squash.png';
 import TomatoVector from '../img/tomatoVector.png';
-import { FaTrash, FaComments } from 'react-icons/fa';
+import { FaTrash, FaComments, FaEdit } from 'react-icons/fa';
 
 const AdminCommunityForumComponent = () => {
   return (
@@ -35,6 +35,11 @@ const AdminCommunityForumComponent = () => {
                    <option value="15">15</option>
                    <option value="20">20</option>
             </select>
+            <input 
+            className="adminCommunityForumComponentRowSelect"
+            type = "text"
+            placeholder = "Search">                    
+            </input>
             </div> 
             <br></br>     
     
@@ -69,7 +74,11 @@ const AdminCommunityForumComponent = () => {
                     </div>
                   </div>
                   <div className="adminCommunityForumComponentFrameItem" />
-                  <div className="adminCommunityForumComponentDetails">                
+                  <div className="adminCommunityForumComponentDetails">      
+                  <button className="adminCommunityForumComponentButton">
+                    <FaEdit className="adminCommunityForumComponentButtonIcon" />
+                    <div className="adminCommunityForumComponentButtonText">Update</div>
+                  </button>          
                   <button className="adminCommunityForumComponentButton">
                     <FaTrash className="adminCommunityForumComponentButtonIcon" />
                     <div className="adminCommunityForumComponentButtonText">Delete</div>
@@ -77,6 +86,45 @@ const AdminCommunityForumComponent = () => {
                 </div>         
                 </div>
               </a> 
+
+              <a className="adminCommunityForumComponentRectangleParent">
+                <img
+                  className="adminCommunityForumComponentFrameChild"
+                  alt=""
+                  src={SquashVector}
+                />
+                <div className="adminCommunityForumComponentFrameGroup">
+                  <div className="adminCommunityForumComponentFrameContainer">
+                    <div className="adminCommunityForumComponentSubText1Wrapper">
+                      <b className="adminCommunityForumComponentSubText1">Can Squash survive summer?</b>
+                    </div>
+                    <div className="adminCommunityForumComponentSubText2Wrapper2">
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>User ID:</b> B002
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>User Role</b> Buyer
+                      </div>
+                      <div className="adminCommunityForumComponentSubText2">
+                       <b>Full Name:</b> Arriane Clarisse Gatpo
+                      </div>                                    
+                    </div>
+                  </div>
+                  <div className="adminCommunityForumComponentFrameItem" />
+                  <div className="adminCommunityForumComponentDetails">   
+                  <button className="adminCommunityForumComponentButton">
+                    <FaEdit className="adminCommunityForumComponentButtonIcon" />
+                    <div className="adminCommunityForumComponentButtonText">Update</div>
+                  </button>             
+                  <button className="adminCommunityForumComponentButton">
+                    <FaTrash className="adminCommunityForumComponentButtonIcon" />
+                    <div className="adminCommunityForumComponentButtonText">Delete</div>
+                  </button>
+                </div>         
+                </div>
+              </a> 
+
+
             </div>  
 
             <div className="adminCommunityForumComponentFrameWrapper">
@@ -104,7 +152,11 @@ const AdminCommunityForumComponent = () => {
                     </div>
                   </div>
                   <div className="adminCommunityForumComponentFrameItem" />
-                  <div className="adminCommunityForumComponentDetails">                
+                  <div className="adminCommunityForumComponentDetails">        
+                  <button className="adminCommunityForumComponentButton">
+                    <FaEdit className="adminCommunityForumComponentButtonIcon" />
+                    <div className="adminCommunityForumComponentButtonText">Update</div>
+                  </button>        
                   <button className="adminCommunityForumComponentButton">
                     <FaTrash className="adminCommunityForumComponentButtonIcon" />
                     <div className="adminCommunityForumComponentButtonText">Delete</div>
@@ -112,9 +164,7 @@ const AdminCommunityForumComponent = () => {
                 </div>         
                 </div>
               </a> 
-            </div>  
 
-            <div className="adminCommunityForumComponentFrameWrapper">
               <a className="adminCommunityForumComponentRectangleParent">
                 <img
                   className="adminCommunityForumComponentFrameChild"
@@ -139,7 +189,11 @@ const AdminCommunityForumComponent = () => {
                     </div>
                   </div>
                   <div className="adminCommunityForumComponentFrameItem" />
-                  <div className="adminCommunityForumComponentDetails">                
+                  <div className="adminCommunityForumComponentDetails">      
+                  <button className="adminCommunityForumComponentButton">
+                    <FaEdit className="adminCommunityForumComponentButtonIcon" />
+                    <div className="adminCommunityForumComponentButtonText">Update</div>
+                  </button>          
                   <button className="adminCommunityForumComponentButton">
                     <FaTrash className="adminCommunityForumComponentButtonIcon" />
                     <div className="adminCommunityForumComponentButtonText">Delete</div>
@@ -147,42 +201,7 @@ const AdminCommunityForumComponent = () => {
                 </div>         
                 </div>
               </a> 
-            </div>  
-
-            <div className="adminCommunityForumComponentFrameWrapper">
-              <a className="adminCommunityForumComponentRectangleParent">
-                <img
-                  className="adminCommunityForumComponentFrameChild"
-                  alt=""
-                  src={SquashVector}
-                />
-                <div className="adminCommunityForumComponentFrameGroup">
-                  <div className="adminCommunityForumComponentFrameContainer">
-                    <div className="adminCommunityForumComponentSubText1Wrapper">
-                      <b className="adminCommunityForumComponentSubText1">Can Squash survive summer?</b>
-                    </div>
-                    <div className="adminCommunityForumComponentSubText2Wrapper2">
-                      <div className="adminCommunityForumComponentSubText2">
-                       <b>User ID:</b> B002
-                      </div>
-                      <div className="adminCommunityForumComponentSubText2">
-                       <b>User Role</b> Buyer
-                      </div>
-                      <div className="adminCommunityForumComponentSubText2">
-                       <b>Full Name:</b> Arriane Clarisse Gatpo
-                      </div>                                    
-                    </div>
-                  </div>
-                  <div className="adminCommunityForumComponentFrameItem" />
-                  <div className="adminCommunityForumComponentDetails">                
-                  <button className="adminCommunityForumComponentButton">
-                    <FaTrash className="adminCommunityForumComponentButtonIcon" />
-                    <div className="adminCommunityForumComponentButtonText">Delete</div>
-                  </button>
-                </div>         
-                </div>
-              </a> 
-            </div>  
+            </div>        
 
             <div className="adminCommunityForumComponentFrameWrapper">
               <a className="adminCommunityForumComponentRectangleParent">
@@ -209,7 +228,11 @@ const AdminCommunityForumComponent = () => {
                     </div>
                   </div>
                   <div className="adminCommunityForumComponentFrameItem" />
-                  <div className="adminCommunityForumComponentDetails">                
+                  <div className="adminCommunityForumComponentDetails">      
+                  <button className="adminCommunityForumComponentButton">
+                    <FaEdit className="adminCommunityForumComponentButtonIcon" />
+                    <div className="adminCommunityForumComponentButtonText">Update</div>
+                  </button>          
                   <button className="adminCommunityForumComponentButton">
                     <FaTrash className="adminCommunityForumComponentButtonIcon" />
                     <div className="adminCommunityForumComponentButtonText">Delete</div>
@@ -217,10 +240,7 @@ const AdminCommunityForumComponent = () => {
                 </div>         
                 </div>
               </a> 
-            </div>  
 
-            
-            <div className="adminCommunityForumComponentFrameWrapper">
               <a className="adminCommunityForumComponentRectangleParent">
                 <img
                   className="adminCommunityForumComponentFrameChild"
@@ -245,7 +265,11 @@ const AdminCommunityForumComponent = () => {
                     </div>
                   </div>
                   <div className="adminCommunityForumComponentFrameItem" />
-                  <div className="adminCommunityForumComponentDetails">                
+                  <div className="adminCommunityForumComponentDetails">  
+                  <button className="adminCommunityForumComponentButton">
+                    <FaEdit className="adminCommunityForumComponentButtonIcon" />
+                    <div className="adminCommunityForumComponentButtonText">Update</div>
+                  </button>              
                   <button className="adminCommunityForumComponentButton">
                     <FaTrash className="adminCommunityForumComponentButtonIcon" />
                     <div className="adminCommunityForumComponentButtonText">Delete</div>
@@ -254,11 +278,9 @@ const AdminCommunityForumComponent = () => {
                 </div>
               </a> 
             </div>  
+
             
-          
-               
-
-
+         
             <div className="adminCommunityForumComponentForumNumber">
               <div className="adminCommunityForumComponentForumContainer">
                 <div className="adminCommunityForumComponentForumNumberBox">1</div>

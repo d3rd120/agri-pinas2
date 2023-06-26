@@ -34,6 +34,11 @@ const FarmerCommunityForumComponent = () => {
                    <option value="15">15</option>
                    <option value="20">20</option>
             </select>
+            <input 
+            className="farmerTransactionsPendingComponentRowSelect"
+            type = "text"
+            placeholder = "Search">                    
+            </input> 
             </div> 
             <br></br>     
     
@@ -95,10 +100,7 @@ const FarmerCommunityForumComponent = () => {
                 </div>         
                 </div>
               </a> 
-            </div>
 
-            
-            <div className="farmerTransactionsPendingComponentFrameWrapper">
               <a className="farmerTransactionsPendingComponentRectangleParent">
                 <img
                   className="farmerTransactionsPendingComponentFrameChild"
@@ -150,6 +152,13 @@ const FarmerCommunityForumComponent = () => {
                 </div>         
                 </div>
               </a> 
+
+
+            </div>
+
+            
+            <div className="farmerTransactionsPendingComponentFrameWrapper">
+             
             </div>
 
             <div className="farmerTransactionsPendingComponentFrameWrapper">
@@ -204,8 +213,9 @@ const FarmerCommunityForumComponent = () => {
                 </div>         
                 </div>
               </a> 
-            </div>
-          
+              <a className="farmerTransactionsPendingComponentRectangleParent">              
+              </a> 
+            </div>          
           
                
 

@@ -33,6 +33,11 @@ const AdminFarmerTransactionsCancelledComponent = () => {
               <option value="15">15</option>
               <option value="20">20</option>
             </select>
+            <input 
+            className="adminFarmerTransactionsCancelledComponentRowSelect"
+            type = "text"
+            placeholder = "Search">                    
+            </input>
           </div>
           <br></br>
 
@@ -82,19 +87,10 @@ const AdminFarmerTransactionsCancelledComponent = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="adminFarmerTransactionsCancelledComponentFrameItem" />
-                    <div className="adminFarmerTransactionsCancelledComponentDetails">
-                      <button className="adminFarmerTransactionsCancelledComponentButton">
-                        <FaTrash className="adminFarmerTransactionsCancelledComponentButtonIcon" />
-                        <div className="adminFarmerTransactionsCancelledComponentButtonText">Delete</div>
-                      </button>
-                    </div>
+                    
                   </div>
                 </a>
-              </div>
 
-                 
-              <div className="adminFarmerTransactionsCancelledComponentFrameWrapper">
                 <a className="adminFarmerTransactionsCancelledComponentRectangleParent">
                   <img
                     className="adminFarmerTransactionsCancelledComponentFrameChild"
@@ -135,19 +131,15 @@ const AdminFarmerTransactionsCancelledComponent = () => {
                           <b>Status:</b> Cancelled
                         </div>
                       </div>
-                    </div>
-                    <div className="adminFarmerTransactionsCancelledComponentFrameItem" />
-                    <div className="adminFarmerTransactionsCancelledComponentDetails">
-                      <button className="adminFarmerTransactionsCancelledComponentButton">
-                        <FaTrash className="adminFarmerTransactionsCancelledComponentButtonIcon" />
-                        <div className="adminFarmerTransactionsCancelledComponentButtonText">Delete</div>
-                      </button>
-                    </div>
+                    </div>                    
                   </div>
                 </a>
+
+
               </div>
-
-
+                 
+            
+            
               <div className="adminFarmerTransactionsCancelledComponentForumNumber">
                 <div className="adminFarmerTransactionsCancelledComponentForumContainer">
                   <div className="adminFarmerTransactionsCancelledComponentForumNumberBox">1</div>

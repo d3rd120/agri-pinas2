@@ -96,7 +96,7 @@ const FarmerMarketplace = () => {
                         </p>
                         <p className="farmerMarketplaceComponentPostBlankLine">
                           <b>Description: </b>
-                          <span>Corn, also known as maize, is a tall annual cereal plant that belongs to the grass family. It is one of the most widely cultivated and consumed staple crops in the world.{editedDescription}</span>
+                          <span> I am selling this crop as wholesale and retail, if you need to know more just message me here and we can talk about how things needs to be done.{editedDescription}</span>
                         </p>
                       </div>
                     </div>

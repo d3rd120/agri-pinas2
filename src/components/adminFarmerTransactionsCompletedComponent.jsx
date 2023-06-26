@@ -33,6 +33,11 @@ const AdminFarmerTransactionsCompletedComponent = () => {
               <option value="15">15</option>
               <option value="20">20</option>
             </select>
+            <input 
+            className="adminFarmerTransactionsCompletedComponentRowSelect"
+            type = "text"
+            placeholder = "Search">                    
+            </input>
           </div>
           <br></br>
 
@@ -82,20 +87,10 @@ const AdminFarmerTransactionsCompletedComponent = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="adminFarmerTransactionsCompletedComponentFrameItem" />
-                    <div className="adminFarmerTransactionsCompletedComponentDetails">
-                      <button className="adminFarmerTransactionsCompletedComponentButton">
-                        <FaTrash className="adminFarmerTransactionsCompletedComponentButtonIcon" />
-                        <div className="adminFarmerTransactionsCompletedComponentButtonText">Delete</div>
-                      </button>
-                    </div>
+                 
                   </div>
                 </a>
-              </div>
 
-
-               
-              <div className="adminFarmerTransactionsCompletedComponentFrameWrapper">
                 <a className="adminFarmerTransactionsCompletedComponentRectangleParent">
                   <img
                     className="adminFarmerTransactionsCompletedComponentFrameChild"
@@ -137,17 +132,15 @@ const AdminFarmerTransactionsCompletedComponent = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="adminFarmerTransactionsCompletedComponentFrameItem" />
-                    <div className="adminFarmerTransactionsCompletedComponentDetails">
-                      <button className="adminFarmerTransactionsCompletedComponentButton">
-                        <FaTrash className="adminFarmerTransactionsCompletedComponentButtonIcon" />
-                        <div className="adminFarmerTransactionsCompletedComponentButtonText">Delete</div>
-                      </button>
-                    </div>
+                  
                   </div>
                 </a>
+
               </div>
 
+
+               
+              
 
 
               <div className="adminFarmerTransactionsCompletedComponentForumNumber">
