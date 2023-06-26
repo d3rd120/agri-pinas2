@@ -5,7 +5,7 @@ import CornVector from '../img/cornVector.png';
 import OnionVector from '../img/onionVector.png';
 import SiliVector from '../img/sili.png';
 import SquashVector from '../img/squash.png';
-import { FaTrash, FaStore } from 'react-icons/fa';
+import { FaTrash, FaStore, FaEdit } from 'react-icons/fa';
 
 const AdminMarketplaceComponent = () => {
   return (
@@ -33,6 +33,11 @@ const AdminMarketplaceComponent = () => {
               <option value="15">15</option>
               <option value="20">20</option>
             </select>
+            <input 
+            className="adminMarketplaceComponentRowSelect"
+            type = "text"
+            placeholder = "Search">                    
+            </input>
           </div> 
           <br></br>     
     
@@ -40,47 +45,7 @@ const AdminMarketplaceComponent = () => {
             <div className="adminMarketplaceComponentFrameParent">
 
 
-              <div className="adminMarketplaceComponentFrameWrapper">
-                <a className="adminMarketplaceComponentRectangleParent">
-                  <img
-                    className="adminMarketplaceComponentFrameChild"
-                    alt=""
-                    src={CornVector}
-                  />
-                  <div className="adminMarketplaceComponentFrameGroup">
-                    <div className="adminMarketplaceComponentFrameContainer">
-                      <div className="adminMarketplaceComponentSubText1Wrapper">
-                        <b className="adminMarketplaceComponentSubText1">Corn</b>
-                      </div>
-                      <div className="adminMarketplaceComponentSubText2Wrapper2">                        
-                        <div className="adminMarketplaceComponentSubText2">
-                          <b>Category:</b> Fruit
-                        </div> 
-                        <div className="adminMarketplaceComponentSubText2">
-                          <b>Packaging:</b> Sack
-                        </div>                        
-                        <div className="adminMarketplaceComponentSubText2">
-                          <b>Price:</b> Php 3,000
-                        </div>    
-                        <div className="adminMarketplaceComponentSubText2">
-                          <b>Kilogram per unit:</b> 20 kgs
-                        </div>    
-                        <div className="adminMarketplaceComponentSubText2">
-                          <b>Description:</b> Corn, also known as maize, is a tall annual cereal plant that belongs to the grass family. It is one of the most widely cultivated and consumed staple crops in the world.
-                        </div>    
-                      </div>
-                    </div>
-                    <div className="adminMarketplaceComponentFrameItem" />
-                    <div className="adminMarketplaceComponentDetails">                
-                      <button className="adminMarketplaceComponentButton">
-                        <FaTrash className="adminMarketplaceComponentButtonIcon" />
-                        <div className="adminMarketplaceComponentButtonText">Delete</div>
-                      </button>
-                    </div>         
-                  </div>
-                </a> 
-              </div>  
-
+            
 
               <div className="adminMarketplaceComponentFrameWrapper">
                 <a className="adminMarketplaceComponentRectangleParent">
@@ -108,12 +73,16 @@ const AdminMarketplaceComponent = () => {
                           <b>Kilogram per unit:</b> 5 kgs
                         </div>    
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Description:</b>  An onion is a round vegetable with a brown skin that grows underground. It has many white layers on its inside which have a strong, sharp smell and taste.
+                          <b>Description:</b>  An onion is a round vegetable with a brown skin that grows underground. It has many white layers on its inside which have a strong.
                         </div>    
                       </div>
                     </div>
                     <div className="adminMarketplaceComponentFrameItem" />
-                    <div className="adminMarketplaceComponentDetails">                
+                    <div className="adminMarketplaceComponentDetails">      
+                    <button className="adminMarketplaceComponentButton">
+                        <FaEdit className="adminMarketplaceComponentButtonIcon" />
+                        <div className="adminMarketplaceComponentButtonText">Update</div>
+                      </button>          
                       <button className="adminMarketplaceComponentButton">
                         <FaTrash className="adminMarketplaceComponentButtonIcon" />
                         <div className="adminMarketplaceComponentButtonText">Delete</div>
@@ -121,10 +90,7 @@ const AdminMarketplaceComponent = () => {
                     </div>         
                   </div>
                 </a> 
-              </div>  
 
-
-              <div className="adminMarketplaceComponentFrameWrapper">
                 <a className="adminMarketplaceComponentRectangleParent">
                   <img
                     className="adminMarketplaceComponentFrameChild"
@@ -155,7 +121,11 @@ const AdminMarketplaceComponent = () => {
                       </div>
                     </div>
                     <div className="adminMarketplaceComponentFrameItem" />
-                    <div className="adminMarketplaceComponentDetails">                
+                    <div className="adminMarketplaceComponentDetails">   
+                    <button className="adminMarketplaceComponentButton">
+                        <FaEdit className="adminMarketplaceComponentButtonIcon" />
+                        <div className="adminMarketplaceComponentButtonText">Update</div>
+                      </button>             
                       <button className="adminMarketplaceComponentButton">
                         <FaTrash className="adminMarketplaceComponentButtonIcon" />
                         <div className="adminMarketplaceComponentButtonText">Delete</div>
@@ -163,7 +133,12 @@ const AdminMarketplaceComponent = () => {
                     </div>         
                   </div>
                 </a> 
+
+
               </div>  
+
+
+            
 
               <div className="adminMarketplaceComponentFrameWrapper">
                 <a className="adminMarketplaceComponentRectangleParent">
@@ -197,7 +172,11 @@ const AdminMarketplaceComponent = () => {
                       </div>
                     </div>
                     <div className="adminMarketplaceComponentFrameItem" />
-                    <div className="adminMarketplaceComponentDetails">                
+                    <div className="adminMarketplaceComponentDetails"> 
+                    <button className="adminMarketplaceComponentButton">
+                        <FaEdit className="adminMarketplaceComponentButtonIcon" />
+                        <div className="adminMarketplaceComponentButtonText">Update</div>
+                      </button>               
                       <button className="adminMarketplaceComponentButton">
                         <FaTrash className="adminMarketplaceComponentButtonIcon" />
                         <div className="adminMarketplaceComponentButtonText">Delete</div>
@@ -205,10 +184,7 @@ const AdminMarketplaceComponent = () => {
                     </div>         
                   </div>
                 </a> 
-              </div> 
 
-
-              <div className="adminMarketplaceComponentFrameWrapper">
                 <a className="adminMarketplaceComponentRectangleParent">
                   <img
                     className="adminMarketplaceComponentFrameChild"
@@ -240,7 +216,11 @@ const AdminMarketplaceComponent = () => {
                       </div>
                     </div>
                     <div className="adminMarketplaceComponentFrameItem" />
-                    <div className="adminMarketplaceComponentDetails">                
+                    <div className="adminMarketplaceComponentDetails">  
+                    <button className="adminMarketplaceComponentButton">
+                        <FaEdit className="adminMarketplaceComponentButtonIcon" />
+                        <div className="adminMarketplaceComponentButtonText">Update</div>
+                      </button>              
                       <button className="adminMarketplaceComponentButton">
                         <FaTrash className="adminMarketplaceComponentButtonIcon" />
                         <div className="adminMarketplaceComponentButtonText">Delete</div>
@@ -248,8 +228,8 @@ const AdminMarketplaceComponent = () => {
                     </div>         
                   </div>
                 </a> 
-              </div>  
- 
+                
+              </div> 
 
 
 

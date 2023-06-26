@@ -33,6 +33,11 @@ const FarmerCropTrackerComponent = () => {
                    <option value="15">15</option>
                    <option value="20">20</option>
             </select>
+            <input 
+            className="farmerCropTrackerComponentHarvestedRowSelect"
+            type = "text"
+            placeholder = "Search">                    
+            </input> 
             </div> 
             <br></br>     
     
@@ -61,22 +66,10 @@ const FarmerCropTrackerComponent = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="farmerCropTrackerComponentHarvestedFrameItem" />
-                  <div className="farmerCropTrackerComponentHarvestedDetails">
-                  <button className="farmerCropTrackerComponentHarvestedButton">
-                    <FaEdit className="farmerCropTrackerComponentHarvestedButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestedButtonText">Edit</div>
-                  </button>
-                  <button className="farmerCropTrackerComponentHarvestedButton">
-                    <FaTrash className="farmerCropTrackerComponentHarvestedButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestedButtonText">Delete</div>
-                  </button>
-                </div>         
+                        
                 </div>
               </a> 
-            </div>
 
-            <div className="farmerCropTrackerComponentHarvestedFrameWrapper">
               <a className="farmerCropTrackerComponentHarvestedRectangleParent">
                 <img
                   className="farmerCropTrackerComponentHarvestedFrameChild"
@@ -97,22 +90,14 @@ const FarmerCropTrackerComponent = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="farmerCropTrackerComponentHarvestedFrameItem" />
-                  <div className="farmerCropTrackerComponentHarvestedDetails">
-                  <button className="farmerCropTrackerComponentHarvestedButton">
-                    <FaEdit className="farmerCropTrackerComponentHarvestedButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestedButtonText">Edit</div>
-                  </button>
-                  <button className="farmerCropTrackerComponentHarvestedButton">
-                    <FaTrash className="farmerCropTrackerComponentHarvestedButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestedButtonText">Delete</div>
-                  </button>
-                </div>         
+                       
                 </div>
               </a> 
+
+
             </div>
-           
-         
+
+          
             <div className="farmerCropTrackerComponentHarvestedForumNumber">
               <div className="farmerCropTrackerComponentHarvestedForumContainer">
                 <div className="farmerCropTrackerComponentHarvestedForumNumberBox">1</div>

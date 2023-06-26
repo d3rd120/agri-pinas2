@@ -110,14 +110,14 @@ const FarmerDashboard = () => {
         <div className="farmerDashboardComponentTopSection">
           <div className="farmerDashboardComponentMainText1">
             <b className="farmerDashboardComponentMainText1Container">                         
-              <p className="farmerDashboardComponentBlankLine">Welcome back, farmer</p>
+              <p className="farmerDashboardComponentBlankLine">Welcome farmer</p>
             </b>
           </div>
         </div>
         <div className="farmerDashboardComponentMiddleSection">
           <div className="farmerDashboardComponentOverview">
             <div className="farmerDashboardComponentMainText2">
-             Your Monthly Sales Performance
+             Monthly Sales Performance
             </div>
             <div className="farmerDashboardComponentCard">           
           <ResponsiveContainer width="100%" height={350}>

@@ -34,6 +34,11 @@ const AdminBuyerTransactionsCancelledComponent = () => {
               <option value="15">15</option>
               <option value="20">20</option>
             </select>
+            <input 
+            className="adminBuyerTransactionsCancelledComponentRowSelect"
+            type = "text"
+            placeholder = "Search">                    
+            </input>
           </div>
           <br></br>
 
@@ -83,18 +88,10 @@ const AdminBuyerTransactionsCancelledComponent = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="adminBuyerTransactionsCancelledComponentFrameItem" />
-                    <div className="adminBuyerTransactionsCancelledComponentDetails">
-                      <button className="adminBuyerTransactionsCancelledComponentButton">
-                        <FaTrash className="adminBuyerTransactionsCancelledComponentButtonIcon" />
-                        <div className="adminBuyerTransactionsCancelledComponentButtonText">Delete</div>
-                      </button>
-                    </div>
+                    
                   </div>
                 </a>
-              </div>
 
-              <div className="adminBuyerTransactionsCancelledComponentFrameWrapper">
                 <a className="adminBuyerTransactionsCancelledComponentRectangleParent">
                   <img
                     className="adminBuyerTransactionsCancelledComponentFrameChild"
@@ -136,16 +133,13 @@ const AdminBuyerTransactionsCancelledComponent = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="adminBuyerTransactionsCancelledComponentFrameItem" />
-                    <div className="adminBuyerTransactionsCancelledComponentDetails">
-                      <button className="adminBuyerTransactionsCancelledComponentButton">
-                        <FaTrash className="adminBuyerTransactionsCancelledComponentButtonIcon" />
-                        <div className="adminBuyerTransactionsCancelledComponentButtonText">Delete</div>
-                      </button>
-                    </div>
+                    
                   </div>
                 </a>
+
+
               </div>
+
 
 
               <div className="adminBuyerTransactionsCancelledComponentForumNumber">

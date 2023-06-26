@@ -37,6 +37,11 @@ const AdminFarmerTransactionsPendingComponent = () => {
               <option value="15">15</option>
               <option value="20">20</option>
             </select>
+            <input 
+            className="adminFarmerTransactionsPendingComponentRowSelect"
+            type = "text"
+            placeholder = "Search">                    
+            </input>
           </div>
           <br></br>
 
@@ -88,6 +93,10 @@ const AdminFarmerTransactionsPendingComponent = () => {
                     </div>
                     <div className="adminFarmerTransactionsPendingComponentFrameItem" />
                     <div className="adminFarmerTransactionsPendingComponentDetails">
+                    <button className="adminFarmerTransactionsPendingComponentButton">
+                        <FaEdit className="adminFarmerTransactionsPendingComponentButtonIcon" />
+                        <div className="adminFarmerTransactionsPendingComponentButtonText">Update</div>
+                      </button>
                       <button className="adminFarmerTransactionsPendingComponentButton">
                         <FaTrash className="adminFarmerTransactionsPendingComponentButtonIcon" />
                         <div className="adminFarmerTransactionsPendingComponentButtonText">Delete</div>
@@ -95,11 +104,7 @@ const AdminFarmerTransactionsPendingComponent = () => {
                     </div>
                   </div>
                 </a>
-              </div>
-              
 
-              
-              <div className="adminFarmerTransactionsPendingComponentFrameWrapper">
                 <a className="adminFarmerTransactionsPendingComponentRectangleParent">
                   <img
                     className="adminFarmerTransactionsPendingComponentFrameChild"
@@ -143,6 +148,10 @@ const AdminFarmerTransactionsPendingComponent = () => {
                     </div>
                     <div className="adminFarmerTransactionsPendingComponentFrameItem" />
                     <div className="adminFarmerTransactionsPendingComponentDetails">
+                    <button className="adminFarmerTransactionsPendingComponentButton">
+                        <FaEdit className="adminFarmerTransactionsPendingComponentButtonIcon" />
+                        <div className="adminFarmerTransactionsPendingComponentButtonText">Update</div>
+                      </button>
                       <button className="adminFarmerTransactionsPendingComponentButton">
                         <FaTrash className="adminFarmerTransactionsPendingComponentButtonIcon" />
                         <div className="adminFarmerTransactionsPendingComponentButtonText">Delete</div>
@@ -150,7 +159,10 @@ const AdminFarmerTransactionsPendingComponent = () => {
                     </div>
                   </div>
                 </a>
-              </div>
+
+              </div>              
+
+             
 
               
               <div className="adminFarmerTransactionsPendingComponentFrameWrapper">
@@ -197,12 +209,19 @@ const AdminFarmerTransactionsPendingComponent = () => {
                     </div>
                     <div className="adminFarmerTransactionsPendingComponentFrameItem" />
                     <div className="adminFarmerTransactionsPendingComponentDetails">
+                    <button className="adminFarmerTransactionsPendingComponentButton">
+                        <FaEdit className="adminFarmerTransactionsPendingComponentButtonIcon" />
+                        <div className="adminFarmerTransactionsPendingComponentButtonText">Update</div>
+                      </button>
                       <button className="adminFarmerTransactionsPendingComponentButton">
                         <FaTrash className="adminFarmerTransactionsPendingComponentButtonIcon" />
                         <div className="adminFarmerTransactionsPendingComponentButtonText">Delete</div>
                       </button>
                     </div>
                   </div>
+                </a>
+
+                <a className="adminFarmerTransactionsPendingComponentRectangleParent">                  
                 </a>
               </div>              
            

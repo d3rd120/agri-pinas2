@@ -92,7 +92,7 @@ const FarmerMarketplace = () => {
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Corn, also known as maize, is a tall annual cereal plant that belongs to the grass family....
+                          I am selling this crop as wholesale and retail, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -141,7 +141,7 @@ const FarmerMarketplace = () => {
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                            A red round vegetable with a good storage quality.....
+                          I am selling this crop as wholesale and retail, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -191,7 +191,7 @@ const FarmerMarketplace = () => {
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Rice is a staple food and a primary dietary component for a significant portion of the...
+                          I am selling this crop as wholesale and retail, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -243,7 +243,7 @@ const FarmerMarketplace = () => {
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Sitaw, also known as yardlong beans or snake beans, is a....
+                          I am selling this crop as wholesale and retail, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -292,7 +292,7 @@ const FarmerMarketplace = () => {
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Siling labuyo, also known as bird's eye chili or Thai chili, is a small, fiery chili...
+                          I am selling this crop as wholesale and retail, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -342,7 +342,7 @@ const FarmerMarketplace = () => {
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Squash refers to a group of edible plants that belong to the gourd family....
+                          I am selling this crop as wholesale and retail, if you need to know more...
                           </span>
                         </p>
                       </div>

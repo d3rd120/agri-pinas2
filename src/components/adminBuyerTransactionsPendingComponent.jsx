@@ -33,6 +33,11 @@ const AdminBuyerTransactionsPendingComponent = () => {
               <option value="15">15</option>
               <option value="20">20</option>
             </select>
+            <input 
+            className="adminBuyerTransactionsPendingComponentRowSelect"
+            type = "text"
+            placeholder = "Search">                    
+            </input>
           </div>
           <br></br>
 
@@ -84,6 +89,10 @@ const AdminBuyerTransactionsPendingComponent = () => {
                     </div>
                     <div className="adminBuyerTransactionsPendingComponentFrameItem" />
                     <div className="adminBuyerTransactionsPendingComponentDetails">
+                    <button className="adminBuyerTransactionsPendingComponentButton">
+                        <FaEdit className="adminBuyerTransactionsPendingComponentButtonIcon" />
+                        <div className="adminBuyerTransactionsPendingComponentButtonText">Update</div>
+                      </button>
                       <button className="adminBuyerTransactionsPendingComponentButton">
                         <FaTrash className="adminBuyerTransactionsPendingComponentButtonIcon" />
                         <div className="adminBuyerTransactionsPendingComponentButtonText">Delete</div>
@@ -91,9 +100,7 @@ const AdminBuyerTransactionsPendingComponent = () => {
                     </div>
                   </div>
                 </a>
-              </div>
 
-              <div className="adminBuyerTransactionsPendingComponentFrameWrapper">
                 <a className="adminBuyerTransactionsPendingComponentRectangleParent">
                   <img
                     className="adminBuyerTransactionsPendingComponentFrameChild"
@@ -137,6 +144,10 @@ const AdminBuyerTransactionsPendingComponent = () => {
                     </div>
                     <div className="adminBuyerTransactionsPendingComponentFrameItem" />
                     <div className="adminBuyerTransactionsPendingComponentDetails">
+                    <button className="adminBuyerTransactionsPendingComponentButton">
+                        <FaEdit className="adminBuyerTransactionsPendingComponentButtonIcon" />
+                        <div className="adminBuyerTransactionsPendingComponentButtonText">Update</div>
+                      </button>
                       <button className="adminBuyerTransactionsPendingComponentButton">
                         <FaTrash className="adminBuyerTransactionsPendingComponentButtonIcon" />
                         <div className="adminBuyerTransactionsPendingComponentButtonText">Delete</div>
@@ -144,8 +155,11 @@ const AdminBuyerTransactionsPendingComponent = () => {
                     </div>
                   </div>
                 </a>
+
+
               </div>
 
+           
 
 
 

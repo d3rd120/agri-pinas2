@@ -31,6 +31,11 @@ const FarmerCommunityForumComponent = () => {
               <option value="15">15</option>
               <option value="20">20</option>
             </select>
+            <input 
+            className="farmerTransactionsCompletedComponentRowSelect"
+            type = "text"
+            placeholder = "Search">                    
+            </input> 
           </div>
           <br></br>
 
@@ -72,26 +77,14 @@ const FarmerCommunityForumComponent = () => {
                           <b>Total Amount:</b> 800
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Status:</b> Pending
+                          <b>Status:</b> Completed
                       </div>
                       </div>
-                      <div className="farmerTransactionsCompletedComponentFrameItem" />
-                      <div className="farmerTransactionsCompletedComponentDetails">
-                        <button className="farmerTransactionsCompletedComponentButton">
-                          <FaEdit className="farmerTransactionsCompletedComponentButtonIcon" />
-                          <div className="farmerTransactionsCompletedComponentButtonText">Edit</div>
-                        </button>
-                        <button className="farmerTransactionsCompletedComponentButton">
-                          <FaTrash className="farmerTransactionsCompletedComponentButtonIcon" />
-                          <div className="farmerTransactionsCompletedComponentButtonText">Delete</div>
-                        </button>
-                      </div>
+                     
                     </div>
                   </div>
                 </a>
-              </div>
 
-              <div className="farmerTransactionsCompletedComponentFrameWrapper">
                 <a className="farmerTransactionsCompletedComponentRectangleParent">
                   <img
                     className="farmerTransactionsCompletedComponentFrameChild"
@@ -126,24 +119,15 @@ const FarmerCommunityForumComponent = () => {
                           <b>Total Amount:</b> 800
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Status:</b> Pending
+                          <b>Status:</b> Completed
                       </div>
                       </div>
-                      <div className="farmerTransactionsCompletedComponentFrameItem" />
-                      <div className="farmerTransactionsCompletedComponentDetails">
-                        <button className="farmerTransactionsCompletedComponentButton">
-                          <FaEdit className="farmerTransactionsCompletedComponentButtonIcon" />
-                          <div className="farmerTransactionsCompletedComponentButtonText">Edit</div>
-                        </button>
-                        <button className="farmerTransactionsCompletedComponentButton">
-                          <FaTrash className="farmerTransactionsCompletedComponentButtonIcon" />
-                          <div className="farmerTransactionsCompletedComponentButtonText">Delete</div>
-                        </button>
-                      </div>
+                     
                     </div>
                   </div>
                 </a>
               </div>
+             
 
               <div className="farmerTransactionsCompletedComponentForumNumber">
                 <div className="farmerTransactionsCompletedComponentForumContainer">
