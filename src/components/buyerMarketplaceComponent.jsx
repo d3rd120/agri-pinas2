@@ -69,7 +69,7 @@ const BuyerMarketplace = () => {
                         <p className="buyerMarketplaceComponentBlankLine">
                           <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Corn is rich in vitamin C, an antioxidant that helps protect your cells from damage and wards off diseases like cancer....
+                          I am selling this crop as wholesale, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -117,7 +117,7 @@ const BuyerMarketplace = () => {
                         <p className="buyerMarketplaceComponentBlankLine">
                           <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Okra is rich in vitamins A and C, as well as antioxidants that help reduce the risk of serious health conditions like cancer....
+                          I am selling this crop as retail, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -166,7 +166,7 @@ const BuyerMarketplace = () => {
                         <p className="buyerMarketplaceComponentBlankLine">
                           <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Onions contain antioxidants and compounds that fight inflammation, decrease triglycerides, and reduce cholesterol levels....
+                          I am selling this crop as retail, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -220,7 +220,7 @@ const BuyerMarketplace = () => {
                         <p className="buyerMarketplaceComponentBlankLine">
                           <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Watermelon is rich in an amino acid called citrulline that may help move blood through your body and can lower your blood pressure....
+                          I am selling this crop as wholesale, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -268,7 +268,7 @@ const BuyerMarketplace = () => {
                         <p className="buyerMarketplaceComponentBlankLine">
                           <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Pechay has vitamin C and can help improve the functioning of the immune system. Vitamin C is also an important part of...
+                          I am selling this crop as wholesale, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -317,7 +317,7 @@ const BuyerMarketplace = () => {
                         <p className="buyerMarketplaceComponentBlankLine">
                           <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Onions contain antioxidants and compounds that fight inflammation, decrease triglycerides, and reduce cholesterol levels....
+                          I am selling this crop as retail, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -372,7 +372,7 @@ const BuyerMarketplace = () => {
                         <p className="buyerMarketplaceComponentBlankLine">
                           <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Eggplant has antioxidants like vitamins A and C, which help protect your cells against damage....
+                          I am selling this crop as retail, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -420,7 +420,7 @@ const BuyerMarketplace = () => {
                         <p className="buyerMarketplaceComponentBlankLine">
                           <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Tomatoes are low in calories and provide important nutrients like vitamin C....
+                          I am selling this crop as wholesale, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -469,7 +469,7 @@ const BuyerMarketplace = () => {
                         <p className="buyerMarketplaceComponentBlankLine">
                           <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Siling labuyo has been considered a medicinal herbal plant used to treat arthritis, rheumatism....
+                          I am selling this crop as wholesale, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -524,7 +524,7 @@ const BuyerMarketplace = () => {
                         <p className="buyerMarketplaceComponentBlankLine">
                           <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Squash is rich in minerals, including calcium. Calcium helps build and maintain healthy bones and teeth..
+                          I am selling this crop as retail, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -572,7 +572,7 @@ const BuyerMarketplace = () => {
                         <p className="buyerMarketplaceComponentBlankLine">
                           <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          The benefits of calamansi juice go beyond a refreshing twist on lemonade. Drinking this tangy...
+                          I am selling this crop as wholesale, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -621,7 +621,7 @@ const BuyerMarketplace = () => {
                         <p className="buyerMarketplaceComponentBlankLine">
                           <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          Sitaw or string beans are a good source of calcium and phosphorous for strong bones and...
+                          I am selling this crop as wholesale, if you need to know more...
                           </span>
                         </p>
                       </div>
