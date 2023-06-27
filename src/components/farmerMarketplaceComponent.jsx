@@ -87,12 +87,12 @@ const FarmerMarketplace = () => {
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b>{`Kilogram per unit: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">80 kgs</span>
+                          <span className="farmerMarketplaceComponentCategory">50 kgs</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          I am selling this crop as wholesale and retail, if you need to know more...
+                          I am selling this harvested corn as wholesale, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -136,12 +136,12 @@ const FarmerMarketplace = () => {
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b>{`Kilogram per unit: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">50 kgs</span>
+                          <span className="farmerMarketplaceComponentCategory">20 kgs</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          I am selling this crop as wholesale and retail, if you need to know more...
+                          I am selling this 3 sacks of harvested onions as retail, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -186,12 +186,12 @@ const FarmerMarketplace = () => {
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b>{`Kilogram per unit: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">100 kgs</span>
+                          <span className="farmerMarketplaceComponentCategory">65 kgs</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          I am selling this crop as wholesale and retail, if you need to know more...
+                          I am selling this harvested Jasmin Rice as wholesale, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -243,7 +243,7 @@ const FarmerMarketplace = () => {
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          I am selling this crop as wholesale and retail, if you need to know more...
+                          I am selling this crop as retail, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -292,7 +292,7 @@ const FarmerMarketplace = () => {
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          I am selling this crop as wholesale and retail, if you need to know more...
+                          I am selling this crop as wholesale, if you need to know more...
                           </span>
                         </p>
                       </div>
@@ -342,7 +342,7 @@ const FarmerMarketplace = () => {
                         <p className="farmerMarketplaceComponentBlankLine">
                           <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
                           <span>
-                          I am selling this crop as wholesale and retail, if you need to know more...
+                          I am selling this crop as wholesale, if you need to know more...
                           </span>
                         </p>
                       </div>
