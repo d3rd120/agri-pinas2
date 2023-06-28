@@ -1,15 +1,16 @@
 import '../css/Components/farmerMarketplaceComponentAddProduct.css';
-import { useState } from "react";
-import { collection, addDoc} from 'firebase/firestore';
-import {db} from './firebase';
+import { useState, useEffect } from "react";
+import { collection, addDoc, onSnapshot } from 'firebase/firestore';
+import { db } from './firebase';
 
-const FarmerMarketplaceAddProductComponent  = () =>  {
+const FarmerMarketplaceAddProductComponent = () => {
   const [productName, setProductName] = useState("");
   const [category, setCategory] = useState("");
   const [packaging, setPackaging] = useState("");
   const [price, setPrice] = useState("");
   const [kilogramPerUnit, setKilogramPerUnit] = useState("");
   const [image, setImage] = useState("");
+  const [description, setDescription] = useState("");
 
   const createProduct = async () => {
     try {
@@ -30,8 +31,9 @@ const FarmerMarketplaceAddProductComponent  = () =>  {
 
   const handleAddProduct = async () => {
     await createProduct();
-  
   };
+
+ 
 
   return (
     <div className="FarmerMarketplaceAddProductComponent">
@@ -60,10 +62,12 @@ const FarmerMarketplaceAddProductComponent  = () =>  {
           </div>
           <div className="FarmerMarketplaceAddProductComponentInputParent">
             <div className="FarmerMarketplaceAddProductComponentTitle">Packaging</div>
-            <input className="FarmerMarketplaceAddProductComponentInput1" 
-            type="text" placeholder = "Enter your packaging"
-            value={packaging}
-            onChange={(e) => setPackaging(e.target.value)}
+            <input
+              className="FarmerMarketplaceAddProductComponentInput1"
+              type="text"
+              placeholder="Enter your packaging"
+              value={packaging}
+              onChange={(e) => setPackaging(e.target.value)}
             />
           </div>
         </div>
@@ -90,15 +94,20 @@ const FarmerMarketplaceAddProductComponent  = () =>  {
           </div>
           <div className="FarmerMarketplaceAddProductComponentInputParent">
             <div className="FarmerMarketplaceAddProductComponentTitle">Upload Product Image</div>
-            <input className="FarmerMarketplaceAddProductComponentInput3"
-             type="file" required 
-             onChange={(e) => setImage(e.target.files[0])}
-             />
+            <input
+              className="FarmerMarketplaceAddProductComponentInput3"
+              type="file"
+              required
+              onChange={(e) => setImage(e.target.files[0])}
+            />
           </div>
         </div>
       </div>
       <div className="FarmerMarketplaceAddProductComponentTitle">Description</div>
-      <textarea className="FarmerMarketplaceAddProductComponentInput4" placeholder="Enter your description" />
+      <textarea className="FarmerMarketplaceAddProductComponentInput4" 
+      placeholder="Enter your description"
+      value={description}
+      onChange={(e) => setDescription(e.target.value)} />
       <button className="FarmerMarketplaceAddProductComponentButton" onClick={handleAddProduct}>
         <div className="FarmerMarketplaceAddProductComponentButtonText">Add</div>
       </button>
@@ -106,6 +115,5 @@ const FarmerMarketplaceAddProductComponent  = () =>  {
     </div>
   );
 };
-
 
 export default FarmerMarketplaceAddProductComponent;
