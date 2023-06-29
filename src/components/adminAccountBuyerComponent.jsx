@@ -1,8 +1,29 @@
 import '../css/Components/adminAccountBuyerComponent.css';
 import AdminNavigation from './adminPageNavigation';
 import { FaPeopleArrows, FaEdit, FaTrash} from 'react-icons/fa';
+import React, { useState, useEffect } from 'react';
+import { collection, onSnapshot } from 'firebase/firestore';
+import { db } from './firebase';
+
 
 const AdminFarmerTransactions = () => {
+  const [registeredUsers, setRegisteredUsers] = useState([]);
+
+
+  useEffect(() => {
+    const unsubscribe = onSnapshot(collection(db, 'Users'), (snapshot) => {
+      const users = [];
+      snapshot.forEach((doc) => {
+        const user = doc.data();
+        users.push(user);
+      });
+      setRegisteredUsers(users);
+    });
+
+    
+    return () => unsubscribe();
+  }, []);
+  
   return (
     <div className="adminAccountBuyerComponent">
       <AdminNavigation />
@@ -57,18 +78,19 @@ const AdminFarmerTransactions = () => {
             </tr>
           </thead>
           <tbody>
-          <tr> 
-                 <td>B001</td>
-                 <td>Arrianne Clarisse Gatpo</td>
-                 <td>arriane@gmail.com</td>
-                 <td>(+63)9234567891</td>
-                 <td>Tandang Sora, Quezon City</td>
-                 <td>01-15-1999</td>
-                 <td>23</td>       
-                 <td><FaEdit /></td>   
-                 <td><FaTrash /> </td>
-                             
-           </tr>    
+            {registeredUsers.map((user) => (
+              <tr key={user.uid}>
+                <td>{user.uid}</td>
+                <td>{user.fullname}</td>
+                <td>{user.email}</td>
+                <td>{user.contact}</td>
+                <td>{user.address}</td>
+                <td>{user.birthdate}</td>
+                <td>{user.age}</td>
+                <td><FaEdit /></td>
+                <td><FaTrash /></td>
+              </tr>
+            ))} 
 
             <tr> 
                  <td>B002</td>
