@@ -15,10 +15,35 @@ import RiceVector from '../img/riceCardImage.png';
 import ProfileVector2 from '../img/profileVector2.png';
 import ProfileVector1 from '../img/profileVector1.png';
 import {Link} from 'react-router-dom';
-import { FaPlus } from 'react-icons/fa';
+import { FaPlus, FaTimes } from 'react-icons/fa';
 import BuyerTopNav from '../components/buyerTopNav';
+import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+import { db } from './firebase';
+import { collection, onSnapshot } from 'firebase/firestore';
+
 
 const BuyerMarketplace = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const unsubscribe = onSnapshot(collection(db, "Products"), (snapshot) => {
+      const productsData = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setProducts(productsData);
+    });
+  
+    return () => unsubscribe();
+  }, []);
+
+
+
+
+
+
   return (
     <div className="buyerMarketplaceComponent">
       <BuyerNavigation />
@@ -33,6 +58,61 @@ const BuyerMarketplace = () => {
           </div>
         </div>
             
+
+                    {products.map((product) => (
+              <NavLink
+                key={product.id}
+                className="farmerMarketplaceComponentRectangleParent"
+                to="/farmermarketplacepost"
+                activeClassName="active"
+              >
+                <img className="farmerMarketplaceComponentFrameChild" alt="" src={product.image} />
+                <div className="farmerMarketplaceComponentFrameGroup">
+                  <div className="farmerMarketplaceComponentFrameContainer">
+                    <div className="farmerMarketplaceComponentCardWrapper">
+                      <b className="farmerMarketplaceComponentCardText">{product.productName}</b>
+                    </div>
+                    <div className="farmerMarketplaceComponentCategoryWrapper">
+                      <div className="farmerMarketplaceComponentCategoryContainer">
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b>Category: </b>
+                          <span className="farmerMarketplaceComponentCategory">{product.category}</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b>Packaging: </b>
+                          <span className="farmerMarketplaceComponentCategory">{product.packaging}</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b className="farmerMarketplaceComponentCategory">Price: </b>
+                          <span>{product.price}</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b>Kilogram per unit: </b>
+                          <span className="farmerMarketplaceComponentCategory">{product.kilogramPerUnit}</span>
+                        </p>
+                        <p className="farmerMarketplaceComponentBlankLine">
+                          <b className="farmerMarketplaceComponentCategory">Description: </b>
+                          <span>{product.description}</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="farmerMarketplaceComponentFrameItem" />
+                  <div className="farmerMarketplaceComponentAuthor">
+                    <img className="farmerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
+                    <div className="farmerMarketplaceComponentAuthorText">
+                      <div className="farmerMarketplaceComponentAuthorName">Marievic Anes</div>
+                      <div className="farmerMarketplaceComponentSubName">Farmer</div>
+                    </div>
+                  </div>
+                </div>
+              </NavLink>
+            ))}
+
+
+
+
+
 
         <div className="buyerMarketplaceComponentMiddleSection">
           <div className="buyerMarketplaceComponentFrameParent">
