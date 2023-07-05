@@ -1,7 +1,7 @@
 import '../css/Components/farmerMarketplaceComponentAddProduct.css';
 import { useState, useEffect } from "react";
 import { collection, addDoc, onSnapshot } from 'firebase/firestore';
-import { db } from './firebase';
+import { db, uploadImage } from './firebase';
 
 const FarmerMarketplaceAddProductComponent = () => {
   const [productName, setProductName] = useState("");
@@ -10,7 +10,18 @@ const FarmerMarketplaceAddProductComponent = () => {
   const [price, setPrice] = useState("");
   const [kilogramPerUnit, setKilogramPerUnit] = useState("");
   const [image, setImage] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
   const [description, setDescription] = useState("");
+
+
+  const handleImageUpload = async (e) => {
+    const file = e.target.files[0];
+    setImage(file);
+
+    const downloadURL = await uploadImage(file);
+    setImageUrl(downloadURL);
+  };  
+
 
   const createProduct = async () => {
     try {
@@ -20,8 +31,10 @@ const FarmerMarketplaceAddProductComponent = () => {
         category,
         kilogramPerUnit,
         packaging,
-        image,
+        description,
+        imageUrl: imageUrl || null,
       });
+
       console.log("Product added successfully!");
     } catch (err) {
       console.error(err);
@@ -95,11 +108,12 @@ const FarmerMarketplaceAddProductComponent = () => {
           <div className="FarmerMarketplaceAddProductComponentInputParent">
             <div className="FarmerMarketplaceAddProductComponentTitle">Upload Product Image</div>
             <input
-              className="FarmerMarketplaceAddProductComponentInput3"
-              type="file"
-              required
-              onChange={(e) => setImage(e.target.files[0])}
-            />
+            className="FarmerMarketplaceAddProductComponentInput3"
+            type="file"
+            required
+            onChange={handleImageUpload}
+          />
+            {imageUrl && <img src={imageUrl} alt="Uploaded Product" />}
           </div>
         </div>
       </div>
