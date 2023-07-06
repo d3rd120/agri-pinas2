@@ -2,6 +2,7 @@ import "../css/Components/adminMarketplaceComponent.css";
 import AdminNavigation from '../components/adminPageNavigation';
 import RiceVector from '../img/riceCardImage.png';
 import CornVector from '../img/cornVector.png';
+import ProfileVector2 from '../img/profileVector2.png';
 import OnionVector from '../img/onionVector.png';
 import SiliVector from '../img/sili.png';
 import SquashVector from '../img/squash.png';
