@@ -255,6 +255,12 @@ input[type="text"] {
 }
 .message {
   margin-bottom: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.message:hover {
+  background-color: #f0f0f0;
 }
 
 .message-sender {
