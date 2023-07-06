@@ -10,8 +10,15 @@ import {
 import {
     addDoc,
     collection,
-    getFirestore
+    getFirestore,
+   
 } from "firebase/firestore";
+import {
+    getStorage,
+    ref,
+    uploadBytes,
+    getDownloadURL,
+  } from "firebase/storage";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDb3krID96DKYoFLdnhzu3zrId2EigC00w",
@@ -26,6 +33,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
+const storage = getStorage(app);
 
 const logInWithEmailAndPassword = async (email, password) => {
     try {
@@ -70,6 +78,17 @@ const sendPasswordReset = async (email) => {
 const logout = () => {
     signOut(auth);
 };
+const uploadImage = async (file) => {
+    try {
+      const storageRef = ref(storage, file.name);
+      await uploadBytes(storageRef, file);
+      const downloadURL = await getDownloadURL(storageRef);
+      return downloadURL;
+    } catch (err) {
+      console.error(err);
+      alert(err.message);
+    }
+  };
 
 export {
     auth,
@@ -78,4 +97,5 @@ export {
     registerWithEmailAndPassword,
     sendPasswordReset,
     logout,
+    uploadImage
 };

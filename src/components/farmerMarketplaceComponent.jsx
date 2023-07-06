@@ -72,19 +72,14 @@ const FarmerMarketplace = () => {
 
         <div className="farmerMarketplaceComponentMiddleSection">
           <div className="farmerMarketplaceComponentFrameParent">
-
             <div className="farmerMarketplaceComponentFrameWrapper">
-
-
-
-                            {products.map((product) => (
+                  {products.map((product) => (
                   <NavLink
                     key={product.id}
                     className="farmerMarketplaceComponentRectangleParent"
                     to="/farmermarketplacepost"
-                    activeClassName="active"
-                  >
-                    <img className="farmerMarketplaceComponentFrameChild" alt="" src={product.image} />
+                    activeClassName="active">
+                    <img className="farmerMarketplaceComponentFrameChild" alt="" src={product.imageUrl} />
                     <div className="farmerMarketplaceComponentFrameGroup">
                       <div className="farmerMarketplaceComponentFrameContainer">
                         <div className="farmerMarketplaceComponentCardWrapper">
