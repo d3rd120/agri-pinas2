@@ -4,10 +4,40 @@ import FarmerTopNav from '../components/farmerTopNav';
 import CropTrackerNav from '../components/farmerCropTrackerNavigation';
 import RiceVector from '../img/riceCardImage.png';
 import TomatoVector from '../img/tomatoVector.png';
+import FarmerMarketplaceAddProductComponent from '../components/farmerMarketplaceComponentAddProduct';
+import React, { useState, useEffect } from 'react';
+import { collection, onSnapshot } from 'firebase/firestore';
+import { db } from './firebase';
 
-import {FaEdit, FaTrash, FaFolderOpen} from 'react-icons/fa';
+import {FaEdit, FaTrash, FaFolderOpen,FaPlus,FaTimes } from 'react-icons/fa';
 
 const FarmerCropTrackerComponent = () => {
+
+
+  const [showPopup, setShowPopup] = useState(false);
+  const [products, setProducts] = useState([]);
+
+  const openPopup = () => {
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+   
+  }
+  useEffect(() => {
+    const unsubscribe = onSnapshot(collection(db, "Products"), (snapshot) => {
+      const productsData = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setProducts(productsData);
+    });
+  
+    return () => unsubscribe();
+  }, []);
+
+
   return (
     <div className="farmerCropTrackerComponentHarvested">
       <FarmerNavigation />
@@ -66,7 +96,32 @@ const FarmerCropTrackerComponent = () => {
                       </div>
                     </div>
                   </div>
-                        
+                  <div className="farmerCropTrackerComponentHarvestDetails">
+
+                  <button className="farmerCropTrackerComponentHarvestButton" onClick={openPopup}>
+                    <FaPlus className="farmerCropTrackerComponentHarvestButtonIcon" />
+                    <div className="farmerCropTrackerComponentHarvestButtonText">Add</div>
+                  </button>
+
+                  
+                  {showPopup && (
+                    <div id="farmerMarketplaceComponentPopupWindow" className="farmerMarketplaceComponentPopupWindow">
+                      <div className="farmerMarketplaceComponentPopupContent">      
+                      <span className="farmerMarketplaceComponentCloseButton" onClick={closePopup}><FaTimes/></span>          
+                        <FarmerMarketplaceAddProductComponent/>                     
+                      </div>
+                    </div>
+                  )}
+
+                  <button className="farmerCropTrackerComponentHarvestButton">
+                    <FaEdit className="farmerCropTrackerComponentHarvestButtonIcon" />
+                    <div className="farmerCropTrackerComponentHarvestButtonText">Update</div>
+                  </button>
+                  <button className="farmerCropTrackerComponentHarvestButton">
+                    <FaTrash className="farmerCropTrackerComponentHarvestButtonIcon" />
+                    <div className="farmerCropTrackerComponentHarvestButtonText">Delete</div>
+                  </button>
+                </div>                     
                 </div>
               </a> 
 
@@ -90,7 +145,31 @@ const FarmerCropTrackerComponent = () => {
                       </div>
                     </div>
                   </div>
-                       
+                  <div className="farmerCropTrackerComponentHarvestDetails">
+                    
+                  <button className="farmerCropTrackerComponentHarvestButton" onClick={openPopup}>
+                    <FaPlus className="farmerCropTrackerComponentHarvestButtonIcon" />
+                    <div className="farmerCropTrackerComponentHarvestButtonText">Add</div>
+                  </button>
+
+                  
+                  {showPopup && (
+                    <div id="farmerMarketplaceComponentPopupWindow" className="farmerMarketplaceComponentPopupWindow">
+                      <div className="farmerMarketplaceComponentPopupContent">      
+                      <span className="farmerMarketplaceComponentCloseButton" onClick={closePopup}><FaTimes/></span>          
+                        <FarmerMarketplaceAddProductComponent/>                     
+                      </div>
+                    </div>
+                  )}
+                  <button className="farmerCropTrackerComponentHarvestButton">
+                    <FaEdit className="farmerCropTrackerComponentHarvestButtonIcon" />
+                    <div className="farmerCropTrackerComponentHarvestButtonText">Update</div>
+                  </button>
+                  <button className="farmerCropTrackerComponentHarvestButton">
+                    <FaTrash className="farmerCropTrackerComponentHarvestButtonIcon" />
+                    <div className="farmerCropTrackerComponentHarvestButtonText">Delete</div>
+                  </button>
+                </div>                    
                 </div>
               </a> 
 

@@ -52,24 +52,9 @@ const FarmerMarketplace = () => {
               <p className="farmerMarketplaceComponentBlankLine">Marketplace</p>
             </b>
           </div>
-        </div>
-            
+        </div>            
 
-        <button className="farmerMarketplaceComponentButton" onClick={openPopup}>
-          <FaPlus className="farmerMarketplaceComponentButtonIcon" />
-          <div className="farmerMarketplaceComponentButtonText">Add a Product</div>
-        </button>
-
-        {showPopup && (
-          <div id="farmerMarketplaceComponentPopupWindow" className="farmerMarketplaceComponentPopupWindow">
-            <div className="farmerMarketplaceComponentPopupContent">      
-            <span className="farmerMarketplaceComponentCloseButton" onClick={closePopup}><FaTimes/></span>          
-              <FarmerMarketplaceAddProductComponent/>                     
-            </div>
-          </div>
-        )}
-
-
+        
         <div className="farmerMarketplaceComponentMiddleSection">
           <div className="farmerMarketplaceComponentFrameParent">
             <div className="farmerMarketplaceComponentFrameWrapper">
