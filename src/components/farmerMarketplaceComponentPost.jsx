@@ -11,8 +11,12 @@ import FarmerMarketplaceEditProduct from '../components/farmerMarketplaceCompone
 import FarmerMarketplaceDeleteProduct from '../components/farmerMarketplaceComponentDeleteProduct';
 import { FaEdit, FaTrash, FaTimes } from 'react-icons/fa';
 import FarmerTopNav from '../components/farmerTopNav';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 const FarmerMarketplace = () => {
+  const { t } = useTranslation();
   const [showPopup1, setShowPopup1] = useState(false);
   const [showPopup2, setShowPopup2] = useState(false);
   const [editedCategory, setEditedCategory] = useState('');
@@ -47,6 +51,7 @@ const FarmerMarketplace = () => {
   };
 
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="farmerMarketplaceComponentPost">
       <FarmerNavigation />
       <div className="farmerMarketplaceComponentPostMainPanel">
@@ -55,7 +60,7 @@ const FarmerMarketplace = () => {
           <div className="farmerMarketplaceComponentPostMainTextContainer">
             <b className="farmerMarketplaceComponentPostMainTextWrapper">              
 
-              <p className="farmerMarketplaceComponentPostBlankLine">Marketplace</p>
+              <p className="farmerMarketplaceComponentPostBlankLine">{t('farmerPageText2')}</p>
             </b>
           </div>
         </div>
@@ -73,37 +78,37 @@ const FarmerMarketplace = () => {
                 <div className="farmerMarketplaceComponentPostSmallCardsContent">
                   <div className="farmerMarketplaceComponentPostSmallCardsHeading">
                     <div className="farmerMarketplaceComponentPostSmallCardsDetails">
-                      <b className="farmerMarketplaceComponentPostSmallCardsProductName">Corn</b>
-                      <b className="farmerMarketplaceComponentPostSmallCardsFarmerName">Farmer: Marievic Anes</b>
+                      <b className="farmerMarketplaceComponentPostSmallCardsProductName">{t('farmerPageProductText1')}</b>
+                      <b className="farmerMarketplaceComponentPostSmallCardsFarmerName">{t('farmerPageUserRole')}: Marievic Anes</b>
                     </div>
                     <div className="farmerMarketplaceComponentPostSmallCardsDescriptionWrapper">
                       <div className="farmerMarketplaceComponentPostSmallCardsFullDescription">
                         <p className="farmerMarketplaceComponentPostBlankLine">
-                          <b>Category: </b>
-                          <span className="farmerMarketplaceComponentPostBlankLine">Fruit{editedCategory}</span>
+                          <b>{t('farmerPageCategory')} </b>
+                          <span className="farmerMarketplaceComponentPostBlankLine">{t('farmerPageCategoryText1')}{editedCategory}</span>
                         </p>
                         <p className="farmerMarketplaceComponentPostBlankLine">
-                          <b>Packaging: </b>
-                          <span className="farmerMarketplaceComponentPostCategory">Sack{editedPackaging}</span>
+                          <b>{t('farmerPagePackaging')} </b>
+                          <span className="farmerMarketplaceComponentPostCategory">{t('farmerPagePackagingText1')}{editedPackaging}</span>
                         </p>
                         <p className="farmerMarketplaceComponentPostBlankLine">
-                          <b>Price:  </b>
+                          <b>{t('farmerPagePrice')}  </b>
                           <span>Php 10,000{editedPrice}</span>
                         </p>
                         <p className="farmerMarketplaceComponentPostBlankLine">
-                          <b>Kilogram per unit: </b>
+                          <b>{t('farmerPageKilogram')} </b>
                           <span className="farmerMarketplaceComponentPostCategory">80 kgs{editedKilogram}</span>
                         </p>
                         <p className="farmerMarketplaceComponentPostBlankLine">
-                          <b>Description: </b>
-                          <span> I am selling this crop as wholesale and retail, if you need to know more just message me here and we can talk about how things needs to be done.{editedDescription}</span>
+                          <b>{t('farmerPageDescription')} </b>
+                          <span> {t('farmerPageDescriptionText2')}{editedDescription}</span>
                         </p>
                       </div>
                     </div>
                     <div className="farmerMarketplaceComponentPostButtonContainer">
                       <button className="farmerMarketplaceComponentPostButton" onClick={openPopup1}>
                         <FaEdit className="farmerMarketplaceComponentPostButtonIcon" />
-                        <div className="farmerMarketplaceComponentPostButtonText">Edit</div>
+                        <div className="farmerMarketplaceComponentPostButtonText">{t('farmerPageButton1')} </div>
                       </button>
 
                       {showPopup1 && (
@@ -124,7 +129,7 @@ const FarmerMarketplace = () => {
 
                       <button className="farmerMarketplaceComponentPostButton" onClick={openPopup2}>
                         <FaTrash className="farmerMarketplaceComponentPostButtonIcon" />
-                        <div className="farmerMarketplaceComponentPostButtonText">Delete</div>
+                        <div className="farmerMarketplaceComponentPostButtonText">{t('farmerPageButton2')} </div>
                       </button>
 
                       {showPopup2 && (
@@ -142,7 +147,7 @@ const FarmerMarketplace = () => {
           </div>
         </div>
         <div className="farmerMarketplaceComponentPostButtonNew">
-          <div className="farmerMarketplaceComponentPostButtonNewTitle">Your Other Products</div>
+          <div className="farmerMarketplaceComponentPostButtonNewTitle">{t('farmerPagePostText1')}</div>
           <div className="farmerMarketplaceComponentPostButtonNewCourses">
             <button className="farmerMarketplaceComponentPostButtonNewCard1">
               <img
@@ -153,7 +158,7 @@ const FarmerMarketplace = () => {
               <div className="farmerMarketplaceComponentPostButtonNewCard1Details">
                 <div className="farmerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="farmerMarketplaceComponentPostButtonNewCard1Wrapper">
-                    <div className="farmerMarketplaceComponentPostButtonNewCard1Title">Sitaw</div>
+                    <div className="farmerMarketplaceComponentPostButtonNewCard1Title">{t('farmerPageProductText4')}</div>
                   </div>
                 </div>
               </div>
@@ -167,7 +172,7 @@ const FarmerMarketplace = () => {
               <div className="farmerMarketplaceComponentPostButtonNewCard1Details">
                 <div className="farmerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="farmerMarketplaceComponentPostButtonNewCard1Wrapper">
-                    <div className="farmerMarketplaceComponentPostButtonNewCard1Title">Siling Labuyo</div>
+                    <div className="farmerMarketplaceComponentPostButtonNewCard1Title">{t('farmerPageProductText5')}</div>
                   </div>
                 </div>
               </div>
@@ -181,7 +186,7 @@ const FarmerMarketplace = () => {
               <div className="farmerMarketplaceComponentPostButtonNewCard1Details">
                 <div className="farmerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="farmerMarketplaceComponentPostButtonNewCard1Wrapper">
-                    <div className="farmerMarketplaceComponentPostButtonNewCard1Title">Squash</div>
+                    <div className="farmerMarketplaceComponentPostButtonNewCard1Title">{t('farmerPageProductText6')}</div>
                   </div>
                 </div>
               </div>
@@ -190,6 +195,7 @@ const FarmerMarketplace = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
   );
 };
 

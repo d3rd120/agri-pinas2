@@ -6,14 +6,24 @@ import SquashVector from '../img/squash.png';
 import RiceCardImage from '../img/riceCardImage.png';
 import OnionVector from '../img/onionVector.png'
 import CornVector from '../img/cornVector.png';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 
 const PostComponent = () => {
+  const { t } = useTranslation();
+
   return (
+
+    <I18nextProvider i18n={i18n}> 
+
+    
     <div className="postComponentFrame">
       <div className="postComponentParent">
-        <b className="postComponentSubTitle">catch up to our posts</b>
-        <b className="postComponentTitle">Recent community forum entries</b>
+        <b className="postComponentSubTitle">{t('postComponentText1')}</b>
+        <b className="postComponentTitle">{t('postComponentText2')}</b>
       </div>
       <div className="postComponentCardContainer">
         <div className="postComponentCard1">
@@ -23,13 +33,12 @@ const PostComponent = () => {
             src={OnionVector}
           />
           <div className="postComponentCard1Details">
-            <b className="postComponentCard1Title">What is the SRP of Onions?</b>
+            <b className="postComponentCard1Title">{t('postComponentText11')}</b>
             <div className="postComponentCard1DescriptionContainer">
               <span>
-              The Shortage Risk Premium (SRP) of onions refers to an additional cost or 
-              price increase imposed on onions due to the potential scarcity...
+              {t('postComponentText12')}
               </span>
-              <span className="postComponentCard1ViewBlog">view full blog</span>
+              <span className="postComponentCard1ViewBlog">{t('postComponentText13')}</span>
             </div>
           </div>
         </div>
@@ -41,13 +50,12 @@ const PostComponent = () => {
               src={CornVector}
             />
             <div className="postComponentCard2Details">
-              <b className="postComponentCard1Title">How corn grows?</b>
+              <b className="postComponentCard1Title">{t('postComponentText3')}</b>
               <div className="postComponentCard1DescriptionContainer">
                 <span>
-                Corn is grown for various purposes, including human consumption, animal feed, 
-                and industrial uses such as biofuel production...
+                {t('postComponentText4')}
                 </span>
-                <span className="postComponentCard1ViewBlog1">view full blog</span>
+                <span className="postComponentCard1ViewBlog1">{t('postComponentText13')}</span>
               </div>
             </div>
           </div>     
@@ -59,13 +67,12 @@ const PostComponent = () => {
               src={SiliVector}
             />
             <div className="postComponentCard2Details">
-              <b className="postComponentCard1Title">What are alternatives for sili?</b>
+              <b className="postComponentCard1Title">{t('postComponentText5')}</b>
               <div className="postComponentCard1DescriptionContainer">
                 <span>
-                Bell peppers are mild and have a crunchy texture, making them a suitable alternative 
-                  if you prefer a milder flavor. They come in various colors, such as...
+                {t('postComponentText6')}
                 </span>
-                <span className="postComponentCard1ViewBlog1">view full blog</span>
+                <span className="postComponentCard1ViewBlog1">{t('postComponentText13')}</span>
               </div>
             </div>
           </div>     
@@ -78,13 +85,12 @@ const PostComponent = () => {
               src={SquashVector}
             />
             <div className="postComponentCard2Details">
-              <b className="postComponentCard1Title">Can Squash survive summer?</b>
+              <b className="postComponentCard1Title">{t('postComponentText7')}</b>
               <div className="postComponentCard1DescriptionContainer">
                 <span>
-                Squash plants have relatively high water needs, especially during the summer when evaporation rates are high. 
-                    Adequate irrigation is crucial to ensure the...
+                {t('postComponentText8')}
                 </span>
-                <span className="postComponentCard1ViewBlog1">view full blog</span>
+                <span className="postComponentCard1ViewBlog1">{t('postComponentText13')}</span>
               </div>
             </div>
           </div>     
@@ -96,13 +102,12 @@ const PostComponent = () => {
               src={TomatoVector}
             />
             <div className="postComponentCard2Details">
-              <b className="postComponentCard1Title">Is Tomato a good source?</b>
+              <b className="postComponentCard1Title">{t('postComponentText9')}</b>
               <div className="postComponentCard1DescriptionContainer">
                 <span>
-                Vitamins and minerals: Tomatoes are rich in essential vitamins and minerals. 
-                    They are an excellent source of vitamin C, which supports immune function and...
+                {t('postComponentText10')}
                 </span>
-                <span className="postComponentCard1ViewBlog1">view full blog</span>
+                <span className="postComponentCard1ViewBlog1">{t('postComponentText13')}</span>
               </div>
             </div>
           </div>     
@@ -111,6 +116,7 @@ const PostComponent = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
   );
 };
 

@@ -15,7 +15,14 @@ import FarmerTopNav from '../components/farmerTopNav';
 import { db } from './firebase';
 import { collection, onSnapshot } from 'firebase/firestore';
 
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
+
 const FarmerMarketplace = () => {
+
+  const { t } = useTranslation();
   const [showPopup, setShowPopup] = useState(false);
   const [products, setProducts] = useState([]);
 
@@ -42,6 +49,8 @@ const FarmerMarketplace = () => {
 
 
   return (
+    <I18nextProvider i18n={i18n}> 
+
     <div className="farmerMarketplaceComponent">
       <FarmerNavigation />
       <div className="farmerMarketplaceComponentMainPanel">
@@ -49,7 +58,7 @@ const FarmerMarketplace = () => {
         <div className="farmerMarketplaceComponentTopSection">
           <div className="farmerMarketplaceComponentMainText">
             <b className="farmerMarketplaceComponentSubText">      
-              <p className="farmerMarketplaceComponentBlankLine">Marketplace</p>
+              <p className="farmerMarketplaceComponentBlankLine">{t('farmerPageText2')}</p>
             </b>
           </div>
         </div>            
@@ -121,30 +130,30 @@ const FarmerMarketplace = () => {
                 <div className="farmerMarketplaceComponentFrameGroup">
                   <div className="farmerMarketplaceComponentFrameContainer">
                     <div className="farmerMarketplaceComponentCardWrapper">
-                      <b className="farmerMarketplaceComponentCardText">Corn</b>
+                      <b className="farmerMarketplaceComponentCardText">{t('farmerPageProductText1')}</b>
                     </div>
                     <div className="farmerMarketplaceComponentCategoryWrapper">
                       <div className="farmerMarketplaceComponentCategoryContainer">
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">Fruit</span>
+                          <b>{t('farmerPageCategory')}</b>
+                          <span className="farmerMarketplaceComponentCategory">{t('farmerPageCategoryText1')}</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">Sack</span>
+                          <b>{t('farmerPagePackaging')}</b>
+                          <span className="farmerMarketplaceComponentCategory">{t('farmerPagePackagingText1')}</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b className="farmerMarketplaceComponentCategory">{`Price: `}</b>
+                          <b className="farmerMarketplaceComponentCategory">{t('farmerPagePrice')}</b>
                           <span>Php 10,000</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
+                          <b>{t('farmerPageKilogram')}</b>
                           <span className="farmerMarketplaceComponentCategory">50 kgs</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
+                          <b className="farmerMarketplaceComponentCategory">{t('farmerPageDescription')}</b>
                           <span>
-                          I am selling this harvested corn as wholesale, if you need to know more...
+                          {t('farmerPageDescriptionText1')}
                           </span>
                         </p>
                       </div>
@@ -155,13 +164,13 @@ const FarmerMarketplace = () => {
                     <img className="farmerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
                     <div className="farmerMarketplaceComponentAuthorText">
                       <div className="farmerMarketplaceComponentAuthorName">Marievic Anes</div>
-                      <div className="farmerMarketplaceComponentSubName">Farmer</div>
+                      <div className="farmerMarketplaceComponentSubName">{t('farmerPageUserRole')}</div>
                     </div>
                   </div>
                 </div>
-              </NavLink>   
+              </NavLink>  
 
-              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'   activeClassName="active">
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -170,30 +179,30 @@ const FarmerMarketplace = () => {
                 <div className="farmerMarketplaceComponentFrameGroup">
                   <div className="farmerMarketplaceComponentFrameContainer">
                     <div className="farmerMarketplaceComponentCardWrapper">
-                      <b className="farmerMarketplaceComponentCardText">Onions</b>
+                      <b className="farmerMarketplaceComponentCardText">{t('farmerPageProductText2')}</b>
                     </div>
                     <div className="farmerMarketplaceComponentCategoryWrapper">
                       <div className="farmerMarketplaceComponentCategoryContainer">
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">Vegetable</span>
+                          <b>{t('farmerPageCategory')}</b>
+                          <span className="farmerMarketplaceComponentCategory">{t('farmerPageCategoryText2')}</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">Sack</span>
+                          <b>{t('farmerPagePackaging')}</b>
+                          <span className="farmerMarketplaceComponentCategory">{t('farmerPagePackagingText1')}</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b className="farmerMarketplaceComponentCategory">{`Price: `}</b>
-                          <span>Php 3,000</span>
+                          <b className="farmerMarketplaceComponentCategory">{t('farmerPagePrice')}</b>
+                          <span>Php 10,000</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">20 kgs</span>
+                          <b>{t('farmerPageKilogram')}</b>
+                          <span className="farmerMarketplaceComponentCategory">50 kgs</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
+                          <b className="farmerMarketplaceComponentCategory">{t('farmerPageDescription')}</b>
                           <span>
-                          I am selling this 3 sacks of harvested onions as retail, if you need to know more...
+                          {t('farmerPageDescriptionText1')}
                           </span>
                         </p>
                       </div>
@@ -204,14 +213,14 @@ const FarmerMarketplace = () => {
                     <img className="farmerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
                     <div className="farmerMarketplaceComponentAuthorText">
                       <div className="farmerMarketplaceComponentAuthorName">Marievic Anes</div>
-                      <div className="farmerMarketplaceComponentSubName">Farmer</div>
+                      <div className="farmerMarketplaceComponentSubName">{t('farmerPageUserRole')}</div>
                     </div>
                   </div>
                 </div>
-              </NavLink>     
-              
+              </NavLink> 
 
-              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'   activeClassName="active">
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -220,30 +229,30 @@ const FarmerMarketplace = () => {
                 <div className="farmerMarketplaceComponentFrameGroup">
                   <div className="farmerMarketplaceComponentFrameContainer">
                     <div className="farmerMarketplaceComponentCardWrapper">
-                      <b className="farmerMarketplaceComponentCardText">Rice</b>
+                      <b className="farmerMarketplaceComponentCardText">{t('farmerPageProductText3')}</b>
                     </div>
                     <div className="farmerMarketplaceComponentCategoryWrapper">
                       <div className="farmerMarketplaceComponentCategoryContainer">
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">Grain</span>
+                          <b>{t('farmerPageCategory')}</b>
+                          <span className="farmerMarketplaceComponentCategory">{t('farmerPageCategoryText3')}</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">Sack</span>
+                          <b>{t('farmerPagePackaging')}</b>
+                          <span className="farmerMarketplaceComponentCategory">{t('farmerPagePackagingText1')}</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b className="farmerMarketplaceComponentCategory">{`Price: `}</b>
-                          <span>Php 3,000</span>
+                          <b className="farmerMarketplaceComponentCategory">{t('farmerPagePrice')}</b>
+                          <span>Php 10,000</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">65 kgs</span>
+                          <b>{t('farmerPageKilogram')}</b>
+                          <span className="farmerMarketplaceComponentCategory">50 kgs</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
+                          <b className="farmerMarketplaceComponentCategory">{t('farmerPageDescription')}</b>
                           <span>
-                          I am selling this harvested Jasmin Rice as wholesale, if you need to know more...
+                          {t('farmerPageDescriptionText1')}
                           </span>
                         </p>
                       </div>
@@ -254,16 +263,19 @@ const FarmerMarketplace = () => {
                     <img className="farmerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
                     <div className="farmerMarketplaceComponentAuthorText">
                       <div className="farmerMarketplaceComponentAuthorName">Marievic Anes</div>
-                      <div className="farmerMarketplaceComponentSubName">Farmer</div>
+                      <div className="farmerMarketplaceComponentSubName">{t('farmerPageUserRole')}</div>
                     </div>
                   </div>
                 </div>
-              </NavLink>     
-            </div>
+              </NavLink>  
+              </div>
+
+            
 
             
             <div className="farmerMarketplaceComponentFrameWrapper">
-              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'   activeClassName="active">
+             
+            <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'   activeClassName="active">
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -272,30 +284,30 @@ const FarmerMarketplace = () => {
                 <div className="farmerMarketplaceComponentFrameGroup">
                   <div className="farmerMarketplaceComponentFrameContainer">
                     <div className="farmerMarketplaceComponentCardWrapper">
-                      <b className="farmerMarketplaceComponentCardText">Sitaw</b>
+                      <b className="farmerMarketplaceComponentCardText">{t('farmerPageProductText4')}</b>
                     </div>
                     <div className="farmerMarketplaceComponentCategoryWrapper">
                       <div className="farmerMarketplaceComponentCategoryContainer">
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">Vegetable</span>
+                          <b>{t('farmerPageCategory')}</b>
+                          <span className="farmerMarketplaceComponentCategory">{t('farmerPageCategoryText2')}</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">Sack</span>
+                          <b>{t('farmerPagePackaging')}</b>
+                          <span className="farmerMarketplaceComponentCategory">{t('farmerPagePackagingText1')}</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b className="farmerMarketplaceComponentCategory">{`Price: `}</b>
-                          <span>Php 3,000</span>
+                          <b className="farmerMarketplaceComponentCategory">{t('farmerPagePrice')}</b>
+                          <span>Php 10,000</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">10 kgs</span>
+                          <b>{t('farmerPageKilogram')}</b>
+                          <span className="farmerMarketplaceComponentCategory">50 kgs</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
+                          <b className="farmerMarketplaceComponentCategory">{t('farmerPageDescription')}</b>
                           <span>
-                          I am selling this crop as retail, if you need to know more...
+                          {t('farmerPageDescriptionText1')}
                           </span>
                         </p>
                       </div>
@@ -306,13 +318,13 @@ const FarmerMarketplace = () => {
                     <img className="farmerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
                     <div className="farmerMarketplaceComponentAuthorText">
                       <div className="farmerMarketplaceComponentAuthorName">Marievic Anes</div>
-                      <div className="farmerMarketplaceComponentSubName">Farmer</div>
+                      <div className="farmerMarketplaceComponentSubName">{t('farmerPageUserRole')}</div>
                     </div>
                   </div>
                 </div>
-              </NavLink>   
+              </NavLink>  
 
-              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'   activeClassName="active">
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -321,30 +333,30 @@ const FarmerMarketplace = () => {
                 <div className="farmerMarketplaceComponentFrameGroup">
                   <div className="farmerMarketplaceComponentFrameContainer">
                     <div className="farmerMarketplaceComponentCardWrapper">
-                      <b className="farmerMarketplaceComponentCardText">Siling Labuyo</b>
+                      <b className="farmerMarketplaceComponentCardText">{t('farmerPageProductText5')}</b>
                     </div>
                     <div className="farmerMarketplaceComponentCategoryWrapper">
                       <div className="farmerMarketplaceComponentCategoryContainer">
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">Fruit</span>
+                          <b>{t('farmerPageCategory')}</b>
+                          <span className="farmerMarketplaceComponentCategory">{t('farmerPageCategoryText1')}</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">Sack</span>
+                          <b>{t('farmerPagePackaging')}</b>
+                          <span className="farmerMarketplaceComponentCategory">{t('farmerPagePackagingText1')}</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b className="farmerMarketplaceComponentCategory">{`Price: `}</b>
-                          <span>Php 7,000</span>
+                          <b className="farmerMarketplaceComponentCategory">{t('farmerPagePrice')}</b>
+                          <span>Php 10,000</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">5 kgs</span>
+                          <b>{t('farmerPageKilogram')}</b>
+                          <span className="farmerMarketplaceComponentCategory">50 kgs</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
+                          <b className="farmerMarketplaceComponentCategory">{t('farmerPageDescription')}</b>
                           <span>
-                          I am selling this crop as wholesale, if you need to know more...
+                          {t('farmerPageDescriptionText1')}
                           </span>
                         </p>
                       </div>
@@ -355,14 +367,14 @@ const FarmerMarketplace = () => {
                     <img className="farmerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
                     <div className="farmerMarketplaceComponentAuthorText">
                       <div className="farmerMarketplaceComponentAuthorName">Marievic Anes</div>
-                      <div className="farmerMarketplaceComponentSubName">Farmer</div>
+                      <div className="farmerMarketplaceComponentSubName">{t('farmerPageUserRole')}</div>
                     </div>
                   </div>
                 </div>
-              </NavLink>     
-              
+              </NavLink> 
 
-              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'>
+              
+              <NavLink className="farmerMarketplaceComponentRectangleParent" to = '/farmermarketplacepost'   activeClassName="active">
                 <img
                   className="farmerMarketplaceComponentFrameChild"
                   alt=""
@@ -371,30 +383,30 @@ const FarmerMarketplace = () => {
                 <div className="farmerMarketplaceComponentFrameGroup">
                   <div className="farmerMarketplaceComponentFrameContainer">
                     <div className="farmerMarketplaceComponentCardWrapper">
-                      <b className="farmerMarketplaceComponentCardText">Squash</b>
+                      <b className="farmerMarketplaceComponentCardText">{t('farmerPageProductText6')}</b>
                     </div>
                     <div className="farmerMarketplaceComponentCategoryWrapper">
                       <div className="farmerMarketplaceComponentCategoryContainer">
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">Vegetable</span>
+                          <b>{t('farmerPageCategory')}</b>
+                          <span className="farmerMarketplaceComponentCategory">{t('farmerPageCategoryText2')}</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">Sack</span>
+                          <b>{t('farmerPagePackaging')}</b>
+                          <span className="farmerMarketplaceComponentCategory">{t('farmerPagePackagingText1')}</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b className="farmerMarketplaceComponentCategory">{`Price: `}</b>
+                          <b className="farmerMarketplaceComponentCategory">{t('farmerPagePrice')}</b>
                           <span>Php 10,000</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
-                          <span className="farmerMarketplaceComponentCategory">65 kgs</span>
+                          <b>{t('farmerPageKilogram')}</b>
+                          <span className="farmerMarketplaceComponentCategory">50 kgs</span>
                         </p>
                         <p className="farmerMarketplaceComponentBlankLine">
-                          <b className="farmerMarketplaceComponentCategory">{`Description: `}</b>
+                          <b className="farmerMarketplaceComponentCategory">{t('farmerPageDescription')}</b>
                           <span>
-                          I am selling this crop as wholesale, if you need to know more...
+                          {t('farmerPageDescriptionText1')}
                           </span>
                         </p>
                       </div>
@@ -405,11 +417,11 @@ const FarmerMarketplace = () => {
                     <img className="farmerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
                     <div className="farmerMarketplaceComponentAuthorText">
                       <div className="farmerMarketplaceComponentAuthorName">Marievic Anes</div>
-                      <div className="farmerMarketplaceComponentSubName">Farmer</div>
+                      <div className="farmerMarketplaceComponentSubName">{t('farmerPageUserRole')}</div>
                     </div>
                   </div>
                 </div>
-              </NavLink>     
+              </NavLink>  
               
             </div>
 
@@ -441,6 +453,7 @@ const FarmerMarketplace = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
   );
 };
 

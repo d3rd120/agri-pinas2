@@ -1,0 +1,142 @@
+{
+    "homeComponentText1": "Sariwang Galing sa Bukid.",
+    "homeComponentText2": "Tulungan natin sila!",
+    "homeComponentText3": "Link sa pagitan ng magsasaka at mga mamimili",
+    "homeComponentText4": "Tumuloy",
+
+    "aboutComponentText1": "Tungkol sa AgriPinas",
+    "aboutComponentText2": "Ang AgriPinas ay isang mapagbago at makabagong mobile at web application na dinisenyo upang baguhin ang industriya ng agrikultura, partikular na naglalayong tulungan ang mga magsasaka sa Cabiao, Nueva Ecija, Pilipinas.",
+    "aboutComponentText3": "Ang rehiyon na kilala bilang Granaryo ng Palay ng Pilipinas ay hinaharap ang mga hamong tulad ng mababang kita at kakulangan ng suporta mula sa pamahalaan.",
+    
+    "postComponentText1": "Sumunod sa aming post",
+    "postComponentText2": "Kamakailang mga pagsusulit sa komunidad.",
+    "postComponentText3": "Paano lumalaki ang mais?",
+    "postComponentText4": "Ang mais ay itinatanim para sa iba't ibang layunin, kabilang ang pagkain ng tao, panghahayop na pagkain, at industriyal na gamit tulad ng...",
+    "postComponentText5": "Ano ang mga alternatibo sa sili?",
+    "postComponentText6": "Ang mga bell pepper ay banayad ang anghang at mayroong malutong na tekstura, kaya't angkop na kapalit kung mas gusto mo ang banayad na lasa. May iba't ibang kulay ang mga ito, tulad ng...",
+    "postComponentText7": "Mabubuhay ba ang kalabasa sa tag-init?",
+    "postComponentText8": "Ang mga halamang kalabasa ay may mataas na pangangailangan sa tubig, lalo na sa panahon ng tag-init kung saan mataas ang mga rate ng pag-evaporate...",
+    "postComponentText9": "Ang Kamatis ba ay isang magandang pinagmumulan?",
+    "postComponentText10": "Bitamina at mineral: Ang mga kamatis ay mayaman sa mahahalagang bitamina at mineral. Ito ay isang mahusay na pinagmumulan ng bitamina C, na nagtataguyod ng malusog na immune system at...",
+    "postComponentText11": "Ano ang SRP ng Sibuyas?",
+    "postComponentText12": "Ang Shortage Risk Premium (SRP) ng sibuyas ay tumutukoy sa karagdagang gastos o pagtaas ng presyo na ipinapataw sa sibuyas...",
+    "postComponentText13": "tignan ng buo",
+
+    "contactComponentText1": "Dumulong sa amin",
+    "contactComponentText2": "Pangalan",
+    "contactComponentText3": "Ilagay ang iyong pangalan",
+    "contactComponentText4": "Email Address",
+    "contactComponentText5": "Ilagay ang iyong email address",
+    "contactComponentText6": "Number ng telepono",
+    "contactComponentText7": "Ilagay ang iyong number ng telepono",
+    "contactComponentText8": "Mensahe",
+    "contactComponentText9": "Ilagay ang iyong mensahe",
+    "contactComponentText10": "Ipadala ang mensahe",
+
+    "mainPageNavigationComponentText1": "Pangunahin",
+    "mainPageNavigationComponentText2": "Tungkol",
+    "mainPageNavigationComponentText3": "Mga Post",
+    "mainPageNavigationComponentText4": "Kontak",
+
+    "loginComponentText1": "Mag Log-in",
+    "loginComponentText2": "I-reset ang password",
+    "loginComponentText3": "Wala pang account? ",
+    "loginComponentText4": "Signup",
+
+    "resetComponentText1": "Ilagay ang iyong email para ireset ang iyong password",
+    "resetComponentText2": "Wala pang account?",
+    "resetComponentText3": "Ipadala ang code",
+    "resetComponentText4": "Mag-Register",
+
+    "registerComponentText1": "Mag-Register",
+    "registerComponentText2": "Buong Pangalan",
+    "registerComponentText3": "Kontak Number",
+    "registerComponentText4": "Tirahan",
+    "registerComponentText5": "Edad",
+    "registerComponentText6": "Pangalan ng Email",
+    "registerComponentText7": "Mamili ng Role",
+    "registerComponentText8": "Password",
+    "registerComponentText9": "I-kumpirma ang password",
+    "registerComponentText10": "Meron nang account? ",
+
+    "farmerPageNavgationText1": "Painitan",
+    "farmerPageNavgationText2": "Pamilihan",
+    "farmerPageNavgationText3": "Komunidad",
+    "farmerPageNavgationText4": "Mga Tanim",
+    "farmerPageNavgationText5": "Transaksyon",
+
+    "farmerPageText1": "Painitan",
+    "farmerPageText2": "Pamilihan",
+
+    
+    "farmerPageProductText1": "Mais",
+    "farmerPageProductText2": "Sibuyas",
+    "farmerPageProductText3": "Bigas",
+    "farmerPageProductText4": "Sitaw",
+    "farmerPageProductText5": "Siling Labuyo",
+    "farmerPageProductText6": "Kalabasa",
+
+    "farmerPageCategory": "Kategorya: ",
+    "farmerPageCategoryText1": "Prutas",
+    "farmerPageCategoryText2": "Gulay",
+    "farmerPageCategoryText3": "Butil",
+
+    "farmerPagePackaging": "Pakete: ",
+    "farmerPagePackagingText1": "Sako",
+
+    "farmerPagePrice": "Presyo: ",
+
+    "farmerPageKilogram": "Kilogram per yunit: ",
+
+    "farmerPageDescription": "Deskripsyon: ",
+    "farmerPageDescriptionText1": "Binebenta ko tong produkto na ito bilang wholesale, i-chat mo ko... ",
+    "farmerPageDescriptionText2": "Binebenta ko tong produkto na ito bilang wholesale, i-chat mo ko kung may kailangan ka pang malaman tungkol sa produkto na ito. ",
+
+    "farmerPageUserRole": "Magsasaka",
+
+    "farmerPageButton1": "I-edit",
+    "farmerPageButton2": "Burahin",
+    "farmerPageButton3": "I-save",
+    "farmerPageButton4": "I-kansela",
+    "farmerPageButton5": "Oo",
+    "farmerPageButton6": "Hindi",
+    "farmerPageButton7": "Sumulat ng post",
+    "farmerPageButton8": "I-post",
+
+    "farmerPageEditText1": "I-edit ang iyong produkto",
+    "farmerPageEditText2": "Pangalan ng Produkto",
+    "farmerPageEditText3": "Ilagay ang bagong pangalan ng produkto",
+    "farmerPageEditText4": "Presyo",
+    "farmerPageEditText5": "Ilagay ang bagong presyo",
+    "farmerPageEditText6": "Kategorya",
+    "farmerPageEditText7": "Ilagay ang bagong kategorya",
+    "farmerPageEditText8": "Kilogram per yunit",
+    "farmerPageEditText9": "Ilagay ang bagong kilogram",
+    "farmerPageEditText10": "Pakete",
+    "farmerPageEditText11": "Ilagay ang bagong pakete",
+    "farmerPageEditText12": "I-upload ang iyong bagong litrato",
+    "farmerPageEditText13": "Deskripsyon",
+    "farmerPageEditText14": "Ilagay ang bagong deskripsyon",
+
+    "farmerPageDeleteText1": "Burahin itong produkto",
+    "farmerPageDeleteText2": "Sigurado ka bang gusto mo itong burahin?",
+
+    "farmerPagePostText1": "Iyong Ibang Produkto",
+     
+    "farmerCommunityText1": "Pagtatalakay ng Komunidad",
+    "farmerCommunityText2": "Anong SRP ng Sibuyas?",
+    "farmerCommunityText2": "Anong SRP ng Sibuyas?",
+
+    "farmerCommunityAddPostText1": "Sumulat ng Post",
+    "farmerCommunityAddPostText2": "Pangalan ng post",
+    "farmerCommunityAddPostText3": "Ilagay ang pangalan ng post",
+    "farmerCommunityAddPostText4": "I-upload ang imahe ng post",
+    "farmerCommunityAddPostText5": "Deskripsyon",
+    "farmerCommunityAddPostText6": "Ilagay ang deskripsyon"
+    
+    
+
+
+    
+    
+  }
