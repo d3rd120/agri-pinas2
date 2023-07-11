@@ -13,9 +13,13 @@ import { FaEdit, FaTimes } from 'react-icons/fa';
 import React, { useState } from 'react';
 import FarmerCommunityForumComponentAddPost from '../components/farmerCommunityForumComponentAddPost';
 import FarmerTopNav from '../components/farmerTopNav';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 
 const FarmerCommunityForumComponent = () => {
+  const { t } = useTranslation();
 
   const [showPopup, setShowPopup] = useState(false);
 
@@ -28,6 +32,7 @@ const FarmerCommunityForumComponent = () => {
   };
 
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="farmerCommunityForumComponent">
      <FarmerNavigation />
       <div className="farmerCommunityForumComponentMainPanel">
@@ -35,7 +40,7 @@ const FarmerCommunityForumComponent = () => {
         <div className="farmerCommunityForumComponentTopSection">
           <div className="farmerCommunityForumComponentMainText1">
             <b className="farmerCommunityForumComponentMainText2">    
-              <p className="farmerCommunityForumComponentBlankLine">Community Forum</p>
+              <p className="farmerCommunityForumComponentBlankLine">{t('farmerCommunityText1')}</p>
             </b>
           </div>
         </div>
@@ -43,7 +48,7 @@ const FarmerCommunityForumComponent = () => {
 
         <button className="farmerCommunityForumComponentButton1" onClick={handleButtonClick}>
           <FaEdit className="farmerCommunityForumComponentButtonIcon1" />
-          <div className="farmerCommunityForumComponentButtonText1">Write a Post</div>
+          <div className="farmerCommunityForumComponentButtonText1">{t('farmerPageButton7')}</div>
         </button>
 
 
@@ -183,70 +188,7 @@ const FarmerCommunityForumComponent = () => {
                 </div>
               </div>
             </Link>              
-            </div>
-
-            <div className="farmerCommunityForumComponentFrameWrapper">
-
-          <Link className="farmerCommunityForumComponentRectangleParent"  to = '/farmercommunityforumpost'>
-            <img
-              className="farmerCommunityForumComponentFrameChild"
-              alt=""
-              src={SiliVector}
-            />
-            <div className="farmerCommunityForumComponentFrameGroup">
-              <div className="farmerCommunityForumComponentFrameContainer">
-
-                <div className="farmerCommunityForumComponentSubText1Wrapper">
-                  <b className="farmerCommunityForumComponentSubText1">What are alternatives for sili?</b>
-                </div>
-                <div className="farmerCommunityForumComponentSubText2Wrapper2">
-                  <div className="farmerCommunityForumComponentSubText2">
-                  Bell peppers are mild and have a crunchy texture, making them a suitable alternative 
-                  if you prefer a milder flavor. They come in various colors, such as...
-                  </div>
-                </div>
-              </div>
-              <div className="farmerCommunityForumComponentFrameItem" />
-              <div className="farmerCommunityForumComponentFrameAuthor">
-                <img className="farmerCommunityForumComponentFrameIcon" alt="" src={ProfileVector2} />
-                <div className="farmerCommunityForumComponentAuthorText">
-                  <div className="farmerCommunityForumComponentAuthorName">Daniella Tungol</div>
-                  <div className="farmerCommunityForumComponentPostTime">1 day ago</div>
-                </div>
-              </div>
-            </div>
-          </Link>
-
-            <Link className="farmerCommunityForumComponentRectangleParent" to = '/farmercommunityforumpost'>
-              <img
-                className="farmerCommunityForumComponentFrameChild"
-                alt=""
-                src={TomatoVector}
-              />
-              <div className="farmerCommunityForumComponentFrameGroup">
-                <div className="farmerCommunityForumComponentFrameContainer">
-                  <div className="farmerCommunityForumComponentSubText1Wrapper">
-                    <b className="farmerCommunityForumComponentSubText1">Is tomato good source?</b>
-                  </div>
-                  <div className="farmerCommunityForumComponentSubText2Wrapper2">
-                    <div className="farmerCommunityForumComponentSubText2">
-                    Vitamins and minerals: Tomatoes are rich in essential vitamins and minerals. 
-                    They are an excellent source of vitamin C, which supports immune function and...
-                    </div>
-                  </div>
-                </div>
-                <div className="farmerCommunityForumComponentFrameItem" />
-                <div className="farmerCommunityForumComponentFrameAuthor">
-                  <img className="farmerCommunityForumComponentFrameIcon" alt="" src={ProfileVector2} />
-                  <div className="farmerCommunityForumComponentAuthorText">
-                    <div className="farmerCommunityForumComponentAuthorName">Marievic Anes</div>
-                    <div className="farmerCommunityForumComponentPostTime">2 days ago</div>
-                  </div>
-                </div>
-              </div>
-            </Link>              
-            </div>
-
+            </div>       
 
             
 
@@ -275,6 +217,7 @@ const FarmerCommunityForumComponent = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
   );
 };
 

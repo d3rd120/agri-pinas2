@@ -1,0 +1,72 @@
+{
+  "homeComponentText1": "Fresh from the farm",
+  "homeComponentText2": "Let's help farmers!",
+  "homeComponentText3": "Direct link between farmers and consumers",
+  "homeComponentText4": "More",
+
+  "aboutComponentText1": "About AgriPinas",
+  "aboutComponentText2": "AgriPinas is an innovative mobile and web application designed to revolutionize the agricultural industry, specifically aiming to assist farmers in Cabiao, Nueva Ecija, Philippines.",
+  "aboutComponentText3": "The region known as the Rice Granary of the Philippines is facing challenges such as low income and lack of support from the government.",
+
+  "postComponentText1": "Follow our post",
+  "postComponentText2": "Recent community forum entries.",
+  "postComponentText3": "How does corn grow?",
+  "postComponentText4": "Corn is grown for various purposes, including human consumption, animal feed, and industrial uses such as...",
+  "postComponentText5": "What are alternatives for sili?",
+  "postComponentText6": "Bell peppers are mild and have a crunchy texture, making them a suitable alternative if you prefer a milder flavor. They come in various colors, such as...",
+  "postComponentText7": "Can Squash survive summer?",
+  "postComponentText8": "Squash plants have relatively high water needs, especially during the summer when evaporation rates are high...",
+  "postComponentText9": "Is Tomato a good source?",
+  "postComponentText10": "Vitamins and minerals: Tomatoes are rich in essential vitamins and minerals. They are an excellent source of vitamin C, which supports immune function and...",
+  "postComponentText11": "What is the SRP of Onions?",
+  "postComponentText12": "The Shortage Risk Premium (SRP) of onions refers to an additional cost or price increase imposed on onions due to the potential scarcity...",
+  "postComponentText13": "view full",
+
+  "contactComponentText1": "Contact us",
+  "contactComponentText2": "Name",
+  "contactComponentText3": "Enter your name",
+  "contactComponentText4": "Email Address",
+  "contactComponentText5": "Enter your email address",
+  "contactComponentText6": "Phone Number",
+  "contactComponentText7": "Enter your phone number",
+  "contactComponentText8": "Message",
+  "contactComponentText9": "Enter your message",
+  "contactComponentText10": "Send message",
+
+    "mainPageNavigationComponentText1": "Home",
+    "mainPageNavigationComponentText2": "About",
+    "mainPageNavigationComponentText3": "Posts",
+    "mainPageNavigationComponentText4": "Contact",
+  
+
+    "loginComponentText1": "Login",
+    "loginComponentText2": "Reset password",
+    "loginComponentText3": "Don't have an account? ",
+    "loginComponentText4": "Signup",
+
+    "resetComponentText1": "Enter your email to reset your password",
+    "resetComponentText2": "Don't have an account?",
+    "resetComponentText3": "Send Code",
+    "resetComponentText4": "Register",
+
+    
+    "registerComponentText1": "Register",
+    "registerComponentText2": "Full Name",
+    "registerComponentText3": "Contact Number",
+    "registerComponentText4": "Address",
+    "registerComponentText5": "Age",
+    "registerComponentText6": "Email Address",
+    "registerComponentText7": "Choose a Role",
+    "registerComponentText8": "Password",
+    "registerComponentText9": "Confirm Password",
+    "registerComponentText10": "Already have an account? ",
+
+    "farmerPageNavgationText1": "Dashboard",
+    "farmerPageNavgationText2": "Marketplace",
+    "farmerPageNavgationText3": "Community",
+    "farmerPageNavgationText4": "Crop Tracker",
+    "farmerPageNavgationText5": "Transactions"
+
+  
+
+  }

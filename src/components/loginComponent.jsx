@@ -7,8 +7,12 @@ import { collection, getDocs, getFirestore, query, where } from 'firebase/firest
 import { auth } from "../components/firebase";
 import axios from 'axios';
 import { getToken } from '../Util/Common';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 const LoginPage = () => {
+  const { t } = useTranslation();
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [loggedIn, setLoggedIn] = React.useState(false);
@@ -142,12 +146,13 @@ const LoginPage = () => {
   }
 
   return (
+    <I18nextProvider i18n={i18n}>   
     <div className="loginComponent">
       <div className="loginComponentWrapper">
         <div className="loginComponentForm">
           <div className="loginComponentFormText">
             <img className="loginComponentLogo" alt="" src={Logo} />
-            <div className="loginComponentMainText">Login</div>
+            <div className="loginComponentMainText">{t('loginComponentText1')}</div>
           </div>
           <div className="loginComponentFormFields">
             <input
@@ -168,21 +173,22 @@ const LoginPage = () => {
               onKeyPress={handleKeyPress} // Trigger handleSubmit on Enter key press
             />
           </div>
-          <a className="logInPageSubText2" href="reset">
-            Forgot Password
-          </a>
+          <Link className="logInPageSubText2" to = '/reset'>
+          {t('loginComponentText2')}
+          </Link>
           <button className="loginComponentButton" onClick={handleSubmit}>
             <div className="loginComponentButtonText">Login</div>
           </button>
           <div className="loginComponentSubTextContainter">
-            <span>{`Don’t have an account? `}</span>
+            <span>{t('loginComponentText3')}</span>
             <Link className="loginComponentSignUpLink" to="/signup">
-              Signup
+            {t('loginComponentText4')}
             </Link>
           </div>
         </div>
       </div>
     </div>
+    </I18nextProvider>
   );
 };
 

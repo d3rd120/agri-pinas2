@@ -4,8 +4,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import "../css/Components/signupComponent.css";
 import { auth, registerWithEmailAndPassword } from "./firebase";
 import Logo from '../img/agriPinasLogo2.png';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 const Signup = () => {
+  const { t } = useTranslation();
   const [birthdate, setBirthdate] = React.useState("");
   const [address, setAddress] = React.useState("");
   const [contact, setContact] = React.useState("");
@@ -64,43 +69,45 @@ const Signup = () => {
   }, []);
 
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="signupComponent">
       <div className="signupComponentWrapper">
         <div className="signupComponentForm">
           <div className="signupComponentFormText">
             <img className="signUpComponentLogo" alt="" src={Logo} />
-            <div className="signupComponentMainText">Register</div>
+            <div className="signupComponentMainText">{t('registerComponentText1')}</div>
           </div>
           <div className="signupComponentFormFields">
             <input className="signupComponentFormInput" id="signupComponentFullName" type="text" value={fullname}
-              onChange={(e) => setFullName(e.target.value)} placeholder="Full Name" required />
-            <input className="signupComponentFormInput" id="signupComponentContactNumber" type="text" placeholder="Contact Number" value={contact}
+              onChange={(e) => setFullName(e.target.value)} placeholder={t('registerComponentText2')} required />
+            <input className="signupComponentFormInput" id="signupComponentContactNumber" type="text" placeholder={t('registerComponentText3')} value={contact}
               onChange={(e) => setContact(e.target.value)} required />
-            <input className="signupComponentFormInput" id="signupComponentAddress" type="text" placeholder="Address" value={address}
+            <input className="signupComponentFormInput" id="signupComponentAddress" type="text" placeholder={t('registerComponentText4')} value={address}
               onChange={(e) => setAddress(e.target.value)} required />
             <input className="signupComponentFormInput" id="signupComponentBirthday" type="date" placeholder="Birthday" onInput={calculateAge} value={birthdate}
               onChange={(e) => setBirthdate(e.target.value)} required />
-            <input className="signupComponentFormInput" id="signupComponentAge" type="text" placeholder="Age" value={age}
+            <input className="signupComponentFormInput" id="signupComponentAge" type="text" placeholder={t('registerComponentText5')} value={age}
               onChange={(e) => setAge(e.target.value)} readOnly />
-            <input className="signupComponentFormInput" id={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
+            <input className="signupComponentFormInput" id={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder={t('registerComponentText6')} required />
             <select className="signupComponentFormInput" id="signupComponentRole" value={role} onChange={(e) => setRole(e.target.value)} required>
-              <option value="" disabled>Select a role</option>
+              <option value="" disabled>{t('registerComponentText7')}</option>
               <option value="Farmer">Farmer</option>
               <option value="Buyer">Buyer</option>
             </select>
-            <input className="signupComponentFormInput" id={password} type="password" onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
-            <input className="signupComponentFormInput" id={confirmpassword} type="password" onChange={(e) => setConfirmPassword(e.target.value)} placeholder="Confirm Password" required />
+            <input className="signupComponentFormInput" id={password} type="password" onChange={(e) => setPassword(e.target.value)} placeholder={t('registerComponentText8')} required />
+            <input className="signupComponentFormInput" id={confirmpassword} type="password" onChange={(e) => setConfirmPassword(e.target.value)} placeholder={t('registerComponentText9')} required />
           </div>
           <button ref={registerButtonRef} className="signupComponentButton" onClick={register}>
             <div className="signupComponentButtonText">Register</div>
           </button>
           <div className="signupComponentSubTextContainer">
-            <span>{`Already have an account? `}</span>
+            <span>{t('registerComponentText10')}</span>
             <Link className="signupComponentLoginLink" to='/login'>Login</Link>
           </div>
         </div>
       </div>
     </div>
+    </I18nextProvider>
   );
 };
 
