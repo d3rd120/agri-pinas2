@@ -88,8 +88,8 @@ const App = () => {
           <Route path="/farmercroptrackerharvest" element={<FarmerCropTrackerHarvest />} />
           <Route path="/farmercroptrackerharvested" element={<FarmerCropTrackerHarvested />} />
           <Route path="/farmertransactionspending" element={<FarmerTransactionsPending />} />
-          <Route path="/farmertransactionscompleted" element={<FarmerTransactionsCancelled />} />
-          <Route path="/farmertransactionscancelled" element={<FarmerTransactionsCompleted />} />
+          <Route path="/farmertransactionscompleted" element={<FarmerTransactionsCompleted />} />
+          <Route path="/farmertransactionscancelled" element={<FarmerTransactionsCancelled/>} />
           <Route path="/farmerprofile" element={<FarmerProfile />} />
           <Route path="/farmerinbox" element={<FarmerInbox />} />  
           <Route path="/farmeraddress" element={<FarmerAddress />} />  

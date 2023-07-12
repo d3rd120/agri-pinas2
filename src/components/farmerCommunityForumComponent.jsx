@@ -77,12 +77,11 @@ const FarmerCommunityForumComponent = () => {
                   <div className="farmerCommunityForumComponentFrameContainer">
 
                     <div className="farmerCommunityForumComponentSubText1Wrapper">
-                      <b className="farmerCommunityForumComponentSubText1">What is the SRP of Onions?</b>
+                      <b className="farmerCommunityForumComponentSubText1">{t('farmerCommunityText2')}</b>
                     </div>
                     <div className="farmerCommunityForumComponentSubText2Wrapper2">
                       <div className="farmerCommunityForumComponentSubText2">
-                      The Shortage Risk Premium (SRP) of onions refers to an additional cost or price increase 
-                      imposed on onions due to the potential scarcity or limited availability of....
+                      {t('farmerCommunityText3')}
                       </div>
                     </div>
                   </div>
@@ -106,12 +105,11 @@ const FarmerCommunityForumComponent = () => {
                 <div className="farmerCommunityForumComponentFrameGroup">
                   <div className="farmerCommunityForumComponentFrameContainer">
                     <div className="farmerCommunityForumComponentSubText1Wrapper">
-                      <b className="farmerCommunityForumComponentSubText1">How corn grows?</b>
+                      <b className="farmerCommunityForumComponentSubText1"> {t('farmerCommunityText4')}</b>
                     </div>
                     <div className="farmerCommunityForumComponentSubText2Wrapper2">
                       <div className="farmerCommunityForumComponentSubText2">
-                      Corn is grown for various purposes, including human consumption, animal feed, 
-                      and industrial uses such as biofuel production...
+                      {t('farmerCommunityText5')}
                       </div>
                     </div>
                   </div>
@@ -140,12 +138,11 @@ const FarmerCommunityForumComponent = () => {
                 <div className="farmerCommunityForumComponentFrameContainer">
 
                   <div className="farmerCommunityForumComponentSubText1Wrapper">
-                    <b className="farmerCommunityForumComponentSubText1">How to plant rice efficiently?</b>
+                    <b className="farmerCommunityForumComponentSubText1"> {t('farmerCommunityText6')}</b>
                   </div>
                   <div className="farmerCommunityForumComponentSubText2Wrapper2">
                     <div className="farmerCommunityForumComponentSubText2">
-                    Seed selection and preparation: Farmers select high-quality rice seeds based on 
-                    factors such as yield potential, disease resistance, and adaptability...
+                    {t('farmerCommunityText7')}
                     </div>
                   </div>
                 </div>
@@ -169,12 +166,11 @@ const FarmerCommunityForumComponent = () => {
               <div className="farmerCommunityForumComponentFrameGroup">
                 <div className="farmerCommunityForumComponentFrameContainer">
                   <div className="farmerCommunityForumComponentSubText1Wrapper">
-                    <b className="farmerCommunityForumComponentSubText1">Can Squash survive summer?</b>
+                    <b className="farmerCommunityForumComponentSubText1"> {t('farmerCommunityText8')}</b>
                   </div>
                   <div className="farmerCommunityForumComponentSubText2Wrapper2">
                     <div className="farmerCommunityForumComponentSubText2">
-                    Squash plants have relatively high water needs, especially during the summer when evaporation rates are high. 
-                    Adequate irrigation is crucial to ensure the...
+                    {t('farmerCommunityText9')}
                     </div>
                   </div>
                 </div>
