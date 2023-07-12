@@ -5,9 +5,15 @@ import FarmerTopNav from '../components/farmerTopNav';
 import SquashVector from '../img/squash.png';
 import CornVector from '../img/cornVector.png';
 import { FaEdit, FaTrash, FaFolderOpen } from 'react-icons/fa';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 const FarmerCommunityForumComponent = () => {
+  const { t } = useTranslation();
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="farmerTransactionsCompletedComponent">
       <FarmerNavigation />
       <div className="farmerTransactionsCompletedComponentMainPanel">
@@ -15,16 +21,16 @@ const FarmerCommunityForumComponent = () => {
         <div className="farmerTransactionsCompletedComponentTopSection">
           <div className="farmerTransactionsCompletedComponentMainText">
             <b className="farmerTransactionsCompletedComponentMainTextWrapper">   
-              <p className="farmerTransactionsCompletedComponentBlankLine">Transactions</p>
+              <p className="farmerTransactionsCompletedComponentBlankLine">{t('farmerTransactionsText1')}</p>
             </b>
           </div>
         </div>
         <TransactionsNav />
 
         <div className="farmerTransactionsCompletedComponentCard">
-          <div className="farmerTransactionsCompletedComponentSubTitle"><FaFolderOpen /> Your Transactions</div>
+          <div className="farmerTransactionsCompletedComponentSubTitle"><FaFolderOpen /> {t('farmerTransactionsText2')}</div>
           <br></br>
-          <div className="farmerTransactionsCompletedComponentShow">Show:
+          <div className="farmerTransactionsCompletedComponentShow">{t('farmerTransactionsText3')}
             <select className="farmerTransactionsCompletedComponentRowSelect" onchange="updateRows(this.value)">
               <option value="5">5</option>
               <option value="10">10</option>
@@ -34,7 +40,7 @@ const FarmerCommunityForumComponent = () => {
             <input 
             className="farmerTransactionsCompletedComponentRowSelect"
             type = "text"
-            placeholder = "Search">                    
+            placeholder ={t('farmerTransactionsText4')}>                    
             </input> 
           </div>
           <br></br>
@@ -52,32 +58,32 @@ const FarmerCommunityForumComponent = () => {
                   <div className="farmerTransactionsCompletedComponentFrameGroup">
                     <div className="farmerTransactionsCompletedComponentFrameContainer">
                       <div className="farmerTransactionsCompletedComponentSubText1Wrapper">
-                        <b className="farmerTransactionsCompletedComponentSubText1">Squash</b>
+                        <b className="farmerTransactionsCompletedComponentSubText1">{t('farmerTransactionsText16')}</b>
                       </div>
                       <div className="farmerTransactionsCompletedComponentSubText2Wrapper2">
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>User ID:</b> B006
+                          <b>{t('farmerTransactionsText7')}</b> B006
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Item ID:</b> N006
+                          <b>{t('farmerTransactionsText8')}</b> N006
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Buyer Name:</b> Marievic Anes
+                          <b>{t('farmerTransactionsText9')}</b> Marievic Anes
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Date Ordered:</b> 02 / 01 / 2023
+                          <b>{t('farmerTransactionsText10')}</b> 02 / 01 / 2023
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Unit Price:</b> 400
+                          <b>{t('farmerTransactionsText11')}</b> 400
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Quantity Order:</b> 2
+                          <b>{t('farmerTransactionsText12')}</b> 2
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Total Amount:</b> 800
+                          <b>{t('farmerTransactionsText13')}</b> 800
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Status:</b> Completed
+                          <b>{t('farmerTransactionsText14')}</b> Completed
                       </div>
                       </div>
                      
@@ -94,32 +100,32 @@ const FarmerCommunityForumComponent = () => {
                   <div className="farmerTransactionsCompletedComponentFrameGroup">
                     <div className="farmerTransactionsCompletedComponentFrameContainer">
                       <div className="farmerTransactionsCompletedComponentSubText1Wrapper">
-                        <b className="farmerTransactionsCompletedComponentSubText1">Corn</b>
+                        <b className="farmerTransactionsCompletedComponentSubText1">{t('farmerTransactionsText17')}</b>
                       </div>
                       <div className="farmerTransactionsCompletedComponentSubText2Wrapper2">
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>User ID:</b> B007
+                          <b>{t('farmerTransactionsText7')}</b> B007
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Item ID:</b> N007
+                          <b>{t('farmerTransactionsText8')}</b> N007
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Buyer Name:</b> Jenkins Mesina
+                          <b>{t('farmerTransactionsText9')}</b> Jenkins Mesina
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Date Ordered:</b> 02 / 01 / 2023
+                          <b>{t('farmerTransactionsText10')}</b> 02 / 01 / 2023
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Unit Price:</b> 400
+                          <b>{t('farmerTransactionsText11')}</b> 400
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Quantity Order:</b> 2
+                          <b>{t('farmerTransactionsText12')}</b> 2
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Total Amount:</b> 800
+                          <b>{t('farmerTransactionsText13')}</b> 800
                       </div>
                         <div className="farmerTransactionsCompletedComponentSubText2">
-                          <b>Status:</b> Completed
+                          <b>{t('farmerTransactionsText14')}</b> Completed
                       </div>
                       </div>
                      
@@ -154,6 +160,7 @@ const FarmerCommunityForumComponent = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
 
   );
 };

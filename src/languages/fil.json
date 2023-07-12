@@ -102,21 +102,26 @@
     "farmerPageButton6": "Hindi",
     "farmerPageButton7": "Sumulat ng post",
     "farmerPageButton8": "I-post",
+    "farmerPageButton9": "I-like",
+    "farmerPageButton10": "Magdagdag ng pananim",
+    "farmerPageButton11": "Anihin",
+    "farmerPageButton12": "Idagdag",
+    "farmerPageButton13": "I-update",
 
     "farmerPageEditText1": "I-edit ang iyong produkto",
     "farmerPageEditText2": "Pangalan ng Produkto",
-    "farmerPageEditText3": "Ilagay ang bagong pangalan ng produkto",
+    "farmerPageEditText3": "Ilagay ang pangalan ng produkto",
     "farmerPageEditText4": "Presyo",
-    "farmerPageEditText5": "Ilagay ang bagong presyo",
+    "farmerPageEditText5": "Ilagay ang presyo",
     "farmerPageEditText6": "Kategorya",
-    "farmerPageEditText7": "Ilagay ang bagong kategorya",
+    "farmerPageEditText7": "Ilagay ang kategorya",
     "farmerPageEditText8": "Kilogram per yunit",
-    "farmerPageEditText9": "Ilagay ang bagong kilogram",
+    "farmerPageEditText9": "Ilagay ang  kilogram",
     "farmerPageEditText10": "Pakete",
-    "farmerPageEditText11": "Ilagay ang bagong pakete",
-    "farmerPageEditText12": "I-upload ang iyong bagong litrato",
+    "farmerPageEditText11": "Ilagay ang pakete",
+    "farmerPageEditText12": "I-upload ang iyong litrato",
     "farmerPageEditText13": "Deskripsyon",
-    "farmerPageEditText14": "Ilagay ang bagong deskripsyon",
+    "farmerPageEditText14": "Ilagay ang deskripsyon",
 
     "farmerPageDeleteText1": "Burahin itong produkto",
     "farmerPageDeleteText2": "Sigurado ka bang gusto mo itong burahin?",
@@ -125,15 +130,87 @@
      
     "farmerCommunityText1": "Pagtatalakay ng Komunidad",
     "farmerCommunityText2": "Anong SRP ng Sibuyas?",
-    "farmerCommunityText2": "Anong SRP ng Sibuyas?",
+    "farmerCommunityText3": "Ang Shortage Risk Premium (SRP) ng mga sibuyas ay tumutukoy sa karagdagang gastos o pagtaas ng presyo na ipinapataw sa mga sibuyas dahil...",
+    "farmerCommunityText4": "Paano lumaki ang mais?",
+    "farmerCommunityText5": "Ang proseso ng pagtatanim ng mais ay nag-uumpisa sa paghanda ng lupa. Ang lupa ay dapat maging malambot at mayaman sa sustansiya...",
+    "farmerCommunityText6": "Paano Magtanim ng palay?",
+    "farmerCommunityText7": "Ang bigas ay hindi isang halamang tanim, kundi ang bunga ng palay na isang halamang butil. Narito ang mga pangunahing hakbang sa pagtatanim ng...",
+    "farmerCommunityText8": "Tumatagal ba ang kalabasa?",
+    "farmerCommunityText9": "Ang kalabasa ay isang uri ng gulay na karaniwang tumatagal ng ilang buwan pagkatapos ito ay mahinog. Ang pangmatagalang pagtagalng...",
+
+    "farmerCommunityPostText1": "Ano ang SRP ng Sibuyas?",
+    "farmerCommunityPostText2": "Pinost ni: ",
+    "farmerCommunityPostText3": "Ang Shortage Risk Premium (SRP) ng mga sibuyas ay tumutukoy sa karagdagang gastos o pagtaas ng presyo na ipinapataw sa mga sibuyas dahil sa posibleng kakulangan o limitadong availability ng produkto. Ang SRP ay nagpapakita ng inaasahang pagbaba ng suplay ng sibuyas sa merkado, na karaniwang sanhi ng mga salik tulad ng masamang kondisyon ng panahon, kalamidad, mga peste, o mga hadlang sa produksyon o distribusyon ng sibuyas.",
+    "farmerCommunityPostText4": "24 na tao ang nag like nito.",
+    "farmerCommunityPostText5": "Mag-komento",
+    "farmerCommunityPostText6": "Mga Komento",
+    "farmerCommunityPostText7": "Pinag iisipan ko to ng matagal na salamat sa pag post",
+    "farmerCommunityPostText8": "Ganun pala yun? ang galing.",
+    "farmerCommunityPostText9": "Iba Pang Post",    
+    
 
     "farmerCommunityAddPostText1": "Sumulat ng Post",
     "farmerCommunityAddPostText2": "Pangalan ng post",
     "farmerCommunityAddPostText3": "Ilagay ang pangalan ng post",
     "farmerCommunityAddPostText4": "I-upload ang imahe ng post",
     "farmerCommunityAddPostText5": "Deskripsyon",
-    "farmerCommunityAddPostText6": "Ilagay ang deskripsyon"
+    "farmerCommunityAddPostText6": "Ilagay ang deskripsyon",
     
+    "farmerCropTrackerText1": "Mga Tanim",
+    "farmerCropTrackerText2": "Ang iyong imbentaryo",
+    "farmerCropTrackerText3": "Pakita: ",
+    "farmerCropTrackerText4": "Mag-search",
+    "farmerCropTrackerText5": "Sibuyas",
+    "farmerCropTrackerText6": "Mais",
+    "farmerCropTrackerText7": "Sitaw",
+    "farmerCropTrackerText8": "Petsa ng pagtatanim: ",
+    "farmerCropTrackerText9": "Inaasahang petsa ng pag-aani: ",
+    "farmerCropTrackerText10": "Kalagayan: ",
+    "farmerCropTrackerText11": "Bigas ",
+    "farmerCropTrackerText12": "Kamatis ",
+    "farmerCropTrackerText13": "Bilang: ",
+    
+    "farmerCropTrackerAddText1": "Idagdag ang produkto ",
+    "farmerCropTrackerAddText2": "Magdagdag ng pananim ",
+    "farmerCropTrackerAddText3": "Pangalan ng Pananim ",
+    "farmerCropTrackerAddText4": "Ilagay ang pangalan ng pananim ",
+    "farmerCropTrackerAddText5": "Petsa ng Pagtanim ",
+    "farmerCropTrackerAddText6": "Inaasahang petsa ng pag-ani ",
+    "farmerCropTrackerAddText7": "Kalagayan ",
+    "farmerCropTrackerAddText8": "Ilagay ang Kalagayan ",
+ 
+
+    "farmerCropTrackerNavigationText1": "Mga ani" ,
+    "farmerCropTrackerNavigationText2": "Mga na-ani " ,
+
+    "farmerTransactionsNavigationText1": "Hinihintay" ,
+    "farmerTransactionsNavigationText2": "Kinansela " ,
+    "farmerTransactionsNavigationText3": "Mga Tapos " ,
+
+    "farmerTransactionsText1": "Transaksyon",
+    "farmerTransactionsText2": "Ang iyong transaksyon",
+    "farmerTransactionsText3": "Pakita: ",
+    "farmerTransactionsText4": "Mag-search",
+    "farmerTransactionsText5": "Sitaw",
+    "farmerTransactionsText6": "Kamatis",
+    "farmerTransactionsText7": "ID ng User: ",
+    "farmerTransactionsText8": "ID ng Item: ",
+    "farmerTransactionsText9": "Pangalan ng Bumili: ",
+    "farmerTransactionsText10": "Petsa ng Pag-Order: ",
+    "farmerTransactionsText11": "Presyo kada Yunit: ",
+    "farmerTransactionsText12": "Dami ng Pag-order: ",
+    "farmerTransactionsText13": "Kabuuang Halaga: ",
+    "farmerTransactionsText14": "Kalagayan: ",
+    "farmerTransactionsText15": "Sibuyas",
+    "farmerTransactionsText16": "Kalabasa",
+    "farmerTransactionsText17": "Mais"
+
+
+
+   
+
+
+   
     
 
 

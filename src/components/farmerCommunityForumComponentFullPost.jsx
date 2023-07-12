@@ -6,9 +6,14 @@ import RiceVector from '../img/riceCardImage.png';
 import SquashVector from '../img/squash.png';
 import { FaThumbsUp } from 'react-icons/fa';
 import FarmerTopNav from '../components/farmerTopNav';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 const FarmerMarketplace = () => {
+  const { t } = useTranslation();
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="farmerCommunityForumComponentFullPost">
         <FarmerNavigation />      
       <div className="farmerCommunityForumComponentFullPostMainPanel">
@@ -16,7 +21,7 @@ const FarmerMarketplace = () => {
         <div className="farmerCommunityForumComponentFullPostTopSection">
           <div className="farmerCommunityForumComponentFullPostMainTextContainer">
             <b className="farmerCommunityForumComponentFullPostMainText1">              
-              <p className="farmerCommunityForumComponentFullPostBlankLine">Community Forum</p>
+              <p className="farmerCommunityForumComponentFullPostBlankLine">{t('farmerCommunityText1')}</p>
             </b>
           </div>
         </div>
@@ -34,39 +39,36 @@ const FarmerMarketplace = () => {
                 <div className="farmerCommunityForumComponentFullPostSmallCardsContent">
                   <div className="farmerCommunityForumComponentFullPostSmallCardsHeading">
                     <div className="farmerCommunityForumComponentFullPostSmallCardsDetails">
-                      <b className="farmerCommunityForumComponentFullPostSmallCardsMainText">What is the SRP of Onions?</b>
-                      <b className="farmerCommunityForumComponentFullPostSmallCardsDescription1">Posted by: Jenkins Mesina</b>
+                      <b className="farmerCommunityForumComponentFullPostSmallCardsMainText">{t('farmerCommunityPostText1')}</b>
+                      <b className="farmerCommunityForumComponentFullPostSmallCardsDescription1">{t('farmerCommunityPostText2')} Jenkins Mesina</b>
                     </div>
                     <div className="farmerCommunityForumComponentFullPostSmallCardsDescriptionWrapper">
                       <div className="farmerCommunityForumComponentFullPostSmallCardsFullDescription">
-                      The Shortage Risk Premium (SRP) of onions refers to an additional cost or price increase imposed on onions due to the potential 
-                      scarcity or limited availability of the commodity. The SRP reflects the market's anticipation of reduced onion supply, 
-                      often caused by factors such as adverse weather conditions, natural disasters, pests, or disruptions in the onion production 
-                      or distribution chain.
+                      {t('farmerCommunityPostText3')}
                       </div>
                     </div>
-                    <b className="farmerCommunityForumComponentFullPostSmallCardsDescription2">24 people liked this post.</b>
+                    <b className="farmerCommunityForumComponentFullPostSmallCardsDescription2">{t('farmerCommunityPostText4')}</b>
                     <button className="farmerCommunityForumComponentFullPostButton">
                         <FaThumbsUp className="farmerCommunityForumComponentFullPostButtonIcon" />
-                        <div className="farmerCommunityForumComponentFullPostButtonText">Like</div>
+                        <div className="farmerCommunityForumComponentFullPostButtonText">{t('farmerPageButton9')}</div>
                     </button>
                   </div>
                   <input
                     className="farmerCommunityForumComponentFullPostCommentInput"
                     type="text"
-                    placeholder="Comment Here"
+                    placeholder={t('farmerCommunityPostText5')}
                   />
                   <div className="farmerCommunityForumComponentFullPostSmallCardsDescriptionWrapper">
                     <div className="farmerCommunityForumComponentFullPostSmallCardsFullDescription">
                       <p className="farmerCommunityForumComponentFullPostBlankLine">
-                        <b>Comments:</b>
+                        <b>{t('farmerCommunityPostText6')}</b>
                       </p>
                       <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>&nbsp;</b>
                       </p>
                       <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>{`Ryan Edward Amador: `}</b>
-                        <span>{`I've been thinking about this for a very long time, thanks for making this as a topic. `}</span>
+                        <span>{t('farmerCommunityPostText7')}</span>
                       </p>
                       <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>&nbsp;</b>
@@ -74,7 +76,7 @@ const FarmerMarketplace = () => {
                       <p className="farmerCommunityForumComponentFullPostBlankLine">
                         <b>{`Marievic Anes: `}</b>
                         <span>
-                         Ohhhh, That's nice to read that srp of onions is going down
+                        {t('farmerCommunityPostText8')}
                         </span>
                       </p>
                     </div>
@@ -85,7 +87,7 @@ const FarmerMarketplace = () => {
           </div>
         </div>
         <div className="farmerCommunityForumComponentFullPostNewCard">
-          <div className="farmerCommunityForumComponentFullPostNewCardMainText">Other Posts</div>
+          <div className="farmerCommunityForumComponentFullPostNewCardMainText">{t('farmerCommunityPostText9')}</div>
           <div className="farmerCommunityForumComponentFullPostNewCardText">
             <button className="farmerCommunityForumComponentFullPostNewCardButton">
               <img
@@ -96,7 +98,7 @@ const FarmerMarketplace = () => {
               <div className="farmerCommunityForumComponentFullPostNewCardDetails">
                 <div className="farmerCommunityForumComponentFullPostNewCardInner">
                   <div className="farmerCommunityForumComponentFullPostNewCardTitleWrapper">
-                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">How Corn Grows?</div>
+                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">{t('farmerCommunityText4')}</div>
                   </div>
                 </div>
               </div>
@@ -111,7 +113,7 @@ const FarmerMarketplace = () => {
               <div className="farmerCommunityForumComponentFullPostNewCardDetails">
                 <div className="farmerCommunityForumComponentFullPostNewCardInner">
                   <div className="farmerCommunityForumComponentFullPostNewCardTitleWrapper">
-                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">How to plant rice efficiently?</div>
+                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">{t('farmerCommunityText6')}</div>
                   </div>
                 </div>
               </div>
@@ -126,7 +128,7 @@ const FarmerMarketplace = () => {
               <div className="farmerCommunityForumComponentFullPostNewCardDetails">
                 <div className="farmerCommunityForumComponentFullPostNewCardInner">
                   <div className="farmerCommunityForumComponentFullPostNewCardTitleWrapper">
-                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">Can squash survive summer?</div>
+                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">{t('farmerCommunityText8')}</div>
                   </div>
                 </div>
               </div>
@@ -136,6 +138,7 @@ const FarmerMarketplace = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
   );
 };
 

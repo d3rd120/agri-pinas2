@@ -1,52 +1,59 @@
 import '../css/Components/farmerCropTrackerComponentAdd.css';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 
 
-const farmerCropTrackerComponentAdd  = () =>  {
+
+const FarmerCropTrackerComponentAdd  = () =>  {
+  const { t } = useTranslation();
     return (
+      <I18nextProvider i18n={i18n}> 
         <div className="farmerCropTrackerComponentAdd">
-          <div className="farmerCropTrackerComponentAddMainText">Add Crop</div>
+          <div className="farmerCropTrackerComponentAddMainText">{t('farmerCropTrackerAddText2')}</div>
           <div className="farmerCropTrackerComponentAddFrameParent">
             <div className="farmerCropTrackerComponentAddFrameGroup">
               <div className="farmerCropTrackerComponentAddInputParent">
-                <div className="farmerCropTrackerComponentAddTitle">Crop Name</div>
+                <div className="farmerCropTrackerComponentAddTitle">{t('farmerCropTrackerAddText3')}</div>
                 <input
                   className="farmerCropTrackerComponentAddInput1"
                   type="text"
-                  placeholder="Enter your crop name"
+                  placeholder={t('farmerCropTrackerAddText4')}
                 />
               </div>   
-              <div className="farmerCropTrackerComponentAddTitle">Date Planted</div>
+              <div className="farmerCropTrackerComponentAddTitle">{t('farmerCropTrackerAddText5')}</div>
                 <input
                   className="farmerCropTrackerComponentAddInput1"
                   type="date"
                   placeholder="Enter your date planted"
                 />
-                <div className="farmerCropTrackerComponentAddTitle">Estimated Date to Harvest</div>
+                <div className="farmerCropTrackerComponentAddTitle">{t('farmerCropTrackerAddText6')}</div>
                 <input
                   className="farmerCropTrackerComponentAddInput1"
                   type="date"
                   placeholder="Enter your estimated date to harvest"
                 />
-                <div className="farmerCropTrackerComponentAddTitle">Status</div>
+                <div className="farmerCropTrackerComponentAddTitle">{t('farmerCropTrackerAddText7')}</div>
                 <input
                   className="farmerCropTrackerComponentAddInput1"
                   type="text"
-                  placeholder="Enter your status"
+                  placeholder={t('farmerCropTrackerAddText8')}
                 />                         
               
               <button className="farmerCropTrackerComponentAddButton">
-                <div className="farmerCropTrackerComponentAddButtonText">Add</div>
+                <div className="farmerCropTrackerComponentAddButtonText">{t('farmerPageButton12')}</div>
               </button>
               <div className="farmerCropTrackerComponentAddFormChild" />
             </div>        
           </div>     
         </div>
+        </I18nextProvider>
       );
       
 };
 
 
-export default farmerCropTrackerComponentAdd;
+export default FarmerCropTrackerComponentAdd;
 
 

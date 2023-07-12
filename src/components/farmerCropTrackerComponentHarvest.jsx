@@ -10,8 +10,14 @@ import SiliVector from '../img/sili.png';
 import {FaEdit, FaTrash,FaFolderOpen,FaHandHoldingMedical, FaPlus, FaTimes} from 'react-icons/fa';
 import FarmerCropTrackerAdd from '../components/farmerCropTrackerComponentAdd';
 import React, { useState } from 'react';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 const FarmerCommunityForumComponent = () => {
+  const { t } = useTranslation();
+
 
   const [showPopup, setShowPopup] = useState(false);
 
@@ -25,6 +31,7 @@ const FarmerCommunityForumComponent = () => {
 
  
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="farmerCropTrackerComponentHarvest">
       <FarmerNavigation />
       <div className="farmerCropTrackerComponentHarvestMainPanel">
@@ -32,7 +39,7 @@ const FarmerCommunityForumComponent = () => {
         <div className="farmerCropTrackerComponentHarvestTopSection">
           <div className="farmerCropTrackerComponentHarvestMainText">
             <b className="farmerCropTrackerComponentHarvestMainTextWrapper">          
-              <p className="farmerCropTrackerComponentHarvestBlankLine">Crop Tracker</p>
+              <p className="farmerCropTrackerComponentHarvestBlankLine">{t('farmerCropTrackerText1')}</p>
             </b>
           </div>
         </div>    
@@ -53,10 +60,10 @@ const FarmerCommunityForumComponent = () => {
 
         
         <div className="farmerCropTrackerComponentHarvestCard">
-            <div className="farmerCropTrackerComponentHarvestSubTitle"><FaFolderOpen /> Your Inventory
+            <div className="farmerCropTrackerComponentHarvestSubTitle"><FaFolderOpen /> {t('farmerCropTrackerText2')}
             </div>
             <br></br>
-           <div className = "farmerCropTrackerComponentHarvestShow">Show:   
+           <div className = "farmerCropTrackerComponentHarvestShow">{t('farmerCropTrackerText3')}   
            <select className="farmerCropTrackerComponentHarvestRowSelect" onchange="updateRows(this.value)">
                    <option value="5">5</option>
                    <option value="10">10</option>
@@ -66,10 +73,10 @@ const FarmerCommunityForumComponent = () => {
             <input 
             className="farmerCropTrackerComponentHarvestRowSelect"
             type = "text"
-            placeholder = "Search">                    
+            placeholder = {t('farmerCropTrackerText4')}>                    
             </input>    
             <button className="farmerCropTrackerComponentHarvestRowSelect2" onClick={handleButtonClick}>         
-          <div className="farmerCropTrackerComponentButtonText1">Add Crop</div>
+          <div className="farmerCropTrackerComponentButtonText1">{t('farmerPageButton10')}</div>
            </button>     
             
             </div> 
@@ -87,17 +94,17 @@ const FarmerCommunityForumComponent = () => {
                 <div className="farmerCropTrackerComponentHarvestFrameGroup">
                   <div className="farmerCropTrackerComponentHarvestFrameContainer">
                     <div className="farmerCropTrackerComponentHarvestSubText1Wrapper">
-                      <b className="farmerCropTrackerComponentHarvestSubText1">Onions</b>
+                      <b className="farmerCropTrackerComponentHarvestSubText1">{t('farmerCropTrackerText5')}</b>
                     </div>
                     <div className="farmerCropTrackerComponentHarvestSubText2Wrapper2">                     
                       <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Date Planted:</b> 01 / 03 / 2023
+                       <b>{t('farmerCropTrackerText8')}</b> 01 / 03 / 2023
                       </div>
                       <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Estimated Date to Harvest:</b> 02 / 05 / 2023
+                       <b>{t('farmerCropTrackerText9')}</b> 02 / 05 / 2023
                       </div>
                       <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Status:</b> Ready to Harvest
+                       <b>{t('farmerCropTrackerText10')}</b> Ready to Harvest
                       </div>
                     </div>
                   </div>
@@ -105,15 +112,15 @@ const FarmerCommunityForumComponent = () => {
                   <div className="farmerCropTrackerComponentHarvestDetails">
                   <button className="farmerCropTrackerComponentHarvestButton">
                     <FaHandHoldingMedical className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Harvest</div>
+                    <div className="farmerCropTrackerComponentHarvestButtonText">{t('farmerPageButton11')}</div>
                   </button>
                   <button className="farmerCropTrackerComponentHarvestButton">
                     <FaEdit className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Edit</div>
+                    <div className="farmerCropTrackerComponentHarvestButtonText">{t('farmerPageButton1')}</div>
                   </button>
                   <button className="farmerCropTrackerComponentHarvestButton">
                     <FaTrash className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Delete</div>
+                    <div className="farmerCropTrackerComponentHarvestButtonText">{t('farmerPageButton2')}</div>
                   </button>
                 </div>         
                 </div>
@@ -123,17 +130,17 @@ const FarmerCommunityForumComponent = () => {
                 <div className="farmerCropTrackerComponentHarvestFrameGroup">
                   <div className="farmerCropTrackerComponentHarvestFrameContainer">
                     <div className="farmerCropTrackerComponentHarvestSubText1Wrapper">
-                      <b className="farmerCropTrackerComponentHarvestSubText1">Corn</b>
+                      <b className="farmerCropTrackerComponentHarvestSubText1">{t('farmerCropTrackerText6')}</b>
                     </div>
                     <div className="farmerCropTrackerComponentHarvestSubText2Wrapper2">
                     <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Date Planted:</b> 02 / 05 / 2023
+                       <b>{t('farmerCropTrackerText8')}</b> 02 / 05 / 2023
                       </div>
                       <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Estimated Date to Harvest:</b> 05 / 02 / 2023
+                       <b>{t('farmerCropTrackerText9')}</b> 05 / 02 / 2023
                       </div>
                       <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Status:</b> Delayed
+                       <b>{t('farmerCropTrackerText10')}</b> Delayed
                       </div>
                     </div>
                   </div>
@@ -141,15 +148,15 @@ const FarmerCommunityForumComponent = () => {
                   <div className="farmerCropTrackerComponentHarvestDetails">
                   <button className="farmerCropTrackerComponentHarvestButton">
                     <FaHandHoldingMedical className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Harvest</div>
+                    <div className="farmerCropTrackerComponentHarvestButtonText">{t('farmerPageButton11')}</div>
                   </button>
                   <button className="farmerCropTrackerComponentHarvestButton">
                     <FaEdit className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Edit</div>
+                    <div className="farmerCropTrackerComponentHarvestButtonText">{t('farmerPageButton1')}</div>
                   </button>
                   <button className="farmerCropTrackerComponentHarvestButton">
                     <FaTrash className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Delete</div>
+                    <div className="farmerCropTrackerComponentHarvestButtonText">{t('farmerPageButton2')}</div>
                   </button>
                 </div>         
                 </div>
@@ -163,17 +170,17 @@ const FarmerCommunityForumComponent = () => {
                 <div className="farmerCropTrackerComponentHarvestFrameGroup">
                   <div className="farmerCropTrackerComponentHarvestFrameContainer">
                     <div className="farmerCropTrackerComponentHarvestSubText1Wrapper">
-                      <b className="farmerCropTrackerComponentHarvestSubText1">Sitaw</b>
+                      <b className="farmerCropTrackerComponentHarvestSubText1">{t('farmerCropTrackerText7')}</b>
                     </div>
                     <div className="farmerCropTrackerComponentHarvestSubText2Wrapper2">
                     <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Date Planted:</b> 02 / 05 / 2023
+                       <b>{t('farmerCropTrackerText8')}</b> 02 / 05 / 2023
                       </div>
                       <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Estimated Date to Harvest:</b> 05 / 02 / 2023
+                       <b>{t('farmerCropTrackerText9')}</b> 05 / 02 / 2023
                       </div>
                       <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Status:</b> Delayed
+                       <b>{t('farmerCropTrackerText10')}</b> Delayed
                       </div>
                     </div>
                   </div>
@@ -181,99 +188,24 @@ const FarmerCommunityForumComponent = () => {
                   <div className="farmerCropTrackerComponentHarvestDetails">
                   <button className="farmerCropTrackerComponentHarvestButton">
                     <FaHandHoldingMedical className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Harvest</div>
+                    <div className="farmerCropTrackerComponentHarvestButtonText">{t('farmerPageButton11')}</div>
                   </button>
                   <button className="farmerCropTrackerComponentHarvestButton">
                     <FaEdit className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Edit</div>
+                    <div className="farmerCropTrackerComponentHarvestButtonText">{t('farmerPageButton1')}</div>
                   </button>
                   <button className="farmerCropTrackerComponentHarvestButton">
                     <FaTrash className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Delete</div>
+                    <div className="farmerCropTrackerComponentHarvestButtonText">{t('farmerPageButton2')}</div>
                   </button>
                 </div>         
                 </div>
               </a> 
-              <a className="farmerCropTrackerComponentHarvestRectangleParent">
-              
-                <div className="farmerCropTrackerComponentHarvestFrameGroup">
-                  <div className="farmerCropTrackerComponentHarvestFrameContainer">
-                    <div className="farmerCropTrackerComponentHarvestSubText1Wrapper">
-                      <b className="farmerCropTrackerComponentHarvestSubText1">Siling Labuyo</b>
-                    </div>
-                    <div className="farmerCropTrackerComponentHarvestSubText2Wrapper2">
-                    <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Date Planted:</b> 01 / 03 / 2023
-                      </div>
-                      <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Estimated Date to Harvest:</b> 02 / 05 / 2023
-                      </div>
-                      <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Status:</b> Ready to Harvest
-                      </div>
-                    </div>
-                  </div>
-                  <div className="farmerCropTrackerComponentHarvestFrameItem" />
-                  <div className="farmerCropTrackerComponentHarvestDetails">
-                  <button className="farmerCropTrackerComponentHarvestButton">
-                    <FaHandHoldingMedical className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Harvest</div>
-                  </button>
-                  <button className="farmerCropTrackerComponentHarvestButton">
-                    <FaEdit className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Edit</div>
-                  </button>
-                  <button className="farmerCropTrackerComponentHarvestButton">
-                    <FaTrash className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Delete</div>
-                  </button>
-                </div>         
-                </div>
+              <a className="farmerCropTrackerComponentHarvestRectangleParent">              
+                
               </a>  
-            </div>
+            </div>          
            
-            <div className="farmerCropTrackerComponentHarvestFrameWrapper">
-              <a className="farmerCropTrackerComponentHarvestRectangleParent">
-              
-                <div className="farmerCropTrackerComponentHarvestFrameGroup">
-                  <div className="farmerCropTrackerComponentHarvestFrameContainer">
-                    <div className="farmerCropTrackerComponentHarvestSubText1Wrapper">
-                      <b className="farmerCropTrackerComponentHarvestSubText1">Squash</b>
-                    </div>
-                    <div className="farmerCropTrackerComponentHarvestSubText2Wrapper2">
-                    <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Date Planted:</b> 01 / 03 / 2023
-                      </div>
-                      <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Estimated Date to Harvest:</b> 02 / 05 / 2023
-                      </div>
-                      <div className="farmerCropTrackerComponentHarvestSubText2">
-                       <b>Status:</b> Ready to Harvest
-                      </div>
-                    </div>
-                  </div>
-                  <div className="farmerCropTrackerComponentHarvestFrameItem" />
-                  <div className="farmerCropTrackerComponentHarvestDetails">
-                  <button className="farmerCropTrackerComponentHarvestButton">
-                    <FaHandHoldingMedical className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Harvest</div>
-                  </button>
-                  <button className="farmerCropTrackerComponentHarvestButton">
-                    <FaEdit className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Edit</div>
-                  </button>
-                  <button className="farmerCropTrackerComponentHarvestButton">
-                    <FaTrash className="farmerCropTrackerComponentHarvestButtonIcon" />
-                    <div className="farmerCropTrackerComponentHarvestButtonText">Delete</div>
-                  </button>
-                </div>         
-                </div>
-              </a>               
-              <a className="farmerCropTrackerComponentHarvestRectangleParent">                
-              </a>         
-         
-            </div>
-         
 
             <div className="farmerCropTrackerComponentHarvestForumNumber">
               <div className="farmerCropTrackerComponentHarvestForumContainer">
@@ -300,6 +232,7 @@ const FarmerCommunityForumComponent = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
 
   );
 };
