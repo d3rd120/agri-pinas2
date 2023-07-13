@@ -97,7 +97,7 @@
     "farmerPageButton1": "I-edit",
     "farmerPageButton2": "Burahin",
     "farmerPageButton3": "I-save",
-    "farmerPageButton4": "I-kansela",
+    "farmerPageButton4": "Kansela",
     "farmerPageButton5": "Oo",
     "farmerPageButton6": "Hindi",
     "farmerPageButton7": "Sumulat ng post",
@@ -107,6 +107,12 @@
     "farmerPageButton11": "Anihin",
     "farmerPageButton12": "Idagdag",
     "farmerPageButton13": "I-update",
+    "farmerPageButton14": "I-chat",
+    "farmerPageButton15": "I-add sa cart",
+    "farmerPageButton16": "Bilhin na",
+    "farmerPageButton17": "I-checkout",
+    "farmerPageButton18": "Magdagdag",
+   
 
     "farmerPageEditText1": "I-edit ang iyong produkto",
     "farmerPageEditText2": "Pangalan ng Produkto",
@@ -127,6 +133,8 @@
     "farmerPageDeleteText2": "Sigurado ka bang gusto mo itong burahin?",
 
     "farmerPagePostText1": "Iyong Ibang Produkto",
+
+    "farmerPageDashboardText1": "Maligayang Pagdating, Magsasaka",
      
     "farmerCommunityText1": "Pagtatalakay ng Komunidad",
     "farmerCommunityText2": "Anong SRP ng Sibuyas?",
@@ -203,7 +211,135 @@
     "farmerTransactionsText14": "Kalagayan: ",
     "farmerTransactionsText15": "Sibuyas",
     "farmerTransactionsText16": "Kalabasa",
-    "farmerTransactionsText17": "Mais"
+    "farmerTransactionsText17": "Mais",
+
+    "farmerTopNavText1": "Notipikasyon",
+    "farmerTopNavText2": "Mayroon kang bagong mensahe.",
+    "farmerTopNavText3": "2 oras nakalipas",
+    "farmerTopNavText4": "May mga bagong deals na available.",
+    "farmerTopNavText5": "3 araw nakalipas",
+    "farmerTopNavText6": "Mga Mensahe",
+    "farmerTopNavText7": "Mayroon kang bagong mensahe.",
+    "farmerTopNavText8": "Mayroon kang bagong mensahe.",
+    "farmerTopNavText9": "Lahat ng mensahe",
+
+    "farmerProfileText1": "I-edit ang Profil",
+    "farmerProfileText2": "Aking Akawnt",
+    "farmerProfileText3": "Profil",
+    "farmerProfileText4": "Mga Address",
+    "farmerProfileText5": "Mag-Logout",
+    "farmerProfileText6": "I-edit ang iyong Profil",
+    "farmerProfileText7": "Pumili ng Imahe",
+    "farmerProfileText8": "Buong Pangalan",
+    "farmerProfileText9": "Ilagay ang iyong buong pangalan",
+    "farmerProfileText10": "Numero ng Telepono",
+    "farmerProfileText11": "Ilagay ang iyong numero ng telepono",
+    "farmerProfileText12": "Email",
+    "farmerProfileText13": "Ilagay ang iyong email",
+    "farmerProfileText14": "Araw ng kapanganakan",
+    "farmerProfileText15": "Ilagay ang iyong araw ng kapanganakan",
+    "farmerProfileText16": "Aking Profil",
+    "farmerProfileText17": "I-manage at protektahan ang iyong akawnt",
+    "farmerProfileText18": "Pangalan",
+    "farmerProfileText19": "Role",
+    "farmerProfileText20": "Magsasaka",
+    "farmerProfileText21": "Email",
+    "farmerProfileText22": "Araw ng kapanganakan",
+    "farmerProfileText23": "Number ng telepono",
+    "farmerProfileText24": "Mga Address",
+    "farmerProfileText25": "Address",
+    "farmerProfileText26": "I-edit ang iyong Address",
+    "farmerProfileText27": "Buong Pangalan",
+    "farmerProfileText28": "Ilagay ang iyong buong pangalan",
+    "farmerProfileText29": "Number ng Telepono",
+    "farmerProfileText30": "Ilagay ang iyong number ng telepono",
+    "farmerProfileText31": "Barangay",
+    "farmerProfileText32": "Ilagay ang iyong barangay",
+    "farmerProfileText33": "Address",
+    "farmerProfileText34": "Ilagay ang iyong address",
+    "farmerProfileText35": "I-set bilang pangkaraniwan na address",
+    "farmerProfileText36": "I-delete itong address?",
+   
+
+    
+    
+    
+    "buyerPageNavigationText1": "Pamilihan",
+    "buyerPageNavigationText2": "Cart",
+    "buyerPageNavigationText3": "Transaksyon",
+    "buyerPageNavigationText4": "Komunidad",
+
+    "buyerPageCategory": "Kategorya: ",
+    "buyerPageCategoryText1": "Prutas",
+    "buyerPageCategoryText2": "Gulay",
+    "buyerPageCategoryText3": "Butil",
+
+    "buyerPagePackaging": "Pakete: ",
+    "buyerPagePackagingText1": "Sako",
+
+    "buyerPagePrice": "Presyo: ",
+
+    "buyerPageKilogram": "Kilogram bawat yunit: ",
+
+    "buyerPagePopup": "Naidagdag na ito sa iyong cart ",
+
+    "buyerPageDescription": "Deskripsyon: ",
+    "buyerPageDescriptionText1": "Binebenta ko ang produktong ito sa wholesale. I-chat mo ako... ",
+    "buyerPageDescriptionText2": "Binebenta ko ang produktong ito sa wholesale. I-chat mo ako kung mayroon kang katanungan tungkol sa produktong ito. ",
+    "buyerPageDescriptionText3": "Sa Parehong Pamilihan",
+    "buyerPageDescriptionText4": "Kamatis",
+    "buyerPageDescriptionText5": "Sibuyas",
+    "buyerPageDescriptionText6": "Talong",
+
+    
+    "buyerPageUserRole": "Magsasaka",
+    "buyerPageUserRole2": "Magsasaka: ",
+
+    "buyerCartText1": "Ang iyong cart",
+    "buyerCartText2": "Produkto",
+    "buyerCartText3": "Presyo",
+    "buyerCartText4": "Bilang",
+    "buyerCartText5": "Buong Presyo",
+    "buyerCartText6": "Aksyon",
+    "buyerCartText7": "Magsasaka",
+    "buyerCartText8": "Mais",
+    "buyerCartText9": "Kategorya",
+    "buyerCartText10": "Pakete",
+    "buyerCartText11": "Iba Pang Produkto",
+    "buyerCartText12": "Kamatis",
+    "buyerCartText13": "Sibuyas",
+    "buyerCartText14": "Palay",
+
+    "buyerTransactionText1": "Transaksyon",
+    "buyerTransactionText2": "Ang iyong Pamimili",
+    "buyerTransactionText3": "Pakita: ",
+    "buyerTransactionText4": "Dating ng 2 Jul 2023",
+    "buyerTransactionText5": "Matanggap",
+    "buyerTransactionText6": "Magsasaka",
+    "buyerTransactionText7": "Mais",
+    "buyerTransactionText8": "Okra",
+    "buyerTransactionText9": "Dumating ng 2 Jul 2023",
+    "buyerTransactionText10": "Dumating",
+    "buyerTransactionText11": "Kinansela",
+    "buyerTransactionText12": "Pakwan",
+    "buyerTransactionText13": "Sibuyas",
+
+
+    "buyerTransactionNavText1": "Dadating",
+    "buyerTransactionNavText2": "Tapos",
+    "buyerTransactionNavText3": "Kinansela",
+
+    "buyerTopNavText1": "Notipikasyon",
+    "buyerTopNavText2": "Mayroon kang bagong mensahe.",
+    "buyerTopNavText3": "2 oras nakalipas",
+    "buyerTopNavText4": "May mga bagong deals na available.",
+    "buyerTopNavText5": "3 araw nakalipas",
+    "buyerTopNavText6": "Mga Mensahe",
+    "buyerTopNavText7": "Mayroon kang bagong mensahe.",
+    "buyerTopNavText8": "Mayroon kang bagong mensahe.",
+    "buyerTopNavText9": "Lahat ng mensahe"
+
+    
 
 
 

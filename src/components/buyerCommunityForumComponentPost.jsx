@@ -1,235 +1,134 @@
-import React, { useState } from 'react';
-import "../css/BuyerPage/buyerCommunityForumPost.css"
-import BuyerNavigation from '../components/buyerNavigation';
+import '../css/Components/farmerCommunityForumComponentFullPost.css';
+import BuyerNavigation from './buyerNavigation';
 import OnionVector from '../img/onionVector.png';
 import CornVector from '../img/cornVector.png';
 import RiceVector from '../img/riceCardImage.png';
-import TomatoVector from '../img/tomatoVector.png';
+import SquashVector from '../img/squash.png';
 import { FaThumbsUp } from 'react-icons/fa';
-import { Modal,  Button } from '@material-ui/core';
 import BuyerTopNav from '../components/buyerTopNav';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
-
-const BuyerCommunityForum = () => {
-  const [openEditModal, setOpenEditModal] = useState(false);
-  const [openDeleteModal, setOpenDeleteModal] = useState(false);
-
-  const handleEditClick = () => {
-    setOpenEditModal(true);
-  };
-
-  const handleDeleteClick = () => {
-    setOpenDeleteModal(true);
-  };
-
-  const handleClose = () => {
-    setOpenEditModal(false);
-    setOpenDeleteModal(false);
-  };
-
-  const handleSave = () => {
-    setOpenEditModal(false);
-  };
-
-  const handleDelete = () => {
-    setOpenDeleteModal(false);
-  };
-
+const FarmerMarketplace = () => {
+  const { t } = useTranslation();
   return (
-      <div className="buyerCommunityForumComponentFullPost">
-          <BuyerNavigation />     
-          <div className="farmerMarketplaceComponentMainPanel">
-        <BuyerTopNav /> 
-        <div className="farmerCommunityForumComponentTopSection">
-          <div className="farmerCommunityForumComponentMainText1">
-            <b className="farmerCommunityForumComponentMainText2">             
-              <p className="farmerCommunityForumComponentBlankLine">&nbsp;</p>
-              <p className="farmerCommunityForumComponentBlankLine">Community Forum</p>
+    <I18nextProvider i18n={i18n}> 
+    <div className="farmerCommunityForumComponentFullPost">
+        <BuyerNavigation />      
+      <div className="farmerCommunityForumComponentFullPostMainPanel">
+        <BuyerTopNav />
+        <div className="farmerCommunityForumComponentFullPostTopSection">
+          <div className="farmerCommunityForumComponentFullPostMainTextContainer">
+            <b className="farmerCommunityForumComponentFullPostMainText1">              
+              <p className="farmerCommunityForumComponentFullPostBlankLine">{t('farmerCommunityText1')}</p>
             </b>
           </div>
         </div>
-          
-          <div className="buyerCommunityForumComponentFullPostMiddleSection">
-            <div className="buyerCommunityForumComponentFullPostCardsContainer">
-              <div className="buyerCommunityForumComponentFullPostCard1">
-                <img
-                  className="buyerCommunityForumComponentFullPostCard1Image"
-                  alt=""
-                  src={OnionVector}
-                />
-              </div>
-              <div className="buyerCommunityForumComponentFullPostSmallCards">
-                <div className="buyerCommunityForumComponentFullPostSmallCardsDescription">
-                <div className="farmerCommunityForumComponentFullPostSmallCardsContent">
-                    <div className="farmerCommunityForumComponentFullPostSmallCardsHeading">
-                    <div class="farmerCommunityForumComponentFullPostSmallCardsDetails">
-  <b class="farmerCommunityForumComponentFullPostSmallCardsMainText">What is the SRP of Onions?</b>
-  <b class="farmerCommunityForumComponentFullPostSmallCardsDescription1">Posted by: Jenkins Mesina</b>
-
-  <div>
-      <div className="popup-menu">
-        <div className="dot"></div>
-        <div className="dot"></div>
-        <div className="dot"></div>
-        <div className="menu">
-          <button className="edit-button" onClick={handleEditClick}>Edit</button>
-          <button className="delete-button" onClick={handleDeleteClick}>Delete</button>
-        </div>
-      </div>
-
-      <Modal open={openEditModal} onClose={handleClose}>
-        <div className="editModal">
-          <h2>Edit your Post</h2>
-          <br />
-          <div className={`farmerMarketplaceEditProductComponentInputParent`}>
-            <div className="farmerMarketplaceEditProductComponentTitle">Post Title</div>
-            <input
-              className={`farmerMarketplaceEditProductComponentInput2`}
-              type="text"
-              placeholder="Enter your post title"
-            />
-          </div>
-          <br></br>
-          <div className={`farmerMarketplaceEditProductComponentInputParent`}>
-            <div className="farmerMarketplaceEditProductComponentTitle">Post Image (Optional)</div>
-            <input
-              className={`farmerMarketplaceEditProductComponentInput2`}
-              type="file"
-            />
+        <div className="farmerCommunityForumComponentFullPostMiddleSection">
+          <div className="farmerCommunityForumComponentFullPostCardsContainer">
+            <div className="farmerCommunityForumComponentFullPostCard1">
+              <img
+                className="farmerCommunityForumComponentFullPostCard1Image"
+                alt=""
+                src={OnionVector}
+              />
             </div>
-            <br></br>
-            <div className="farmerMarketplaceEditProductComponentInputParent">
-  <div className="farmerMarketplaceEditProductComponentTitle">Description</div>
-  <textarea
-    className="farmerMarketplaceEditProductComponentInput2"
-    placeholder="Enter your questions or thoughts"
-  ></textarea>
-</div>
-          <div className="buttonContainer">
-            <Button variant="contained" color="primary" onClick={handleClose} className="cancelButton">
-              Cancel
-            </Button>
-            <Button variant="contained" color="secondary" onClick={handleSave} className="saveButton">
-              Save
-            </Button>
-          </div>
-        </div>
-      </Modal>
-      <Modal open={openDeleteModal} onClose={handleClose}>
-        <div className="deleteModal">
-          <h2>Confirmation</h2>
-          <p>Do you want to delete this post?</p>
-          <div className="buttonContainer1">
-            <Button variant="contained" color="primary" onClick={handleClose} className="cancelButton1">
-              Cancel
-            </Button>
-            <Button variant="contained" color="secondary" onClick={handleDelete} className="deleteButton">
-              Delete
-            </Button>
-          </div>
-        </div>
-      </Modal>
-</div>
-</div>
-             <div className="farmerCommunityForumComponentFullPostSmallCardsDescriptionWrapper">
-                        <div className="farmerCommunityForumComponentFullPostSmallCardsFullDescription1">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor incididunt ut labore et dolore
-                          magna aliqua. Ut enim ad minim veniam, quis nostrud
-                          exercitation ullamco laboris nisi ut aliquip ex ea
-                          commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                          non proident, sunt in culpa qui officia deserunt mollit
-                          anim id est laborum.
-                        </div>
-                      </div>
-                      <b className="farmerCommunityForumComponentFullPostSmallCardsDescription2">24 people liked this post.</b>
-                      <button className="farmerCommunityForumComponentFullPostButton">
-                          <FaThumbsUp className="farmerCommunityForumComponentFullPostButtonIcon" />
-                          <div className="farmerCommunityForumComponentFullPostButtonText">Like</div>
-                      </button>
-                    </div>
-                    <div class="farmerCommunityForumComponentFullPostCommentInputWrapper">
-                     <input
-                         class="farmerCommunityForumComponentFullPostCommentInput"type="text"placeholder="Comment Here"/>
-                       <button class="farmerCommunityForumComponentFullPostCommentInputButton">
-                         <i class="fa fa-arrow-right"></i>
-                        </button>
+            <div className="farmerCommunityForumComponentFullPostSmallCards">
+              <div className="farmerCommunityForumComponentFullPostSmallCardsDescription">
+                <div className="farmerCommunityForumComponentFullPostSmallCardsContent">
+                  <div className="farmerCommunityForumComponentFullPostSmallCardsHeading">
+                    <div className="farmerCommunityForumComponentFullPostSmallCardsDetails">
+                      <b className="farmerCommunityForumComponentFullPostSmallCardsMainText">{t('farmerCommunityPostText1')}</b>
+                      <b className="farmerCommunityForumComponentFullPostSmallCardsDescription1">{t('farmerCommunityPostText2')} Jenkins Mesina</b>
                     </div>
                     <div className="farmerCommunityForumComponentFullPostSmallCardsDescriptionWrapper">
                       <div className="farmerCommunityForumComponentFullPostSmallCardsFullDescription">
-                        <p className="farmerCommunityForumComponentFullPostBlankLine">
-                          <b>Comments:</b>
-                        </p>
-                        <p className="farmerCommunityForumComponentFullPostBlankLine">
-                          <b>&nbsp;</b>
-                        </p>
-                        <p className="farmerCommunityForumComponentFullPostBlankLine">
-                          <b>{`Ryan Edward Amador: `}</b>
-                          <span>{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `}</span>
-                        </p>
-                        <p className="farmerCommunityForumComponentFullPostBlankLine">
-                          <b>&nbsp;</b>
-                        </p>
-                        <p className="farmerCommunityForumComponentFullPostBlankLine">
-                          <b>{`Marievic Anes: `}</b>
-                          <span>
-                            Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.
-                          </span>
-                        </p>
-                        </div>
+                      {t('farmerCommunityPostText3')}
                       </div>
                     </div>
+                    <b className="farmerCommunityForumComponentFullPostSmallCardsDescription2">{t('farmerCommunityPostText4')}</b>
+                    <button className="farmerCommunityForumComponentFullPostButton">
+                        <FaThumbsUp className="farmerCommunityForumComponentFullPostButtonIcon" />
+                        <div className="farmerCommunityForumComponentFullPostButtonText">{t('farmerPageButton9')}</div>
+                    </button>
                   </div>
+                  <input
+                    className="farmerCommunityForumComponentFullPostCommentInput"
+                    type="text"
+                    placeholder={t('farmerCommunityPostText5')}
+                  />
+                  <div className="farmerCommunityForumComponentFullPostSmallCardsDescriptionWrapper">
+                    <div className="farmerCommunityForumComponentFullPostSmallCardsFullDescription">
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
+                        <b>{t('farmerCommunityPostText6')}</b>
+                      </p>
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
+                        <b>&nbsp;</b>
+                      </p>
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
+                        <b>{`Ryan Edward Amador: `}</b>
+                        <span>{t('farmerCommunityPostText7')}</span>
+                      </p>
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
+                        <b>&nbsp;</b>
+                      </p>
+                      <p className="farmerCommunityForumComponentFullPostBlankLine">
+                        <b>{`Marievic Anes: `}</b>
+                        <span>
+                        {t('farmerCommunityPostText8')}
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        <div className="buyerCommunityForumComponentFullPostNewCard">
-          <div className="buyerCommunityForumComponentFullPostNewCardMainText">Other Posts</div>
-          <div className="buyerCommunityForumComponentFullPostNewCardText">
-            <button className="buyerCommunityForumComponentFullPostNewCardButton">
+        </div>
+        <div className="farmerCommunityForumComponentFullPostNewCard">
+          <div className="farmerCommunityForumComponentFullPostNewCardMainText">{t('farmerCommunityPostText9')}</div>
+          <div className="farmerCommunityForumComponentFullPostNewCardText">
+            <button className="farmerCommunityForumComponentFullPostNewCardButton">
               <img
-                className="buyerCommunityForumComponentFullPostNewCardImage"
+                className="farmerCommunityForumComponentFullPostNewCardImage"
                 alt=""
                 src={CornVector}
               />
-              <div className="buyerCommunityForumComponentFullPostNewCardDetails">
-                <div className="buyerCommunityForumComponentFullPostNewCardInner">
-                  <div className="buyerCommunityForumComponentFullPostNewCardTitleWrapper">
-                    <div className="buyerCommunityForumComponentFullPostNewCardTitle">How Corn Grows?</div>
+              <div className="farmerCommunityForumComponentFullPostNewCardDetails">
+                <div className="farmerCommunityForumComponentFullPostNewCardInner">
+                  <div className="farmerCommunityForumComponentFullPostNewCardTitleWrapper">
+                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">{t('farmerCommunityText4')}</div>
                   </div>
                 </div>
               </div>
             </button>
 
-             <button className="buyerCommunityForumComponentFullPostNewCardButton">
+             <button className="farmerCommunityForumComponentFullPostNewCardButton">
               <img
-                className="buyerCommunityForumComponentFullPostNewCardImage"
+                className="farmerCommunityForumComponentFullPostNewCardImage"
                 alt=""
                 src={RiceVector}
               />
-              <div className="buyerCommunityForumComponentFullPostNewCardDetails">
-                <div className="buyerCommunityForumComponentFullPostNewCardInner">
-                  <div className="buyerCommunityForumComponentFullPostNewCardTitleWrapper">
-                    <div className="buyerCommunityForumComponentFullPostNewCardTitle">Rice Planting</div>
+              <div className="farmerCommunityForumComponentFullPostNewCardDetails">
+                <div className="farmerCommunityForumComponentFullPostNewCardInner">
+                  <div className="farmerCommunityForumComponentFullPostNewCardTitleWrapper">
+                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">{t('farmerCommunityText6')}</div>
                   </div>
                 </div>
               </div>
             </button>             
 
-            <button className="buyerCommunityForumComponentFullPostNewCardButton">
+            <button className="farmerCommunityForumComponentFullPostNewCardButton">
               <img
-                className="buyerCommunityForumComponentFullPostNewCardImage"
+                className="farmerCommunityForumComponentFullPostNewCardImage"
                 alt=""
-                src={TomatoVector}
+                src={SquashVector}
               />
-              <div className="buyerCommunityForumComponentFullPostNewCardDetails">
-                <div className="buyerCommunityForumComponentFullPostNewCardInner">
-                  <div className="buyerCommunityForumComponentFullPostNewCardTitleWrapper">
-                    <div className="buyerCommunityForumComponentFullPostNewCardTitle">How to plant Tomatoes?</div>
+              <div className="farmerCommunityForumComponentFullPostNewCardDetails">
+                <div className="farmerCommunityForumComponentFullPostNewCardInner">
+                  <div className="farmerCommunityForumComponentFullPostNewCardTitleWrapper">
+                    <div className="farmerCommunityForumComponentFullPostNewCardTitle">{t('farmerCommunityText8')}</div>
                   </div>
                 </div>
               </div>
@@ -238,9 +137,9 @@ const BuyerCommunityForum = () => {
           </div>
         </div>
       </div>
-      </div>
-     
+    </div>
+    </I18nextProvider>
   );
 };
 
-export default BuyerCommunityForum;
+export default FarmerMarketplace;

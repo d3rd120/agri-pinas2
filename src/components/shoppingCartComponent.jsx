@@ -10,9 +10,14 @@ import {Link} from 'react-router-dom';
 import { RiDeleteBinLine } from 'react-icons/ri';
 import { IconButton } from '@material-ui/core';
 import BuyerTopNav from '../components/buyerTopNav';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 
 const ShoppingCart = () => {
+  const { t } = useTranslation();
+
   const [quantity, setQuantity] = useState(1);
   const [showModal, setShowModal] = useState(false);
 
@@ -48,6 +53,7 @@ const ShoppingCart = () => {
   };
 
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="buyerMarketplaceComponent">
       <BuyerNavigation />
       <div className="farmerMarketplaceComponentMainPanel">
@@ -56,7 +62,7 @@ const ShoppingCart = () => {
           <div className="farmerCommunityForumComponentMainText1">
             <b className="farmerCommunityForumComponentMainText2">             
               <p className="farmerCommunityForumComponentBlankLine">&nbsp;</p>
-              <p className="farmerCommunityForumComponentBlankLine">Shopping Cart</p>
+              <p className="farmerCommunityForumComponentBlankLine">{t('buyerCartText1')}</p>
             </b>
           </div>
         </div>
@@ -73,7 +79,7 @@ const ShoppingCart = () => {
 </div>
               
             </th>
-            <th>Product</th>
+            <th>{t('buyerCartText2')}</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
@@ -102,21 +108,21 @@ const ShoppingCart = () => {
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
-            <th class="unit-price-header">Unit Price</th>
+            <th class="unit-price-header">{t('buyerCartText3')}</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
-            <th>Quantity</th>
+            <th>{t('buyerCartText4')}</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
-            <th class="total-price-header">Total Price</th>
+            <th class="total-price-header">{t('buyerCartText5')}</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th> 
-            <th>Actions</th>
+            <th>{t('buyerCartText6')}</th>
           </tr>
         </thead>
       </table>
@@ -137,7 +143,7 @@ const ShoppingCart = () => {
                 <img className="cartAvatarIcon" alt="" src={ProfileVector1} />
                 <div className="buyerMarketplaceComponentAuthorText">
                   <div className="buyerMarketplaceComponentAuthorName">Jenkins Mesina</div>
-                  <div className="buyerMarketplaceComponentSubName">Farmer</div>
+                  <div className="buyerMarketplaceComponentSubName">{t('buyerCartText7')}</div>
                 </div>
               </div>
               <img src={CornVector} alt="Corn" className="img-container" />
@@ -145,7 +151,7 @@ const ShoppingCart = () => {
 
             <div className="cartPostSmallCardsFullDescription">
               <div className="buyerMarketplaceComponentCardWrapper">
-                <b className="cartCardText">Corn</b>
+                <b className="cartCardText">{t('buyerCartText8')}</b>
               </div>
               <div className="cartPostBlankLine">
                 <b>{`Category: Packaging:`}</b>
@@ -240,7 +246,7 @@ const ShoppingCart = () => {
   </div>
 </div>
 <div className="buyerMarketplaceComponentPostButtonNew">
-          <div className="buyerMarketplaceComponentPostButtonNewTitle">YOU MAY ALSO LIKE</div>
+          <div className="buyerMarketplaceComponentPostButtonNewTitle">{t('buyerCartText11')}</div>
           <div className="buyerMarketplaceComponentPostButtonNewCourses">
             <Link className="buyerMarketplaceComponentPostButtonNewCard1" to = '/buyermarketplacepost'style={{ textDecoration: 'none' }}>
               <img
@@ -251,7 +257,7 @@ const ShoppingCart = () => {
               <div className="buyerMarketplaceComponentPostButtonNewCard1Details">
                 <div className="buyerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="buyerMarketplaceComponentPostButtonNewCard1Wrapper">
-                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">Tomato</div>
+                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">{t('buyerCartText12')}</div>
                     <div className="buyerMarketplaceComponentPostButtonNewCard1Price">₱5,000</div>
                   </div>
                 </div>
@@ -266,7 +272,7 @@ const ShoppingCart = () => {
               <div className="buyerMarketplaceComponentPostButtonNewCard1Details">
                 <div className="buyerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="buyerMarketplaceComponentPostButtonNewCard1Wrapper">
-                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">Onion</div>
+                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">{t('buyerCartText13')}</div>
                     <div className="buyerMarketplaceComponentPostButtonNewCard1Price">₱3,000</div>
                   </div>
                 </div>
@@ -281,7 +287,7 @@ const ShoppingCart = () => {
               <div className="buyerMarketplaceComponentPostButtonNewCard1Details">
                 <div className="buyerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="buyerMarketplaceComponentPostButtonNewCard1Wrapper">
-                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">Rice</div>
+                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">{t('buyerCartText14')}</div>
                     <div className="buyerMarketplaceComponentPostButtonNewCard1Price">₱2,000</div>
                   </div>
                 </div>
@@ -292,6 +298,7 @@ const ShoppingCart = () => {
 
 	</div>
 </div>
+</I18nextProvider>
       
   );
 };

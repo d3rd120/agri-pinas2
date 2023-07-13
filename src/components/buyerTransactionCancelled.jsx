@@ -7,9 +7,14 @@ import ProfileVector2 from '../img/profileVector2.png';
 import OnionVector from '../img/onionVector.png';
 import pakwan from '../img/pakwan.png';
 import {FaEdit, FaTrash,FaFolderOpen} from 'react-icons/fa';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 const BuyerTransanctionCancelled = () => {
+  const { t } = useTranslation();
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="farmerTransactionsCancelledComponent">
       <BuyerNavigation />
       <div className="farmerTransactionsCancelledComponentMainPanel">
@@ -17,7 +22,7 @@ const BuyerTransanctionCancelled = () => {
         <div className="farmerTransactionsCancelledComponentTopSection">
           <div className="farmerTransactionsCancelledComponentMainText">
             <b className="farmerTransactionsCancelledComponentMainTextWrapper">  
-              <p className="farmerTransactionsCancelledComponentBlankLine">Transactions</p>
+              <p className="farmerTransactionsCancelledComponentBlankLine">{t('buyerTransactionText1')}</p>
             </b>
           </div>
         </div>    
@@ -25,10 +30,10 @@ const BuyerTransanctionCancelled = () => {
 
         
         <div className="buyerTransactionCard">
-            <div className="buyerTransactionSubTitle"><FaFolderOpen /> My Purchase
+            <div className="buyerTransactionSubTitle"><FaFolderOpen /> {t('buyerTransactionText2')}
             </div>
             <br></br>
-           <div className = "farmerTransactionsPendingComponentShow">Show:   
+           <div className = "farmerTransactionsPendingComponentShow">{t('buyerTransactionText3')}   
            <select className="farmerTransactionsPendingComponentRowSelect" onchange="updateRows(this.value)">
                    <option value="5">5</option>
                    <option value="10">10</option>
@@ -109,7 +114,7 @@ const BuyerTransanctionCancelled = () => {
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
-            <th class="total-price-header">Cancelled</th>
+            <th class="total-price-header">{t('buyerTransactionText11')}</th>
           </tr>
         </thead>
       </table>
@@ -129,7 +134,7 @@ const BuyerTransanctionCancelled = () => {
                   <div className="buyerMarketplaceComponentAuthorText">
                     <div className="buyerMarketplaceComponentAuthorName">Daniella Tungol</div>
                     
-                    <div className="buyerMarketplaceComponentSubName">Farmer</div>
+                    <div className="buyerMarketplaceComponentSubName">{t('buyerTransactionText6')}</div>
                   </div>
                 </div>
                 <img src={pakwan} alt="Corn" className="img-container" />
@@ -137,7 +142,7 @@ const BuyerTransanctionCancelled = () => {
               
               <div className="cartPostSmallCardsFullDescription">
               <div className="buyerMarketplaceComponentCardWrapper">
-                      <b className="cartCardText">Watermelon</b>
+                      <b className="cartCardText">{t('buyerTransactionText12')}</b>
                     </div>
   <div className="cartPostBlankLine">
     <b>{`Category: Packaging:`}</b>
@@ -264,7 +269,7 @@ const BuyerTransanctionCancelled = () => {
                   <div className="buyerMarketplaceComponentAuthorText">
                     <div className="buyerMarketplaceComponentAuthorName">Romeo London</div>
                     
-                    <div className="buyerMarketplaceComponentSubName">Farmer</div>
+                    <div className="buyerMarketplaceComponentSubName">{t('buyerTransactionText6')}</div>
                   </div>
                 </div>
                 <img src={OnionVector} alt="Corn" className="img-container" />
@@ -272,7 +277,7 @@ const BuyerTransanctionCancelled = () => {
               
               <div className="cartPostSmallCardsFullDescription">
               <div className="buyerMarketplaceComponentCardWrapper">
-                      <b className="cartCardText">Onion</b>
+                      <b className="cartCardText">{t('buyerTransactionText13')}</b>
                     </div>
   <div className="cartPostBlankLine">
     <b>{`Category: Packaging:`}</b>
@@ -338,6 +343,7 @@ const BuyerTransanctionCancelled = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
 
   );
 };

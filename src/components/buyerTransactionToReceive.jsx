@@ -6,9 +6,15 @@ import CornVector from '../img/cornVector.png';
 import ProfileVector1 from '../img/profileVector1.png';
 import {FaEdit, FaTrash,FaFolderOpen} from 'react-icons/fa';
 import BuyerTransactionNav from '../components/buyerTransactionNav';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 const BuyerTransanctionPending = () => {
+  const { t } = useTranslation();
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="buyerTransaction">
      <BuyerNavigation />
       <div className="buyerTransactionMainPanel">
@@ -16,7 +22,7 @@ const BuyerTransanctionPending = () => {
         <div className="buyerTransactionTopSection">
           <div className="buyerTransactionMainText">
             <b className="buyerTransactionMainTextWrapper">       
-              <p className="buyerTransactionBlankLine">Transactions</p>
+              <p className="buyerTransactionBlankLine">{t('buyerTransactionText1')}</p>
             </b>
           </div>
         </div>    
@@ -24,10 +30,10 @@ const BuyerTransanctionPending = () => {
 
         
         <div className="buyerTransactionCard">
-            <div className="buyerTransactionSubTitle"><FaFolderOpen /> My Purchase
+            <div className="buyerTransactionSubTitle"><FaFolderOpen />{t('buyerTransactionText2')}
             </div>
             <br></br>
-           <div className = "farmerTransactionsPendingComponentShow">Show:   
+           <div className = "farmerTransactionsPendingComponentShow"> {t('buyerTransactionText3')}  
            <select className="farmerTransactionsPendingComponentRowSelect" onchange="updateRows(this.value)">
                    <option value="5">5</option>
                    <option value="10">10</option>
@@ -48,7 +54,7 @@ const BuyerTransanctionPending = () => {
       <table class="table">
         <thead>
           <tr>
-            <th class="product">Get by 2 Jul 2023</th>
+            <th class="product">{t('buyerTransactionText4')}</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
@@ -101,7 +107,7 @@ const BuyerTransanctionPending = () => {
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
-            <th class="total-price-header">To Receive</th>
+            <th class="total-price-header">{t('buyerTransactionText5')}</th>
           </tr>
         </thead>
       </table>
@@ -121,7 +127,7 @@ const BuyerTransanctionPending = () => {
                   <div className="buyerMarketplaceComponentAuthorText">
                     <div className="buyerMarketplaceComponentAuthorName">Jenkins Mesina</div>
                     
-                    <div className="buyerMarketplaceComponentSubName">Farmer</div>
+                    <div className="buyerMarketplaceComponentSubName">{t('buyerTransactionText6')}</div>
                   </div>
                 </div>
                 <img src={CornVector} alt="Corn" className="img-container" />
@@ -129,7 +135,7 @@ const BuyerTransanctionPending = () => {
               
               <div className="cartPostSmallCardsFullDescription">
               <div className="buyerMarketplaceComponentCardWrapper">
-                      <b className="cartCardText">Corn</b>
+                      <b className="cartCardText">{t('buyerTransactionText7')}</b>
                     </div>
   <div className="cartPostBlankLine">
     <b>{`Category: Packaging:`}</b>
@@ -176,7 +182,7 @@ const BuyerTransanctionPending = () => {
       <table class="table">
         <thead>
           <tr>
-            <th class="product">Get by 4 Jul 2023</th>
+            <th class="product">{t('buyerTransactionText4')}</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
@@ -229,7 +235,7 @@ const BuyerTransanctionPending = () => {
             <th>&nbsp;</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
-            <th class="total-price-header">To Receive</th>
+            <th class="total-price-header">{t('buyerTransactionText5')}</th>
           </tr>
         </thead>
       </table>
@@ -249,7 +255,7 @@ const BuyerTransanctionPending = () => {
                   <div className="buyerMarketplaceComponentAuthorText">
                     <div className="buyerMarketplaceComponentAuthorName">Romeo London</div>
                     
-                    <div className="buyerMarketplaceComponentSubName">Farmer</div>
+                    <div className="buyerMarketplaceComponentSubName">{t('buyerTransactionText6')}</div>
                   </div>
                 </div>
                 <img src={okra} alt="Corn" className="img-container" />
@@ -257,7 +263,7 @@ const BuyerTransanctionPending = () => {
               
               <div className="cartPostSmallCardsFullDescription">
               <div className="buyerMarketplaceComponentCardWrapper">
-                      <b className="cartCardText">Okra</b>
+                      <b className="cartCardText">{t('buyerTransactionText8')}</b>
                     </div>
   <div className="cartPostBlankLine">
     <b>{`Category: Packaging:`}</b>
@@ -323,6 +329,7 @@ const BuyerTransanctionPending = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
 
   );
 };

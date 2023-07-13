@@ -8,6 +8,10 @@ import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 import styled from 'styled-components';
 import { RiChat1Line } from 'react-icons/ri';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 const CustomHeaderTitle = styled.div`
   background-color: #557153;
@@ -17,6 +21,7 @@ const CustomHeaderTitle = styled.div`
 
 
 const BuyerTopNav = () => {
+  const { t } = useTranslation();
   const theme = {
     background: 'white',
     headerBgColor: '#9DC08B',
@@ -101,6 +106,7 @@ const BuyerTopNav = () => {
     setShowMessages(prevState => !prevState);
   };
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="buyerTopNavContainer">
       <div className="searchBar" style={{ width: '300px' }}>
         <input
@@ -135,24 +141,20 @@ const BuyerTopNav = () => {
 
       {showNotifications && (
         <div className="notificationsModal">
-          <h2>Notifications</h2>
+          <h2>{t('buyerTopNavText1')}</h2>
           <ul className="notificationList">
             <li className="notificationItem">
-              <span className="notificationMessage">You have a new message.</span>
-              <span className="notificationTime">2 hours ago</span>
+              <span className="notificationMessage">{t('buyerTopNavText2')}</span>
+              <span className="notificationTime">{t('buyerTopNavText3')}</span>
             </li>
             <li className="notificationItem">
-              <span className="notificationMessage">Your order has been shipped.</span>
-              <span className="notificationTime">1 day ago</span>
+              <span className="notificationMessage">{t('buyerTopNavText4')}</span>
+              <span className="notificationTime">{t('buyerTopNavText5')}</span>
             </li>
             <li className="notificationItem">
-              <span className="notificationMessage">New deals are available.</span>
-              <span className="notificationTime">3 days ago</span>
-            </li>
-            <li className="notificationItem">
-              <span className="notificationMessage">Your order has been cancelled.</span>
-              <span className="notificationTime">4 days ago</span>
-            </li>
+              <span className="notificationMessage">{t('buyerTopNavText4')}</span>
+              <span className="notificationTime">{t('buyerTopNavText5')}</span>
+            </li>            
           </ul>
         </div>
       )}
@@ -225,6 +227,7 @@ const BuyerTopNav = () => {
           )}
 
     </div>
+    </I18nextProvider>
   );
 };
 

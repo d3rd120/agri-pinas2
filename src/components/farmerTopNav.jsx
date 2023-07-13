@@ -9,6 +9,10 @@ import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 import styled from 'styled-components';
 import { RiChat1Line } from 'react-icons/ri';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 const CustomHeaderTitle = styled.div`
   background-color: #557153;
@@ -17,6 +21,8 @@ const CustomHeaderTitle = styled.div`
 `;
 
 const FarmerTopNav = () => {
+  const { t } = useTranslation();
+
 
   const theme = {
     background: 'white',
@@ -77,6 +83,7 @@ const FarmerTopNav = () => {
   };
 
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="farmerTopNavContainer">       
       <div className="farmersearchBar" style={{ width: '300px' }}>
         <input
@@ -111,26 +118,26 @@ const FarmerTopNav = () => {
 
       {showNotifications && (
   <div className="farmernotificationsModal">
-    <h2>Notifications</h2>
+    <h2>{t('farmerTopNavText1')}</h2>
     <ul className="farmernotificationList">
       <li className="farmernotificationItem">
-        <span className="farmernotificationMessage">You have a new message.</span>
-        <span className="farmernotificationTime">2 hours ago</span>
+        <span className="farmernotificationMessage">{t('farmerTopNavText2')}</span>
+        <span className="farmernotificationTime">{t('farmerTopNavText3')}</span>
       </li>     
       <li className="farmernotificationItem">
-        <span className="farmernotificationMessage">New deals are available.</span>
-        <span className="farmernotificationTime">3 days ago</span>
-      </li>
+        <span className="farmernotificationMessage">{t('farmerTopNavText4')}</span>
+        <span className="farmernotificationTime">{t('farmerTopNavText5')}</span>
+      </li> 
       <li className="farmernotificationItem">
-        <span className="farmernotificationMessage">Your product has been cancelled.</span>
-        <span className="farmernotificationTime">1 hour ago</span>
-      </li>
+        <span className="farmernotificationMessage">{t('farmerTopNavText4')}</span>
+        <span className="farmernotificationTime">{t('farmerTopNavText5')}</span>
+      </li>       
     </ul>
   </div>
 )}
 {showMessages && (
   <div className="farmernotificationsModal">
-    <h2>Messages</h2>
+    <h2>{t('farmerTopNavText6')}</h2>
     <ul className="farmernotificationList">
       <li className="farmernotificationItem" onClick={handleChatButtonClick}>
         <div className="farmernotificationProfile">
@@ -138,7 +145,7 @@ const FarmerTopNav = () => {
           <span className="farmernotificationSender">Yagerobi Doria</span>
         </div>
         <div className="farmernotificationContent">
-          <span className="farmernotificationMessage">You have a new message.</span>
+          <span className="farmernotificationMessage">{t('farmerTopNavText7')}</span>
           <span className="farmernotificationTime">2h ago</span>
         </div>
       </li>
@@ -148,13 +155,13 @@ const FarmerTopNav = () => {
           <span className="farmernotificationSender">Daniella Tungol</span>
         </div>
         <div className="farmernotificationContent">
-          <span className="farmernotificationMessage">Your product has been shipped.</span>
+          <span className="farmernotificationMessage">{t('farmerTopNavText8')}</span>
           <span className="farmernotificationTime">1d ago</span>
         </div>
       </li>   
       <li className="farmernotificationItem" >        
         <div className="farmernotificationContent">
-          <NavLink className="farmernotificationMessage2" to = '/farmerinbox'>See all messages</NavLink>         
+          <NavLink className="farmernotificationMessage2" to = '/farmerinbox'>{t('farmerTopNavText9')}</NavLink>         
         </div>
       </li>     
     </ul>
@@ -204,8 +211,8 @@ const FarmerTopNav = () => {
             </div>
           )}
 
-
     </div>
+    </I18nextProvider>
   );
 };
 
