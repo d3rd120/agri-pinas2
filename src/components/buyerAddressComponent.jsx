@@ -4,9 +4,14 @@ import BuyerProfileNav from '../components/buyerProfileNav';
 import { IconButton, Modal, TextField, Button } from '@material-ui/core';
 import BuyerTopNav from '../components/buyerTopNav';
 import { FaTrashAlt, FaEdit, FaPlus } from 'react-icons/fa';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 
 const BuyerAddress = () => {
+  const { t } = useTranslation();
+  
   const [openEditModal1, setOpenEditModal1] = useState(false);
   const [openEditModal2, setOpenEditModal2] = useState(false);
   const [name, setName] = useState('');
@@ -108,6 +113,7 @@ const BuyerAddress = () => {
   };
 
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="buyerCommunityForumComponentFullPost">
       <BuyerProfileNav />
       <div className="farmerMarketplaceComponentMainPanel">
@@ -115,14 +121,14 @@ const BuyerAddress = () => {
         <div className="farmerCommunityForumComponentTopSection">
           <div className="farmerCommunityForumComponentMainText1">
             <b className="farmerCommunityForumComponentMainText2">
-              <p className="farmerCommunityForumComponentBlankLine">My Addresses</p>
+              <p className="farmerCommunityForumComponentBlankLine">{t('farmerProfileText24')}</p>
             </b>
           </div>
         </div>
         <div className="addressTopSection">
       <div className="addressMainText1">
         <button className="addressMainText2" onClick={handleAddAddress}>
-          <p className="addressBlankLine">Add New Address</p>
+          <p className="addressBlankLine">{t('farmerPageButton18')}</p>
           <FaPlus className="farmerCommunityForumComponentPlusIcon" onClick={handleOpenEditModal3} />
         </button>
         <Modal open={openEditModal3} onClose={handleClose}>
@@ -204,54 +210,54 @@ const BuyerAddress = () => {
 
 <Modal open={openEditModal1} onClose={handleClose}>
         <div className="editModal">
-          <h2>Edit your Address</h2>
+          <h2>{t('farmerProfileText26')}</h2>
           <br />
           <div className={`farmerMarketplaceEditProductComponentInputParent ${nameError ? 'error' : ''}`}>
-            <div className="farmerMarketplaceEditProductComponentTitle">Full Name</div>
+            <div className="farmerMarketplaceEditProductComponentTitle">{t('farmerProfileText27')}</div>
             <input
               className={`farmerMarketplaceEditProductComponentInput2 ${nameError ? 'error' : ''}`}
               type="text"
-              placeholder="Enter your name"
+              placeholder={t('farmerProfileText28')}
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className={`farmerMarketplaceEditProductComponentInputParent ${phoneNumberError ? 'error' : ''}`}>
-            <div className="farmerMarketplaceEditProductComponentTitle">Phone number</div>
+            <div className="farmerMarketplaceEditProductComponentTitle">{t('farmerProfileText29')}</div>
             <input
               className={`farmerMarketplaceEditProductComponentInput2 ${phoneNumberError ? 'error' : ''}`}
               type="text"
-              placeholder="Enter your phone number"
+              placeholder={t('farmerProfileText30')}
               value={phoneNumber}
               onChange={handlePhoneNumberChange}
             />
           </div>
           <div className={`farmerMarketplaceEditProductComponentInputParent ${barangayError ? 'error' : ''}`}>
-            <div className="farmerMarketplaceEditProductComponentTitle">Barangay</div>
+            <div className="farmerMarketplaceEditProductComponentTitle">{t('farmerProfileText31')}</div>
             <input
               className={`farmerMarketplaceEditProductComponentInput2 ${barangayError ? 'error' : ''}`}
               type="text"
-              placeholder="Enter your barangay"
+              placeholder={t('farmerProfileText32')}
               value={barangay}
               onChange={(e) => setBarangay(e.target.value)}
             />
           </div>
           <div className={`farmerMarketplaceEditProductComponentInputParent ${addressError ? 'error' : ''}`}>
-            <div className="farmerMarketplaceEditProductComponentTitle">Address</div>
+            <div className="farmerMarketplaceEditProductComponentTitle">{t('farmerProfileText33')}</div>
             <input
               className={`farmerMarketplaceEditProductComponentInput2 ${addressError ? 'error' : ''}`}
               type="text"
-              placeholder="Enter your full address"
+              placeholder={t('farmerProfileText34')}
               value={address}
               onChange={(e) => setAddress(e.target.value)}
             />
           </div>
           <div className="buttonContainer">
             <Button variant="contained" color="primary" onClick={handleClose} className="cancelButton">
-              Cancel
+            {t('farmerPageButton4')}
             </Button>
             <Button variant="contained" color="secondary" onClick={handleSave} className="saveButton">
-              Save
+            {t('farmerPageButton3')}
             </Button>
           </div>
         </div>
@@ -264,44 +270,44 @@ const BuyerAddress = () => {
               <FaEdit className="EditIconAddress1" onClick={handleOpenEditModal2} />
               <Modal open={openEditModal2} onClose={handleClose}>
         <div className="editModal">
-          <h2>Edit your Address</h2>
+          <h2>{t('farmerProfileText26')}</h2>
           <br />
           <div className={`farmerMarketplaceEditProductComponentInputParent ${nameError ? 'error' : ''}`}>
-            <div className="farmerMarketplaceEditProductComponentTitle">Full Name</div>
+            <div className="farmerMarketplaceEditProductComponentTitle">{t('farmerProfileText27')}</div>
             <input
               className={`farmerMarketplaceEditProductComponentInput2 ${nameError ? 'error' : ''}`}
               type="text"
-              placeholder="Enter your name"
+              placeholder={t('farmerProfileText28')}
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className={`farmerMarketplaceEditProductComponentInputParent ${phoneNumberError ? 'error' : ''}`}>
-            <div className="farmerMarketplaceEditProductComponentTitle">Phone number</div>
+            <div className="farmerMarketplaceEditProductComponentTitle">{t('farmerProfileText29')}</div>
             <input
               className={`farmerMarketplaceEditProductComponentInput2 ${phoneNumberError ? 'error' : ''}`}
               type="text"
-              placeholder="Enter your phone number"
+              placeholder={t('farmerProfileText30')}
               value={phoneNumber}
               onChange={handlePhoneNumberChange}
             />
           </div>
           <div className={`farmerMarketplaceEditProductComponentInputParent ${barangayError ? 'error' : ''}`}>
-            <div className="farmerMarketplaceEditProductComponentTitle">Barangay</div>
+            <div className="farmerMarketplaceEditProductComponentTitle">{t('farmerProfileText31')}</div>
             <input
               className={`farmerMarketplaceEditProductComponentInput2 ${barangayError ? 'error' : ''}`}
               type="text"
-              placeholder="Enter your barangay"
+              placeholder={t('farmerProfileText32')}
               value={barangay}
               onChange={(e) => setBarangay(e.target.value)}
             />
           </div>
           <div className={`farmerMarketplaceEditProductComponentInputParent ${addressError ? 'error' : ''}`}>
-            <div className="farmerMarketplaceEditProductComponentTitle">Address</div>
+            <div className="farmerMarketplaceEditProductComponentTitle">{t('farmerProfileText33')}</div>
             <input
               className={`farmerMarketplaceEditProductComponentInput2 ${addressError ? 'error' : ''}`}
               type="text"
-              placeholder="Enter your full address"
+              placeholder={t('farmerProfileText34')}
               value={address}
               onChange={(e) => setAddress(e.target.value)}
             />
@@ -314,14 +320,14 @@ const BuyerAddress = () => {
                     value={false}
                     onChange={(e) => console.log(e.target.value)}
                   />
-                  <div className="setDefaultAddress">Set as Default Address</div>
+                  <div className="setDefaultAddress">{t('farmerProfileText35')}</div>
                 </div>
           <div className="buttonContainer">
             <Button variant="contained" color="primary" onClick={handleClose} className="cancelButton">
-              Cancel
+            {t('farmerPageButton4')}
             </Button>
             <Button variant="contained" color="secondary" onClick={handleSave} className="saveButton">
-              Save
+            {t('farmerPageButton3')}
             </Button>
           </div>
         </div>
@@ -330,14 +336,14 @@ const BuyerAddress = () => {
               <div className="modalBackdrop">
                 <div className="modal1">
                   <div className="modalContent">
-                    <h2>Delete Address?</h2>
+                    <h2>{t('farmerProfileText36')}</h2>
                     <div className="buttonContainer">
                       <br />
                       <button className="confirmButton" onClick={handleModalConfirm}>
-                        Yes
+                      {t('farmerPageButton5')}
                       </button>
                       <button className="cancelButton" onClick={handleModalCancel}>
-                        No
+                      {t('farmerPageButton6')}
                       </button>
                     </div>
                   </div>
@@ -350,6 +356,7 @@ const BuyerAddress = () => {
       </div>
     </div>
     </div>
+    </I18nextProvider>
   );
 };
 

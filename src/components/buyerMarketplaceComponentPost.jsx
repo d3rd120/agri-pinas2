@@ -12,6 +12,9 @@ import styled from 'styled-components';
 import { RiChat1Line } from 'react-icons/ri';
 import {Link} from 'react-router-dom';
 import BuyerTopNav from '../components/buyerTopNav';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 const CustomHeaderTitle = styled.div`
   background-color: #557153;
@@ -20,6 +23,7 @@ const CustomHeaderTitle = styled.div`
 `;
 
 const BuyerMarketplace = () => {
+  const { t } = useTranslation();
   const theme = {
     background: 'white',
     headerBgColor: '#9DC08B',
@@ -64,6 +68,7 @@ const BuyerMarketplace = () => {
 
   
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="buyerMarketplaceComponentPost">
       <BuyerNavigation />
       <div className="farmerMarketplaceComponentMainPanel">
@@ -71,7 +76,7 @@ const BuyerMarketplace = () => {
         <div className="farmerCommunityForumComponentTopSection">
           <div className="farmerCommunityForumComponentMainText1">
             <b className="farmerCommunityForumComponentMainText2">             
-              <p className="farmerCommunityForumComponentBlankLine">Marketplace</p>
+              <p className="farmerCommunityForumComponentBlankLine">{t('buyerPageNavigationText1')}</p>
             </b>
           </div>
         </div>
@@ -90,36 +95,31 @@ const BuyerMarketplace = () => {
                   <div className="buyerMarketplaceComponentPostSmallCardsHeading">
                     <div className="buyerMarketplaceComponentPostSmallCardsDetails">
                       <b className="buyerMarketplaceComponentPostSmallCardsProductName">Corn</b>
-                      <b className="buyerMarketplaceComponentPostSmallCardsBuyerName">Farmer: Jenkins Mesina</b>
+                      <b className="buyerMarketplaceComponentPostSmallCardsBuyerName">{t('buyerPageUserRole2')} Jenkins Mesina</b>
                     </div>
                     
                     <div className="buyerMarketplaceComponentPostSmallCardsDescriptionWrapper">
                       <div className="buyerMarketplaceComponentPostSmallCardsFullDescription">
                         <p className="buyerMarketplaceComponentPostBlankLine">
-                          <b>{`Category: `}</b>
+                          <b>{t('buyerPageCategory')} </b>
                           <span className="buyerMarketplaceComponentPostBlankLine">Vegetable</span>
                         </p>
                         <p className="buyerMarketplaceComponentPostBlankLine">
-                          <b>{`Packaging: `}</b>
+                          <b>{t('buyerPagePackaging')} </b>
                           <span className="buyerMarketplaceComponentPostCategory">Sack</span>
                         </p>
                         <p className="buyerMarketplaceComponentPostBlankLine">
-                          <b className="buyerMarketplaceComponentPostCategory">{`Price: `}</b>
+                          <b className="buyerMarketplaceComponentPostCategory">{t('buyerPagePrice')} </b>
                           <span>Php 3,000</span>
                         </p>
                         <p className="buyerMarketplaceComponentPostBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
+                          <b>{t('buyerPageKilogram')} </b>
                           <span className="buyerMarketplaceComponentPostCategory">50 kgs</span>
                         </p>
                         <p className="buyerMarketplaceComponentPostBlankLine">
-                          <b className="buyerMarketplaceComponentPostCategory">{`Description: `}</b>
+                          <b className="buyerMarketplaceComponentPostCategory">{t('buyerPageDescription')} </b>
                           <span>
-                            Onions are a versatile and widely used vegetable
-                            known for their distinct flavor and pungent aroma.
-                            They belong to the Allium genus, which also includes
-                            garlic, shallots, and chives. Onions come in various
-                            shapes, sizes, and colors, ranging from small and
-                            white to large and yellow or red.
+                          {t('buyerPageDescriptionText2')}
                           </span>
                         </p>
                       </div>
@@ -128,18 +128,18 @@ const BuyerMarketplace = () => {
   <div className="buyerMarketplaceComponentPostButtonRow">
     <button className="buyerMarketplaceComponentPostButton outlinedButton" onClick={handleChatButtonClick}>
       <FaCommentDots className="buyerMarketplaceComponentPostButtonIcon" />
-      <div className="buyerMarketplaceComponentPostButtonText">Chat</div>
+      <div className="buyerMarketplaceComponentPostButtonText">{t('farmerPageButton14')}</div>
     </button>
     <div id="popupMessage" className="popupMessage">
-      <span className="popupText">Item has been added to your shopping cart</span>
+      <span className="popupText">{t('buyerPagePopup')}</span>
     </div>
     <button className="buyerMarketplaceComponentPostButton outlinedButton" onClick={handleAddToCart}>
       <FaCartArrowDown className="buyerMarketplaceComponentPostButtonIcon" />
-      <div className="buyerMarketplaceComponentPostButtonText">Add to Cart</div>
+      <div className="buyerMarketplaceComponentPostButtonText">{t('farmerPageButton15')}</div>
     </button>
     <a href="/shoppingcart" style={{ textDecoration: 'none' }}>
       <button className="buyerMarketplaceComponentPostButton1">
-        <div className="buyerMarketplaceComponentPostButtonText1">Buy Now</div>
+        <div className="buyerMarketplaceComponentPostButtonText1">{t('farmerPageButton16')}</div>
       </button>
     </a>
   </div>
@@ -153,7 +153,7 @@ const BuyerMarketplace = () => {
           </div>
         </div>
         <div className="buyerMarketplaceComponentPostButtonNew">
-          <div className="buyerMarketplaceComponentPostButtonNewTitle">FROM THE SAME SHOP</div>
+          <div className="buyerMarketplaceComponentPostButtonNewTitle">{t('buyerPageDescriptionText3')}</div>
           <div className="buyerMarketplaceComponentPostButtonNewCourses">
             <Link className="buyerMarketplaceComponentPostButtonNewCard1" to = '/buyermarketplacepost'style={{ textDecoration: 'none' }}>
               <img
@@ -164,7 +164,7 @@ const BuyerMarketplace = () => {
               <div className="buyerMarketplaceComponentPostButtonNewCard1Details">
                 <div className="buyerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="buyerMarketplaceComponentPostButtonNewCard1Wrapper">
-                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">Tomato</div>
+                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">{t('buyerPageDescriptionText4')}</div>
                     <div className="buyerMarketplaceComponentPostButtonNewCard1Price">₱5,000</div>
                   </div>
                 </div>
@@ -179,7 +179,7 @@ const BuyerMarketplace = () => {
               <div className="buyerMarketplaceComponentPostButtonNewCard1Details">
                 <div className="buyerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="buyerMarketplaceComponentPostButtonNewCard1Wrapper">
-                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">Onion</div>
+                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">{t('buyerPageDescriptionText5')}</div>
                     <div className="buyerMarketplaceComponentPostButtonNewCard1Price">₱3,000</div>
                   </div>
                 </div>
@@ -194,7 +194,7 @@ const BuyerMarketplace = () => {
               <div className="buyerMarketplaceComponentPostButtonNewCard1Details">
                 <div className="buyerMarketplaceComponentPostButtonNewCard1DetailsInner">
                   <div className="buyerMarketplaceComponentPostButtonNewCard1Wrapper">
-                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">Eggplant</div>
+                    <div className="buyerMarketplaceComponentPostButtonNewCard1Title">{t('buyerPageDescriptionText6')}</div>
                     <div className="buyerMarketplaceComponentPostButtonNewCard1Price">₱2,000</div>
                   </div>
                 </div>
@@ -250,6 +250,7 @@ const BuyerMarketplace = () => {
             </div>
           )}
     </div>
+    </I18nextProvider>
   );
 };
 

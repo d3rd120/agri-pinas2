@@ -7,8 +7,13 @@ import Logo from '../img/agriPinasLogo.png';
 import profile1 from '../img/profileVector1.png';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 const BuyerProfileNav = ({ onUserInfoChange }) => {
+  const { t } = useTranslation();
+
   const [showEditModal, setShowEditModal] = useState(false);
   const [open, setOpen] = useState(false);
   const [name, setName] = useState('');
@@ -46,6 +51,7 @@ const BuyerProfileNav = ({ onUserInfoChange }) => {
   
 
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="buyerNavigation">
       <NavLink className="buyerNavigationLogoParent" to = '/buyermarketplace'>
         <img className="buyerNavigationLogoIcon" alt="" src={Logo} />
@@ -57,7 +63,7 @@ const BuyerProfileNav = ({ onUserInfoChange }) => {
           to="/buyerprofile"
           activeClassName="active"
         >
-          <div className="buyerNavigationLinksProfile">Profile</div>
+          <div className="buyerNavigationLinksProfile">{t('farmerProfileText3')}</div>
         </NavLink>
 
         <NavLink
@@ -65,20 +71,20 @@ const BuyerProfileNav = ({ onUserInfoChange }) => {
           to="/buyeraddress"
           activeClassName="active"
         >
-          <div className="buyerNavigationLinksAddress">Addresses</div>
+          <div className="buyerNavigationLinksAddress">{t('farmerProfileText4')}</div>
         </NavLink>
         <NavLink
           className="buyerNavigationLogout"
           to="/login"
         >
-          <div className="buyerNavigationLinksLogout">Logout</div>
+          <div className="buyerNavigationLinksLogout">{t('farmerProfileText5')}</div>
           <FaSignOutAlt className="buyerNavigationLinksIconLogout" />
         </NavLink>
 
         <div className="buyerNavigationLink3">
           <img src={profile1} alt="Account Icon" className="accountIcon" /> 
           <div className="buyerNavigationLinks1">{name}</div>
-          <div className="buyerNavigationLinks2" onClick={handleEditProfileClick}>Edit Profile</div>
+          <div className="buyerNavigationLinks2" onClick={handleEditProfileClick}>{t('farmerProfileText1')}</div>
           <FaEdit className="buyerNavigationLinksIcon1" onClick={handleEditProfileClick} />
         </div>
 
@@ -87,19 +93,19 @@ const BuyerProfileNav = ({ onUserInfoChange }) => {
           to="#"
           activeClassName="active"
         >
-          <div className="buyerNavigationLinks">My Account</div>
+          <div className="buyerNavigationLinks">{t('farmerProfileText2')}</div>
           <FaUser className="buyerNavigationLinksIcon" />
         </NavLink>
       </div>
       <div className="nameUser">Jenkins Mesina</div>
       <Modal open={open} onClose={handleClose}>
         <div className="editModal">
-          <h2>Edit your Profile</h2>
+          <h2>{t('farmerProfileText6')}</h2>
           <br />
                 <div class="buyerNavEditProductComponentInputParent">
         <div class="buyerNavEditProductComponentTitle1">
           <img src={profile1} class="accountIcon1"/>
-          Select Image
+          {t('farmerProfileText7')}
         </div>
         <input
           type="file"
@@ -108,70 +114,60 @@ const BuyerProfileNav = ({ onUserInfoChange }) => {
       </div>
 
           <div className="buyerNavEditInputParent">
-            <div className="buyerNavEditFullName">Full Name</div>
+            <div className="buyerNavEditFullName">{t('farmerProfileText8')}</div>
             <input
               className="buyerNavEditProductComponentInput2"
               type="text"
-              placeholder="Enter your name"
+              placeholder={t('farmerProfileText9')}
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className="buyerNavEditInputParent dateOfBirthFieldParent">
-            <div className="buyerNavEditDBirth">Date of Birth</div>
+            <div className="buyerNavEditDBirth">{t('farmerProfileText10')}</div>
             <DatePicker
               className="buyerNavEditProductComponentInput2 dateOfBirthField"
               selected={dateOfBirth}
-              placeholderText="Select your date of birth"
+              placeholderText={t('farmerProfileText11')}
               onChange={date => setDateOfBirth(date)}
               dateFormat="yyyy-MM-dd"
             />
           </div>
           <div className="buyerNavEditInputParent">
-            <div className="buyerNavEditEmail">Email</div>
+            <div className="buyerNavEditEmail">{t('farmerProfileText12')}</div>
             <input
               className="buyerNavEditProductComponentInput2"
               type="text"
-              placeholder="Enter your email"
+              placeholder={t('farmerProfileText13')}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="buyerNavEditInputParent">
-            <div className="buyerNavEditAge">Age</div>
+            <div className="buyerNavEditAge">{t('farmerProfileText14')}</div>
             <input
               className="buyerNavEditProductComponentInput2"
               type="text"
-              placeholder="Enter your age"
+              placeholder={t('farmerProfileText15')}
               value={phoneNumber}
               onChange={handlePhoneNumberChange}
             />
-          </div>
-          <div className="buyerNavEditInputParent">
-            <div className="buyerNavEditPNum">Phone number</div>
-            <input
-              className="buyerNavEditProductComponentInput2"
-              type="text"
-              placeholder="Enter your phone number"
-              value={phoneNumber}
-              onChange={handlePhoneNumberChange}
-            />
-          </div>
-         
+          </div>       
        
        
 
           <div className="buttonContainer1">
             <Button variant="contained" color="primary" onClick={handleClose} className="cancelButton">
-              Cancel
+            {t('farmerPageButton4')}
             </Button>
             <Button variant="contained" color="secondary" onClick={handleSave} className="saveButton">
-              Save
+            {t('farmerPageButton3')}
             </Button>
           </div>
         </div>
       </Modal>
     </div>
+    </I18nextProvider>
   );
 };
 

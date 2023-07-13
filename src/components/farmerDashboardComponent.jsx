@@ -2,6 +2,9 @@ import "../css/Components/farmerDashboardComponent.css";
 import FarmerNavigation from '../components/farmerPageNavigation';
 import FarmerTopNav from '../components/farmerTopNav';
 import ChatBot from 'react-simple-chatbot';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 import {
   LineChart,
@@ -19,6 +22,7 @@ import {
 
 
 const FarmerDashboard = () => {
+  const { t } = useTranslation();
 
 
 
@@ -103,7 +107,7 @@ const FarmerDashboard = () => {
 
 
   return (
-    <>   
+    <I18nextProvider i18n={i18n}> 
     <div className="farmerDashboardComponent">
       <FarmerNavigation />      
       <div className="farmerDashboardComponentMainPanel">  
@@ -111,7 +115,7 @@ const FarmerDashboard = () => {
         <div className="farmerDashboardComponentTopSection">
           <div className="farmerDashboardComponentMainText1">
             <b className="farmerDashboardComponentMainText1Container">                         
-              <p className="farmerDashboardComponentBlankLine">Welcome farmer</p>
+              <p className="farmerDashboardComponentBlankLine">{t('farmerPageDashboardText1')}</p>
             </b>
           </div>
         </div>
@@ -167,7 +171,7 @@ const FarmerDashboard = () => {
         </div>
       </div>
     </div>
-    </>
+    </I18nextProvider>
   );
 };
 

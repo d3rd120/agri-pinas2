@@ -21,9 +21,13 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { db } from './firebase';
 import { collection, onSnapshot } from 'firebase/firestore';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 
 const BuyerMarketplace = () => {
+  const { t } = useTranslation();
   const [showPopup, setShowPopup] = useState(false);
   const [products, setProducts] = useState([]);
 
@@ -45,6 +49,7 @@ const BuyerMarketplace = () => {
 
 
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="buyerMarketplaceComponent">
       <BuyerNavigation />
       <div className="farmerMarketplaceComponentMainPanel">
@@ -53,7 +58,7 @@ const BuyerMarketplace = () => {
           <div className="farmerCommunityForumComponentMainText1">
             <b className="farmerCommunityForumComponentMainText2">             
               <p className="farmerCommunityForumComponentBlankLine">&nbsp;</p>
-              <p className="farmerCommunityForumComponentBlankLine">Marketplace</p>
+              <p className="farmerCommunityForumComponentBlankLine">{t('buyerPageNavigationText1')}</p>
             </b>
           </div>
         </div>
@@ -131,25 +136,25 @@ const BuyerMarketplace = () => {
                     <div className="buyerMarketplaceComponentCategoryWrapper">
                       <div className="buyerMarketplaceComponentCategoryContainer">
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Fruit</span>
+                          <b>{t('buyerPageCategory')}</b>
+                          <span className="buyerMarketplaceComponentCategory">{t('buyerPageCategoryText1')}</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Sack</span>
+                          <b>{t('buyerPagePackaging')}</b>
+                          <span className="buyerMarketplaceComponentCategory">{t('buyerPagePackagingText1')}</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Price: `}</b>
+                          <b className="buyerMarketplaceComponentCategory">{t('buyerPagePrice')}</b>
                           <span>Php 3,000</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
+                          <b>{t('buyerPageKilogram')}</b>
                           <span className="buyerMarketplaceComponentCategory">50 kgs</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
+                          <b className="buyerMarketplaceComponentCategory">{t('buyerPageDescription')}</b>
                           <span>
-                          I am selling this crop as wholesale, if you need to know more...
+                          {t('buyerPageDescriptionText1')}
                           </span>
                         </p>
                       </div>
@@ -160,7 +165,7 @@ const BuyerMarketplace = () => {
                     <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
                     <div className="buyerMarketplaceComponentAuthorText">
                       <div className="buyerMarketplaceComponentAuthorName">Daniella Tungol</div>
-                      <div className="buyerMarketplaceComponentSubName">Farmer</div>
+                      <div className="buyerMarketplaceComponentSubName">{t('buyerPageUserRole')}</div>
                     </div>
                   </div>
                 </div>
@@ -179,25 +184,25 @@ const BuyerMarketplace = () => {
                     <div className="buyerMarketplaceComponentCategoryWrapper">
                       <div className="buyerMarketplaceComponentCategoryContainer">
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Vegetable</span>
+                          <b>{t('buyerPageCategory')}</b>
+                          <span className="buyerMarketplaceComponentCategory">{t('buyerPageCategoryText1')}</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Sack</span>
+                          <b>{t('buyerPagePackaging')}</b>
+                          <span className="buyerMarketplaceComponentCategory">{t('buyerPagePackagingText1')}</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Price: `}</b>
+                          <b className="buyerMarketplaceComponentCategory">{t('buyerPagePrice')}</b>
                           <span>Php 3,000</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
+                          <b>{t('buyerPageKilogram')}</b>
                           <span className="buyerMarketplaceComponentCategory">50 kgs</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
+                          <b className="buyerMarketplaceComponentCategory">{t('buyerPageDescription')}</b>
                           <span>
-                          I am selling this crop as retail, if you need to know more...
+                          {t('buyerPageDescriptionText1')}
                           </span>
                         </p>
                       </div>
@@ -208,7 +213,7 @@ const BuyerMarketplace = () => {
                     <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
                     <div className="buyerMarketplaceComponentAuthorText">
                       <div className="buyerMarketplaceComponentAuthorName">Arriane Gatpo</div>
-                      <div className="buyerMarketplaceComponentSubName">Farmer</div>
+                      <div className="buyerMarketplaceComponentSubName">{t('buyerPageUserRole')}</div>
                     </div>
                   </div>
                 </div>
@@ -228,25 +233,25 @@ const BuyerMarketplace = () => {
                     <div className="buyerMarketplaceComponentCategoryWrapper">
                       <div className="buyerMarketplaceComponentCategoryContainer">
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Vegetable</span>
+                          <b>{t('buyerPageCategory')}</b>
+                          <span className="buyerMarketplaceComponentCategory">{t('buyerPageCategoryText1')}</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Sack</span>
+                          <b>{t('buyerPagePackaging')}</b>
+                          <span className="buyerMarketplaceComponentCategory">{t('buyerPagePackagingText1')}</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Price: `}</b>
+                          <b className="buyerMarketplaceComponentCategory">{t('buyerPagePrice')}</b>
                           <span>Php 3,000</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
+                          <b>{t('buyerPageKilogram')}</b>
                           <span className="buyerMarketplaceComponentCategory">50 kgs</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
+                          <b className="buyerMarketplaceComponentCategory">{t('buyerPageDescription')}</b>
                           <span>
-                          I am selling this crop as retail, if you need to know more...
+                          {t('buyerPageDescriptionText1')}
                           </span>
                         </p>
                       </div>
@@ -257,7 +262,7 @@ const BuyerMarketplace = () => {
                     <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
                     <div className="buyerMarketplaceComponentAuthorText">
                       <div className="buyerMarketplaceComponentAuthorName">Romeo London</div>
-                      <div className="buyerMarketplaceComponentSubName">Farmer</div>
+                      <div className="buyerMarketplaceComponentSubName">{t('buyerPageUserRole')}</div>
                     </div>
                   </div>
                 </div>
@@ -282,25 +287,25 @@ const BuyerMarketplace = () => {
                     <div className="buyerMarketplaceComponentCategoryWrapper">
                       <div className="buyerMarketplaceComponentCategoryContainer">
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Fruit</span>
+                          <b>{t('buyerPageCategory')}</b>
+                          <span className="buyerMarketplaceComponentCategory">{t('buyerPageCategoryText1')}</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Sack</span>
+                          <b>{t('buyerPagePackaging')}</b>
+                          <span className="buyerMarketplaceComponentCategory">{t('buyerPagePackagingText1')}</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Price: `}</b>
+                          <b className="buyerMarketplaceComponentCategory">{t('buyerPagePrice')}</b>
                           <span>Php 3,000</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
+                          <b>{t('buyerPageKilogram')}</b>
                           <span className="buyerMarketplaceComponentCategory">50 kgs</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
+                          <b className="buyerMarketplaceComponentCategory">{t('buyerPageDescription')}</b>
                           <span>
-                          I am selling this crop as wholesale, if you need to know more...
+                          {t('buyerPageDescriptionText1')}
                           </span>
                         </p>
                       </div>
@@ -311,7 +316,7 @@ const BuyerMarketplace = () => {
                     <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
                     <div className="buyerMarketplaceComponentAuthorText">
                       <div className="buyerMarketplaceComponentAuthorName">Jenkins Mesina</div>
-                      <div className="buyerMarketplaceComponentSubName">Farmer</div>
+                      <div className="buyerMarketplaceComponentSubName">{t('buyerPageUserRole')}</div>
                     </div>
                   </div>
                 </div>
@@ -330,25 +335,25 @@ const BuyerMarketplace = () => {
                     <div className="buyerMarketplaceComponentCategoryWrapper">
                       <div className="buyerMarketplaceComponentCategoryContainer">
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Vegetable</span>
+                          <b>{t('buyerPageCategory')}</b>
+                          <span className="buyerMarketplaceComponentCategory">{t('buyerPageCategoryText1')}</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Sack</span>
+                          <b>{t('buyerPagePackaging')}</b>
+                          <span className="buyerMarketplaceComponentCategory">{t('buyerPagePackagingText1')}</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Price: `}</b>
+                          <b className="buyerMarketplaceComponentCategory">{t('buyerPagePrice')}</b>
                           <span>Php 3,000</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
+                          <b>{t('buyerPageKilogram')}</b>
                           <span className="buyerMarketplaceComponentCategory">50 kgs</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
+                          <b className="buyerMarketplaceComponentCategory">{t('buyerPageDescription')}</b>
                           <span>
-                          I am selling this crop as wholesale, if you need to know more...
+                          {t('buyerPageDescriptionText1')}
                           </span>
                         </p>
                       </div>
@@ -359,7 +364,7 @@ const BuyerMarketplace = () => {
                     <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
                     <div className="buyerMarketplaceComponentAuthorText">
                       <div className="buyerMarketplaceComponentAuthorName">Ryan Amador</div>
-                      <div className="buyerMarketplaceComponentSubName">Farmer</div>
+                      <div className="buyerMarketplaceComponentSubName">{t('buyerPageUserRole')}</div>
                     </div>
                   </div>
                 </div>
@@ -379,25 +384,25 @@ const BuyerMarketplace = () => {
                     <div className="buyerMarketplaceComponentCategoryWrapper">
                       <div className="buyerMarketplaceComponentCategoryContainer">
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Vegetable</span>
+                          <b>{t('buyerPageCategory')}</b>
+                          <span className="buyerMarketplaceComponentCategory">{t('buyerPageCategoryText1')}</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Sack</span>
+                          <b>{t('buyerPagePackaging')}</b>
+                          <span className="buyerMarketplaceComponentCategory">{t('buyerPagePackagingText1')}</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Price: `}</b>
+                          <b className="buyerMarketplaceComponentCategory">{t('buyerPagePrice')}</b>
                           <span>Php 3,000</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
+                          <b>{t('buyerPageKilogram')}</b>
                           <span className="buyerMarketplaceComponentCategory">50 kgs</span>
                         </p>
                         <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
+                          <b className="buyerMarketplaceComponentCategory">{t('buyerPageDescription')}</b>
                           <span>
-                          I am selling this crop as retail, if you need to know more...
+                          {t('buyerPageDescriptionText1')}
                           </span>
                         </p>
                       </div>
@@ -408,7 +413,7 @@ const BuyerMarketplace = () => {
                     <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
                     <div className="buyerMarketplaceComponentAuthorText">
                       <div className="buyerMarketplaceComponentAuthorName">Yagerobi Doria</div>
-                      <div className="buyerMarketplaceComponentSubName">Farmer</div>
+                      <div className="buyerMarketplaceComponentSubName">{t('buyerPageUserRole')}</div>
                     </div>
                   </div>
                 </div>
@@ -417,315 +422,14 @@ const BuyerMarketplace = () => {
                 
                 </div>    
             </div>
-            </div>
-            <div className="buyerMarketplaceComponentFrameParent">
-            <div className="buyerMarketplaceComponentFrameWrapper">
-              <Link className="buyerMarketplaceComponentRectangleParent" to = '/buyermarketplacepost'>
-                <img
-                  className="buyerMarketplaceComponentFrameChild"
-                  alt=""
-                  src={talong}
-                />
-                <div className="buyerMarketplaceComponentFrameGroup">
-                  <div className="buyerMarketplaceComponentFrameContainer">
-                    <div className="buyerMarketplaceComponentCardWrapper">
-                      <b className="buyerMarketplaceComponentCardText">Eggplant</b>
-                    </div>
-                    <div className="buyerMarketplaceComponentCategoryWrapper">
-                      <div className="buyerMarketplaceComponentCategoryContainer">
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Vegetable</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Sack</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Price: `}</b>
-                          <span>Php 3,000</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">50 kgs</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
-                          <span>
-                          I am selling this crop as retail, if you need to know more...
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="buyerMarketplaceComponentFrameItem" />
-                  <div className="buyerMarketplaceComponentAuthor">
-                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
-                    <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Daniel Ribaya</div>
-                      <div className="buyerMarketplaceComponentSubName">Farmer</div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-              <Link className="buyerMarketplaceComponentRectangleParent" to = '/buyermarketplacepost'>
-                <img
-                  className="buyerMarketplaceComponentFrameChild"
-                  alt=""
-                  src={tomatoVector}
-                />
-                <div className="buyerMarketplaceComponentFrameGroup">
-                  <div className="buyerMarketplaceComponentFrameContainer">
-                    <div className="buyerMarketplaceComponentCardWrapper">
-                      <b className="buyerMarketplaceComponentCardText">Tomato</b>
-                    </div>
-                    <div className="buyerMarketplaceComponentCategoryWrapper">
-                      <div className="buyerMarketplaceComponentCategoryContainer">
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Vegetable</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Sack</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Price: `}</b>
-                          <span>Php 3,000</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">50 kgs</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
-                          <span>
-                          I am selling this crop as wholesale, if you need to know more...
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="buyerMarketplaceComponentFrameItem" />
-                  <div className="buyerMarketplaceComponentAuthor">
-                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
-                    <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Marievic Anes</div>
-                      <div className="buyerMarketplaceComponentSubName">Farmer</div>
-                    </div>
-                  </div>
-                </div>
-              </Link>              
-                            
-              <Link className="buyerMarketplaceComponentRectangleParent" to = '/buyermarketplacepost'>
-                <img
-                  className="buyerMarketplaceComponentFrameChild"
-                  alt=""
-                  src={sili}
-                />
-                <div className="buyerMarketplaceComponentFrameGroup">
-                  <div className="buyerMarketplaceComponentFrameContainer">
-                    <div className="buyerMarketplaceComponentCardWrapper">
-                      <b className="buyerMarketplaceComponentCardText">Siling Labuyo</b>
-                    </div>
-                    <div className="buyerMarketplaceComponentCategoryWrapper">
-                      <div className="buyerMarketplaceComponentCategoryContainer">
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Fruit</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Sack</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Price: `}</b>
-                          <span>Php 3,000</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">50 kgs</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
-                          <span>
-                          I am selling this crop as wholesale, if you need to know more...
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="buyerMarketplaceComponentFrameItem" />
-                  <div className="buyerMarketplaceComponentAuthor">
-                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
-                    <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Arriane Gatpo</div>
-                      <div className="buyerMarketplaceComponentSubName">Farmer</div>
-                    </div>
-                  </div>
-                </div>
-              </Link> 
-              <div>
-                
-                </div>    
-            </div>
-            </div>
-            <div className="buyerMarketplaceComponentFrameParent">
-            <div className="buyerMarketplaceComponentFrameWrapper">
-              <Link className="buyerMarketplaceComponentRectangleParent" to = '/buyermarketplacepost'>
-                <img
-                  className="buyerMarketplaceComponentFrameChild"
-                  alt=""
-                  src={squash}
-                />
-                <div className="buyerMarketplaceComponentFrameGroup">
-                  <div className="buyerMarketplaceComponentFrameContainer">
-                    <div className="buyerMarketplaceComponentCardWrapper">
-                      <b className="buyerMarketplaceComponentCardText">Squash</b>
-                    </div>
-                    <div className="buyerMarketplaceComponentCategoryWrapper">
-                      <div className="buyerMarketplaceComponentCategoryContainer">
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Vegetable</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Sack</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Price: `}</b>
-                          <span>Php 3,000</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">50 kgs</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
-                          <span>
-                          I am selling this crop as retail, if you need to know more...
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="buyerMarketplaceComponentFrameItem" />
-                  <div className="buyerMarketplaceComponentAuthor">
-                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
-                    <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Romeo London</div>
-                      <div className="buyerMarketplaceComponentSubName">Farmer</div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-              <Link className="buyerMarketplaceComponentRectangleParent" to = '/buyermarketplacepost'>
-                <img
-                  className="buyerMarketplaceComponentFrameChild"
-                  alt=""
-                  src={calamansi}
-                />
-                <div className="buyerMarketplaceComponentFrameGroup">
-                  <div className="buyerMarketplaceComponentFrameContainer">
-                    <div className="buyerMarketplaceComponentCardWrapper">
-                      <b className="buyerMarketplaceComponentCardText">Calamansi</b>
-                    </div>
-                    <div className="buyerMarketplaceComponentCategoryWrapper">
-                      <div className="buyerMarketplaceComponentCategoryContainer">
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Fruit</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Sack</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Price: `}</b>
-                          <span>Php 3,000</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">50 kgs</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
-                          <span>
-                          I am selling this crop as wholesale, if you need to know more...
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="buyerMarketplaceComponentFrameItem" />
-                  <div className="buyerMarketplaceComponentAuthor">
-                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector1} />
-                    <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Jenkins Mesina</div>
-                      <div className="buyerMarketplaceComponentSubName">Farmer</div>
-                    </div>
-                  </div>
-                </div>
-              </Link>              
-                            
-              <Link className="buyerMarketplaceComponentRectangleParent" to = '/buyermarketplacepost'>
-                <img
-                  className="buyerMarketplaceComponentFrameChild"
-                  alt=""
-                  src={sitaw}
-                />
-                <div className="buyerMarketplaceComponentFrameGroup">
-                  <div className="buyerMarketplaceComponentFrameContainer">
-                    <div className="buyerMarketplaceComponentCardWrapper">
-                      <b className="buyerMarketplaceComponentCardText">Sitaw</b>
-                    </div>
-                    <div className="buyerMarketplaceComponentCategoryWrapper">
-                      <div className="buyerMarketplaceComponentCategoryContainer">
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Category: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Vegetable</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Packaging: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">Sack</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Price: `}</b>
-                          <span>Php 3,000</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b>{`Kilogram per unit: `}</b>
-                          <span className="buyerMarketplaceComponentCategory">50 kgs</span>
-                        </p>
-                        <p className="buyerMarketplaceComponentBlankLine">
-                          <b className="buyerMarketplaceComponentCategory">{`Description: `}</b>
-                          <span>
-                          I am selling this crop as wholesale, if you need to know more...
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="buyerMarketplaceComponentFrameItem" />
-                  <div className="buyerMarketplaceComponentAuthor">
-                    <img className="buyerMarketplaceComponentAvatarIcon" alt="" src={ProfileVector2} />
-                    <div className="buyerMarketplaceComponentAuthorText">
-                      <div className="buyerMarketplaceComponentAuthorName">Arriane Gatpo</div>
-                      <div className="buyerMarketplaceComponentSubName">Farmer</div>
-                    </div>
-                  </div>
-                </div>
-              </Link> 
-              <div>
-                
-                </div>    
-            </div>
+            </div>          
+        
+           
             </div>
           </div>
         </div>
       </div>
-    </div>
+      </I18nextProvider>   
   );
 };
 
