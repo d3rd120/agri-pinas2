@@ -8,9 +8,15 @@ import OnionVector from '../img/onionVector.png';
 import SquashVector from '../img/squash.png';
 import TomatoVector from '../img/tomatoVector.png';
 import { FaTrash, FaComments, FaEdit } from 'react-icons/fa';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 const AdminCommunityForumComponent = () => {
+  const { t } = useTranslation();
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="adminCommunityForumComponent">
       <AdminNavigation />
       <div className="adminCommunityForumComponentMainPanel">   
@@ -18,17 +24,17 @@ const AdminCommunityForumComponent = () => {
           <div className="adminCommunityForumComponentMainText">
             <b className="adminCommunityForumComponentMainTextWrapper">       
             <p className="adminCommunityForumComponentBlankLine">&nbsp;</p>
-              <p className="adminCommunityForumComponentBlankLine">Community forum</p>
+              <p className="adminCommunityForumComponentBlankLine">{t('Text1')}</p>
             </b>
           </div>
         </div>    
     
         
         <div className="adminCommunityForumComponentCard">
-            <div className="adminCommunityForumComponentSubTitle"><FaComments /> Post Management
+            <div className="adminCommunityForumComponentSubTitle"><FaComments /> {t('Text2')}
             </div>
             <br></br>
-           <div className="adminCommunityForumComponentShow">Show:   
+           <div className="adminCommunityForumComponentShow">{t('Text3')}   
            <select className="adminCommunityForumComponentRowSelect" onchange="updateRows(this.value)">
                    <option value="5">5</option>
                    <option value="10">10</option>
@@ -38,7 +44,7 @@ const AdminCommunityForumComponent = () => {
             <input 
             className="adminCommunityForumComponentRowSelect"
             type = "text"
-            placeholder = "Search">                    
+            placeholder = {t('Text4')}>                    
             </input>
             </div> 
             <br></br>     
@@ -59,29 +65,29 @@ const AdminCommunityForumComponent = () => {
                 <div className="adminCommunityForumComponentFrameGroup">
                   <div className="adminCommunityForumComponentFrameContainer">
                     <div className="adminCommunityForumComponentSubText1Wrapper">
-                      <b className="adminCommunityForumComponentSubText1">What is the current SRP of onions?</b>
+                      <b className="adminCommunityForumComponentSubText1">{t('Text5')}</b>
                     </div>
                     <div className="adminCommunityForumComponentSubText2Wrapper2">
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>User ID:</b> F001
+                       <b>{t('Text9')}</b> B001
                       </div>
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>User Role</b> Farmer
+                       <b>{t('Text10')}</b> Buyer
                       </div>
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>Full Name:</b> Ryan Edward Amador
-                      </div>                                         
+                       <b>{t('Text11')}</b> Jenkins Mesina
+                      </div>                           
                     </div>
                   </div>
                   <div className="adminCommunityForumComponentFrameItem" />
                   <div className="adminCommunityForumComponentDetails">      
                   <button className="adminCommunityForumComponentButton">
                     <FaEdit className="adminCommunityForumComponentButtonIcon" />
-                    <div className="adminCommunityForumComponentButtonText">Update</div>
+                    <div className="adminCommunityForumComponentButtonText">{t('farmerPageButton13')}</div>
                   </button>          
                   <button className="adminCommunityForumComponentButton">
                     <FaTrash className="adminCommunityForumComponentButtonIcon" />
-                    <div className="adminCommunityForumComponentButtonText">Delete</div>
+                    <div className="adminCommunityForumComponentButtonText">{t('farmerPageButton2')}</div>
                   </button>
                 </div>         
                 </div>
@@ -96,29 +102,29 @@ const AdminCommunityForumComponent = () => {
                 <div className="adminCommunityForumComponentFrameGroup">
                   <div className="adminCommunityForumComponentFrameContainer">
                     <div className="adminCommunityForumComponentSubText1Wrapper">
-                      <b className="adminCommunityForumComponentSubText1">Can Squash survive summer?</b>
+                      <b className="adminCommunityForumComponentSubText1">{t('Text6')}</b>
                     </div>
                     <div className="adminCommunityForumComponentSubText2Wrapper2">
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>User ID:</b> B002
+                       <b>{t('Text9')}</b> B001
                       </div>
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>User Role</b> Buyer
+                       <b>{t('Text10')}</b> Buyer
                       </div>
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>Full Name:</b> Arriane Clarisse Gatpo
-                      </div>                                    
+                       <b>{t('Text11')}</b> Jenkins Mesina
+                      </div>                           
                     </div>
                   </div>
                   <div className="adminCommunityForumComponentFrameItem" />
-                  <div className="adminCommunityForumComponentDetails">   
+                  <div className="adminCommunityForumComponentDetails">      
                   <button className="adminCommunityForumComponentButton">
                     <FaEdit className="adminCommunityForumComponentButtonIcon" />
-                    <div className="adminCommunityForumComponentButtonText">Update</div>
-                  </button>             
+                    <div className="adminCommunityForumComponentButtonText">{t('farmerPageButton13')}</div>
+                  </button>          
                   <button className="adminCommunityForumComponentButton">
                     <FaTrash className="adminCommunityForumComponentButtonIcon" />
-                    <div className="adminCommunityForumComponentButtonText">Delete</div>
+                    <div className="adminCommunityForumComponentButtonText">{t('farmerPageButton2')}</div>
                   </button>
                 </div>         
                 </div>
@@ -137,29 +143,29 @@ const AdminCommunityForumComponent = () => {
                 <div className="adminCommunityForumComponentFrameGroup">
                   <div className="adminCommunityForumComponentFrameContainer">
                     <div className="adminCommunityForumComponentSubText1Wrapper">
-                      <b className="adminCommunityForumComponentSubText1">How corn grows?</b>
+                      <b className="adminCommunityForumComponentSubText1">{t('Text7')}</b>
                     </div>
                     <div className="adminCommunityForumComponentSubText2Wrapper2">
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>User ID:</b> F002
+                       <b>{t('Text9')}</b> B001
                       </div>
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>User Role</b> Farmer
+                       <b>{t('Text10')}</b> Buyer
                       </div>
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>Full Name:</b> Marievic Anes
-                      </div>                                     
+                       <b>{t('Text11')}</b> Jenkins Mesina
+                      </div>                           
                     </div>
                   </div>
                   <div className="adminCommunityForumComponentFrameItem" />
-                  <div className="adminCommunityForumComponentDetails">        
+                  <div className="adminCommunityForumComponentDetails">      
                   <button className="adminCommunityForumComponentButton">
                     <FaEdit className="adminCommunityForumComponentButtonIcon" />
-                    <div className="adminCommunityForumComponentButtonText">Update</div>
-                  </button>        
+                    <div className="adminCommunityForumComponentButtonText">{t('farmerPageButton13')}</div>
+                  </button>          
                   <button className="adminCommunityForumComponentButton">
                     <FaTrash className="adminCommunityForumComponentButtonIcon" />
-                    <div className="adminCommunityForumComponentButtonText">Delete</div>
+                    <div className="adminCommunityForumComponentButtonText">{t('farmerPageButton2')}</div>
                   </button>
                 </div>         
                 </div>
@@ -174,17 +180,17 @@ const AdminCommunityForumComponent = () => {
                 <div className="adminCommunityForumComponentFrameGroup">
                   <div className="adminCommunityForumComponentFrameContainer">
                     <div className="adminCommunityForumComponentSubText1Wrapper">
-                      <b className="adminCommunityForumComponentSubText1">How do you plant Rice efficiently?</b>
+                      <b className="adminCommunityForumComponentSubText1">{t('Text8')}</b>
                     </div>
                     <div className="adminCommunityForumComponentSubText2Wrapper2">
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>User ID:</b> B001
+                       <b>{t('Text9')}</b> B001
                       </div>
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>User Role</b> Buyer
+                       <b>{t('Text10')}</b> Buyer
                       </div>
                       <div className="adminCommunityForumComponentSubText2">
-                       <b>Full Name:</b> Jenkins Mesina
+                       <b>{t('Text11')}</b> Jenkins Mesina
                       </div>                           
                     </div>
                   </div>
@@ -192,92 +198,16 @@ const AdminCommunityForumComponent = () => {
                   <div className="adminCommunityForumComponentDetails">      
                   <button className="adminCommunityForumComponentButton">
                     <FaEdit className="adminCommunityForumComponentButtonIcon" />
-                    <div className="adminCommunityForumComponentButtonText">Update</div>
+                    <div className="adminCommunityForumComponentButtonText">{t('farmerPageButton13')}</div>
                   </button>          
                   <button className="adminCommunityForumComponentButton">
                     <FaTrash className="adminCommunityForumComponentButtonIcon" />
-                    <div className="adminCommunityForumComponentButtonText">Delete</div>
+                    <div className="adminCommunityForumComponentButtonText">{t('farmerPageButton2')}</div>
                   </button>
                 </div>         
                 </div>
               </a> 
-            </div>        
-
-            <div className="adminCommunityForumComponentFrameWrapper">
-              <a className="adminCommunityForumComponentRectangleParent">
-                <img
-                  className="adminCommunityForumComponentFrameChild"
-                  alt=""
-                  src={SiliVector}
-                />
-                <div className="adminCommunityForumComponentFrameGroup">
-                  <div className="adminCommunityForumComponentFrameContainer">
-                    <div className="adminCommunityForumComponentSubText1Wrapper">
-                      <b className="adminCommunityForumComponentSubText1">What are alternatives for sili?</b>
-                    </div>
-                    <div className="adminCommunityForumComponentSubText2Wrapper2">
-                      <div className="adminCommunityForumComponentSubText2">
-                       <b>User ID:</b> F003
-                      </div>
-                      <div className="adminCommunityForumComponentSubText2">
-                       <b>User Role</b> Farmer
-                      </div>
-                      <div className="adminCommunityForumComponentSubText2">
-                       <b>Full Name:</b> Daniella Tungol
-                      </div>                                      
-                    </div>
-                  </div>
-                  <div className="adminCommunityForumComponentFrameItem" />
-                  <div className="adminCommunityForumComponentDetails">      
-                  <button className="adminCommunityForumComponentButton">
-                    <FaEdit className="adminCommunityForumComponentButtonIcon" />
-                    <div className="adminCommunityForumComponentButtonText">Update</div>
-                  </button>          
-                  <button className="adminCommunityForumComponentButton">
-                    <FaTrash className="adminCommunityForumComponentButtonIcon" />
-                    <div className="adminCommunityForumComponentButtonText">Delete</div>
-                  </button>
-                </div>         
-                </div>
-              </a> 
-
-              <a className="adminCommunityForumComponentRectangleParent">
-                <img
-                  className="adminCommunityForumComponentFrameChild"
-                  alt=""
-                  src={TomatoVector}
-                />
-                <div className="adminCommunityForumComponentFrameGroup">
-                  <div className="adminCommunityForumComponentFrameContainer">
-                    <div className="adminCommunityForumComponentSubText1Wrapper">
-                      <b className="adminCommunityForumComponentSubText1">Is tomato good source?</b>
-                    </div>
-                    <div className="adminCommunityForumComponentSubText2Wrapper2">
-                      <div className="adminCommunityForumComponentSubText2">
-                       <b>User ID:</b> F003
-                      </div>
-                      <div className="adminCommunityForumComponentSubText2">
-                       <b>User Role</b> Farmer
-                      </div>
-                      <div className="adminCommunityForumComponentSubText2">
-                       <b>Full Name:</b> Daniella Tungol
-                      </div>                                      
-                    </div>
-                  </div>
-                  <div className="adminCommunityForumComponentFrameItem" />
-                  <div className="adminCommunityForumComponentDetails">  
-                  <button className="adminCommunityForumComponentButton">
-                    <FaEdit className="adminCommunityForumComponentButtonIcon" />
-                    <div className="adminCommunityForumComponentButtonText">Update</div>
-                  </button>              
-                  <button className="adminCommunityForumComponentButton">
-                    <FaTrash className="adminCommunityForumComponentButtonIcon" />
-                    <div className="adminCommunityForumComponentButtonText">Delete</div>
-                  </button>
-                </div>         
-                </div>
-              </a> 
-            </div>  
+            </div>                
 
             
          
@@ -306,6 +236,7 @@ const AdminCommunityForumComponent = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
 
   );
 };

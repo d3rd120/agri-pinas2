@@ -106,8 +106,8 @@ const App = () => {
           <Route path="/adminbuyercompletedtransactions" element={<AdminBuyerCompletedTransactions />}/>
           <Route path="/adminbuyercancelledtransactions" element={<AdminBuyerCancelledTransactions />}/>  
           <Route path="/adminfarmerpendingtransactions" element={<AdminFarmerPendingTransactions />}/>  
-          <Route path="/adminfarmercancelledtransactions" element={<AdminFarmerCompletedTransactions />}/>  
-          <Route path="/adminfarmercompletedtransactions" element={<AdminFarmerCancelledTransactions />}/>  
+          <Route path="/adminfarmercompletedtransactions" element={<AdminFarmerCompletedTransactions />}/>  
+          <Route path="/adminfarmercancelledtransactions" element={<AdminFarmerCancelledTransactions />}/>  
                    
           <Route element={<PublicRoutes />} />
           <Route element={<PrivateRoutes />} />

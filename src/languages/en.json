@@ -60,12 +60,14 @@
     "registerComponentText8": "Password",
     "registerComponentText9": "Confirm Password",
     "registerComponentText10": "Already have an account? ",
+    
 
     "farmerPageNavgationText1": "Dashboard",
     "farmerPageNavgationText2": "Marketplace",
     "farmerPageNavgationText3": "Community",
     "farmerPageNavgationText4": "Crop Tracker",
     "farmerPageNavgationText5": "Transactions",
+    "farmerPageNavgationText6": "Accounts",
 
     "farmerPageText1": "Heat up",
     "farmerPageText2": "Marketplace",
@@ -108,6 +110,12 @@
     "farmerPageButton11": "Harvest",
     "farmerPageButton12": "Add",
     "farmerPageButton13": "Update",
+    "farmerPageButton14": "chat",
+    "farmerPageButton15": "Add to Cart",
+    "farmerPageButton16": "Buy now",
+    "farmerPageButton17": "Checkout",
+    "farmerPageButton18": "Add",
+   
 
     "farmerPageEditText1": "Edit your product",
     "farmerPageEditText2": "Product Name",
@@ -203,6 +211,7 @@
     "farmerTransactionsText15": "Onion",
     "farmerTransactionsText16": "Squash",
     "farmerTransactionsText17": "Corn",
+    "farmerTransactionsText18": "Marketplace Management",
 
     "farmerTopNavText1": "Notification",
     "farmerTopNavText2": "You have a new message.",
@@ -249,7 +258,119 @@
     "farmerProfileText33": "Address",
     "farmerProfileText34": "Enter your address",
     "farmerProfileText35": "Set as default address",
-    "farmerProfileText36": "Delete this address?"
+    "farmerProfileText36": "Delete this address?",
+
+    "buyerPageNavigationText1": "Marketplace",
+    "buyerPageNavigationText2": "Cart",
+    "buyerPageNavigationText3": "Transactions",
+    "buyerPageNavigationText4": "Community",
+
+
+    "buyerPageCategory": "Category: ",
+    "buyerPageCategoryText1": "Fruits",
+    "buyerPageCategoryText2": "Vegetables",
+    "buyerPageCategoryText3": "Grains",
+
+    "buyerPagePackaging": "Package: ",
+    "buyerPagePackagingText1": "Sack",
+
+    "buyerPagePrice": "Price: ",
+
+    "buyerPageKilogram": "Kilogram per unit: ",
+
+    "buyerPagePopup": "Added to your cart ",
+
+    "buyerPageDescription": "Description: ",
+    "buyerPageDescriptionText1": "I am selling this product wholesale. Chat me... ",
+    "buyerPageDescriptionText2": "I am selling this product wholesale. Chat me if you have any questions about this product. ",
+    "buyerPageDescriptionText3": "In the Same Market",
+    "buyerPageDescriptionText4": "Tomato",
+    "buyerPageDescriptionText5": "Onion",
+    "buyerPageDescriptionText6": "Eggplant",
+
+
+    "buyerPageUserRole": "Farmer",
+    "buyerPageUserRole2": "Farmer: ",
+
+    "buyerCartText1": "Your Cart",
+    "buyerCartText2": "Product",
+    "buyerCartText3": "Price",
+    "buyerCartText4": "Quantity",
+    "buyerCartText5": "Total Price",
+    "buyerCartText6": "Action",
+    "buyerCartText7": "Farmer",
+    "buyerCartText8": "Corn",
+    "buyerCartText9": "Category",
+    "buyerCartText10": "Package",
+    "buyerCartText11": "Other Products",
+    "buyerCartText12": "Tomato",
+    "buyerCartText13": "Onion",
+    "buyerCartText14": "Rice",
+
+    "buyerTransactionText1": "Transaction",
+    "buyerTransactionText2": "Your Purchases",
+    "buyerTransactionText3": "Show: ",
+    "buyerTransactionText4": "Dated July 2, 2023",
+    "buyerTransactionText5": "Received",
+    "buyerTransactionText6": "Farmer",
+    "buyerTransactionText7": "Corn",
+    "buyerTransactionText8": "Okra",
+    "buyerTransactionText9": "Arrived on July 2, 2023",
+    "buyerTransactionText10": "Arrived",
+    "buyerTransactionText11": "Canceled",
+    "buyerTransactionText12": "Watermelon",
+    "buyerTransactionText13": "Onion",
+
+
+    "buyerTransactionNavText1": "Incoming",
+    "buyerTransactionNavText2": "Completed",
+    "buyerTransactionNavText3": "Canceled",
+
+    "buyerTopNavText1": "Notifications",
+    "buyerTopNavText2": "You have a new message.",
+    "buyerTopNavText3": "2 hours ago",
+    "buyerTopNavText4": "New deals are available.",
+    "buyerTopNavText5": "3 days ago",
+    "buyerTopNavText6": "Messages",
+    "buyerTopNavText7": "You have a new message.",
+    "buyerTopNavText8": "You have a new message.",
+    "buyerTopNavText9": "All Messages",
+    "Text1": "Community Discussion",
+    "Text2": "Post Management",
+    "Text3": "Show: ",
+    "Text4": "Search",
+    "Text5": "What is the SRP of Onion?",
+    "Text6": "Does Squash last long?",
+    "Text7": "How does corn grow?",
+    "Text8": "How to plant rice?",
+    "Text9": "User ID: ",
+    "Text10": "User Role: ",
+    "Text11": "Full Name: ",
+    "Text12": "Pending",
+    "Text13": "Canceled",
+    "Text14": "Completed",
+    "Text15": "Transaction",
+    "Text16": "Farmer's Transaction",
+    "Text17": "Show: ",
+    "Text18": "Search",
+    "Text19": "Bird's Eye Chili",
+    "Text20": "Rice",
+    "Text21": "Squash",
+    "Text22": "Farmer's Name: ",
+    "Text23": "Status: ",
+    "Text24": "Corn",
+    "Text25": "Onion",
+    "Text26": "Okra",
+    "Text27": "String Beans",
+    "Text28": "Buyer's Transaction",
+    "Text29": "Rice",
+    "Text30": "Bird's Eye Chili",
+    "Text31": "Squash",
+    "Text32": "Accounts",
+    "Text33": "Farmer's Account",
+    "Text34": "Buyer's Account",
+
+    "farmerPageDashboardText1": "Welcome Farmer"
 
 
   }

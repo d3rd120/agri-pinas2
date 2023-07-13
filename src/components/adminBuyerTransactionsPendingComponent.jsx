@@ -4,9 +4,15 @@ import AdminNavigation from '../components/adminPageNavigation';
 import OkraVector from '../img/okra.png';
 import SitawVector from '../img/sitaw.png';
 import { FaEdit, FaTrash, FaFolderOpen } from 'react-icons/fa';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 const AdminBuyerTransactionsPendingComponent = () => {
+  const { t } = useTranslation();
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="adminBuyerTransactionsPendingComponent">
       <AdminNavigation />
       <div className="adminBuyerTransactionsPendingComponentMainPanel">
@@ -14,7 +20,7 @@ const AdminBuyerTransactionsPendingComponent = () => {
           <div className="adminBuyerTransactionsPendingComponentMainText">
             <b className="adminBuyerTransactionsPendingComponentMainTextWrapper">
               <p className="adminBuyerTransactionsPendingComponentBlankLine">&nbsp;</p>
-              <p className="adminBuyerTransactionsPendingComponentBlankLine">Transactions</p>
+              <p className="adminBuyerTransactionsPendingComponentBlankLine">{t('Text15')}</p>
             </b>
           </div>
         </div>
@@ -22,11 +28,11 @@ const AdminBuyerTransactionsPendingComponent = () => {
 
         <div className="adminBuyerTransactionsPendingComponentCard">
           <div className="adminBuyerTransactionsPendingComponentSubTitle">
-            <FaFolderOpen /> Buyer Transactions
+            <FaFolderOpen /> {t('Text28')}
           </div>
           <br></br>
           <div className="adminBuyerTransactionsPendingComponentShow">
-            Show:
+          {t('Text17')}
             <select className="adminBuyerTransactionsPendingComponentRowSelect" onchange="updateRows(this.value)">
               <option value="5">5</option>
               <option value="10">10</option>
@@ -36,7 +42,7 @@ const AdminBuyerTransactionsPendingComponent = () => {
             <input 
             className="adminBuyerTransactionsPendingComponentRowSelect"
             type = "text"
-            placeholder = "Search">                    
+            placeholder = {t('Text18')}>                    
             </input>
           </div>
           <br></br>
@@ -55,35 +61,35 @@ const AdminBuyerTransactionsPendingComponent = () => {
                   <div className="adminBuyerTransactionsPendingComponentFrameGroup">
                     <div className="adminBuyerTransactionsPendingComponentFrameContainer">
                       <div className="adminBuyerTransactionsPendingComponentSubText1Wrapper">
-                        <b className="adminBuyerTransactionsPendingComponentSubText1">Okra</b>
+                        <b className="adminBuyerTransactionsPendingComponentSubText1">{t('Text26')}</b>
                       </div>
                       <div className="adminBuyerTransactionsPendingComponentSubText2Wrapper2">
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>User ID:</b> B001
+                          <b>{t('farmerTransactionsText7')}</b> B001
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Item ID:</b> N001
+                          <b>{t('farmerTransactionsText8')}</b> N001
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Buyer Name:</b> Ryan Edward Amador
+                          <b>{t('farmerTransactionsText9')}</b> Ryan Edward Amador
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Date Ordered:</b> 02 / 01 / 2023
+                          <b>{t('farmerTransactionsText10')}:</b> 02 / 01 / 2023
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Unit Price:</b> 400
+                          <b>{t('farmerTransactionsText11')}</b> 400
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Quantity Order:</b> 2
+                          <b>{t('farmerTransactionsText12')}</b> 2
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Total Amount:</b> 800
+                          <b>{t('farmerTransactionsText13')}</b> 800
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Farmer Name:</b> Arriane Gatpo
+                          <b>{t('Text22')}</b> Arriane Gatpo
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Status:</b> Pending
+                          <b>{t('Text23')}</b> Pending
                         </div>
                       </div>
                     </div>
@@ -91,11 +97,11 @@ const AdminBuyerTransactionsPendingComponent = () => {
                     <div className="adminBuyerTransactionsPendingComponentDetails">
                     <button className="adminBuyerTransactionsPendingComponentButton">
                         <FaEdit className="adminBuyerTransactionsPendingComponentButtonIcon" />
-                        <div className="adminBuyerTransactionsPendingComponentButtonText">Update</div>
+                        <div className="adminBuyerTransactionsPendingComponentButtonText">{t('farmerPageButton13')}</div>
                       </button>
                       <button className="adminBuyerTransactionsPendingComponentButton">
                         <FaTrash className="adminBuyerTransactionsPendingComponentButtonIcon" />
-                        <div className="adminBuyerTransactionsPendingComponentButtonText">Delete</div>
+                        <div className="adminBuyerTransactionsPendingComponentButtonText">{t('farmerPageButton2')}</div>
                       </button>
                     </div>
                   </div>
@@ -110,47 +116,47 @@ const AdminBuyerTransactionsPendingComponent = () => {
                   <div className="adminBuyerTransactionsPendingComponentFrameGroup">
                     <div className="adminBuyerTransactionsPendingComponentFrameContainer">
                       <div className="adminBuyerTransactionsPendingComponentSubText1Wrapper">
-                        <b className="adminBuyerTransactionsPendingComponentSubText1">Sitaw</b>
+                        <b className="adminBuyerTransactionsPendingComponentSubText1">{t('Text27')}</b>
                       </div>
                       <div className="adminBuyerTransactionsPendingComponentSubText2Wrapper2">
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>User ID:</b> B001
+                          <b>{t('farmerTransactionsText7')}</b> B001
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Item ID:</b> N001
+                          <b>{t('farmerTransactionsText8')}</b> N001
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Buyer Name:</b> Ryan Edward Amador
+                          <b>{t('farmerTransactionsText9')}</b> Ryan Edward Amador
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Date Ordered:</b> 02 / 01 / 2023
+                          <b>{t('farmerTransactionsText10')}:</b> 02 / 01 / 2023
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Unit Price:</b> 400
+                          <b>{t('farmerTransactionsText11')}</b> 400
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Quantity Order:</b> 2
+                          <b>{t('farmerTransactionsText12')}</b> 2
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Total Amount:</b> 800
+                          <b>{t('farmerTransactionsText13')}</b> 800
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Farmer Name:</b> Arriane Gatpo
+                          <b>{t('Text22')}</b> Arriane Gatpo
                         </div>
                         <div className="adminBuyerTransactionsPendingComponentSubText2">
-                          <b>Status:</b> Pending
-                        </div>
+                          <b>{t('Text23')}</b> Pending
+                        </div>                     
                       </div>
                     </div>
                     <div className="adminBuyerTransactionsPendingComponentFrameItem" />
                     <div className="adminBuyerTransactionsPendingComponentDetails">
                     <button className="adminBuyerTransactionsPendingComponentButton">
                         <FaEdit className="adminBuyerTransactionsPendingComponentButtonIcon" />
-                        <div className="adminBuyerTransactionsPendingComponentButtonText">Update</div>
+                        <div className="adminBuyerTransactionsPendingComponentButtonText">{t('farmerPageButton13')}</div>
                       </button>
                       <button className="adminBuyerTransactionsPendingComponentButton">
                         <FaTrash className="adminBuyerTransactionsPendingComponentButtonIcon" />
-                        <div className="adminBuyerTransactionsPendingComponentButtonText">Delete</div>
+                        <div className="adminBuyerTransactionsPendingComponentButtonText">{t('farmerPageButton2')}</div>
                       </button>
                     </div>
                   </div>
@@ -188,6 +194,7 @@ const AdminBuyerTransactionsPendingComponent = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
   );
 };
 

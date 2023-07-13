@@ -64,6 +64,7 @@
     "farmerPageNavgationText3": "Komunidad",
     "farmerPageNavgationText4": "Mga Tanim",
     "farmerPageNavgationText5": "Transaksyon",
+    "farmerPageNavgationText6": "Mga Akawnt",
 
     "farmerPageText1": "Painitan",
     "farmerPageText2": "Pamilihan",
@@ -80,6 +81,7 @@
     "farmerPageCategoryText1": "Prutas",
     "farmerPageCategoryText2": "Gulay",
     "farmerPageCategoryText3": "Butil",
+    
 
     "farmerPagePackaging": "Pakete: ",
     "farmerPagePackagingText1": "Sako",
@@ -212,6 +214,7 @@
     "farmerTransactionsText15": "Sibuyas",
     "farmerTransactionsText16": "Kalabasa",
     "farmerTransactionsText17": "Mais",
+    "farmerTransactionsText18": "Pag Manage ng Pamilihan",
 
     "farmerTopNavText1": "Notipikasyon",
     "farmerTopNavText2": "Mayroon kang bagong mensahe.",
@@ -337,10 +340,49 @@
     "buyerTopNavText6": "Mga Mensahe",
     "buyerTopNavText7": "Mayroon kang bagong mensahe.",
     "buyerTopNavText8": "Mayroon kang bagong mensahe.",
-    "buyerTopNavText9": "Lahat ng mensahe"
-
+    "buyerTopNavText9": "Lahat ng mensahe",
+    "Text1": "Pagtatalakay ng Komunidad",
+    "Text2": "Pag Manage ng Post",
+    "Text3": "Pakita: ",
+    "Text4": "Mag Search",
+    "Text5": "Anong SRP ng Sibuyas?",
+    "Text6": "Tumatagal ba ang Kalabasa?",
+    "Text7": "Pano lumaki nag mais?",
+    "Text8": "Pano magtanim ng palay?",
+    "Text9": "ID ng User: ",
+    "Text10": "Role ng User: ",
+    "Text11": "Buong Pangalan: ",
+    "Text12": "Hinihintay",
+    "Text13": "Kinansela",
+    "Text14": "Tapos",
+    "Text15": "Transaksyon",
+    "Text16": "Transaksyon ng Magsasaka",
+    "Text17": "Pakita: ",
+    "Text18": "Mag Search",
+    "Text19": "Siling Labuyo",
+    "Text20": "Palay",
+    "Text21": "Kalabasa",
+    "Text22": "Pangalan ng Magsasaka: ",
+    "Text23": "Kalagayan: ",
+    "Text24": "Mais",
+    "Text25": "Sibuyas",
+    "Text26": "Okra",
+    "Text27": "Sitaw",
+    "Text28": "Transaksyon ng Mamimili",
+    "Text29": "Palay",
+    "Text30": "Siling Labuyo",
+    "Text31": "Kalabasa",
+    "Text32": "Akawnts",
+    "Text33": "Akawnt ng Magasasaka",
+    "Text34": "Akawnt ng Mamimili"
     
 
+
+
+
+
+    
+    
 
 
    

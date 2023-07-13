@@ -5,9 +5,15 @@ import RiceVector from '../img/riceCardImage.png';
 import CornVector from '../img/cornVector.png';
 import OnionVector from '../img/onionVector.png';
 import { FaEdit, FaTrash, FaFolderOpen } from 'react-icons/fa';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 const AdminBuyerTransactionsCompletedComponent = () => {
+  const { t } = useTranslation();
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="adminBuyerTransactionsCompletedComponent">
       <AdminNavigation />
       <div className="adminBuyerTransactionsCompletedComponentMainPanel">
@@ -15,7 +21,7 @@ const AdminBuyerTransactionsCompletedComponent = () => {
           <div className="adminBuyerTransactionsCompletedComponentMainText">
             <b className="adminBuyerTransactionsCompletedComponentMainTextWrapper">
               <p className="adminBuyerTransactionsCompletedComponentBlankLine">&nbsp;</p>
-              <p className="adminBuyerTransactionsCompletedComponentBlankLine">Transactions</p>
+              <p className="adminBuyerTransactionsCompletedComponentBlankLine">{t('Text15')}</p>
             </b>
           </div>
         </div>
@@ -23,11 +29,11 @@ const AdminBuyerTransactionsCompletedComponent = () => {
 
         <div className="adminBuyerTransactionsCompletedComponentCard">
           <div className="adminBuyerTransactionsCompletedComponentSubTitle">
-            <FaFolderOpen /> Buyer Transactions
+            <FaFolderOpen /> {t('Text28')}
           </div>
           <br></br>
           <div className="adminBuyerTransactionsCompletedComponentShow">
-            Show:
+          {t('Text17')}
             <select className="adminBuyerTransactionsCompletedComponentRowSelect" onchange="updateRows(this.value)">
               <option value="5">5</option>
               <option value="10">10</option>
@@ -37,7 +43,7 @@ const AdminBuyerTransactionsCompletedComponent = () => {
             <input 
             className="adminBuyerTransactionsCompletedComponentRowSelect"
             type = "text"
-            placeholder = "Search">                    
+            placeholder ={t('Text18')}>                    
             </input>
           </div>
           <br></br>
@@ -56,35 +62,35 @@ const AdminBuyerTransactionsCompletedComponent = () => {
                   <div className="adminBuyerTransactionsCompletedComponentFrameGroup">
                     <div className="adminBuyerTransactionsCompletedComponentFrameContainer">
                       <div className="adminBuyerTransactionsCompletedComponentSubText1Wrapper">
-                        <b className="adminBuyerTransactionsCompletedComponentSubText1">Onions</b>
+                        <b className="adminBuyerTransactionsCompletedComponentSubText1">{t('Text25')}</b>
                       </div>
                       <div className="adminBuyerTransactionsCompletedComponentSubText2Wrapper2">
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>User ID:</b> B001
+                          <b>{t('farmerTransactionsText7')}</b> B001
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Item ID:</b> N001
+                          <b>{t('farmerTransactionsText8')}</b> N001
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Buyer Name:</b> Ryan Edward Amador
+                          <b>{t('farmerTransactionsText9')}</b> Ryan Edward Amador
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Date Ordered:</b> 02 / 01 / 2023
+                          <b>{t('farmerTransactionsText10')}</b> 02 / 01 / 2023
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Unit Price:</b> 400
+                          <b>{t('farmerTransactionsText11')}</b> 400
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Quantity Order:</b> 2
+                          <b>{t('farmerTransactionsText12')}</b> 2
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Total Amount:</b> 800
+                          <b>{t('farmerTransactionsText13')}</b> 800
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Farmer Name:</b> Arriane Gatpo
+                          <b>{t('Text22')}</b> Arriane Gatpo
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Status:</b> Completed
+                          <b>{t('Text23')}</b> Completed
                         </div>
                       </div>
                     </div>
@@ -101,35 +107,35 @@ const AdminBuyerTransactionsCompletedComponent = () => {
                   <div className="adminBuyerTransactionsCompletedComponentFrameGroup">
                     <div className="adminBuyerTransactionsCompletedComponentFrameContainer">
                       <div className="adminBuyerTransactionsCompletedComponentSubText1Wrapper">
-                        <b className="adminBuyerTransactionsCompletedComponentSubText1">Rice</b>
+                        <b className="adminBuyerTransactionsCompletedComponentSubText1">{t('Text29')}</b>
                       </div>
                       <div className="adminBuyerTransactionsCompletedComponentSubText2Wrapper2">
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>User ID:</b> B001
+                          <b>{t('farmerTransactionsText7')}</b> B001
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Item ID:</b> N001
+                          <b>{t('farmerTransactionsText8')}</b> N001
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Buyer Name:</b> Ryan Edward Amador
+                          <b>{t('farmerTransactionsText9')}</b> Ryan Edward Amador
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Date Ordered:</b> 02 / 01 / 2023
+                          <b>{t('farmerTransactionsText10')}</b> 02 / 01 / 2023
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Unit Price:</b> 400
+                          <b>{t('farmerTransactionsText11')}</b> 400
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Quantity Order:</b> 2
+                          <b>{t('farmerTransactionsText12')}</b> 2
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Total Amount:</b> 800
+                          <b>{t('farmerTransactionsText13')}</b> 800
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Farmer Name:</b> Arriane Gatpo
+                          <b>{t('Text22')}</b> Arriane Gatpo
                         </div>
                         <div className="adminBuyerTransactionsCompletedComponentSubText2">
-                          <b>Status:</b> Completed
+                          <b>{t('Text23')}</b> Completed
                         </div>
                       </div>
                     </div>
@@ -168,6 +174,7 @@ const AdminBuyerTransactionsCompletedComponent = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
   );
 };
 

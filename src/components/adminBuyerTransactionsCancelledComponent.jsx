@@ -5,9 +5,15 @@ import RiceVector from '../img/riceCardImage.png';
 import SiliVector from '../img/sili.png';
 import SquashVector from '../img/squash.png';
 import { FaEdit, FaTrash, FaFolderOpen } from 'react-icons/fa';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 const AdminBuyerTransactionsCancelledComponent = () => {
+  const { t } = useTranslation();
   return (
+    <I18nextProvider i18n={i18n}>
     <div className="adminBuyerTransactionsCancelledComponent">
       <AdminNavigation />
       <div className="adminBuyerTransactionsCancelledComponentMainPanel">
@@ -15,7 +21,7 @@ const AdminBuyerTransactionsCancelledComponent = () => {
           <div className="adminBuyerTransactionsCancelledComponentMainText">
             <b className="adminBuyerTransactionsCancelledComponentMainTextWrapper">
               <p className="adminBuyerTransactionsCancelledComponentBlankLine">&nbsp;</p>
-              <p className="adminBuyerTransactionsCancelledComponentBlankLine">Transactions</p>
+              <p className="adminBuyerTransactionsCancelledComponentBlankLine">{t('Text15')}</p>
             </b>
           </div>
         </div>
@@ -23,11 +29,11 @@ const AdminBuyerTransactionsCancelledComponent = () => {
 
         <div className="adminBuyerTransactionsCancelledComponentCard">
           <div className="adminBuyerTransactionsCancelledComponentSubTitle">
-            <FaFolderOpen /> Buyer Transactions
+            <FaFolderOpen /> {t('Text28')}
           </div>
           <br></br>
           <div className="adminBuyerTransactionsCancelledComponentShow">
-            Show:
+          {t('Text17')}
             <select className="adminBuyerTransactionsCancelledComponentRowSelect" onchange="updateRows(this.value)">
               <option value="5">5</option>
               <option value="10">10</option>
@@ -37,7 +43,7 @@ const AdminBuyerTransactionsCancelledComponent = () => {
             <input 
             className="adminBuyerTransactionsCancelledComponentRowSelect"
             type = "text"
-            placeholder = "Search">                    
+            placeholder =   {t('Text18')}>                    
             </input>
           </div>
           <br></br>
@@ -56,35 +62,35 @@ const AdminBuyerTransactionsCancelledComponent = () => {
                   <div className="adminBuyerTransactionsCancelledComponentFrameGroup">
                     <div className="adminBuyerTransactionsCancelledComponentFrameContainer">
                       <div className="adminBuyerTransactionsCancelledComponentSubText1Wrapper">
-                        <b className="adminBuyerTransactionsCancelledComponentSubText1">Siling Labuyo</b>
+                        <b className="adminBuyerTransactionsCancelledComponentSubText1">  {t('Text30')}</b>
                       </div>
                       <div className="adminBuyerTransactionsCancelledComponentSubText2Wrapper2">
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>User ID:</b> B001
+                          <b>{t('farmerTransactionsText7')}</b> B001
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Item ID:</b> N001
+                          <b>{t('farmerTransactionsText8')}</b> N001
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Buyer Name:</b> Ryan Edward Amador
+                          <b>{t('farmerTransactionsText9')}</b> Ryan Edward Amador
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Date Ordered:</b> 02 / 01 / 2023
+                          <b>{t('farmerTransactionsText10')}</b> 02 / 01 / 2023
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Unit Price:</b> 400
+                          <b>{t('farmerTransactionsText11')}</b> 400
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Quantity Order:</b> 2
+                          <b>{t('farmerTransactionsText12')}</b> 2
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Total Amount:</b> 800
+                          <b>{t('farmerTransactionsText13')}</b> 800
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Farmer Name:</b> Arriane Gatpo
+                          <b>{t('Text22')}</b> Arriane Gatpo
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Status:</b> Cancelled
+                          <b>{t('Text23')}</b> Cancelled
                         </div>
                       </div>
                     </div>
@@ -101,35 +107,35 @@ const AdminBuyerTransactionsCancelledComponent = () => {
                   <div className="adminBuyerTransactionsCancelledComponentFrameGroup">
                     <div className="adminBuyerTransactionsCancelledComponentFrameContainer">
                       <div className="adminBuyerTransactionsCancelledComponentSubText1Wrapper">
-                        <b className="adminBuyerTransactionsCancelledComponentSubText1">Squash</b>
+                        <b className="adminBuyerTransactionsCancelledComponentSubText1">  {t('Text31')}</b>
                       </div>
                       <div className="adminBuyerTransactionsCancelledComponentSubText2Wrapper2">
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>User ID:</b> B001
+                          <b>{t('farmerTransactionsText7')}</b> B001
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Item ID:</b> N001
+                          <b>{t('farmerTransactionsText8')}</b> N001
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Buyer Name:</b> Ryan Edward Amador
+                          <b>{t('farmerTransactionsText9')}</b> Ryan Edward Amador
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Date Ordered:</b> 02 / 01 / 2023
+                          <b>{t('farmerTransactionsText10')}</b> 02 / 01 / 2023
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Unit Price:</b> 400
+                          <b>{t('farmerTransactionsText11')}</b> 400
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Quantity Order:</b> 2
+                          <b>{t('farmerTransactionsText12')}</b> 2
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Total Amount:</b> 800
+                          <b>{t('farmerTransactionsText13')}</b> 800
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Farmer Name:</b> Arriane Gatpo
+                          <b>{t('Text22')}</b> Arriane Gatpo
                         </div>
                         <div className="adminBuyerTransactionsCancelledComponentSubText2">
-                          <b>Status:</b> Cancelled
+                          <b>{t('Text23')}</b> Cancelled
                         </div>
                       </div>
                     </div>
@@ -167,6 +173,7 @@ const AdminBuyerTransactionsCancelledComponent = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
   );
 };
 

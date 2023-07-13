@@ -4,9 +4,13 @@ import { FaPeopleArrows, FaEdit, FaTrash} from 'react-icons/fa';
 import React, { useState, useEffect } from 'react';
 import { collection, onSnapshot } from 'firebase/firestore';
 import { db } from './firebase';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 
 const AdminFarmerTransactions = () => {
+  const { t } = useTranslation();
   const [registeredUsers, setRegisteredUsers] = useState([]);
 
 
@@ -25,6 +29,7 @@ const AdminFarmerTransactions = () => {
   }, []);
   
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="adminAccountBuyerComponent">
       <AdminNavigation />
       <div className="adminAccountBuyerComponentMainPanel">
@@ -32,7 +37,7 @@ const AdminFarmerTransactions = () => {
           <div className="adminAccountBuyerComponentMainText">
             <b className="adminAccountBuyerComponentMainTextContainer">              
               <p className="adminAccountBuyerComponentBlankLine">&nbsp;</p>
-              <p className="adminAccountBuyerComponentBlankLine">accounts</p>
+              <p className="adminAccountBuyerComponentBlankLine">{t('Text32')}</p>
             </b>
           </div>
         </div>
@@ -44,10 +49,10 @@ const AdminFarmerTransactions = () => {
         <div className="adminBuyerAccountManagementPageLayout1">    
             <div className="adminBuyerAccountManagementPageLayout2">
         <div className="adminBuyerAccountManagementCard">
-            <div className="adminBuyerAccountManagementSubTitle"><FaPeopleArrows /> Buyer Accounts
+            <div className="adminBuyerAccountManagementSubTitle"><FaPeopleArrows /> {t('Text34')}
             </div>
             <br></br>
-           <div className = "adminBuyerAccountManagementShow">Show:   
+           <div className = "adminBuyerAccountManagementShow">{t('Text3')}   
            <select className="adminBuyerAccountManagementRowSelect" onchange="updateRows(this.value)">
                    <option value="5">5</option>
                    <option value="10">10</option>
@@ -173,6 +178,7 @@ const AdminFarmerTransactions = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
   );
 };
 
