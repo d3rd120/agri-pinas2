@@ -16,8 +16,8 @@ const MainPage = () => {
 
     return (
         <>
-        <button onClick={() => changeLanguage('en')}>English</button>
-        <button onClick={() => changeLanguage('fil')}>Filipino</button>
+        {/* <button onClick={() => changeLanguage('en')}>English</button>
+        <button onClick={() => changeLanguage('fil')}>Filipino</button> */}
         <MainPageNavigation />                    
         <HomeComponent />  
         <AboutComponent />     

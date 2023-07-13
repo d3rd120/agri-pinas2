@@ -11,9 +11,14 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { db } from './firebase';
 import { collection, onSnapshot } from 'firebase/firestore';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 
 const AdminMarketplaceComponent = () => {
+  const { t } = useTranslation();
   const [showPopup, setShowPopup] = useState(false);
   const [products, setProducts] = useState([]);
 
@@ -31,6 +36,7 @@ const AdminMarketplaceComponent = () => {
 
 
   return (
+    <I18nextProvider i18n={i18n}> 
     <div className="adminMarketplaceComponent">
       <AdminNavigation />
       <div className="adminMarketplaceComponentMainPanel">   
@@ -38,17 +44,17 @@ const AdminMarketplaceComponent = () => {
           <div className="adminMarketplaceComponentMainText">
             <b className="adminMarketplaceComponentMainTextWrapper">       
               <p className="adminMarketplaceComponentBlankLine">&nbsp;</p>
-              <p className="adminMarketplaceComponentBlankLine">Marketplace</p>
+              <p className="adminMarketplaceComponentBlankLine">{t('farmerPageNavgationText2')}</p>
             </b>
           </div>
         </div>    
     
         
         <div className="adminMarketplaceComponentCard">
-          <div className="adminMarketplaceComponentSubTitle"><FaStore /> Marketplace Management
+          <div className="adminMarketplaceComponentSubTitle"><FaStore /> {t('farmerTransactionsText18')}
           </div>
           <br></br>
-          <div className="adminMarketplaceComponentShow">Show:   
+          <div className="adminMarketplaceComponentShow">{t('farmerTransactionsText3')}   
             <select className="adminMarketplaceComponentRowSelect" onchange="updateRows(this.value)">
               <option value="5">5</option>
               <option value="10">10</option>
@@ -58,7 +64,7 @@ const AdminMarketplaceComponent = () => {
             <input 
             className="adminMarketplaceComponentRowSelect"
             type = "text"
-            placeholder = "Search">                    
+            placeholder = {t('farmerTransactionsText4')}>                    
             </input>
           </div> 
           <br></br>     
@@ -83,7 +89,7 @@ const AdminMarketplaceComponent = () => {
                         <div className="farmerMarketplaceComponentCategoryWrapper">
                           <div className="farmerMarketplaceComponentCategoryContainer">
                             <p className="farmerMarketplaceComponentBlankLine">
-                              <b>Category: </b>
+                              <b>Category: </b>farmerPageCategory
                               <span className="farmerMarketplaceComponentCategory">{product.category}</span>
                             </p>
                             <p className="farmerMarketplaceComponentBlankLine">
@@ -127,23 +133,23 @@ const AdminMarketplaceComponent = () => {
                   <div className="adminMarketplaceComponentFrameGroup">
                     <div className="adminMarketplaceComponentFrameContainer">
                       <div className="adminMarketplaceComponentSubText1Wrapper">
-                        <b className="adminMarketplaceComponentSubText1">Onions</b>
+                        <b className="adminMarketplaceComponentSubText1">{t('farmerPageProductText2')}</b>
                       </div>
                       <div className="adminMarketplaceComponentSubText2Wrapper2">                        
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Category:</b> Vegetable
+                          <b>{t('farmerPageCategory')}</b> Vegetable
                         </div> 
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Packaging:</b> Sack
+                          <b>{t('farmerPagePackaging')}</b> Sack
                         </div>                        
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Price:</b> Php 1,000
+                          <b>{t('farmerPagePrice')}</b> Php 1,000
                         </div>    
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Kilogram per unit:</b> 5 kgs
+                          <b>{t('farmerPageKilogram')}</b> 5 kgs
                         </div>    
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Description:</b>  An onion is a round vegetable with a brown skin that grows underground. It has many white layers on its inside which have a strong.
+                          <b>{t('farmerPageDescription')}</b>  An onion is a round vegetable with a brown skin that grows underground. It has many white layers on its inside which have a strong.
                         </div>    
                       </div>
                     </div>
@@ -151,11 +157,11 @@ const AdminMarketplaceComponent = () => {
                     <div className="adminMarketplaceComponentDetails">      
                     <button className="adminMarketplaceComponentButton">
                         <FaEdit className="adminMarketplaceComponentButtonIcon" />
-                        <div className="adminMarketplaceComponentButtonText">Update</div>
+                        <div className="adminMarketplaceComponentButtonText">{t('farmerPageButton13')}</div>
                       </button>          
                       <button className="adminMarketplaceComponentButton">
                         <FaTrash className="adminMarketplaceComponentButtonIcon" />
-                        <div className="adminMarketplaceComponentButtonText">Delete</div>
+                        <div className="adminMarketplaceComponentButtonText">{t('farmerPageButton2')}</div>
                       </button>
                     </div>         
                   </div>
@@ -170,37 +176,37 @@ const AdminMarketplaceComponent = () => {
                   <div className="adminMarketplaceComponentFrameGroup">
                     <div className="adminMarketplaceComponentFrameContainer">
                       <div className="adminMarketplaceComponentSubText1Wrapper">
-                        <b className="adminMarketplaceComponentSubText1">Siling Labuyo</b>
+                        <b className="adminMarketplaceComponentSubText1">{t('farmerPageProductText5')}</b>
                       </div>
                       <div className="adminMarketplaceComponentSubText2Wrapper2">                        
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Category:</b> Fruit
+                          <b>{t('farmerPageCategory')}</b> Vegetable
                         </div> 
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Packaging:</b> Sack
+                          <b>{t('farmerPagePackaging')}</b> Sack
                         </div>                        
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Price:</b> Php 6,000
+                          <b>{t('farmerPagePrice')}</b> Php 1,000
                         </div>    
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Kilogram per unit:</b> 70 kgs
+                          <b>{t('farmerPageKilogram')}</b> 5 kgs
                         </div>    
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Description:</b>  Siling labuyo, also known as bird's eye chili or Thai chili, is a small, fiery chili pepper commonly found in Southeast Asian cuisine.
+                          <b>{t('farmerPageDescription')}</b>  An onion is a round vegetable with a brown skin that grows underground. It has many white layers on its inside which have a strong.
                         </div>    
                       </div>
                     </div>
                     <div className="adminMarketplaceComponentFrameItem" />
-                    <div className="adminMarketplaceComponentDetails">   
+                    <div className="adminMarketplaceComponentDetails">      
                     <button className="adminMarketplaceComponentButton">
                         <FaEdit className="adminMarketplaceComponentButtonIcon" />
-                        <div className="adminMarketplaceComponentButtonText">Update</div>
-                      </button>             
+                        <div className="adminMarketplaceComponentButtonText">{t('farmerPageButton13')}</div>
+                      </button>          
                       <button className="adminMarketplaceComponentButton">
                         <FaTrash className="adminMarketplaceComponentButtonIcon" />
-                        <div className="adminMarketplaceComponentButtonText">Delete</div>
+                        <div className="adminMarketplaceComponentButtonText">{t('farmerPageButton2')}</div>
                       </button>
-                    </div>         
+                    </div>        
                   </div>
                 </a> 
 
@@ -220,36 +226,35 @@ const AdminMarketplaceComponent = () => {
                   <div className="adminMarketplaceComponentFrameGroup">
                     <div className="adminMarketplaceComponentFrameContainer">
                       <div className="adminMarketplaceComponentSubText1Wrapper">
-                        <b className="adminMarketplaceComponentSubText1">Squash</b>
+                        <b className="adminMarketplaceComponentSubText1">{t('farmerPageProductText6')}</b>
                       </div>
                       <div className="adminMarketplaceComponentSubText2Wrapper2">                        
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Category:</b> Vegetable
+                          <b>{t('farmerPageCategory')}</b> Vegetable
                         </div> 
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Packaging:</b> Sack
+                          <b>{t('farmerPagePackaging')}</b> Sack
                         </div>                        
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Price:</b> Php 2,000
+                          <b>{t('farmerPagePrice')}</b> Php 1,000
                         </div>    
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Kilogram per unit:</b> 10 kgs
+                          <b>{t('farmerPageKilogram')}</b> 5 kgs
                         </div>    
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Description:</b> Squash refers to a group of edible plants that belong to the gourd family, Cucurbitaceae. 
-                          It is characterized by its fleshy fruit, which can come in various shapes, sizes, and colors depending on the specific variety. 
+                          <b>{t('farmerPageDescription')}</b>  An onion is a round vegetable with a brown skin that grows underground. It has many white layers on its inside which have a strong.
                         </div>    
                       </div>
                     </div>
                     <div className="adminMarketplaceComponentFrameItem" />
-                    <div className="adminMarketplaceComponentDetails"> 
+                    <div className="adminMarketplaceComponentDetails">      
                     <button className="adminMarketplaceComponentButton">
                         <FaEdit className="adminMarketplaceComponentButtonIcon" />
-                        <div className="adminMarketplaceComponentButtonText">Update</div>
-                      </button>               
+                        <div className="adminMarketplaceComponentButtonText">{t('farmerPageButton13')}</div>
+                      </button>          
                       <button className="adminMarketplaceComponentButton">
                         <FaTrash className="adminMarketplaceComponentButtonIcon" />
-                        <div className="adminMarketplaceComponentButtonText">Delete</div>
+                        <div className="adminMarketplaceComponentButtonText">{t('farmerPageButton2')}</div>
                       </button>
                     </div>         
                   </div>
@@ -264,38 +269,37 @@ const AdminMarketplaceComponent = () => {
                   <div className="adminMarketplaceComponentFrameGroup">
                     <div className="adminMarketplaceComponentFrameContainer">
                       <div className="adminMarketplaceComponentSubText1Wrapper">
-                        <b className="adminMarketplaceComponentSubText1">Rice</b>
+                        <b className="adminMarketplaceComponentSubText1">{t('buyerCartText14')}</b>
                       </div>
                       <div className="adminMarketplaceComponentSubText2Wrapper2">                        
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Category:</b> Vegetable
+                          <b>{t('farmerPageCategory')}</b> Vegetable
                         </div> 
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Packaging:</b> Sack
+                          <b>{t('farmerPagePackaging')}</b> Sack
                         </div>                        
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Price:</b> Php 9,000
+                          <b>{t('farmerPagePrice')}</b> Php 1,000
                         </div>    
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Kilogram per unit:</b> 50 kgs
+                          <b>{t('farmerPageKilogram')}</b> 5 kgs
                         </div>    
                         <div className="adminMarketplaceComponentSubText2">
-                          <b>Description:</b> Rice is a staple food and a primary dietary component for a significant portion of the world's population. 
-                          It is a cereal grain that belongs to the grass family and is the most widely consumed staple crop globally.
+                          <b>{t('farmerPageDescription')}</b>  An onion is a round vegetable with a brown skin that grows underground. It has many white layers on its inside which have a strong.
                         </div>    
                       </div>
                     </div>
                     <div className="adminMarketplaceComponentFrameItem" />
-                    <div className="adminMarketplaceComponentDetails">  
+                    <div className="adminMarketplaceComponentDetails">      
                     <button className="adminMarketplaceComponentButton">
                         <FaEdit className="adminMarketplaceComponentButtonIcon" />
-                        <div className="adminMarketplaceComponentButtonText">Update</div>
-                      </button>              
+                        <div className="adminMarketplaceComponentButtonText">{t('farmerPageButton13')}</div>
+                      </button>          
                       <button className="adminMarketplaceComponentButton">
                         <FaTrash className="adminMarketplaceComponentButtonIcon" />
-                        <div className="adminMarketplaceComponentButtonText">Delete</div>
+                        <div className="adminMarketplaceComponentButtonText">{t('farmerPageButton2')}</div>
                       </button>
-                    </div>         
+                    </div>        
                   </div>
                 </a> 
                 
@@ -331,6 +335,7 @@ const AdminMarketplaceComponent = () => {
         </div>
       </div>
     </div>
+    </I18nextProvider>
   );
 };
 

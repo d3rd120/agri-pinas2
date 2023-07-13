@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import { FaUsers, FaGlobe, FaHome, FaWallet, FaStore, FaUserCircle, FaBell, FaAngleDown } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import '../css/Components/adminPageNavigation.css';
-
 import Logo from '../img/agriPinasLogo.png';
+import { I18nextProvider } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 const AdminNavigation = () => {
+  const { t } = useTranslation();
   const [showDropdown2, setShowDropdown2] = useState(false);
   const [showDropdown5, setShowDropdown5] = useState(false);
 
@@ -18,6 +22,7 @@ const AdminNavigation = () => {
   };
 
   return (
+    <I18nextProvider i18n={i18n}> 
     
     <div className="adminPageNavigation">
       <div className="adminPageNavigationLogoParent">
@@ -30,7 +35,7 @@ const AdminNavigation = () => {
           to="/admincommunityforum"
           activeClassName="active"
         >
-          <div className="adminPageNavigationLinks">Community</div>
+          <div className="adminPageNavigationLinks">{t('farmerPageNavgationText3')}</div>
           <FaUsers className="adminPageNavigationLinksIcon" />
         </NavLink>
 
@@ -41,7 +46,7 @@ const AdminNavigation = () => {
           onMouseEnter={toggleDropdown2}
           onMouseLeave={toggleDropdown2}
         >
-          <div className="adminPageNavigationLinks">Transactions&nbsp;<FaAngleDown /></div>
+          <div className="adminPageNavigationLinks">{t('farmerPageNavgationText5')}&nbsp;<FaAngleDown /></div>
           <FaGlobe className="adminPageNavigationLinksIcon" />
           {showDropdown2 && (
             <div className="dropdown">
@@ -66,7 +71,7 @@ const AdminNavigation = () => {
           to="/admindashboard"
           activeClassName="active"
         >
-          <div className="adminPageNavigationLinks">Dashboard</div>
+          <div className="adminPageNavigationLinks">{t('farmerPageNavgationText1')}</div>
           <FaHome className="adminPageNavigationLinksIcon" />
         </NavLink>
 
@@ -75,7 +80,7 @@ const AdminNavigation = () => {
           to="/adminmarketplace"
           activeClassName="active"
         >
-          <div className="adminPageNavigationLinks">Marketplace</div>
+          <div className="adminPageNavigationLinks">{t('farmerPageNavgationText2')}</div>
           <FaWallet className="adminPageNavigationLinksIcon" />
         </NavLink>
         <div
@@ -85,7 +90,7 @@ const AdminNavigation = () => {
           onMouseEnter={toggleDropdown5}
           onMouseLeave={toggleDropdown5}
         >
-          <div className="adminPageNavigationLinks">Accounts&nbsp;<FaAngleDown /></div>
+          <div className="adminPageNavigationLinks">{t('farmerPageNavgationText6')}&nbsp;<FaAngleDown /></div>
           <FaStore className="adminPageNavigationLinksIcon" />
           {showDropdown5 && (
             <div className="dropdown">
@@ -109,6 +114,7 @@ const AdminNavigation = () => {
             Log Out           
       </NavLink>
     </div>
+    </I18nextProvider>
   );
 };
 
