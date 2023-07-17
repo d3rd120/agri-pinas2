@@ -37,6 +37,7 @@
     "mainPageNavigationComponentText2": "About",
     "mainPageNavigationComponentText3": "Posts",
     "mainPageNavigationComponentText4": "Contact",
+    "mainPageNavigationComponentText5": "Language",
   
 
     "loginComponentText1": "Login",
@@ -264,6 +265,7 @@
     "buyerPageNavigationText2": "Cart",
     "buyerPageNavigationText3": "Transactions",
     "buyerPageNavigationText4": "Community",
+    
 
 
     "buyerPageCategory": "Category: ",
