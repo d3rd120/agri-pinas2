@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../css/Components/farmerProfileComponent.css";
 import BuyerProfileNav from '../components/buyerProfileNav';
 import ProfileVector1 from '../img/profileVector1.png';
@@ -6,21 +6,52 @@ import BuyerTopNav from '../components/buyerTopNav';
 import { I18nextProvider } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 import i18n from '../i18n';
+import { auth, db } from './firebase';
+import { collection, where, getDocs, query } from 'firebase/firestore';
 
 const BuyerProfile = () => {
   const { t } = useTranslation();
+  const [fullname, setfullname] = useState(' ');
+  const [contact, setContact] = useState('');
+  const [email, setEmail] = useState(' ');
+  const [birthdate, setbirthdate] = useState('');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const [name, setName] = useState('Jenkins Mesina');
-  const [phoneNumber, setPhoneNumber] = useState('0987654321');
-  const [email, setEmail] = useState('jenkins123@gmail.com ');
-  const [dateOfBirth, setDateOfBirth] = useState('2000-01-01');
-
-  const handleUserInfoChange = (userInfo) => {
-    setName(userInfo.name);
-    setPhoneNumber(userInfo.phoneNumber);
-    setEmail(userInfo.email);
-    setDateOfBirth(userInfo.dateOfBirth);
+const handleUserInfoChange = (userInfo) => {
+    setfullname(userInfo.fullname || '');
+    setContact(userInfo.contact || '');
+    setEmail(userInfo.email || '');
+    setbirthdate(userInfo.birthdate || '');
   };
+useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setIsLoggedIn(true);
+        const userRef = collection(db, "Users");
+        const userQuery = query(userRef, where("uid", "==", user.uid));
+        
+        getDocs(userQuery)
+          .then((querySnapshot) => {
+            if (!querySnapshot.empty) {
+              const userData = querySnapshot.docs[0].data();
+              handleUserInfoChange(userData);
+            } else {
+              handleUserInfoChange({ fullname: '', contact: '', email: '', birthdate: '' });
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching user data:", error);
+          });
+      } else {
+        setIsLoggedIn(false);
+        handleUserInfoChange({ fullname: '', contact: '', email: '', birthdate: '' });
+      }
+    });
+  
+    return () => unsubscribe();
+  }, []);
+
+
 
   const formatDateOfBirth = (date) => {
     if (date instanceof Date && !isNaN(date)) {
@@ -34,10 +65,10 @@ const BuyerProfile = () => {
     <div className="farmerProfileComponent">
       <BuyerProfileNav
         onUserInfoChange={handleUserInfoChange}
-        name={name}
-        phoneNumber={phoneNumber}
+        name={fullname}
+        phoneNumber={contact}
         email={email}
-        dateOfBirth={dateOfBirth}
+        dateOfBirth={birthdate}
       />     
       <div className="farmerProfileComponentMainPanel">
         <BuyerTopNav /> 
@@ -53,16 +84,16 @@ const BuyerProfile = () => {
             <div class="course-preview1">
               <div class="farmerProfileComponentInfo">{t('farmerProfileText17')}</div>
               <div class="farmerProfileComponentFullName">{t('farmerProfileText18')}</div>
-              <div class="farmerProfileComponentName">{name}</div>
+              <div class="farmerProfileComponentName">{fullname}</div>
               <div class="farmerProfileComponentRole">{t('farmerProfileText19')}</div>
               <img src={ProfileVector1} class="farmerselectImageIcon" />
               <div class="farmerProfileComponentRole2">{t('farmerProfileText20')}</div>
               <div class="farmerProfileComponentEmail1">{t('farmerProfileText21')}</div>
               <div class="farmerProfileComponentEmail2">{email}</div>
               <div class="farmerProfileComponentPhoneNumber">{t('farmerProfileText23')}</div>
-              <div class="farmerProfileComponentNumber">{phoneNumber}</div>
+              <div class="farmerProfileComponentNumber">{contact}</div>
               <div class="farmerProfileComponentBdayDate">{t('farmerProfileText22')}</div>
-              <div class="farmerProfileComponentBirthdate">{formatDateOfBirth(new Date(dateOfBirth))}</div>
+              <div class="farmerProfileComponentBirthdate">{formatDateOfBirth(new Date(birthdate))}</div>
             </div>
           </div>
         </div>
