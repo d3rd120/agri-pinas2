@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/BuyerPage/buyerCommunityForumPost.css';
 import FarmerProfileNav from '../components/farmerProfileNav';
 import { IconButton, Modal, TextField, Button } from '@material-ui/core';
@@ -7,13 +7,15 @@ import { FaTrashAlt, FaEdit } from 'react-icons/fa';
 import { I18nextProvider } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 import i18n from '../i18n';
+import { auth, db } from './firebase';
+import { collection, where, getDocs, query } from 'firebase/firestore';
 
 const BuyerAddress = () => {
   const { t } = useTranslation();
   const [openEditModal1, setOpenEditModal1] = useState(false);
   const [openEditModal2, setOpenEditModal2] = useState(false);
-  const [name, setName] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
+  const [fullname, setfullname] = useState('');
+  const [contact, setContact] = useState('');
   const [barangay, setBarangay] = useState('');
   const [address, setAddress] = useState('');
   const [nameError, setNameError] = useState(false);
@@ -21,7 +23,7 @@ const BuyerAddress = () => {
   const [barangayError, setBarangayError] = useState(false);
   const [addressError, setAddressError] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  
+  const [userData, setUserData] = useState(null);
 
   const handleModalConfirm = () => {
     setShowModal(false);
@@ -46,20 +48,20 @@ const BuyerAddress = () => {
   const handlePhoneNumberChange = (e) => {
     const value = e.target.value;
     const numericValue = value.replace(/\D/g, '');
-    setPhoneNumber(numericValue);
+    setContact(numericValue);
   };
 
   const handleSave = () => {
     let hasError = false;
 
-    if (!name) {
+    if (!fullname) {
       hasError = true;
       setNameError(true);
     } else {
       setNameError(false);
     }
 
-    if (!phoneNumber) {
+    if (!contact) {
       hasError = true;
       setPhoneNumberError(true);
     } else {
@@ -84,8 +86,8 @@ const BuyerAddress = () => {
       return;
     }
 
-    setName('');
-    setPhoneNumber('');
+    setfullname('');
+    setContact('');
     setBarangay('');
     setAddress('');
 
@@ -93,13 +95,43 @@ const BuyerAddress = () => {
   };
 
   const handleClose = () => {
-    setName('');
-    setPhoneNumber('');
+    setfullname('');
+    setContact('');
     setBarangay('');
     setAddress('');
     setOpenEditModal1(false);
     setOpenEditModal2(false);
   };
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        const userRef = collection(db, "Users");
+        const userQuery = query(userRef, where("uid", "==", user.uid));
+  
+        getDocs(userQuery)
+          .then((querySnapshot) => {
+            if (!querySnapshot.empty) {
+              const userData = querySnapshot.docs[0].data();
+              setfullname(userData.fullname || '');
+              setAddress(userData.address || '');
+              setContact(userData.contact || '');
+            } else {
+              setfullname('');
+              setAddress('');
+              setContact('');
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching user data:", error);
+          });
+      } else {
+        setUserData(null);
+      }
+    });
+  
+    return () => unsubscribe();
+  }, []);
 
   return (
     <I18nextProvider i18n={i18n}> 
@@ -118,10 +150,10 @@ const BuyerAddress = () => {
           <div class="courseAddress">
             <div class="course-preview1">
               <div class="info1 ">{t('farmerProfileText25')}</div>
-              <div class="nameAddress">Marievic Anes</div>
-              <div class="numberAddress"> | 09675046713</div>
+              <div class="nameAddress">{fullname}</div>
+              <div class="numberAddress"> | {contact}</div>
               <div class="locAddress1">Timog Ave.</div>
-              <div class="locAddress2">Kristong Hari, Quezon City, Metro Manila, Metro Manila</div>
+              <div class="locAddress2">{address}</div>
               <div class="defaultAddress1">Default</div>
               <FaEdit className="EditIconAddress" onClick={handleOpenEditModal1} />
 
@@ -135,8 +167,8 @@ const BuyerAddress = () => {
               className={`farmerMarketplaceEditProductComponentInput2 ${nameError ? 'error' : ''}`}
               type="text"
               placeholder={t('farmerProfileText28')}
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={fullname}
+              onChange={(e) => setfullname(e.target.value)}
             />
           </div>
           <div className={`farmerMarketplaceEditProductComponentInputParent ${phoneNumberError ? 'error' : ''}`}>
@@ -145,7 +177,7 @@ const BuyerAddress = () => {
               className={`farmerMarketplaceEditProductComponentInput2 ${phoneNumberError ? 'error' : ''}`}
               type="text"
               placeholder={t('farmerProfileText30')}
-              value={phoneNumber}
+              value={contact}
               onChange={handlePhoneNumberChange}
             />
           </div>
@@ -195,8 +227,8 @@ const BuyerAddress = () => {
               className={`farmerMarketplaceEditProductComponentInput2 ${nameError ? 'error' : ''}`}
               type="text"
               placeholder={t('farmerProfileText28')}
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={fullname}
+              onChange={(e) => setfullname(e.target.value)}
             />
           </div>
           <div className={`farmerMarketplaceEditProductComponentInputParent ${phoneNumberError ? 'error' : ''}`}>
@@ -205,7 +237,7 @@ const BuyerAddress = () => {
               className={`farmerMarketplaceEditProductComponentInput2 ${phoneNumberError ? 'error' : ''}`}
               type="text"
               placeholder={t('farmerProfileText30')}
-              value={phoneNumber}
+              value={contact}
               onChange={handlePhoneNumberChange}
             />
           </div>
