@@ -63,7 +63,7 @@
     "registerComponentText10": "Already have an account? ",
     
 
-    "farmerPageNavgationText1": "Dashboard",
+    "farmerPageNavgationText1": "Home",
     "farmerPageNavgationText2": "Marketplace",
     "farmerPageNavgationText3": "Community",
     "farmerPageNavgationText4": "Crop Tracker",
@@ -372,7 +372,11 @@
     "Text33": "Farmer's Account",
     "Text34": "Buyer's Account",
 
-    "farmerPageDashboardText1": "Welcome Farmer"
+    "farmerPageDashboardText1": "Welcome, Farmer",
+    "farmerPageDashboardText2": "Announcements in Cabiao, Nueva Ecija",
+
+    "adminPageDashboardText1": "Welcome, Admin",
+    "adminPageDashboardText2": "Update announcements"
 
 
   }

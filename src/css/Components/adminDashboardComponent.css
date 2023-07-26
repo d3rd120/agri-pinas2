@@ -140,6 +140,42 @@
   font-size: 1.31rem;
   color: #151630;
 }
+
+.adminDashboardComponentButtonIcon {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  color: white;
+}
+
+.adminDashboardComponentButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0.75rem 1.13rem;
+  background-color: #27ae60;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.38rem;
+  transition: 0.3s;
+}
+
+.adminDashboardComponentButton:hover {
+  background-color: #598025;
+}
+
+.adminDashboardComponentButtonText {
+  position: relative;
+  font-size: 0.88rem;
+  letter-spacing: 0.46px;
+  font-weight: 600;    
+  color: #fff;
+  text-align: center;
+}
+
 .adminDashboardComponent {
   position: relative;
   background-color: #fff;

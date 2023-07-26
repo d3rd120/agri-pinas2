@@ -142,6 +142,16 @@
   font-size: 1.31rem;
   color: #151630;
 }
+
+.farmerDashboardIcon {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 30.06rem;
+  object-fit: cover;
+}
+
 .farmerDashboardComponent {
   position: relative;
   background-color: #fff;
